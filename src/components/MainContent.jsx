@@ -1,12 +1,12 @@
+import React from 'react'
 import AuthorPage from '../pages/AuthorPage'
-
-
+import { Route, Routes } from 'react-router'
 
 const MainContent = () => {
     return (
-        <div>
-            <AuthorPage />
-        </div>
+        <Routes>
+            <Route element={<AuthorPage />} path="/:nombreAutor"></Route>
+        </Routes >
     )
 }
 
