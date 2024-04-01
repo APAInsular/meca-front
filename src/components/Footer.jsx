@@ -1,6 +1,6 @@
 import React from 'react';
 import myImage from './Photos/MECA-11.png';
-import './Footer.css'
+import './styles/Footer.css'
 
 const Footer = () => {
   return (

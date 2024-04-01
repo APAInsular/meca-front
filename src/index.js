@@ -11,10 +11,7 @@ import Footer from './components/Footer.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar/>
-    <Author/>
-    <Obrasdest/>
-    <Footer />
+   <App />
   </React.StrictMode>
 );
 

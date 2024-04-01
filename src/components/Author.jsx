@@ -1,4 +1,4 @@
-import './Author.css'
+import './styles/Author.css'
 import authorPhoto from './Photos/Cesar.jpg'
 function Author() {
     return (

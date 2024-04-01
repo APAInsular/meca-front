@@ -1,4 +1,4 @@
-import './Obras.css'
+import './styles/Obras.css'
 import firstObra from './Photos/Obra.jpg'
 
 

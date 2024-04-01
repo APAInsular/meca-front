@@ -1,5 +1,5 @@
 import React from "react";
-import './NavBar.css'
+import './styles/NavBar.css'
 import logo from './Photos/MECA-10.png'
 import userImg from './Photos/userimg.svg'
 function NavBar() {
