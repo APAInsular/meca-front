@@ -13,3 +13,5 @@ const AuthorPage = () => {
     <Footer />
     </div>
 }
+
+export default AuthorPage;
