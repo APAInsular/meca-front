@@ -1,7 +1,7 @@
 import myImage from './images/pin-48.svg';
 import myImage1 from './images/mail.svg';
 import myImage2 from './images/phone.svg';
-import './ContactUs.css';
+import '../styles/ContactUs.css';
 
 
 const ContactUs = () => {
