@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import React from 'react';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
