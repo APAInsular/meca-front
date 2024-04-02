@@ -1,0 +1,17 @@
+
+.titleHead {
+    position: absolute;
+    background-color: #263C5C;
+    top: 15%;
+    font-size: 30px;
+    width: 20%;
+    height: 7%;
+    text-align: center;
+    margin-left: 40%;
+    color: #FFFF;
+    border-radius: 20px;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

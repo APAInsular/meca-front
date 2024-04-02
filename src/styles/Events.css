@@ -1,0 +1,33 @@
+.dropdown {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.bigger{
+    font-size: 50px;
+}
+
+.eventContent{
+    position: relative;
+    top: 20%;
+    left: 40%;
+}
