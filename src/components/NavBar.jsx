@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../images/MECA-10.png';
-import userImg from '../images/userimg.svg';
-import '../styles/NavBar.css';
+import '../styles/NavBar.css'
+import logo from './Photos/MECA-10.png'
+import userImg from './Photos/userimg.svg'
 function NavBar() {
     return (
         <div className="header">
@@ -10,7 +10,7 @@ function NavBar() {
             <button id="explore">Explorar</button>
             <button id="blog">Blog</button>
             <button id="connections">Contáctanos</button>
-            <img className="userImage" src={userImg} alt="userImage"/>
+            <img className="userImage" src={userImg} alt="userImage" />
             <div className="line-break">
             </div>
         </div>

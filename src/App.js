@@ -1,15 +1,15 @@
+import './styles/App.css';
 import React from 'react';
-import Footer from './Footer';
-import ContactUs from './ContactUs';
-import NavBar from './NavBar';
-import './App.css';
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import MainContent from './components/MainContent'
 
 function App() {
   return (
-    <div className="App">\
-    <NavBar/>
-    <ContactUs/>
-      <Footer/>
+    <div className="App">
+      <NavBar />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
