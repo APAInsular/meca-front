@@ -1,63 +1,37 @@
 import '../styles/Events.css';
 import { useState } from 'react';
-
-
+import triangleButton from './Photos/triangle.png';
 
 const Events = () => {
-    // function toggleDropdown() {
-    //     var dropdown = document.getElementById("myDropdown");
-    //     dropdown.classList.toggle("show");
-    // }
-
-    // window.onclick = function(event) {
-    //     if (!event.target.matches('.dropbtn')) {
-    //         var dropdowns = document.getElementsByClassName("dropdown-content");
-    //         for (var i = 0; i < dropdowns.length; i++) {
-    //             var openDropdown = dropdowns[i];
-    //             if (openDropdown.classList.contains('show')) {
-    //                 openDropdown.classList.remove('show');
-    //             }
-    //         }
-    //     }
-    // }
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpand = () => {
         setExpanded(!expanded);
     };
-
-
+    const rotateTriangle = () => {
+        let triangleButton = document.getElementById("triangleButton");
+        triangleButton.classList.toggle("rotated");
+    }
     return (
-        <div>
-            {/* <div class="dropdown">
-    <button onclick={toggleDropdown()} class="dropbtn">Event1</button>
-    <div id="myDropdown" class="dropdown-content">
-        <p>fmajnankanknqkbnkbnbrqknrqrb</p>
-            <img src="../components/Photos/Obra.jpg" alt="ffgf" />
-            <img src="../components/Photos/Cesar.jpg" alt="fdfd" />
-    </div>
-</div> */}
+        <div className="container">
+            <div className={`rect ${expanded ? 'expanded' : ''}`}>
+                <p className='bigger eventoTitle'>Evento1</p>
+                <button id='triangleButton' className="expandBut" onClick={() => { rotateTriangle(); toggleExpand(); }}>
+                    <img className="trianglebuttonImg" src={ triangleButton } alt="triangle" />
+                    {expanded ? '' : ''}
+                </button>
+                {expanded && (
+                    <div>
+                        <p>Extra content goes here...</p>
+                        <p>Extra content goes here...</p>
+                        <p>Extra content goes here...</p>
+                    </div>
+                )}
+            </div>
 
-            {!expanded ? (
-                <div className='eventContent'>
-                    <p className='bigger'>Click the button to expand</p>
-                    <button onClick={toggleExpand}>Expand</button>
-                </div>
-            ) : (
-                <div className='eventContent'>
-                    <p>Expanded Div with More Information</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Sed tempor nunc non libero ullamcorper, nec
-                        scelerisque metus lobortis. Vivamus maximus consequat
-                        consequat. Integer quis velit ut enim tempus
-                        tristique non nec odio.
-                    </p>
-                    <button onClick={toggleExpand}>Collapse</button>
-                </div>
-            )}
         </div>
     );
 }
+
 
 export default Events;

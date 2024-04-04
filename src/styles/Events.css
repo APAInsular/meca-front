@@ -1,33 +1,55 @@
-.dropdown {
-    position: absolute;
-    left: 40%;
-    top: 20%;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.show {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
 
 .bigger{
-    font-size: 50px;
+    font-size: 30px;
 }
 
-.eventContent{
-    position: relative;
-    top: 20%;
-    left: 40%;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    margin-left: 30%;
+}
+
+.rect {
+    width: 1400px;
+    height: 100px;
+    background: rgb(121,143,148);
+    background: linear-gradient(90deg, rgba(121,143,148,1) 0%, rgba(115,115,115,1) 100%);
+    border: 1px solid blue;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.expanded {
+    height: 300px; 
+}
+
+.expandBut{
+    position: absolute;
+    left: 91%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+    height: 40px;
+    width: 35px;
+    bottom: 58%;
+}
+
+.rotated {
+    transform: rotate(180deg); 
+}
+
+.trianglebuttonImg{
+    height: 40px;
+    width: 35px;
+    transform: rotate(180deg);
+}
+
+.eventoTitle{
+    color: #FFFF;
 }
