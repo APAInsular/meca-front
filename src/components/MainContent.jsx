@@ -1,12 +1,13 @@
 import React from 'react'
-import AuthorPage from '../pages/AuthorPage'
+import NavBar from '../components/NavBar.jsx'
 import { Route, Routes } from 'react-router'
+import MonumentFiltradosPage from '../pages/MonumentFiltradosPage.jsx'
 
 const MainContent = () => {
     return (
-        <Routes>
-            <Route element={<AuthorPage />} path="/:nombreAutor"></Route>
-        </Routes >
+        <div>
+            <MonumentFiltradosPage/>
+        </div >
     )
 }
 

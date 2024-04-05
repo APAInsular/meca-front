@@ -1,0 +1,25 @@
+
+.lista-obras{
+    text-align: center;
+    margin-top: 100px;
+}
+.esculturas{
+    text-align: center;
+}
+.obras{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*.obras{
+    display: flex;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-gap: 10px 20px;
+}*/
+.obra1, .obra2, .obra3, .obra4, .obra5, .obra6, .obra7, .obra8{
+    margin: 15px 15px 15px 15px;
+    height: 200px;
+    width: 350px;
+}

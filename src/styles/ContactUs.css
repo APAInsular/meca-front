@@ -1,6 +1,6 @@
 .ContactUs1 {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
@@ -37,7 +37,7 @@
     height: 200px;
     padding: 50px;
     margin: 10px;
-    width: 250%;
+    width: 300px;
   }
 
 h3, p{

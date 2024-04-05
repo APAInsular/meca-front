@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../images/MECA-10.png';
-import userImg from '../images/userimg.svg';
-import '../styles/NavBar.css';
+import './NavBar.css';
+import logo from './images/MECA-10.png';
+import userImg from './images/userimg.svg';
 function NavBar() {
     return (
         <div className="header">
