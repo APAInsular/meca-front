@@ -48,7 +48,7 @@ const ObrasDestacadas = () => {
             </h3>
 
             <div className="d-flex justify-content-center">
-                <div className="row">
+                <div className="row" style={{ margin: "0 auto" }}>
                     {obras.map((obra, index) => (
                         <Obra key={index} obra={obra} />
                     ))}
