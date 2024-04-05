@@ -1,6 +1,11 @@
 import '../styles/Events.css';
 import triangleButton from './Photos/triangle.png';
 import { useState } from 'react';
+import BooksLogo from './Photos/books.png';
+import EventMonumentPhoto1 from './EventMonumentPhoto1';
+import MonumentRoute1 from './MonumentRoute1';
+import EventCreator1 from './EventCreator1';
+import EventDescription1 from './EventDescription1';
 
 
 const Event1 = () => {
@@ -15,22 +20,23 @@ const Event1 = () => {
         triangleButton.classList.toggle("rotated");
     }
     return(
-        <div className="container1">
-        <div className={`rect ${expanded ? 'expanded' : ''}`}>
+        
+        <div className={`rect1 ${expanded ? 'expanded' : ''}`}>
+            <img className="EventLogo" src={BooksLogo} alt="BooksLogo" />
             <p className='bigger eventoTitle'>Evento1</p>
             <button id='triangleButton1' className="expandBut" onClick={() => { rotateTriangle(1); toggleExpand(); }}>
                 <img className="trianglebuttonImg" src={triangleButton} alt="triangle" />
                 {expanded ? '' : ''}
             </button>
             {expanded && (
-                <div>
-                    <p>Extra content goes here...</p>
-                    <p>Extra content goes here...</p>
-                    <p>Extra content goes here...</p>
+                <div className='hiddenContent'>
+                    <EventMonumentPhoto1 />
+                    <MonumentRoute1 />
+                    <EventCreator1 />
+                    <EventDescription1 />
                 </div>
             )}
         </div>
-    </div>
     );
 }
 

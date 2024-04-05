@@ -1,0 +1,10 @@
+.Element3{
+    height: 220px;
+    width: 100%;
+    border: 5px solid #FFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.Route{
+    grid-area: Map;
+}

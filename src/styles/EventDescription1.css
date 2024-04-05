@@ -1,0 +1,29 @@
+.containerDescription{
+    background-color: #818589;
+
+}
+
+.Element1{
+    height: 460px;
+    width: 80%;
+    border: 5px solid #FFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    margin-left: -5%;
+}
+
+.Paragraph{
+    grid-area: Paragraph;
+}
+
+.EventButton {
+    background-color: #263C5C;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    height: 7%;
+    width: 7%;
+    position: absolute;
+    right: 8%;
+    bottom: -10%;
+    cursor: pointer;
+}

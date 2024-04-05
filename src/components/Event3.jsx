@@ -16,11 +16,10 @@ const Event3 = () => {
     }
     return(
         <div className="container3">
-                <div className={`rect ${expanded ? 'expanded' : ''}`}>
+                <div className={`rect3 ${expanded ? 'expanded' : ''}`}>
                     <p className='bigger eventoTitle'>Evento3</p>
                     <button id='triangleButton3' className="expandBut3" onClick={() => { rotateTriangle(3); toggleExpand(); }}>
                         <img className="trianglebuttonImg" src={triangleButton} alt="triangle" />
-                        {expanded ? '' : ''}
                     </button>
                     {expanded && (
                         <div>
