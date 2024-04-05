@@ -1,12 +1,12 @@
 import React from 'react'
-import NavBar from '../components/NavBar.jsx'
-import { Route, Routes } from 'react-router'
-import MonumentFiltradosPage from '../pages/MonumentFiltradosPage.jsx'
+//import NavBar from '../components/NavBar.jsx'
+//import { Route, Routes } from 'react-router'
+import InfoPage from '../pages/InfoPage.jsx'
 
 const MainContent = () => {
     return (
         <div>
-            <MonumentFiltradosPage/>
+            <InfoPage/>
         </div >
     )
 }

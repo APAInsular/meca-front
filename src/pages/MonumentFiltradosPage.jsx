@@ -4,7 +4,7 @@ import myImagea from '../images/Obra.jpg'
 
 const MonumentFiltradosPage = () => {
   return (
-    <div>
+    <div className='filtro'>
     <div className='lista-obras'>
         <h1>Lista de Obras</h1>
     </div>

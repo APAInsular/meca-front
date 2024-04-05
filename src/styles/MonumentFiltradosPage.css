@@ -1,4 +1,6 @@
-
+.filtro{
+    height: 110vh;
+}
 .lista-obras{
     text-align: center;
     margin-top: 100px;
