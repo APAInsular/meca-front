@@ -1,14 +1,14 @@
 import '../styles/Events.css';
-import triangleButton from './Photos/triangle.png';
+// import triangleButton from './Photos/triangle.png';
 import { useState } from 'react';
-import BooksLogo from './Photos/books.png';
+// import BooksLogo from './Photos/books.png';
 import EventMonumentPhoto1 from './EventMonumentPhoto1';
 import MonumentRoute1 from './MonumentRoute1';
 import EventCreator1 from './EventCreator1';
 import EventDescription1 from './EventDescription1';
 
 
-const Event1 = () => {
+const Event = () => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpand = () => {
@@ -22,10 +22,10 @@ const Event1 = () => {
     return(
         
         <div className={`rect1 ${expanded ? 'expanded' : ''}`}>
-            <img className="EventLogo" src={BooksLogo} alt="BooksLogo" />
+            <img className="EventLogo" src={"/public/Image/books.png"} alt="BooksLogo" />
             <p className='bigger eventoTitle'>Evento1</p>
             <button id='triangleButton1' className="expandBut" onClick={() => { rotateTriangle(1); toggleExpand(); }}>
-                <img className="trianglebuttonImg" src={triangleButton} alt="triangle" />
+                <img className="trianglebuttonImg" src={'/public/Image/triangle.png'} alt="triangle" />
                 {expanded ? '' : ''}
             </button>
             {expanded && (
@@ -40,4 +40,4 @@ const Event1 = () => {
     );
 }
 
-export default Event1;
+export default Event;
