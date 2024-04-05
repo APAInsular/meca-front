@@ -1,5 +1,5 @@
-import Author from '../components/Author.jsx';
-import Obrasdest from '../components/Obras_destacadas.jsx';
+import Author from '../components/AuthorPage/Author.jsx';
+import ObrasRelacionadas from '../components/AuthorPage/ObrasRelaciondas.jsx';
 
 
 
@@ -7,7 +7,7 @@ const AuthorPage = () => {
     return (
         <div>
             <Author />
-            <Obrasdest />
+            <ObrasRelacionadas />
         </div>
     )
 }

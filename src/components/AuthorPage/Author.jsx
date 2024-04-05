@@ -1,4 +1,4 @@
-import '../styles/Author.css'
+import '../../styles/Author.css'
 
 function Author() {
     return (

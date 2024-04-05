@@ -1,6 +1,6 @@
-import '../styles/Obras.css'
+import '../../styles/Obras.css'
 
-function Obrasdest() {
+function ObrasRelacionadas() {
     return (
         <>
             <div className="parent">
@@ -14,4 +14,4 @@ function Obrasdest() {
     );
 }
 
-export default Obrasdest;
+export default ObrasRelacionadas;

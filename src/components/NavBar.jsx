@@ -20,6 +20,9 @@ export default function NavBar() {
         });
     };
 
+    // 34,16px
+    // 104,882px
+
     return (
         <div className='my-3 px-3 d-flex align-items-center'>
             <div className='col-md-1 justify-content-center'>
@@ -29,7 +32,7 @@ export default function NavBar() {
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' || item.name === 'Explorar' ? (
-                            <div onClick={() => handleClick(item.name)} className="mx-3 d-flex justify-content-center">
+                            <div onClick={() => handleClick(item.name)} className="mx-3 justify-content-center">
                                 <div className="btn mx-3 text-center" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
