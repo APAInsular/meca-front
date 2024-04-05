@@ -48,16 +48,14 @@ const ObrasDestacadas = () => {
             </h3>
 
             <div className="d-flex justify-content-center">
-                {
-                    obras.map(obra => {
-                        return (
-                            <Obra obra={obra} />
-                        )
-                    })
-                }
+                <div className="row">
+                    {obras.map((obra, index) => (
+                        <Obra key={index} obra={obra} />
+                    ))}
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ObrasDestacadas;
