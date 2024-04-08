@@ -4,6 +4,7 @@ import React from 'react';
 //import MonumentFiltradosPage from './pages/MonumentFiltradosPage.jsx'
 import NavBar from './components/NavBar';
 //import MainContent from './components/MainContent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import InfoPage from './pages/InfoPage'
 import Footer from './components/Footer';
 import './App.css';
