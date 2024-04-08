@@ -5,7 +5,7 @@ import '../styles/MonumentRoute1.css';
 const MonumentRoute1 = () => {
     return(
         <div className='Route'>
-            <img className="Element3" src={"/public/Image/Map.png"} alt="MapImg" />
+            <img className="Element3" src="/Image/Map.png" alt="MapImg" />
         </div>
     );
 }
