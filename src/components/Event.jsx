@@ -22,10 +22,10 @@ const Event = () => {
     return(
         
         <div className={`rect1 ${expanded ? 'expanded' : ''}`}>
-            <img className="EventLogo" src={"/public/Image/books.png"} alt="BooksLogo" />
+            <img className="EventLogo" src="/public/Image/books.png" alt="BooksLogo" />
             <p className='bigger eventoTitle'>Evento1</p>
             <button id='triangleButton1' className="expandBut" onClick={() => { rotateTriangle(1); toggleExpand(); }}>
-                <img className="trianglebuttonImg" src={'/public/Image/triangle.png'} alt="triangle" />
+                <img className="trianglebuttonImg" src='/public/Image/triangle.png' alt="triangle" />
                 {expanded ? '' : ''}
             </button>
             {expanded && (

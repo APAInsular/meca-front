@@ -18,7 +18,7 @@ const MainContent = () => {
         <Routes>
             <Route element={<HomePage />} path="/"></Route>
             <Route element={<AuthorPage />} path="/:nombreAutor"></Route>
-            <Route element={<EventPage />} path="/:id"></Route>
+            <Route element={<EventPage />} path="/events"></Route>
             <Route element={<MonumentPage />} path="/:nombreMonumento"></Route>
             <Route element={<ProfilePage />} path="/:nickname/perfil"></Route>
             <Route element={<FavoritePage />} path="/:nickname/favoritos"></Route>
