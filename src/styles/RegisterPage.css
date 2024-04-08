@@ -1,0 +1,10 @@
+.register-page{
+    display: flexbox;
+    margin-top: 15%;
+    width: 50%;
+    float: right;
+}
+.firstname{
+    background-color: aquamarine;
+    width: fit-content;
+}

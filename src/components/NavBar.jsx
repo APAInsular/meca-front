@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
@@ -8,7 +9,7 @@ const navigation = [
     { name: 'Explorar', path: '/explorar' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contáctanos', path: '/contactanos' },
-    { name: 'Información', path: '/informacion' },
+    { name: 'Información', path: '/info' },
 ];
 
 export default function NavBar() {

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import AuthorPage from '../pages/AuthorPage'
 import HomePage from '../pages/HomePage'
 import BlogPage from '../pages/BlogPage'
@@ -11,6 +12,7 @@ import ProfilePage from '../pages/ProfilePage'
 import RankingPage from '../pages/RankingPage'
 import RoutePage from '../pages/RoutePage'
 import SearchPage from '../pages/SearchPage'
+import InfoPage from '../pages/InfoPage'
 import { Route, Routes } from 'react-router'
 
 const MainContent = () => {
@@ -28,6 +30,7 @@ const MainContent = () => {
             <Route element={<AchievementPage />} path="/logros"></Route>
             <Route element={<ActionHistorial />} path="/notificaciones"></Route>
             <Route element={<RankingPage />} path="/ranking"></Route>
+            <Route element={<InfoPage />} path="/info"></Route>
         </Routes >
     )
 }
