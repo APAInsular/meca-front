@@ -32,20 +32,20 @@ export default function NavBar() {
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' || item.name === 'Explorar' ? (
-                            <div onClick={() => handleClick(item.name)} className="mx-3 justify-content-center">
-                                <div className="btn mx-3 text-center" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }}>
+                            <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
+                                <div className="btn mx-3 text-center" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
-                                <div hidden={selectedItem !== item.name}>
-                                    <Link to={item.path} className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                <div hidden={selectedItem !== item.name} style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Logros</strong>
-                                    </Link>
-                                    <Link to={item.path} className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                    </div>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Eventos</strong>
-                                    </Link>
-                                    <Link to={item.path} className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                    </div>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Clasificación</strong>
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         ) : (
