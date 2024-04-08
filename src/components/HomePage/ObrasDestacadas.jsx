@@ -42,7 +42,7 @@ const ObrasDestacadas = () => {
     ]
 
     return (
-        <div>
+        <div className="p-3 align-items-center text-center">
             <h3 className="text-uppercase">
                 Obras destacadas
             </h3>
