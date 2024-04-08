@@ -24,6 +24,15 @@ const InfoPage = () => {
                                 </div>
                 <div className='boxes_2'>
                     <div className='left_box1'>
+                        <p className='box_n_t'>Nombre Totems</p>
+                        <h1 className='platino_r'>Platino = 100000</h1>
+                        <div className='h_line_1'></div>
+                        <h1 className='platino_r'>Platino = 100000</h1>
+                        <div className='h_line_1'></div>
+                        <h1 className='platino_r'>Platino = 100000</h1>
+                        <div className='h_line_1'></div>
+                        <h1 className='platino_r'>Platino = 100000</h1>
+                        <div className='h_line_1'></div>
                         </div>
                     <div className='right_box1'>
                         </div>
