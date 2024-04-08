@@ -36,7 +36,7 @@ export default function NavBar() {
                                 <div className="btn mx-3 text-center" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
-                                <div hidden={selectedItem !== item.name} style={{ position: 'absolute', top: '100%', left: -10, zIndex: 1 }}>
+                                <div hidden={selectedItem !== item.name} style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
                                     <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Logros</strong>
                                     </div>
