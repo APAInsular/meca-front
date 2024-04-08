@@ -1,15 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-//import NavBar from '../components/NavBar.jsx'
-//import { Route, Routes } from 'react-router'
-import InfoPage from '../pages/InfoPage.jsx'
 
-const MainContent = () => {
-    return (
-        <div>
-            <InfoPage/>
-        </div >
-=======
 import AuthorPage from '../pages/AuthorPage'
 import HomePage from '../pages/HomePage'
 import BlogPage from '../pages/BlogPage'
@@ -22,6 +12,7 @@ import ProfilePage from '../pages/ProfilePage'
 import RankingPage from '../pages/RankingPage'
 import RoutePage from '../pages/RoutePage'
 import SearchPage from '../pages/SearchPage'
+import InfoPage from '../pages/InfoPage'
 import { Route, Routes } from 'react-router'
 
 const MainContent = () => {
@@ -39,8 +30,8 @@ const MainContent = () => {
             <Route element={<AchievementPage />} path="/logros"></Route>
             <Route element={<ActionHistorial />} path="/notificaciones"></Route>
             <Route element={<RankingPage />} path="/ranking"></Route>
+            <Route element={<InfoPage />} path="/info"></Route>
         </Routes >
->>>>>>> 35a4c1c63f2940af9b97994894b16904c4d7aa26
     )
 }
 

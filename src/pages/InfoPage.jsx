@@ -22,8 +22,6 @@ const InfoPage = () => {
                         <h1 className='puntos_h1'>Puntos de recogida</h1>
                             </div>
                                 </div>
-                <div className='center_line'>                  
-                    </div>
                 <div className='boxes_2'>
                     <div className='left_box1'>
                         </div>
