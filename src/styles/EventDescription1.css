@@ -27,4 +27,7 @@
     position: relative;
     float: right;
     cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    vertical-align: middle;
 }
