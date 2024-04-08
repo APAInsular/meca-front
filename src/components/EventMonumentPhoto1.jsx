@@ -1,15 +1,14 @@
-// import MonumentPic1 from './Photos/Obra.jpg';
 import '../styles/EventMonumentPhoto1.css';
 
 
 
-const EventMonumentPhoto1 = () => {
+const EventMonumentPhoto = () => {
     return(
         <div className='Monument1'>
-            <img className="first-monument-pic Element2" src={"/public/Image/Obra.jpg"} alt="MonumentPhoto" />
+            <img className="first-monument-pic Element2" src="/Image/Obra.jpg" alt="MonumentPhoto" />
         </div>
     );
 
 }
 
-export default EventMonumentPhoto1;
+export default EventMonumentPhoto;
