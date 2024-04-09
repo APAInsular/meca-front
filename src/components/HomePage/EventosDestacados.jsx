@@ -6,47 +6,51 @@ const EventosDestacados = () => {
 
     const eventos = [
         {
-            nombre: "Escultura 1",
+            titulo: "Evento 1",
             fecha: "23-06-2007",
             autor: {
                 nombre: "Luis Gordillo"
             },
-            imagen: "/Image/Obra.jpg"
+            cupo: "100",
+            num_inscritos: "35"
         },
         {
-            nombre: "Escultura 2",
+            titulo: "Evento 2",
             fecha: "23-06-2007",
             autor: {
                 nombre: "Luis Gordillo"
             },
-            imagen: "/Image/Obra.jpg"
+            cupo: "100",
+            num_inscritos: "35"
         },
         {
-            nombre: "Escultura 3",
+            titulo: "Evento 3",
             fecha: "23-06-2007",
             autor: {
                 nombre: "Luis Gordillo"
             },
-            imagen: "/Image/Obra.jpg"
+            cupo: "100",
+            num_inscritos: "35"
         },
         {
-            nombre: "Escultura 4",
+            titulo: "Evento 4",
             fecha: "23-06-2007",
             autor: {
                 nombre: "Luis Gordillo"
             },
-            imagen: "/Image/Obra.jpg"
+            cupo: "100",
+            num_inscritos: "35"
         }
     ]
 
     return (
-        <div>
-            <div>
+        <div className="p-3 text-center">
+            <div className="align-items-center">
                 <h3 className="text-uppercase">
                     Eventos Destacados
                 </h3>
             </div>
-            <div>
+            <div className="">
                 {eventos.map((evento, index) => {
                     return (
                         <Evento key={index} evento={evento} />

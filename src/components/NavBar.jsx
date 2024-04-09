@@ -34,23 +34,23 @@ export default function NavBar() {
                     <div key={item.name}>
                         {item.name === 'Acciones' || item.name === 'Explorar' ? (
                             <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
-                                <div className="btn mx-3 text-center" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
+                                <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
                                 <div hidden={selectedItem !== item.name} style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
-                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Logros</strong>
                                     </div>
-                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Eventos</strong>
                                     </div>
-                                    <div className="btn mx-3 mt-2 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                                    <div className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                         <strong className='text-white'>Clasificación</strong>
                                     </div>
                                 </div>
                             </div>
                         ) : (
-                            <Link to={item.path} className="btn mx-3 d-flex justify-content-center" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                            <Link to={item.path} className="btn mx-3 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                                 <strong className='text-white'>{item.name}</strong>
                             </Link>
                         )}
