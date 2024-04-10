@@ -1,5 +1,4 @@
 import '../styles/MonumentRoute1.css';
-// import Map from '../components/Photos/Map.png';
 
 
 const MonumentRoute1 = () => {
