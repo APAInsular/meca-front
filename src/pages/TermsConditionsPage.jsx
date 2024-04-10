@@ -10,7 +10,9 @@
     return(
         <div>
             <h1 className="object-cover flex mx-auto bg-[#263C5C]">Your privacy is important</h1>
-            <img  className="h-[1000px] w-[100px]" src="/Image/lock.png" alt="padlock"/>
+            <div className="flex justify-center align-middle h-[100vh]">
+                <img  className="max-w-full max-h-full" src="/Image/lock.png" alt="padlock"/>
+            </div>
             <p className="ml-1">Accepting terms and conditions is a crucial step when engaging with digital platforms, services, or products, and it holds significant importance for both users and providers. Here are several reasons why users should carefully read and accept terms and conditions:
 Legal Agreement: Accepting terms and conditions establishes a legally binding agreement between the user and the service or product provider. These terms outline the rights and responsibilities of both parties, ensuring a clear understanding of the relationship.
 User Protection: Terms and conditions often include clauses that outline how user data will be handled and protected. This is vital for safeguarding personal information and ensuring that the service complies with relevant privacy laws. By accepting these terms, users give their explicit consent to the data handling practices outlined.
