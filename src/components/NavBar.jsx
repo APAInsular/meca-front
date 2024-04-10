@@ -10,6 +10,7 @@ const navigation = [
     { name: 'Blog', path: '/blog' },
     { name: 'Contáctanos', path: '/contactanos' },
     { name: 'Información', path: '/info' },
+    { name: 'Ranking', path: '/ranking' },
 ];
 
 export default function NavBar() {
