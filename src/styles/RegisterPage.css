@@ -1,10 +1,66 @@
-.register-page{
-    display: flexbox;
-    margin-top: 15%;
-    width: 50%;
-    float: right;
+.meca{
+    width: 762px;
+    height: 518px;
+    text-align: center;
+    margin-top: 5%;
 }
-.firstname{
-    background-color: aquamarine;
-    width: fit-content;
+
+.logo{
+    float: left;
+    height: 650px;
+    border-right: 2px solid #263C5C;
+}
+
+.register_form{
+    float: right;
+    text-align: center;
+    margin-right: 7%;
+
+}
+
+.register_form h5{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.register_form button{
+    color: white;
+    background-color: #263C5C;
+    border-radius: 10px;
+    width: 171px;
+    height: 66px;
+    font-size: 24px;
+    margin-top: 5%;
+}
+.register_form .nombre{
+    border: 2px solid #263C5C;
+    border-radius: 5px;
+    width: 224px;
+    height: 66px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.register_form .apelidos{
+    border: 2px solid #263C5C;
+    border-radius: 5px;
+    width: 329px;
+    height: 66px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 55px;
+}
+
+.register_form .email{
+    border: 2px solid #263C5C;
+    border-radius: 5px;
+    width: 610px;
+    height: 66px;
+    text-align: left;
+
+}
+
+.register_form input::placeholder{
+    padding-left: 20px;
 }

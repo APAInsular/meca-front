@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import '../styles/RegisterPage.css';
+import meca from '../images/MECA-09.png';
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
@@ -10,70 +11,25 @@ const RegisterPage = () => {
     password: ''
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission, for now, let's just log the form data
-    console.log(formData);
-  };
-
   return (
     <div className='register-page'>
-      <h2>Registration Form</h2>
-      <form onSubmit={handleSubmit}>
-        <div className='firstname'>
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button type="submit">Register</button>
-      </form>
+      <div class="logo">
+          <img className='meca' src={meca} alt=""/>
+      </div>
+
+      <div class="register_form">
+          <h5>REGISTRATE</h5>
+          <input type="text" placeholder='Nombre' class="nombre"></input>
+          <input type="text" placeholder='Apelidos' class="apelidos"></input><br></br>
+          <input type="text" placeholder='Email' class="email"></input><br></br>
+          <input type="text" placeholder='Cludad' class="nombre"></input>
+          <input type="text" placeholder='Pais' class="apelidos"></input><br></br>
+          <input type="text" placeholder='Nacionalidad' class="email"></input><br></br>
+          <input type="text" placeholder='Contraseña' class="nombre"></input>
+          <input type="text" placeholder='Repetir Contraseña' class="apelidos"></input><br></br>
+          <button>Entar</button><br></br>
+          
+      </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const navigation = [
     { name: 'Acciones', path: '/acciones' },
     { name: 'Explorar', path: '/explorar' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contáctanos', path: '/contactanos' },
+    { name: 'Contáctanos', path: '/contactus' },
     { name: 'Información', path: '/info' },
     { name: 'Clasificación', path: '/ranking' },
 ];
