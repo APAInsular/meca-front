@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/RankingPage.css';
 import avatar from '../images/usuario_avatar.png';
-import burger from '../images/navbar.png';
+import NavBarMobile from '../components/NavBarMobile';
+import Footer from '../components/Footer';
 
 const RankingPage = () => {
 
@@ -13,9 +14,7 @@ const RankingPage = () => {
 
     return (
         <div> 
-            <div className="navbar">
-                <button><img src={burger} alt="navbar" class="navbar-image"></img></button>
-            </div>
+            <div><NavBarMobile/></div>
             <div className="h-line-3"></div>
             <div className="title">TOP</div>
             <div className="h-line-2"></div>
@@ -90,6 +89,7 @@ const RankingPage = () => {
                     <div className="h-line-1"></div>
                 </div>
             ))}
+            <Footer/>
         </div>
     );
 };
