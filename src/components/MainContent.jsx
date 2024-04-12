@@ -17,6 +17,7 @@ import { Route, Routes } from 'react-router'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
+import TermsConditionsPage from '../pages/TermsConditionsPage'
 
 const MainContent = () => {
     return (
@@ -41,6 +42,7 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
+            <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
         </Routes >
     )
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+//import MainContent from './components/MainContent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import InfoPage from './pages/InfoPage'
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 
