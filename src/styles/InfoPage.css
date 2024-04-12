@@ -87,11 +87,14 @@
     width: 60%;
     height: 10%;
     float: left;
+    color: #263C5C;
 }
 .top_box_2_right{
     width: 40%;
     height: 10%;
+    padding-right: 15%;
     float: right;
+    color: #263C5C;
 }
 
 .top_box_1_text, .top_box_2_text{
@@ -115,18 +118,65 @@
     width: 35%;
     height: 40%;
     float: left;
+    color: #263C5C;
 }
 
 .totems_left{
     width: 35%;
     height: 40%;
     float: left;
+    color: #263C5C;
 }
 
 .platino_rank_left{
     width: 100%;
-    height: 40%;
+    height: 30%;
+    margin-top: 15%;
     justify-content: center;
+}
+
+.platino_rank1_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 22%;
+    justify-content: center;
+}
+.platino_rank2_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 22%;
+    justify-content: center;
+}
+.platino_rank3_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 22%;
+    justify-content: center;
+}
+
+.platino_totems{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 15%;
+    text-align: center;
+}
+.platino_totems1{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+.platino_totems2{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+.platino_totems3{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
 }
 
 .right_box1{
@@ -134,6 +184,33 @@
     width: 40%;
     background-color: #7B96FF;
     border-radius: 30px;
+}
+
+.acerca{
+    text-align: center;
+    color: #263C5C;
+    margin-top: 3%;
+}
+
+.acerca_line{
+    width: 100%;
+    height: 2px;
+    margin-top: 5%;
+    background-color: #263C5C;
+}
+
+.acerca_text{
+    width: 80%;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.eventos_entrantes{
+    color: #263C5C;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .maps{
