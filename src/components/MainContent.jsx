@@ -17,7 +17,6 @@ import { Route, Routes } from 'react-router'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
-import LoginPage from '../pages/LoginPage'
 
 const MainContent = () => {
     return (
@@ -42,7 +41,6 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
-            <Route element={<LoginPage />} path="/login">    </Route>
         </Routes >
     )
 }
