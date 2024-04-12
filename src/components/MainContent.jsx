@@ -18,6 +18,7 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import LoginPage from '../pages/LoginPage'
+import ContactUs from '../pages/ContactUsPage'
 
 const MainContent = () => {
     return (
@@ -43,6 +44,7 @@ const MainContent = () => {
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
             <Route element={<LoginPage />} path="/login">    </Route>
+            <Route element={<ContactUs/>} path="/contact"></Route>
         </Routes >
     )
 }

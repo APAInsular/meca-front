@@ -2,9 +2,11 @@ import React from 'react'
 import '../styles/InfoPage.css';
 import qrImage from '../images/SP_blog_Link.jpg';
 import maps from '../images/maps.png';
+import NavBar from '../components/NavBar';
 
 const InfoPage = () => {
     return (
+        <div><NavBar/> 
         <div className='container-info-page'>
                 <div className='info-page-box1'>
                     <div className='info-box1'>
@@ -45,12 +47,7 @@ const InfoPage = () => {
                             <p>Al escanear los códigos QR cerca de los monumentos <br></br> y explorarlos, serás recompensado con puntos por las <br></br> tareas completadas.</p>
                         </div>
                     </div>
-
-
-
-                    
-
-        </div>
+        </div></div>
     )
 }
 
