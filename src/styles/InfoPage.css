@@ -91,6 +91,7 @@
 .top_box_2_right{
     width: 40%;
     height: 10%;
+    padding-right: 15%;
     float: right;
 }
 
@@ -125,8 +126,53 @@
 
 .platino_rank_left{
     width: 100%;
-    height: 40%;
+    height: 30%;
+    margin-top: 15%;
     justify-content: center;
+}
+
+.platino_rank1_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 20%;
+    justify-content: center;
+}
+.platino_rank2_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 23%;
+    justify-content: center;
+}
+.platino_rank3_left{
+    width: 100%;
+    height: 30%;
+    margin-top: 23%;
+    justify-content: center;
+}
+
+.platino_totems{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 15%;
+    text-align: center;
+}
+.platino_totems1{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+.platino_totems2{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+.platino_totems3{
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
 }
 
 .right_box1{

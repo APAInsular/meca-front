@@ -43,12 +43,15 @@ const InfoPage = () => {
                             </div>
                             <div className='ranks_left'>
                                 <h1 className='platino_rank_left'>Platino</h1>
-                                <h1 className='platino_rank_left'>Platino</h1>
-                                <h1 className='platino_rank_left'>Platino</h1>
-                                <h1 className='platino_rank_left'>Platino</h1>
+                                <h1 className='platino_rank1_left'>Platino</h1>
+                                <h1 className='platino_rank2_left'>Platino</h1>
+                                <h1 className='platino_rank3_left'>Platino</h1>
                             </div>
                             <div className='totems_left'>
-
+                                <h1 className='platino_totems'>100000</h1>
+                                <h1 className='platino_totems1'>100000</h1>
+                                <h1 className='platino_totems2'>100000</h1>
+                                <h1 className='platino_totems3'>100000</h1>
                             </div>
                         </div>
 
