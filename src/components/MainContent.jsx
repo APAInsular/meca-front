@@ -17,6 +17,8 @@ import { Route, Routes } from 'react-router'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
+import ContactUs from '../pages/ContactUsPage'
+import MonumentosFiltradosPage from '../pages/MonumentFiltradosPage'
 
 const MainContent = () => {
     return (
@@ -40,7 +42,8 @@ const MainContent = () => {
             <Route element={<ActionHistorial />} path="/notificaciones"></Route>
             <Route element={<RankingPage />} path="/ranking"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
-            <Route element={<RegisterPage />} path="/registro"></Route>
+            <Route element={<MonumentosFiltradosPage />} path="/registro"></Route>
+            <Route element={<ContactUs />} path="/contact"></Route>
         </Routes >
     )
 }
