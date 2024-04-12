@@ -7,7 +7,7 @@ import { QrCode } from 'react-bootstrap-icons'
 const InfoPage = () => {
     return (
         <div className='container-info-page'>
-                <div className='info-page-box1'>
+                <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
                     <div className='info-box1'>
                         <h1 className='info-pg-h1'>Ver más</h1>                    
                             <h2>Moverse más</h2>
@@ -18,7 +18,7 @@ const InfoPage = () => {
                     <img className="qr-image" src={qrImage} alt="qr" />
                         </div>
                             </div>
-                <div className='info-page-box2'>
+                <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
                    <div className='info-box3'>
                         <h1 className='puntos_h1'>Puntos de recogida</h1>
                             </div>
@@ -27,8 +27,8 @@ const InfoPage = () => {
 
 
 
-                <div className='boxes_2'>
-                    <div className='left_box1'>
+                <div className='boxes_2 col-12'>
+                    <div className='left_box1 col-6'>
                             <div className='top_box_1_left'>
                                 <h1 className='top_box_1_text'>Nombre</h1>
                             </div>
@@ -57,7 +57,8 @@ const InfoPage = () => {
 
 
 
-                    <div className='right_box1'>
+                    <div className='right_box1 col-6'>
+                            <h1 className='acerca'>Acerca de este proyecto</h1>
                         </div>
                             </div>
 
@@ -65,11 +66,11 @@ const InfoPage = () => {
 
 
 
-                    <div className='bottom_parts'>
-                        <div className='maps'>
+                    <div className='bottom_parts col-12'>
+                        <div className='maps col-lg-6'>
                             <img className="maps" src={maps} alt="mapa" />
                         </div>
-                        <div className='about_qr'>
+                        <div className='about_qr col-xs-6 col-lg-6'>
                             <p>Al escanear los códigos QR cerca de los monumentos <br></br> y explorarlos, serás recompensado con puntos por las <br></br> tareas completadas.</p>
                         </div>
                     </div>

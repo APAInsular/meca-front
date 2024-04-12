@@ -24,6 +24,7 @@
 
 .info-pg-h1{
     margin-top: -1px;
+    margin-left: 42%;
 }
 
 .info-box2{
@@ -57,6 +58,7 @@
 .puntos_h1{
     padding: 5px;
     text-align: center;
+    margin-left: 40%;
 }
 
 .center_line{
@@ -84,15 +86,18 @@
 }
 
 .top_box_1_left{
-    width: 60%;
+    width: 30%;
     height: 10%;
     float: left;
+    color: #263C5C;
+    margin-left: 20%;
 }
 .top_box_2_right{
-    width: 40%;
+    width: 20%;
     height: 10%;
-    padding-right: 15%;
+    margin-right: 17%;
     float: right;
+    color: #263C5C;
 }
 
 .top_box_1_text, .top_box_2_text{
@@ -116,12 +121,14 @@
     width: 35%;
     height: 40%;
     float: left;
+    color: #263C5C;
 }
 
 .totems_left{
     width: 35%;
     height: 40%;
     float: left;
+    color: #263C5C;
 }
 
 .platino_rank_left{
@@ -134,19 +141,19 @@
 .platino_rank1_left{
     width: 100%;
     height: 30%;
-    margin-top: 20%;
+    margin-top: 22%;
     justify-content: center;
 }
 .platino_rank2_left{
     width: 100%;
     height: 30%;
-    margin-top: 23%;
+    margin-top: 22%;
     justify-content: center;
 }
 .platino_rank3_left{
     width: 100%;
     height: 30%;
-    margin-top: 23%;
+    margin-top: 22%;
     justify-content: center;
 }
 
@@ -182,11 +189,15 @@
     border-radius: 30px;
 }
 
+.acerca{
+    text-align: center;
+    color: #263C5C;
+    margin-top: 3%;
+}
+
 .maps{
-    position: absolute;
     height: 350px;
     width: 450px;
-    margin-left: 100px;
     float: left;
 }
 
