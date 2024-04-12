@@ -1,0 +1,92 @@
+.bigger {
+    font-size: 30px;
+}
+
+
+.rect {
+    width: 1400px;
+    height: 100px;
+    background: rgb(121, 143, 148);
+    background: linear-gradient(90deg, rgba(121, 143, 148, 1) 0%, rgba(115, 115, 115, 1) 100%);
+    border: 1px solid blue;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 4.5%;
+}
+
+.rect:first-of-type{
+    margin-top: 10%;
+}
+
+.rect:last-of-type{
+    margin-bottom: 10%;
+}
+
+
+.expanded {
+    height: 650px;
+}
+
+.expandBut {
+    position: relative;
+    left: 78%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    /* transition: transform 0.1s ease; */
+    transform-origin: 80% 50%;
+    height: 40px;
+    width: 35px;
+    margin-top: 2%;
+    right: 0;
+    bottom: 0;
+    
+
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.trianglebuttonImg {
+    height: 40px;
+    width: 35px;
+    transform: rotate(180deg);
+    border: none;
+}
+
+.eventoTitle {
+    color: #FFFF;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    display: flex;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.EventLogo{
+    display: flex;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    width: 4%;
+
+}
+
+
+.hiddenContent{
+    display: grid; 
+  grid-template-columns: 33% 33% 33%; 
+  grid-template-rows: 0.8fr 1.2fr; 
+  gap: 3% 3%; 
+  grid-template-areas: 
+    "monument Profile Paragraph"
+    "Map Profile Paragraph"; 
+    height: 70%;
+    margin-top: 10%;
+    margin-left: -15%;
+}
+
