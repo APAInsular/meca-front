@@ -58,6 +58,12 @@ const InfoPage = () => {
 
 
                     <div className='right_box1'>
+                            <h1 className='acerca'>Acerca de este proyecto</h1>
+                            <div className="acerca_line"></div>
+                            <p className='acerca_text'>Después de escanear el código QR cerca del monumento, podrá obtener más información sobre ese objeto y también recibirá puntos por las tareas completadas.</p>
+                            <div className="acerca_line"></div>
+                            <h1 className='eventos_entrantes'>Eventos Entrantes</h1>
+                            <div className="acerca_line"></div>
                         </div>
                             </div>
 
