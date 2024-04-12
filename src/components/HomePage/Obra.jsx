@@ -4,7 +4,7 @@ const Obra = ({ obra }) => {
     return (
         <div className="col-xs-12 col-sm-6 col-lg-3">
             <div className="col-12 d-flex flex-column align-items-center">
-                <img src={obra.imagen} alt="ImagenObra" style={{ width: "200px", height: "auto" }} />
+                <img src={obra.imagen} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
                 <div className="text-center mt-2">
                     <strong>{obra.nombre}</strong>
                 </div>

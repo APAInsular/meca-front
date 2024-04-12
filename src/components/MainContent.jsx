@@ -24,6 +24,7 @@ const MainContent = () => {
         <Routes>
             <Route element={<HomePage />} path="/"></Route>
             <Route element={<ListPage />} path="/autores"></Route>
+            <Route element={<ListPage />} path="/estilos"></Route>
             <Route element={<ListPage />} path="/eventos"></Route>
             <Route element={<ListPage />} path="/monumentos"></Route>
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>

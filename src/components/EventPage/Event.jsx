@@ -1,7 +1,7 @@
-import '../styles/Events.css';
+import '../../styles/Events.css';
 import { useState } from 'react';
 import EventMonumentPhoto from './EventMonumentPhoto1';
-import MonumentRoute1 from './MonumentRoute1';
+import MonumentRoute1 from '../MonumentRoute1';
 import EventCreator1 from './EventCreator1';
 import EventDescription1 from './EventDescription1';
 
