@@ -1,8 +1,8 @@
-import MonumentRoute1 from "src/components/MonumentRoute1";
-import Participants from "src/components/Participants";
-import EventCreator1 from "src/components/EventCreator1";
-import EventDescription1 from "src/components/EventDescription1";
-import ImageCarousel from "src/components/Carrusel";
+import MonumentRoute1 from "../components/MonumentRoute1";
+import Participants from "../components/Participants";
+import EventCreator1 from "../components/EventPage/EventCreator1";
+import EventDescription1 from "../components/EventPage/EventDescription1";
+import ImageCarousel from "../components/Carrusel";
 
 const UnEventPage = () => {
     const images = [
@@ -10,6 +10,7 @@ const UnEventPage = () => {
         '/Image/3.jpg',
         '/Image/2.jpg',
     ];
+
     return (
         <div>
             <div className="flex object-cover justify-center sm:justify-center md:justify-center lg:justify-center xl:justify-center">
@@ -28,7 +29,7 @@ const UnEventPage = () => {
                 <button type="button" className="rounded-xl btn-outline-primary ml-5 h-9 w-20 relative mt-2 bg-[#263C5C] text-[#FFFFFF]">Unirse</button>
             </div>
             <div className="md:max-w-[500px] mt-3 mb-3 sm:max-w-[400px] lg:max-w-[500px] lg:h-[500px] lg:absolute lg:left-10 lg:top-24">
-            <MonumentRoute1 />
+                <MonumentRoute1 />
             </div>
             <div className="h-[300px] mt-3 mb-[15%] lg:flex flex justify-center lg:max-h-full">
                 <ImageCarousel images={images} />
