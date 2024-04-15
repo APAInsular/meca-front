@@ -1,31 +1,25 @@
+.ContactUs{
+  height: 107vh;
+}
 .ContactUs1 {
-    display: flex;
     justify-content: center;
+    margin-top: 80px;
     width: 100%;
   }
 
   .info{
     padding: 30px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
-    padding: 20px;
-    margin: 3em;
-    background-color: #d9d9d9;
-    border-radius: 2em;
-    width: 20em;
-    height: 5em;
+    margin-top: 100px;
   }
+  .info2{
+    text-align: center;
+}
 
-  .button {
-    font-size: 1em;
-    color: white;
-    background-color: #263C5C;
-    border-radius: 1em;
-    width: 30vw;
-    height: 2em;
-  }
-
-  .ContactUs1 {
+.pin{
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -42,11 +36,35 @@
 }
   
   .box {
+    display: grid;
+    justify-content: center;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
     border-radius: 40px;
     height: 200px;
-    padding: 50px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box2 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box3 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
     margin: 10px;
     width: 300px;
   }
@@ -60,8 +78,10 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     color: white;
+    font-size: larger;
+    font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
     height: 40px;
@@ -72,7 +92,7 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     color: white;
     font-size: larger;
     font-style: bold;
@@ -86,22 +106,12 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: -14px;
     color: white;
-    font-size: 1.2em;
-    height: 2em;
-    border: none;
-  }
-
-  .form-input {
-    width: 8em;
-    font-size: 1.2em;
-    border-radius: 2em;
-    background-color: #f4f8fb;
-    color: #737373;
-    font-weight: bold;
-    height: 2em;
-    border: none;
-    padding: 0 0.6em;
-  } */
+    font-size: larger;
+    font-style: bold;
+    background-color: #263C5C;
+    border-radius: 40px;
+    height: 40px;
+    width: 160px;
 }
