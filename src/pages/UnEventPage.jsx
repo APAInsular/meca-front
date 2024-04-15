@@ -30,7 +30,7 @@ const UnEventPage = () => {
             <div className="md:max-w-[500px] mt-3 mb-3 sm:max-w-[400px] lg:max-w-[500px] lg:h-[500px] lg:absolute lg:left-10 lg:top-24">
             <MonumentRoute1 />
             </div>
-            <div className="h-[300px] mt-3 mb-[15%] lg:flex flex justify-center lg:max-h-full">
+            <div className="h-[300px] mt-3 mb-[15%] lg:flex flex justify-center lg:max-h-full lg:mx-auto">
                 <ImageCarousel images={images} />
             </div>
         </div>
