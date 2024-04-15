@@ -19,6 +19,7 @@ import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
+import LoginPage from '../pages/LoginPage'
 
 const MainContent = () => {
     return (
@@ -43,6 +44,7 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/ranking"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
+            <Route element={<LoginPage />} path="/login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
         </Routes >

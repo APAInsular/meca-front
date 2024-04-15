@@ -18,8 +18,9 @@ const RankingPage = () => {
                 <button class="entar">Entar</button><br></br>
                 <button className='google'><img className='google' src={google} alt=""/></button>
                 <button className="facebook"><img className='facebook' src={face} alt=""/></button>
+                <br></br><br></br><br></br><br></br>
             </div>
-
+            
             
         </div>        
     )

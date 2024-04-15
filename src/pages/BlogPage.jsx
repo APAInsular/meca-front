@@ -5,6 +5,7 @@ import filtra from '../images/filtras.svg';
 import nombre from '../images/nombre.svg';
 import monument from '../images/monumento.svg';
 import avatar from '../images/nombreavatar.svg';
+import arrow from '../images/downarrow.svg';
 
 
 const RoutePage = () => {
@@ -13,7 +14,7 @@ const RoutePage = () => {
             <div class="searchbar">
             <form action="" method="get">
                 <input type="search" name="q" placeholder="Busqueda" />
-                <button class="entra"><img class="entra" src={entra}/></button>           
+                <button class="entras"><img class="entra" src={entra}/></button>           
                 <button class="filtras"><img class="filtra" src={filtra}/></button>  
             </form>
             </div>
@@ -45,6 +46,7 @@ const RoutePage = () => {
                     <h5 className='two'>Arte</h5>
                     <h5 className='three'>Fuerteventura</h5>
                 </div>
+                <button><img src={arrow} class='arrowdown' alt='/'></img></button>
             </div>
             <div class='blogblock'>
                 <img src={monument} class='monumento' alt="/"/>
@@ -55,7 +57,8 @@ const RoutePage = () => {
                     <h5 className='one'>Escultura</h5>
                     <h5 className='two'>Arte</h5>
                     <h5 className='three'>Fuerteventura</h5>
-                </div>            
+                </div>   
+                <button><img src={arrow} class='arrowdown' alt='/'></img></button>        
             </div>
             <div class='blogblock'>
                 <img src={monument} class='monumento' alt="/"/>
@@ -67,8 +70,9 @@ const RoutePage = () => {
                     <h5 className='two'>Arte</h5>
                     <h5 className='three'>Fuerteventura</h5>
                 </div>
+                <button><img src={arrow} class='arrowdown' alt='/'></img></button>
             </div>
-            <div class='blogblock'>
+            <div class='blogblock1'>
                 <img src={monument} class='monumento' alt="/"/>
                 <img src={avatar} class="avataro" alt="/"/><p>Nombre Apellidos</p><p class="date">23/04/1956</p>
                 <h5>Título de la entrada del blog</h5>
@@ -78,6 +82,7 @@ const RoutePage = () => {
                     <h5 className='two'>Arte</h5>
                     <h5 className='three'>Fuerteventura</h5>
                 </div>
+                <button><img src={arrow} class='arrowdown' alt='/'></img></button>
             </div>
         </div>        
     )
