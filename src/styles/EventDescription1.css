@@ -6,12 +6,15 @@
 .Element1{
     height: 460px;
     width: 80%;
+    max-width: 100%;
+    min-width: 80%;
     border: 5px solid #FFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .Paragraph{
     grid-area: Paragraph;
+    padding-top: 2%;
 }
 
 .EventButton {
@@ -27,6 +30,5 @@
     cursor: pointer;
     font-size: larger;
     font-weight: 600;
-    vertical-align: middle;
 }
 

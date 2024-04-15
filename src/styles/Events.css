@@ -4,16 +4,18 @@
 
 
 .rect {
-    width: 1400px;
-    height: 100px;
+    width: 90%;
+    height: 5vw;
     background: rgb(121, 143, 148);
     background: linear-gradient(90deg, rgba(121, 143, 148, 1) 0%, rgba(115, 115, 115, 1) 100%);
     border: 1px solid blue;
     transition: height 0.3s ease;
     overflow: hidden;
     display: flex;
+    flex-direction: row;
     margin-top: 5%;
     margin-left: 4.5%;
+    position: relative;
 }
 
 .rect:first-of-type {
@@ -30,8 +32,8 @@
 }
 
 .expandBut {
-    position: relative;
-    left: 78%;
+    position: absolute;
+    right: 2%;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -40,8 +42,6 @@
     height: 40px;
     width: 35px;
     margin-top: 2%;
-    right: 0;
-    bottom: 0;
 
 
 }
@@ -51,28 +51,41 @@
 }
 
 .trianglebuttonImg {
-    height: 40px;
-    width: 35px;
-    transform: rotate(180deg);
+    position: absolute;
+    height: 3vw;
+    width: 8vw;
+    transform: translateY(-50%);
     border: none;
 }
 
 .eventoTitle {
-    color: #FFFF;
-    margin-left: 3%;
+    /*margin-left: 3%;
     margin-top: 1.5%;
     display: flex;
     text-align: center;
     height: fit-content;
-    width: fit-content;
+    width: fit-content; */
+    
+    position: absolute;
+    color: #FFFF;
+    margin-top: 2.5%;
+    transform: translateY(-50%);
+    left: 8%;
+    font-size: 2vw; 
 }
 
 
 .EventLogo {
-    display: flex;
+    /* display: flex;
     margin-left: 1.5%;
-    margin-top: 1.5%;
-    width: 4%;
+    margin-top: 1%;
+    width: 4%; */
+
+    margin-top: 2.5%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 2%;
+    width: 4.5%; 
 
 }
 
