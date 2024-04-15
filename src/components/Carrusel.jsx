@@ -14,7 +14,7 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative max-w-[80%] h-fit">
       {/* Previous Button */}
       <button
         className="absolute inset-y-0 left-0 z-10 bg-black bg-opacity-25 text-white hover:text-gray-300 px-4 py-2"
@@ -32,7 +32,7 @@ const ImageCarousel = ({ images }) => {
       </button>
 
       <img
-        className="w-full h-auto"
+        className="w-full h-fit"
         src={images[currentImageIndex]}
         alt={`this ${currentImageIndex + 1}`}
       />

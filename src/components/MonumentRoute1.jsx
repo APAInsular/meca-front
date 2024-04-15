@@ -11,7 +11,7 @@ const MonumentRoute1 = () => {
     }
     return(
         <div className='Route'>
-            <img id="popOutImage" onClick={popOutImage} className="Element3 popOutImage" src="/Image/Map.png" alt="MapImg" />
+            <img id="popOutImage" onClick={popOutImage} className="Element3 popOutImage h-[240px]" src="/Image/Map.png" alt="MapImg" />
             <div id="overlay"></div>
         </div>
     );
