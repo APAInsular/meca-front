@@ -1,7 +1,7 @@
 import MonumentRoute1 from "src/components/MonumentRoute1";
 import Participants from "src/components/Participants";
-import EventCreator1 from "src/components/EventCreator1";
-import EventDescription1 from "src/components/EventDescription1";
+import EventCreator1 from "src/components/EventPage/EventCreator1";
+import EventDescription1 from "../components/EventPage/EventDescription1";
 import ImageCarousel from "src/components/Carrusel";
 
 const UnEventPage = () => {

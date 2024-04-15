@@ -4,12 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactUsPage from './pages/ContactUsPage'
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className="App m-0 p-0">
-      <NavBar />
-      <ContactUsPage />
+      {pathname === "/perfil" ? null : <NavBar/>}
+      <MainContent />
       <Footer />
     </div>
   );

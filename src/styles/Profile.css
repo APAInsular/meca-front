@@ -15,3 +15,21 @@
     bottom: 0; 
     transform: translateY(40%);  
 }
+
+.menu {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.menu-line {
+    width: 60px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.mobile-background {
+    background-color: #f6f6f6;
+}
