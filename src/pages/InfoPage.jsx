@@ -6,6 +6,7 @@ import { QrCode } from 'react-bootstrap-icons'
 
 const InfoPage = () => {
     return (
+        <div><NavBar/> 
         <div className='container-info-page'>
             <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
                 <div className='info-box1'>
