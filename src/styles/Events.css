@@ -38,10 +38,10 @@
     background-color: transparent;
     border: none;
     /* transition: transform 0.1s ease; */
-    transform-origin: 80% 50%;
+    transform-origin: 50% 50%;
     height: 40px;
     width: 35px;
-    margin-top: 2%;
+    margin-top: 1%;
 
 
 }
