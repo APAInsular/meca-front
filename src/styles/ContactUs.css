@@ -1,9 +1,9 @@
 .ContactUs{
-  height: 100vh;
+  height: 107vh;
 }
 .ContactUs1 {
     justify-content: center;
-    
+    margin-top: 80px;
     width: 100%;
   }
 
