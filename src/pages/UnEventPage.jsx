@@ -20,7 +20,7 @@ const UnEventPage = () => {
             <div className="mx-auto sm:justify-center md:justify-center lg:justify-center max-w-[80%] sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] xl:max-w-[40%]">
                 <EventCreator1 />
             </div>
-            <div className="flex justify-center mt-3 mb-[10%] md:max-w-[500px] lg:w-[90%] xl:max-w-[90%]">
+            <div className="flex mt-3 mb-[10%] md:max-w-[500px] lg:w-[90%] justify-center lg:justify-center">
                 <EventDescription1 />
             </div>
             <div className="flex justify-center align-top lg:absolute lg:right-10 lg:top-40">
@@ -30,7 +30,7 @@ const UnEventPage = () => {
             <div className="md:max-w-[500px] mt-3 mb-3 sm:max-w-[400px] lg:max-w-[500px] lg:h-[500px] lg:absolute lg:left-10 lg:top-24">
                 <MonumentRoute1 />
             </div>
-            <div className="h-[300px] mt-3 mb-[15%] lg:flex flex justify-center lg:max-h-full lg:mx-auto">
+            <div className="h-[300px] mt-3 mb-[15%] lg:flex flex justify-center lg:max-h-full lg:mx-auto lg:w-[80%] lg:h-fit">
                 <ImageCarousel images={images} />
             </div>
         </div>
