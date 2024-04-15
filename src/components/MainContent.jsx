@@ -25,6 +25,7 @@ const MainContent = () => {
         <Routes>
             <Route element={<HomePage />} path="/"></Route>
             <Route element={<ListPage />} path="/autores"></Route>
+            <Route element={<ListPage />} path="/estilos"></Route>
             <Route element={<ListPage />} path="/eventos"></Route>
             <Route element={<ListPage />} path="/monumentos"></Route>
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
@@ -40,7 +41,7 @@ const MainContent = () => {
             <Route element={<EntradaPage />} path="/blog/:idEntrada"></Route>
             <Route element={<AchievementPage />} path="/logros"></Route>
             <Route element={<ActionHistorial />} path="/notificaciones"></Route>
-            <Route element={<RankingPage />} path="/ranking"></Route>
+            <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>

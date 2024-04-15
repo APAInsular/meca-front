@@ -4,7 +4,7 @@ import Autor from "./Autor";
 const AutoresDestacados = () => {
     const [data, setData] = useState(null);
 
-    const eventos = [
+    const autores = [
         {
             name: "Autor 1",
             nacimiento: "23-06-2007",
@@ -35,9 +35,9 @@ const AutoresDestacados = () => {
                 </h3>
             </div>
             <div className="">
-                {eventos.map((evento, index) => {
+                {autores.map((autor, index) => {
                     return (
-                        <Autor key={index} evento={evento} />
+                        <Autor key={index} autor={autor} />
                     )
                 })}
             </div>

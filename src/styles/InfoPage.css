@@ -1,9 +1,9 @@
-.container-info-page{
+.container-info-page {
     height: 100vh;
     width: 100%;
 }
 
-.info-page-box1{
+.info-page-box1 {
     margin-top: 7%;
     width: 90%;
     height: 50vh;
@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 
-.info-box1{
+.info-box1 {
     background-color: white;
     border-radius: 7px;
     border: 3px solid #263C5C;
@@ -22,29 +22,30 @@
     float: left;
 }
 
-.info-pg-h1{
+.info-pg-h1 {
     margin-top: -1px;
+    margin-left: 42%;
 }
 
-.info-box2{
+.info-box2 {
     border-radius: 15%;
     width: 25%;
     margin-right: 5%;
     float: right;
 }
 
-.qr-image{
+.qr-image {
     position: relative;
     border-radius: 7px;
     width: 100%;
     height: 50vh;
 }
 
-.info-page-box2{
-   margin-top: -7%;
+.info-page-box2 {
+    margin-top: -7%;
 }
 
-.info-box3{
+.info-box3 {
     background-color: #7B96FF;
     margin-top: 10%;
     width: 90%;
@@ -54,12 +55,13 @@
     border-radius: 20px;
 }
 
-.puntos_h1{
+.puntos_h1 {
     padding: 5px;
     text-align: center;
+    margin-left: 40%;
 }
 
-.center_line{
+.center_line {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +70,7 @@
     margin-top: 5%;
 }
 
-.boxes_2{
+.boxes_2 {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -76,32 +78,35 @@
     margin-top: 7%;
 }
 
-.left_box1{
+.left_box1 {
     height: 80%;
     width: 40%;
     background-color: #7B96FF;
     border-radius: 30px;
 }
 
-.top_box_1_left{
-    width: 60%;
+.top_box_1_left {
+    width: 30%;
     height: 10%;
     float: left;
     color: #263C5C;
+    margin-left: 20%;
 }
-.top_box_2_right{
-    width: 40%;
+
+.top_box_2_right {
+    width: 20%;
     height: 10%;
-    padding-right: 15%;
+    margin-right: 17%;
     float: right;
     color: #263C5C;
 }
 
-.top_box_1_text, .top_box_2_text{
+.top_box_1_text,
+.top_box_2_text {
     text-align: center;
 }
 
-.icons_box_left{
+.icons_box_left {
     width: 15%;
     height: 80%;
     float: left;
@@ -109,122 +114,103 @@
     align-items: center;
     margin-left: 6%;
 }
-.QrCode{
+
+.QrCode {
     width: 30%;
     height: 30%;
 }
 
-.ranks_left{
+.ranks_left {
     width: 35%;
     height: 40%;
     float: left;
     color: #263C5C;
 }
 
-.totems_left{
+.totems_left {
     width: 35%;
     height: 40%;
     float: left;
     color: #263C5C;
 }
 
-.platino_rank_left{
+.platino_rank_left {
     width: 100%;
     height: 30%;
     margin-top: 15%;
     justify-content: center;
 }
 
-.platino_rank1_left{
-    width: 100%;
-    height: 30%;
-    margin-top: 22%;
-    justify-content: center;
-}
-.platino_rank2_left{
-    width: 100%;
-    height: 30%;
-    margin-top: 22%;
-    justify-content: center;
-}
-.platino_rank3_left{
+.platino_rank1_left {
     width: 100%;
     height: 30%;
     margin-top: 22%;
     justify-content: center;
 }
 
-.platino_totems{
+.platino_rank2_left {
+    width: 100%;
+    height: 30%;
+    margin-top: 22%;
+    justify-content: center;
+}
+
+.platino_rank3_left {
+    width: 100%;
+    height: 30%;
+    margin-top: 22%;
+    justify-content: center;
+}
+
+.platino_totems {
     width: 100%;
     padding-right: 5%;
     margin-top: 15%;
     text-align: center;
 }
-.platino_totems1{
-    width: 100%;
-    padding-right: 5%;
-    margin-top: 35%;
-    text-align: center;
-}
-.platino_totems2{
-    width: 100%;
-    padding-right: 5%;
-    margin-top: 35%;
-    text-align: center;
-}
-.platino_totems3{
+
+.platino_totems1 {
     width: 100%;
     padding-right: 5%;
     margin-top: 35%;
     text-align: center;
 }
 
-.right_box1{
+.platino_totems2 {
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+
+.platino_totems3 {
+    width: 100%;
+    padding-right: 5%;
+    margin-top: 35%;
+    text-align: center;
+}
+
+.right_box1 {
     height: 80%;
     width: 40%;
     background-color: #7B96FF;
     border-radius: 30px;
 }
 
-.acerca{
+.acerca {
     text-align: center;
     color: #263C5C;
     margin-top: 3%;
 }
 
-.acerca_line{
-    width: 100%;
-    height: 2px;
-    margin-top: 5%;
-    background-color: #263C5C;
+.maps {
+    height: 300px;
+    width: 400px;
 }
 
-.acerca_text{
-    width: 80%;
-    color: white;
-    font-size: 28px;
-    text-align: center;
-    margin-left: 10%;
-}
-
-.eventos_entrantes{
-    color: #263C5C;
-    text-align: center;
-    margin-top: 3%;
-}
-
-.maps{
-    position: absolute;
-    height: 350px;
-    width: 450px;
-    margin-left: 100px;
-    float: left;
-}
-
-.about_qr{
+.about_qr {
     font-size: xx-large;
     text-align: center;
-    margin-right: 5%;
-    float: right;
-    margin-top: 3%;
+    /*margin-right: 5%;*/
+    /*margin-top: 3%;*/
 }

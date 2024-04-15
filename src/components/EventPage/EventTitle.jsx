@@ -1,4 +1,4 @@
-import '../styles/EventTitle.css'
+import '../../styles/EventTitle.css'
 
 const EventTitle = () => {
     return (
