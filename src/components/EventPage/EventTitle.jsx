@@ -3,7 +3,7 @@ import '../../styles/EventTitle.css'
 const EventTitle = () => {
     return (
         <div>
-            <div className='titleHead'>Eventos</div>
+            <div className='titleHead text-center '>Eventos</div>
         </div>
     );
 }
