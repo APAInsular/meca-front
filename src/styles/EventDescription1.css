@@ -8,7 +8,7 @@
     width: 80%;
     border: 5px solid #FFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-    margin-left: -5%;
+    /* margin-left: -5%; */
 }
 
 .Paragraph{
@@ -22,7 +22,7 @@
     border-radius: 25px;
     height: 7%;
     width: 28%;
-    margin-top: 85%;
+    /* margin-top: 85%; */
     margin-right: 4%;
     position: relative;
     float: right;
