@@ -30,7 +30,7 @@ const ContactUs = () => {
                 <button className='button'>CONTACTA</button>
             </div>
             </div>
-            <div className="box text-center">
+            <div className="box text-">
                 <img className='pin' src={myImage} alt=""/>
                 <h3>Oficina     </h3>
                 <p>(Agrega tu ubicación)</p>
