@@ -80,7 +80,6 @@ const InfoPage = () => {
                         </div>
                     </div>
                 </div>
-        </div>
     )
 }
 
