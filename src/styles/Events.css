@@ -16,11 +16,11 @@
     margin-left: 4.5%;
 }
 
-.rect:first-of-type{
+.rect:first-of-type {
     margin-top: 10%;
 }
 
-.rect:last-of-type{
+.rect:last-of-type {
     margin-bottom: 10%;
 }
 
@@ -42,7 +42,7 @@
     margin-top: 2%;
     right: 0;
     bottom: 0;
-    
+
 
 }
 
@@ -68,7 +68,7 @@
 }
 
 
-.EventLogo{
+.EventLogo {
     display: flex;
     margin-left: 1.5%;
     margin-top: 1.5%;
@@ -77,16 +77,15 @@
 }
 
 
-.hiddenContent{
-    display: grid; 
-  grid-template-columns: 33% 33% 33%; 
-  grid-template-rows: 0.8fr 1.2fr; 
-  gap: 3% 3%; 
-  grid-template-areas: 
-    "monument Profile Paragraph"
-    "Map Profile Paragraph"; 
+.hiddenContent {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 0.8fr 1.2fr;
+    gap: 3% 3%;
+    grid-template-areas:
+        "monument Profile Paragraph"
+        "Map Profile Paragraph";
     height: 70%;
     margin-top: 10%;
     margin-left: -15%;
 }
-

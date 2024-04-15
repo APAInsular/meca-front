@@ -56,7 +56,7 @@ export default function NavBar() {
                 ))}
             </div>
             <div className='col-md-2 text-right'>
-                <img src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ width: "100%", maxWidth: "75px", height: "75px" }} />
+                <img className="flex float-right" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ width: "100%", maxWidth: "45px", height: "auto" }} />
             </div>
         </div>
     );
