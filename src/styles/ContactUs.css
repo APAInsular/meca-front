@@ -1,49 +1,37 @@
-.ContactUs1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 
   .info{
     padding: 30px;
+    margin-left: 21%;
     text-align: center;
-    margin-left: 27%;
     font-weight: bold;
-    margin-top: -2%;
-    font-size: 64px;
+    font-size: 40px;
   }
   .info2{
-    margin-top: -1%;
+    margin-top: -2%;
     text-align: center;
     margin-bottom: 2%;
 }
 
 .pin{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 .email{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 .phone{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
   
   .box {
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
     border-radius: 40px;
-    height: 284px;
     padding: 50px;
-    margin: 50px;
-    margin-top: 1%;
     width: 382px;
-    background-color: #D9D9D9;
+    text-align: center;
+    display: block;
+    margin-left: 8%;
   }
 
 h3, p{
@@ -56,6 +44,7 @@ p{
 
 .mejlo{
   font-weight: bold;
+  font-size: 15px;
 }
 
 .phoneb{
@@ -63,40 +52,41 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
 }
 .emailb{
     border: 1px solid #263C5C;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
 }
 .oficinab{
     border: 1px solid #263C5C;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16px;
+    margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
+    margin-bottom: 20%
 }

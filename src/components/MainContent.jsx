@@ -20,6 +20,7 @@ import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
+import ContactUs from 'src/pages/ContactUsPage'
 
 const MainContent = () => {
     return (
@@ -47,6 +48,7 @@ const MainContent = () => {
             <Route element={<LoginPage />} path="/login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
+            <Route element={<ContactUs />} path="/contactus"></Route>
         </Routes >
     )
 }
