@@ -1,0 +1,163 @@
+input[type=search]{
+    width: 564px;
+    height: 72px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.searchbar{
+    text-align: center;
+    margin-top: -3%;
+}
+
+input::placeholder{
+    padding-left: 20px;
+}
+
+.entra{
+    position: static;
+    margin-left: -7%;
+    margin-top: 18px;
+    width: 35px;
+    height: 35px;
+}
+
+.fitras{
+    position: static;
+    margin-left: -8%;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 44px;
+    height: 35px;
+}
+
+.filtra{
+    margin-top: 16px;
+    width: 26px;
+    height: 25px;
+    margin-left: 52%;
+    border-radius: 50px;
+    outline: 1px solid black;
+    outline-offset: 5px;
+}
+
+.nombr{
+    margin-left: 30px;
+}
+
+.nombregroup{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.nombretext{
+    display: flex;
+    text-align: center;
+    margin-left: 28%;
+    margin-top: -7%;
+}
+
+.nom{
+    margin-left: 44px
+}
+
+.nom1{
+    margin-left: 28px
+}
+
+.nom2{
+    margin-left: 40px
+}
+
+.nom3{
+    margin-left: 43px
+}
+
+.nom4{
+    margin-left: 40px
+}
+
+.nom5{
+    margin-left: 44px
+}
+
+.nom6{
+    margin-left: 40px
+}
+
+.blogblock{
+    width: 322px;
+    height: 396px;
+    border: 2px solid #263C5C;
+    margin-left: 55px;
+    float: left;
+}
+
+.monumento{
+    width: 318.8px;
+    height: 183px;
+    margin-left: -0.5px;
+    margin-top: -2px;
+}
+
+.avataro{
+    width: 26px;
+    height: 25px;
+    margin-left: 8px;
+}
+
+.blogblock p{
+    margin-left: -110px;
+    margin-top: -25px;
+}
+
+.blogblock .date{
+    float: right;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+
+h5{
+    color: black;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.blogblock .description{
+    float: left;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.blogblock .categories h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    background-color: #7B96FF;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.one{
+    width: 89px;
+    height: 20px;
+}
+
+.two{
+    width: 59px;
+    height: 20px;
+}
+
+.three{
+    width: 119px;
+    height: 20px;
+}
+
+    
+    

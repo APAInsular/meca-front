@@ -15,9 +15,9 @@ const RankingPage = () => {
                 <h5>INICIA SESIÓN</h5>
                 <input type="text" placeholder='Email'></input><br></br>
                 <input type="text" placeholder='Contraseña'></input><br></br>
-                <button>Entar</button><br></br>
-                <img className='google' src={google} alt=""/>
-                <img className='facebook' src={face} alt=""/>
+                <button class="entar">Entar</button><br></br>
+                <button className='google'><img className='google' src={google} alt=""/></button>
+                <button className="facebook"><img className='facebook' src={face} alt=""/></button>
             </div>
 
             

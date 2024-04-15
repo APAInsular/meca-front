@@ -1,10 +1,12 @@
-import '../styles/RankingPage.css';
-import user from '../images/user.svg';
+import '../styles/RoutePage.css';
+import map from '../images/maps.png';
 
 const RoutePage = () => {
     return (
         <div className="RoutePage">
-            
+            <div class="left">
+                <img class="map" src={map} alt=''/>
+            </div>
         </div>        
     )
 }

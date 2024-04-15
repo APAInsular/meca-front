@@ -4,12 +4,14 @@
     font-weight: bold;
     font-size: 20px;
     color: #FFF;
-    height: 50px;
+    height: 66px;
     border-bottom: 2px solid white;
 }
 
 .top h1{
-    margin-left:18.1em;
+    margin-left:5.2em;
+    font-size: 32px;
+    padding-top: 2.5%;
 }
 
 .top2{
@@ -18,12 +20,14 @@
     font-weight: bold;
     font-size: 20px;
     color: #FFF;
-    height: 50px;
+    height: 66px;
     border-bottom: 2px solid white;
 }
 
 .top2 h1{
-    margin-left:17.1em;
+    padding-top: 2%;
+    margin-left:7em;
+    font-size: 32px;
 }
 
 .top3{
@@ -43,33 +47,136 @@
 .users{
     background-color: #7B96FF;
     color: white;
-    height: 60px;
+    height: 66px;
     border-bottom: 2px solid black;
 }
 
-.users h3{
+.users .nombre{
     float: left;
-    margin-top: 0.4em;
+    display: flex;
 }
 
 .user{
     margin-top: 0.4em;
     float: left;
+    width: 48px;
+    height: 48px;
 }
 
 .right{
-    margin-left: 70%;
-
+    margin-left: 55%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+    float: right;
+    font-size: 16px;
+    margin-top: -9.5%;
 }
 
 .users2{
     background-color: #DEE6F0;
     color: black;
-    height: 60px;
+    height: 66px;
     border-bottom: 2px solid black;
 }
 
-.users2 h3{
-    float: left;
-    margin-top: 0.4em;
+.users21{
+    background-color: #DEE6F0;
+    color: black;
+    height: 66px;
+
 }
+
+.users21 .nombre{
+    float: left;
+    margin-top: 4.5%;
+    font-size: 16px;
+}
+
+.users2 .nombre{
+    float: left;
+    margin-top: 4.5%;
+    font-size: 16px;
+}
+
+.users3 .right{
+    padding-top: 10px;
+    position: static;
+}
+
+.users31 .right{
+    padding-top: 10px;
+    position: static;
+}
+
+.toptop{
+    width: 387px;
+    margin-left: 7%;
+    float: left;
+}
+
+.toptop2{
+    width: 563px;
+    margin-left: 17%;
+    float: left;
+}
+
+.leftar{
+    float: left;
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-right: -13%;
+    margin-top: 12.5%;
+    color: black;
+}
+
+button {
+    border: none;
+    font-size: 64px;
+    background: fixed;
+}
+
+button:focus{
+    border: none;
+    outline: none;
+}
+
+.rightarrow{
+    position:fixed;
+    float: left;
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 46%;
+    margin-right: -12%;
+    margin-top: 6.5%;
+    color: black;
+}
+
+.users3{
+    background-color: #DEE6F0;
+    color: black;
+    height: 66px;
+    border-bottom: 2px solid black;
+}
+
+
+.users31{
+    background-color: #DEE6F0;
+    color: black;
+    height: 66px;
+
+}
+
+.users31 .nombre{
+    float: left;
+    margin-top: 2.5%;
+    font-size: 16px;
+}
+
+.users3 .nombre{
+    float: left;
+    margin-top: 3%;
+    font-size: 16px;
+}
+
