@@ -1,8 +1,9 @@
 .ContactUs{
-  height: 200vh;
+  height: 100vh;
 }
 .ContactUs1 {
     justify-content: center;
+    
     width: 100%;
   }
 
@@ -35,11 +36,35 @@
 }
   
   .box {
+    display: grid;
+    justify-content: center;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
     border-radius: 40px;
     height: 200px;
-    padding: 55px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box2 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box3 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
     margin: 10px;
     width: 300px;
   }
@@ -53,7 +78,7 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
+    margin-top: 10px;
     color: white;
     font-size: larger;
     font-style: bold;
@@ -67,7 +92,7 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
+    margin-top: 10px;
     color: white;
     font-size: larger;
     font-style: bold;
@@ -81,7 +106,7 @@ h3, p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -6px;
+    margin-top: -14px;
     color: white;
     font-size: larger;
     font-style: bold;

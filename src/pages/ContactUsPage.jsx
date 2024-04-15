@@ -11,23 +11,22 @@ const ContactUs = () => {
         ¿Alguna pregunta o comentario? ¡Solo escríbenos un mensaje!
       </p>
 
-      <div className="row">
-        <div class="ContactUs1 d-flex col-md-12 col-lg-12">
-          <div className="box col-xs-12">
+        <div class="ContactUs1 row d-flex">
+          <div className="box flex justify-center">
             <img className="phone" src={myImage2} alt="" />
             <h3>Teléfono:</h3>
             <p>(123) 456-7890</p>
             <button className="phoneb">LLAMAR</button>
           </div>
 
-          <div className="box col-xs-12">
+          <div className="box2 flex justify-center">
             <img className="email" src={myImage1} alt="" />
             <h3>Email:</h3>
             <p>contact@example.com</p>
             <button className="emailb">CONTACTO</button>
           </div>
 
-          <div className="box col-xs-12">
+          <div className="box3 flex justify-center">
             <img className="pin" src={myImage} alt="" />
             <h3>Oficina:</h3>
             <p>
@@ -39,7 +38,6 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
