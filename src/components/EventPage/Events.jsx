@@ -1,4 +1,4 @@
-import '../styles/Events.css';
+import '../../styles/Events.css';
 import Event from './Event';
 
 const Events = () => {

@@ -1,50 +1,44 @@
-import myImage from '../images/pin-48.svg';
-import myImage1 from '../images/mail.svg';
-import myImage2 from '../images/phone.svg';
-import '../styles/ContactUs.css';
-import NavBarMobile from "../components/NavBarMobile.jsx";
-import Footer from "../components/Footer.jsx";
-
+import myImage from "../images/pin-48.svg";
+import myImage1 from "../images/mail.svg";
+import myImage2 from "../images/phone.svg";
+import "../styles/ContactUs.css";
 
 const ContactUs = () => {
-        return (
-            <div>
-                <NavBarMobile/> 
-            <div className="ContactUs">
-                <p class="info text-center">Contact Us</p>
-                <p class="info2 text-center mx-5 my-0">Any question or remarks? </p>
-                <p class="info2 text-center mx-5">Just write us a message!</p>
-                <div class="ContactUs1 my-5">
-            <div className="row-1"> 
-            <div className="box text-center">
-            <img className='email' src={myImage1} alt=""/>
-                <h3>Email</h3>
-                <p>contact@example.com</p>
-                <button className='button'>CONTACTA</button>
-            </div>
+  return (
+    <div className="ContactUs">
+      <h1 class="info">Contacta con nosotras</h1>
+      <p class="info2">
+        ¿Alguna pregunta o comentario? ¡Solo escríbenos un mensaje!
+      </p>
 
-            <div className="box text-center">
-            <img className='phone' src={myImage2} alt=""/>
-                <h3>Teléfono</h3>
-                <p>(123) 456-7890</p>
-                <button className='button'>CONTACTA</button>
-            </div>
-            </div>
-            <div className="box text-">
-                <img className='pin' src={myImage} alt=""/>
-                <h3>Oficina     </h3>
-                <p>(Agrega tu ubicación)</p>
-                <button className='button'>CONTACTA</button>
-            </div>
-            </div>
-            </div>
-            {/* <div class='form-box'>
-                <button className='button-submit mx-1'>Submit</button>
-                <input className="form-input mx-1" placeholder='Submit a form'></input>
-            </div> */}
-            <Footer/>
-            </div>
-          );
-        }
+        <div class="ContactUs1 row d-flex">
+          <div className="box flex justify-center">
+            <img className="phone" src={myImage2} alt="" />
+            <h3>Teléfono:</h3>
+            <p>(123) 456-7890</p>
+            <button className="phoneb">LLAMAR</button>
+          </div>
+
+          <div className="box2 flex justify-center">
+            <img className="email" src={myImage1} alt="" />
+            <h3>Email:</h3>
+            <p>contact@example.com</p>
+            <button className="emailb">CONTACTO</button>
+          </div>
+
+          <div className="box3 flex justify-center">
+            <img className="pin" src={myImage} alt="" />
+            <h3>Oficina:</h3>
+            <p>
+              (Agrega tu ubicación)
+              <br />
+              Fuerteventura
+            </p>
+            <button className="oficinab">UBICACIÓN</button>
+          </div>
+        </div>
+      </div>
+  );
+};
 
 export default ContactUs;

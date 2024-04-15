@@ -9,7 +9,7 @@ function ObrasRelacionadas() {
                 <div className="div7"><img className="obraPng" src={'/Image/Obra.jpg'} alt="Obra" /></div>
                 <div className="div8"><img className="obraPng" src={'/Image/Obra.jpg'} alt="Obra" /></div>
                 <div className="div9"><img className="obraPng" src={'/Image/Obra.jpg'} alt="Obra" /></div>
-            </div>
+                </div>
         </>
     );
 }

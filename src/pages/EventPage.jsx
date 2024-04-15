@@ -1,8 +1,5 @@
-import EventTitle from "../components/EventTitle";
-import Events from "../components/Events";
-
-
-
+import EventTitle from "../components/EventPage/EventTitle";
+import Events from "../components/EventPage/Events";
 
 const EventPage = () => {
     return (
