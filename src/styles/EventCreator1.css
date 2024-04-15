@@ -5,7 +5,8 @@
 .ProfilePic1{
     width: 55%;
     height: 40%;
-    margin-left: 18%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
     border: 10px solid #FFFF;
 }
@@ -14,7 +15,8 @@
     height: 50%;
     width: 80%;
     background-color: #263C5C;
-    margin-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 6%;
     color: #FFFF;
     text-align: center;
