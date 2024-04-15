@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { List } from 'react-bootstrap-icons';
 
 const navigation = [
     { name: 'Inicio', path: '/' },
@@ -20,15 +20,31 @@ export default function NavBar() {
         });
     };
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     // 34,16px
     // 104,882px
 
     return (
         <div className='my-3 px-3 d-flex align-items-center'>
-            <div className='col-md-1 justify-content-center'>
+            {/* Botón de menú para tablet */}
+            <div className="col-md-1 text-right d-none d-md-flex justify-content-end">
+                <button className="btn" onClick={toggleMenu}>
+                    <List size="100" color="#263C5C" />
+                </button>
+            </div>
+
+            {/* Logo */}
+            <div className='col-md-1 text-center d-none d-md-block'>
                 <img src="/Image/Logos/MECA-09.png" alt="Logo MECA" />
             </div>
-            <div className="justify-content-start align-items-center hidden sm:ml-6 sm:flex ">
+
+            {/* Botón de menú */}
+            <div className="d-none d-lg-flex justify-content-center align-items-center col-lg-8 d-md-none">
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' ? (
@@ -73,8 +89,21 @@ export default function NavBar() {
                     </div>
                 ))}
             </div>
+
+            {/* Menú desplegable para tablet */}
+            <div className={`col-md-12 d-md-none ${menuOpen ? 'd-block' : 'd-none'}`}>
+                {navigation.map((item) => (
+                    <div key={item.name}>
+                        <Link to={"/logros"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                            <strong className='text-white'>{item.name}</strong>
+                        </Link>
+                    </div>
+                ))}
+            </div>
+
+            {/* Perfil */}
             <div className='col-md-2 text-right'>
-                <img className="flex float-right" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ width: "100%", maxWidth: "45px", height: "auto" }} />
+                <img className="flex float-right p-1" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ border: "1px solid #263C5C", borderRadius: "50%", maxWidth: "40px", height: "auto" }} />
             </div>
         </div>
     );
