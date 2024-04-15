@@ -31,7 +31,7 @@ const MainContent = () => {
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
-            <Route element={<ProfilePage />} path="/perfil/:nickname"></Route>
+            <Route element={<ProfilePage />} path="/perfil"></Route>
             <Route element={<ProfilePage />} path="/perfil/:nickname/editar"></Route>
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>

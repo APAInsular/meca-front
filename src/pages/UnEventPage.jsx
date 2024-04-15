@@ -10,6 +10,7 @@ const UnEventPage = () => {
         '/Image/3.jpg',
         '/Image/2.jpg',
     ];
+
     return (
         <div>
             <div className="flex object-cover justify-center sm:justify-center md:justify-center lg:justify-center xl:justify-center">
