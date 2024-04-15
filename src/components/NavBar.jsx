@@ -26,25 +26,22 @@ export default function NavBar() {
         setMenuOpen(!menuOpen);
     };
 
-    // 34,16px
-    // 104,882px
-
     return (
         <div className='my-3 px-3 d-flex align-items-center'>
             {/* Botón de menú para tablet */}
-            <div className="col-md-1 text-right d-none d-md-flex justify-content-end">
+            <div className="col-md-4 col-xs-4 text-right d-flex d-lg-none justify-content-start">
                 <button className="btn" onClick={toggleMenu}>
-                    <List size="100" color="#263C5C" />
+                    <List size="50" color="#263C5C" />
                 </button>
             </div>
 
             {/* Logo */}
-            <div className='col-md-1 text-center d-none d-md-block'>
+            <div className='col-md-4 col-xs-4 col-lg-2 text-center d-flex justify-content-center'>
                 <img src="/Image/Logos/MECA-09.png" alt="Logo MECA" />
             </div>
 
-            {/* Botón de menú */}
-            <div className="d-none d-lg-flex justify-content-center align-items-center col-lg-8 d-md-none">
+            {/* Botones NavBar */}
+            <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-8 d-md-none">
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' ? (
@@ -94,7 +91,7 @@ export default function NavBar() {
             <div className={`col-md-12 d-md-none ${menuOpen ? 'd-block' : 'd-none'}`}>
                 {navigation.map((item) => (
                     <div key={item.name}>
-                        <Link to={"/logros"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
+                        <Link to={item.path} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }}>
                             <strong className='text-white'>{item.name}</strong>
                         </Link>
                     </div>
@@ -102,7 +99,7 @@ export default function NavBar() {
             </div>
 
             {/* Perfil */}
-            <div className='col-md-2 text-right'>
+            <div className='col-md-4 col-xs-4 col-lg-2 text-right'>
                 <img className="flex float-right p-1" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ border: "1px solid #263C5C", borderRadius: "50%", maxWidth: "40px", height: "auto" }} />
             </div>
         </div>
