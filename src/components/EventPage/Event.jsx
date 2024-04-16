@@ -1,7 +1,7 @@
-import '../styles/Events.css';
+import '../../styles/Events.css';
 import { useState } from 'react';
 import EventMonumentPhoto from './EventMonumentPhoto1';
-import MonumentRoute1 from './MonumentRoute1';
+import MonumentRoute1 from '../MonumentRoute1';
 import EventCreator1 from './EventCreator1';
 import EventDescription1 from './EventDescription1';
 
@@ -29,7 +29,7 @@ const Event = ({ event }) => {
             {expanded && (
                 <div className='hiddenContent'>
                     <EventMonumentPhoto />
-                    <MonumentRoute1 />
+                    <div className='w-[70%] ml-[43%]'><MonumentRoute1 /></div>
                     <EventCreator1 />
                     <EventDescription1 />
                 </div>

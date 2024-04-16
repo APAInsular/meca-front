@@ -1,29 +1,23 @@
-import '../styles/LoginPage.css';
-
-import meca from '../images/MECA-09.png';
-import google from '../images/google.svg';
-import face from '../images/facebook.svg';
-
-const RankingPage = () => {
+import React from 'react';
+import logo from '../images/MECA-09.png'
+import "../styles/Login.css";
+const LoginPage = () => {
     return (
-        <div className="RankingPage">
-            <div class="logo">
-                <img className='meca' src={meca} alt=""/>
+        <div className='login-box'>
+            <img src={logo} alt="logo" className='logo my-1'></img>
+            <div className="v-line-1"></div>
+            <div className="form">
+                <p className='title py-1'>INICIA SESIÓN</p> 
+                <input type="text" className='my-2 input-text px-3' placeholder='Email'></input>  
+                <input type="text" className='my-2 input-text px-3' placeholder='Contraseña'></input>
+                <button type="submit" className='my-2 submit-button'>Entrar</button>
+                <div className='social-login'>
+                    <div class="google-btn m-1">no</div>
+                    <div class="facebook-btn m-1">icon</div>
+                </div>
             </div>
-
-            <div class="login_form">
-                <h5>INICIA SESIÓN</h5>
-                <input type="text" placeholder='Email'></input><br></br>
-                <input type="text" placeholder='Contraseña'></input><br></br>
-                <button class="entar">Entar</button><br></br>
-                <button className='google'><img className='google' src={google} alt=""/></button>
-                <button className="facebook"><img className='facebook' src={face} alt=""/></button>
-                <br></br><br></br><br></br><br></br>
-            </div>
-            
-            
-        </div>        
-    )
+        </div>
+    );
 }
 
-export default RankingPage;
+export default LoginPage;

@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #263C5C;
+}
+
+.profilePicture {
+    background-color: #263C5C;
+    height: 10em;
+    position: relative;  
+}
+
+.profilePicture img {
+    width: 15em;
+    height: auto;  
+    position: absolute;  
+    bottom: 0; 
+    transform: translateY(40%);  
+}

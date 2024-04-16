@@ -1,8 +1,18 @@
+.ContactUs{
+  height: 107vh;
+}
+.ContactUs1 {
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+  }
 
   .info{
     padding: 30px;
     margin-left: 21%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
     font-size: 40px;
   }
@@ -26,12 +36,37 @@
 }
   
   .box {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
     border-radius: 40px;
-    padding: 50px;
-    width: 382px;
-    text-align: center;
-    display: block;
-    margin-left: 8%;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box2 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+  }
+  .box3 {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
   }
 
 h3, p{
@@ -80,7 +115,7 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: -14px;
     color: white;
     font-size: 11px;
     font-style: bold;
