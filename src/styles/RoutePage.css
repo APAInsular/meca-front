@@ -19,7 +19,7 @@
     margin-top: auto;
     margin-bottom: auto;
     width: 40%;
-    height: 45%;
+    height: 40%;
 
 }
 
@@ -54,8 +54,8 @@
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    width: 45%;
-    height: 35%;
+    width: 40%;
+    height: 40%;
 
 }
 
@@ -110,6 +110,6 @@
 }
 
 footer{
-    position: relative;;
+    position: relative;
 }
 
