@@ -6,24 +6,23 @@ import { QrCode } from 'react-bootstrap-icons'
 
 const InfoPage = () => {
     return (
-        <div>
-            <div className='container-info-page'>
-                <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
-                    <div className='info-box1'>
-                        <h1 className='info-pg-h1'>Ver más</h1>
-                        <h2>Moverse más</h2>
-                        <p>Escanee el código para experimentar más.</p>
-                        <p>No se necesita ninguna aplicación. Es fácil.</p>
-                    </div>
-                    <div className='info-box2'>
-                        <img className="qr-image" src={qrImage} alt="qr" />
-                    </div>
+        <div className='container-info-page'>
+            <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
+                <div className='info-box1'>
+                    <h1 className='info-pg-h1'>Ver más</h1>
+                    <h2>Moverse más</h2>
+                    <p>Escanee el código para experimentar más.</p>
+                    <p>No se necesita ninguna aplicación. Es fácil.</p>
                 </div>
-                <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
-                    <div className='info-box3'>
-                        <h1 className='puntos_h1'>Puntos de recogida</h1>
-                    </div>
+                <div className='info-box2'>
+                    <img className="qr-image" src={qrImage} alt="qr" />
                 </div>
+            </div>
+            <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
+                <div className='info-box3'>
+                    <h1 className='puntos_h1'>Puntos de recogida</h1>
+                </div>
+            </div>
 
 
 

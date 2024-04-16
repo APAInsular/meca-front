@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ContactUsPage from './pages/ContactUsPage'
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 import { useLocation } from 'react-router-dom';

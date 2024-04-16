@@ -29,7 +29,7 @@ const Event = ({ event }) => {
             {expanded && (
                 <div className='hiddenContent'>
                     <EventMonumentPhoto />
-                    <MonumentRoute1 />
+                    <div className='w-[70%] ml-[43%]'><MonumentRoute1 /></div>
                     <EventCreator1 />
                     <EventDescription1 />
                 </div>
