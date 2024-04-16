@@ -4,8 +4,6 @@
 
 
 .rect {
-    width: 90%;
-    height: 5vw;
     background: rgb(121, 143, 148);
     background: linear-gradient(90deg, rgba(121, 143, 148, 1) 0%, rgba(115, 115, 115, 1) 100%);
     border: 1px solid blue;
@@ -17,6 +15,7 @@
     margin-left: 4.5%;
     position: relative;
 }
+
 
 .rect:first-of-type {
     margin-top: 10%;
@@ -46,14 +45,15 @@
 
 }
 
+
 .rotated {
     transform: rotate(180deg);
 }
 
 .trianglebuttonImg {
     position: absolute;
-    height: 3vw;
-    width: 8vw;
+    height: fit-content;
+    width: fit-content;
     transform: translateY(-50%);
     border: none;
 }
@@ -72,6 +72,16 @@
     transform: translateY(-50%);
     left: 8%;
     font-size: 2vw; 
+}
+
+@media (min-width:300px) {
+   .eventoTitle{
+    font-size: 6vw;
+    margin-top: 20px;
+   }
+   .EventLogo{
+    margin-top: 10%;
+   }
 }
 
 
