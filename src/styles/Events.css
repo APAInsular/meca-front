@@ -74,14 +74,19 @@
     font-size: 2vw;
 }
 
-@media (min-width:300px) {
+@media (min-width:250px) {
     .eventoTitle {
         font-size: 6vw;
         margin-top: 20px;
+        margin-left: 4%;
     }
 
     .EventLogo {
-        margin-top: 10%;
+        margin-top: 8%;
+        margin-left: 1%;
+        width: 30px;
+        height: 25px;
+        transform: translateY(-50%);
     }
 
     .expanded {
@@ -89,21 +94,37 @@
     }
 
     .hiddenContent {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
+    }
+
+    .rect:last-of-type {
+        margin-bottom: 60%;
     }
 }
+
+@media (min-width: 800px) {
+    .eventoTitle {
+        margin-top: 10px;
+    }
+}
+
 
 @media (min-width:900px) {
     .eventoTitle {
         font-size: 2vw;
         margin-top: 35px;
+        margin-left: 1%;
     }
 
     .EventLogo {
-        margin-top: 10%;
+        margin-top: 2.5%;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 1%;
+        width: 4.5%;
+        height: fit-content;
     }
 
     .hiddenContent {
@@ -124,24 +145,18 @@
     }
 }
 
-
-.EventLogo {
-    /* display: flex;
-    margin-left: 1.5%;
-    margin-top: 1%;
-    width: 4%; */
-
-    margin-top: 2.5%;
-    position: absolute;
-    transform: translateY(-50%);
-    left: 2%;
-    width: 4.5%;
-
-}
-
 @media (min-width:300px) {
     .customFix-position {
-        margin-left: auto;
+        margin-bottom: 5%;
+    }
+
+    .customFix-position2 {
+        margin-bottom: 5%;
+        margin-right: 5%;
+    }
+
+    .customFix-position3 {
+        margin-left: 14%;
         margin-right: auto;
         margin-bottom: 5%;
     }
@@ -153,33 +168,13 @@
         margin-right: 0%;
         margin-bottom: 0%;
     }
-}
 
-@media (min-width:300px) {
-    .customFix-position2 {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5%;
-    }
-}
-
-@media (min-width: 900px) {
     .customFix-position2 {
         margin-left: 12%;
         margin-right: 0%;
         margin-bottom: 0%;
     }
-}
 
-@media (min-width:300px) {
-    .customFix-position3 {
-        margin-left: 16%;
-        margin-right: auto;
-        margin-bottom: 5%;
-    }
-}
-
-@media (min-width: 900px) {
     .customFix-position3 {
         margin-left: 0%;
         margin-right: 0%;
