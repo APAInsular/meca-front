@@ -18,8 +18,9 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
-import UnEventPage from 'src/pages/UnEventPage'
-
+import UnEventPage from '../pages/UnEventPage'
+import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import AdminEventPage from 'src/pages/AdminEventPage'
 const MainContent = () => {
     return (
         <Routes>
@@ -46,6 +47,8 @@ const MainContent = () => {
             <Route element={<RegisterPage />} path="/registro"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
+            <Route element={<MonumentFiltradosPage/>} path="/monumentfiltrados"></Route>
+            <Route element={<AdminEventPage/>} path="/adminevent"></Route>
         </Routes >
     )
 }
