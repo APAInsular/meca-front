@@ -18,9 +18,10 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
-import UnEventPage from '../pages/UnEventPage'
-import MonumentFiltradosPage from '../pages/MonumentFiltradosPage'
-// import AdminEventPage from '../pages/AdminEventPage'
+import UnEventPage from "../pages/UnEventPage"
+import LoginPage from '../pages/LoginPage'
+import ContactUs from 'src/pages/ContactUsPage'
+
 const MainContent = () => {
     return (
         <Routes>
@@ -45,10 +46,10 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
+            <Route element={<LoginPage />} path="/login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
-            <Route element={<MonumentFiltradosPage/>} path="/monumentfiltrados"></Route>
-            {/* <Route element={<AdminEventPage/>} path="/adminevent"></Route> */}
+            <Route element={<ContactUs />} path="/contactus"></Route>
         </Routes >
     )
 }

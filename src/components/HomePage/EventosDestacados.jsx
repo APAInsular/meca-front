@@ -57,6 +57,7 @@ const EventosDestacados = () => {
                     )
                 })}
             </div>
+            
         </div>
     );
 }

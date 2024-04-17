@@ -13,12 +13,12 @@
 
 .info-box1 {
     background-color: white;
-    border-radius: 7px;
+    border-radius: 35px;
     border: 3px solid #263C5C;
     font-size: xx-large;
     text-align: center;
-    height: 50vh;
-    width: 65%;
+    height: 763px;
+    width: 783px;
     float: left;
 }
 
@@ -52,7 +52,7 @@
     height: 50vh;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 
 .puntos_h1 {
@@ -76,6 +76,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 7%;
+    margin-bottom: -5%;
 }
 
 .left_box1 {

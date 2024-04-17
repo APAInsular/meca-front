@@ -10,6 +10,7 @@
 
   .info{
     padding: 30px;
+    margin-left: 21%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -17,21 +18,20 @@
     margin-top: 50px;
   }
   .info2{
+    margin-top: -2%;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .pin{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 .email{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 .phone{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,6 +46,7 @@
     padding: 15px;
     margin: 10px;
     width: 300px;
+    margin-left: 18%;
   }
   .box2 {
     display: grid;
@@ -74,6 +75,15 @@ h3, p{
     text-align: center;
 }
 
+p{
+  color: #444343;
+}
+
+.mejlo{
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .phoneb{
     border: 1px solid #263C5C;
     display: block;
@@ -81,12 +91,12 @@ h3, p{
     margin-right: auto;
     margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
 }
 .emailb{
     border: 1px solid #263C5C;
@@ -95,24 +105,25 @@ h3, p{
     margin-right: auto;
     margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
 }
 .oficinab{
     border: 1px solid #263C5C;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -14px;
+    margin-top: 30px;
     color: white;
-    font-size: larger;
+    font-size: 11px;
     font-style: bold;
     background-color: #263C5C;
     border-radius: 40px;
-    height: 40px;
-    width: 160px;
+    height: 20px;
+    width: 98px;
+    margin-bottom: 20%
 }
