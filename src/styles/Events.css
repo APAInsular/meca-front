@@ -4,8 +4,6 @@
 
 
 .rect {
-    width: 90%;
-    height: 5vw;
     background: rgb(121, 143, 148);
     background: linear-gradient(90deg, rgba(121, 143, 148, 1) 0%, rgba(115, 115, 115, 1) 100%);
     border: 1px solid blue;
@@ -17,6 +15,7 @@
     margin-left: 4.5%;
     position: relative;
 }
+
 
 .rect:first-of-type {
     margin-top: 10%;
@@ -46,14 +45,15 @@
 
 }
 
+
 .rotated {
     transform: rotate(180deg);
 }
 
 .trianglebuttonImg {
     position: absolute;
-    height: 3vw;
-    width: 8vw;
+    height: fit-content;
+    width: fit-content;
     transform: translateY(-50%);
     border: none;
 }
@@ -65,13 +65,63 @@
     text-align: center;
     height: fit-content;
     width: fit-content; */
-    
+
     position: absolute;
     color: #FFFF;
     margin-top: 2.5%;
     transform: translateY(-50%);
     left: 8%;
-    font-size: 2vw; 
+    font-size: 2vw;
+}
+
+@media (min-width:300px) {
+    .eventoTitle {
+        font-size: 6vw;
+        margin-top: 20px;
+    }
+
+    .EventLogo {
+        margin-top: 10%;
+    }
+
+    .expanded {
+        height: 1400px;
+    }
+
+    .hiddenContent {
+        display: block;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:900px) {
+    .eventoTitle {
+        font-size: 2vw;
+        margin-top: 35px;
+    }
+
+    .EventLogo {
+        margin-top: 10%;
+    }
+
+    .hiddenContent {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.8fr 1.2fr;
+        gap: 3% 3%;
+        grid-template-areas:
+            "monument Profile Paragraph"
+            "Map Profile Paragraph";
+        height: 70%;
+        margin-top: 10%;
+        margin-left: -15%;
+    }
+
+    .expanded {
+        height: 700px;
+    }
 }
 
 
@@ -85,20 +135,54 @@
     position: absolute;
     transform: translateY(-50%);
     left: 2%;
-    width: 4.5%; 
+    width: 4.5%;
 
 }
 
+@media (min-width:300px) {
+    .customFix-position {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+}
 
-.hiddenContent {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.8fr 1.2fr;
-    gap: 3% 3%;
-    grid-template-areas:
-        "monument Profile Paragraph"
-        "Map Profile Paragraph";
-    height: 70%;
-    margin-top: 10%;
-    margin-left: -15%;
+@media (min-width: 900px) {
+    .customFix-position {
+        margin-left: 43%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media (min-width:300px) {
+    .customFix-position2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 900px) {
+    .customFix-position2 {
+        margin-left: 12%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media (min-width:300px) {
+    .customFix-position3 {
+        margin-left: 16%;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 900px) {
+    .customFix-position3 {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
 }
