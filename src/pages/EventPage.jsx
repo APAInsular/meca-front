@@ -4,7 +4,7 @@ import Events from "../components/EventPage/Events";
 const EventPage = () => {
     return (
         <div>
-            <EventTitle />
+            <div className="pt-10 pb-10 lg:ml-[10%]"><EventTitle /></div>
             <Events />
         </div>
     );
