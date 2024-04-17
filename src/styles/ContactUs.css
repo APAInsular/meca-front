@@ -1,11 +1,12 @@
 .ContactUs{
-  height: 107vh;
+  min-height: 74.5vh;
 }
 .ContactUs1 {
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 60px;
     width: 100%;
   }
+
 
   .info{
     padding: 30px;
@@ -14,7 +15,7 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    font-size: 40px;
+    margin-top: 50px;
   }
   .info2{
     margin-top: -2%;
