@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
-import MainContent from './components/MainContent';
 import { useLocation } from 'react-router-dom';
 
 function App() {
