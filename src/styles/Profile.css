@@ -16,20 +16,24 @@
     transform: translateY(40%);  
 }
 
-.menu {
-    width: 70px;
-    height: 60px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.menu-line {
-    width: 60px;
-    height: 10px;
-    border-radius: 5px;
-}
-
 .mobile-background {
     background-color: #f6f6f6;
+}
+
+.arrow {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .arrow {
+        display: block;
+        max-height: 30px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profilePicture img {
+        width: 12em;
+    }
 }
