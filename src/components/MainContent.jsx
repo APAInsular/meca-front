@@ -20,6 +20,7 @@ import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from 'src/pages/UnEventPage'
 import ContactUs from 'src/pages/ContactUsPage'
+import LoginPage from 'src/pages/LoginPage'
 
 const MainContent = () => {
     return (
