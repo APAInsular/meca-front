@@ -4,6 +4,7 @@ import EventMonumentPhoto from './EventMonumentPhoto1';
 import MonumentRoute1 from '../MonumentRoute1';
 import EventCreator1 from './EventCreator1';
 import EventDescription1 from './EventDescription1';
+import Participants from '../Participants';
 
 
 const Event = ({ event }) => {
