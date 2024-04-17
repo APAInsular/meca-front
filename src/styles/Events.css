@@ -36,7 +36,7 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    /* transition: transform 0.1s ease; */
+    transition: transform 0.3s ease;
     transform-origin: 50% 50%;
     height: 40px;
     width: 35px;
@@ -54,7 +54,7 @@
     width: fit-content;
     transform: translateY(-50%);
     border: none;
-    transform: rotate(180deg);
+
 }
 
 .eventoTitle {
