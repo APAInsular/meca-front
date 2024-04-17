@@ -7,9 +7,9 @@ import Obra_img from "../images/Obra.jpg";
 
 const RoutePage = () => {
   return (
-    <div className="container row d-flex">
-        <div className="row col-xs-6 col-md-6 col-lg-12">
-      <div className="ruta-left">
+    <div className="container d-flex">
+        <div className="row">
+      <div className="ruta-left zcol-md-12">
         <h1 className="ruta-h1">Ruta</h1>
         <img className="maps" src={maps_route} alt="" />
         <p className="about_cesar">
@@ -19,9 +19,9 @@ const RoutePage = () => {
         </p>
       </div>
 
-      <div className="vertical-line "></div> 
+      <div className="vertical-line col-md-12"></div> 
 
-      <div className="obras-right col-xs-6 col-md-6 col-lg-12">
+      <div className="obras-right col-md-12">
 
 
         <div className="progress_bar_full">
