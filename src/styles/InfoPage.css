@@ -215,3 +215,38 @@
     /*margin-right: 5%;*/
     /*margin-top: 3%;*/
 }
+
+@media (max-width: 768px) {
+    .container-info-page {
+        height: auto; /* Automatyczna wysokość dla mniejszych ekranów */
+    }
+
+    .info-box1 {
+        width: 90%; /* Dopasuj szerokość do mniejszych ekranów */
+        height: auto; /* Ustaw wysokość automatycznie */
+        margin: 5% auto; /* Centralizuj i dodaj marginesy */
+    }
+
+    .info-page-box1 {
+        margin-top: 10%; /* Zwiększ odstęp dla mniejszych ekranów */
+    }
+
+    .info-page-box2 {
+        margin-top: 0; /* Zmień margines na zero */
+    }
+
+    .qr-image {
+        height: 40vh; /* Zmniejsz wysokość obrazka QR */
+    }
+
+    .info-box2 {
+        width: 100%; /* Ustaw szerokość na 100% */
+        margin: 5% auto; /* Centralizuj i dodaj marginesy */
+    }
+
+    .info-box3 {
+        width: 90%; /* Dopasuj szerokość do mniejszych ekranów */
+        margin: 5% auto; /* Centralizuj i dodaj marginesy */
+    }
+
+}
