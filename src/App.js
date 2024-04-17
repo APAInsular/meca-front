@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App m-0 p-0">
       <NavBar />
-      {pathname === "/perfil" ? null : <NavBar/>}
+      {/* {pathname === "/perfil" ? null : <NavBar/>} */}
       <MainContent />
       <Footer />
     </div>
