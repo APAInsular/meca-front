@@ -4,6 +4,7 @@ import EventMonumentPhoto from './EventMonumentPhoto1';
 import MonumentRoute1 from '../MonumentRoute1';
 import EventCreator1 from './EventCreator1';
 import EventDescription1 from './EventDescription1';
+import Participants from '../Participants';
 
 
 const Event = ({ event }) => {
@@ -28,10 +29,10 @@ const Event = ({ event }) => {
             </button>
             {expanded && (
                 <div className='hiddenContent'>
-                    <div className='Monument1 w-[270px] lg:w-[370px] mt-5 xl:ml-[43%] lg:ml-[43%] customFix-position'>
+                    <div className='Monument1 w-[270px] lg:w-[370px] mt-5 customFix-position'>
                         <EventMonumentPhoto />
                     </div>
-                    <div className='w-[270px] ml-[43%] Route lg:w-[70%] customFix-position'>
+                    <div className='w-[270px] Route lg:w-[70%] customFix-position'>
                         <MonumentRoute1 />
                     </div>
                     <div className='Profile customFix-position2 lg:ml-6'>
