@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/InfoPage.css';
-import qrcode from '../images/qrcode.svg';
+import qrcode from '../images/SP_blog_Link.jpg';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
 import Events from 'src/components/EventPage/Event';
 

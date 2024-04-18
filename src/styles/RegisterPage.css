@@ -1,167 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     font-family: "Inter";
 }
 
-.mecaa{
-    width: 762px;
-    height: 518px;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.logoa{
-    height: 85px;
-    width: 245px;
-    text-align: center;
+.login-box {
     display: flex;
-    position: static;
-    margin-left: 20%;
-    margin-top: -50%;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-.register_form{
-    float: right;
+.logo {
+    width: 50vw;
+    height: auto;
+}
+
+.v-line-1 {
+    height: 80vh;
+    width: 1px;
+    background-color: black;
     text-align: center;
-    margin-right: 14%;
-    font-size: 15px;
-    margin-top: 90%;
-
 }
 
-.register_form h5{
+.form {
+    width: 50vw;
+    text-align: center; 
+}
+
+.title {
     font-size: 24px;
-    text-align: center;
-    margin-bottom: 10%;
-    margin-top: -35%;
-    margin-left: 30%;
-    display: flex;
+}
+
+input{
+    height: 2em;
+    border-radius: 10px;
+    border: 3px solid #263C5C;
+    font-size: 24px;
+}
+
+.submit-button {
+    width: 7.5vw;
+    height: 2em;
+    border-radius: 10px;
+    border: 3px solid #263C5C;
+    background-color: #263C5C;
+    font-size: 24px;
+    color: white;
+}
+
+.input-group .nombre{
+    width: 224px;
+   margin-right: 40px;
+   border-radius: 10px;
+}
+
+.input-group .apelidos{
+    width: 329px;
+    border-radius: 10px;
     
 }
 
-.register_form .entar{
-    color: white;
-    background-color: #263C5C;
+.input-group .ciudad{
+    width: 279px;
+    margin-right: 40px;
+}
+
+.input-group .pais{
+    width: 279px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    width: 610px;
     border-radius: 10px;
-    width: 124px;
-    height: 32px;
-    font-size: 16px;
-    margin-top: 5%;
 }
-.register_form .nombre{
-    border: 2px solid #263C5C;
+
+.input-group input {
+    flex: 1; /* Allow inputs to grow and fill available space */
     border-radius: 10px;
-    width: 121px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 15px;
 }
 
-.register_form .nombre1{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 121px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 0px;
+.email{
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.register_form .apelidos1{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 196px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
+@media (max-width: 768px) {
+    .v-line-1 {
+        display: none;
+    }
 
-.register_form .apelidos{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 196px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 0px;
-}
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.register_form .apelidos2{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 185px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 0px;
-}
-
-.register_form .nombre2{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 134px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
-
-.register_form .apelidos3{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 160px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 0px;
-}
-
-.register_form .nombre3{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 159px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
-
-.register_form .email{
-    border: 2px solid #263C5C;
-    border-radius: 10px;
-    width: 331px;
-    height: 43px;
-    text-align: left;
-    margin-bottom: 20px;
-
-}
-
-.register_form input::placeholder{
-    padding-left: 15px;
-}
-
-.google{
-    margin-left: 5%;
-    margin-top: 95%;
-    margin-right: -1%;
-    width: 55px;
-    height: 55px;
-}
-
-.facebook{
-    margin-top: 95%;
-    margin-left: 3%;
-    width: 50px;
-    height: 50px;
-}
-
-.googleb{
-    background-color: none;
-}
-
-.facebookb{
-    background-color: none;
+    .logo {
+        width: 50vw;
+        height: auto;
+        padding-top: 55%;
+    }
+    
+    .form {
+        width: 50%;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .input-group .nombre, .input-group .apelidos, .input-group .ciudad, .input-group .pais {
+        width: 60%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        margin-left: 45vw;
+    }
 }
