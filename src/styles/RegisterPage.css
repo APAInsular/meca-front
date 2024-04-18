@@ -89,39 +89,36 @@ input{
 }
 
 @media (max-width: 768px) {
-    .v-line-1 {
-        display: none;
-    }
-
-    .login-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     .logo {
-        width: 50vw;
-        height: auto;
-        padding-top: 55%;
+        width: 80%;
+        
     }
-    
+
     .form {
-        width: 50%;
+        width: 80%;
     }
-    
+
     .input-group {
         flex-direction: column;
         align-items: flex-start;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
     }
-    
-    .input-group .nombre, .input-group .apelidos, .input-group .ciudad, .input-group .pais {
+
+    .input-group input {
+        width: calc(100% - 10px); /* 10px less to accommodate the margin */
+        margin-right: 10px; /* Add right margin for all input fields */
+        margin-bottom: 10px; /* Add bottom margin for all input fields */
+    }
+
+    .input-group .nombre {
+        margin-top: 0; /* Remove top margin for the second input field */
         width: 60%;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 10px;
-        margin-left: 45vw;
+    }
+
+    .input-group .apelidos {
+        margin-top: 0; /* Remove top margin for the second input field */
+        width: 60%;
     }
 }
