@@ -41,7 +41,7 @@ const RoutePage = () => {
                 <img src={avatar} class="avataro" alt="/"/>
                 <p>Nombre Apellidos</p><p class="date">23/04/1956</p>
                 <h5>Título de la entrada del blog</h5>
-                <p class="description">Descripción corta de la entrada del blog de<br></br>una usuario concreto mientras escribe esta<br></br>descripción que saldrá en el homePage<br></br>abajo del todo</p>
+                <p class="description">Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo</p>
                 <div class='categories'>
                     <h5 className='one'>Escultura</h5>
                     <h5 className='two'>Arte</h5>
@@ -53,7 +53,7 @@ const RoutePage = () => {
                 <img src={monument} class='monumento' alt="/"/>
                 <img src={avatar} class="avataro" alt="/"/><p>Nombre Apellidos</p><p class="date">23/04/1956</p>
                 <h5>Título de la entrada del blog</h5>
-                <p class="description">Descripción corta de la entrada del blog de<br></br>una usuario concreto mientras escribe esta<br></br>descripción que saldrá en el homePage<br></br>abajo del todo</p>
+                <p class="description">Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo</p>
                 <div class='categories'>
                     <h5 className='one'>Escultura</h5>
                     <h5 className='two'>Arte</h5>
@@ -65,7 +65,7 @@ const RoutePage = () => {
                 <img src={monument} class='monumento' alt="/"/>
                 <img src={avatar} class="avataro" alt="/"/><p>Nombre Apellidos</p><p class="date">23/04/1956</p>
                 <h5>Título de la entrada del blog</h5>
-                <p class="description">Descripción corta de la entrada del blog de<br></br>una usuario concreto mientras escribe esta<br></br>descripción que saldrá en el homePage<br></br>abajo del todo</p>
+                <p class="description">Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo</p>
                 <div class='categories'>
                     <h5 className='one'>Escultura</h5>
                     <h5 className='two'>Arte</h5>
@@ -73,17 +73,17 @@ const RoutePage = () => {
                 </div>
                 <button><img src={arrow} class='arrowdown' alt='/'></img></button>
             </div>
-            <div class='blogblock1'>
+            <div class='blogblock'>
                 <img src={monument} class='monumento' alt="/"/>
                 <img src={avatar} class="avataro" alt="/"/><p>Nombre Apellidos</p><p class="date">23/04/1956</p>
                 <h5>Título de la entrada del blog</h5>
-                <p class="description">Descripción corta de la entrada del blog de<br></br>una usuario concreto mientras escribe esta<br></br>descripción que saldrá en el homePage<br></br>abajo del todo</p>
+                <p class="description">Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo</p>
                 <div class='categories'>
                     <h5 className='one'>Escultura</h5>
                     <h5 className='two'>Arte</h5>
                     <h5 className='three'>Fuerteventura</h5>
                 </div>
-                <button><img src={arrow} class='arrowdown1' alt='/'></img></button>
+                <button><img src={arrow} class='arrowdown' alt='/'></img></button>
             </div>
         </div>        
     )
