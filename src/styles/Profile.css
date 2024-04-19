@@ -15,3 +15,25 @@
     bottom: 0; 
     transform: translateY(40%);  
 }
+
+.mobile-background {
+    background-color: #f6f6f6;
+}
+
+.arrow {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .arrow {
+        display: block;
+        max-height: 30px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profilePicture img {
+        width: 12em;
+    }
+}

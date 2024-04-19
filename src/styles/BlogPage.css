@@ -1,0 +1,233 @@
+input[type=search]{
+    width: 344px;
+    height: 41px;
+    border-radius: 40px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.searchbar{
+    text-align: center;
+    margin-top: 0%;
+}
+
+input::placeholder{
+    padding-left: 20px;
+}
+
+.entras{
+    margin-left: -22%;
+    margin-top: 20px;
+    width: 44px;
+    height: 35px;
+}
+
+.entra{
+    position: static;
+    margin-left: 35%;
+    margin-bottom: -10px;
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.fitras{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 44px;
+    height: 35px;
+}
+
+.filtra{
+    width: 19px;
+    height: 18px;
+    margin-left: 90%;
+   margin-bottom: -4px;
+    border-radius: 50px;
+    outline: 1px solid black;
+    outline-offset: 5px;
+}
+
+.nombr{
+    margin-left: 1px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+}
+
+.nombregroup{
+    text-align: center;
+    margin-top: 15px;
+    float: left;
+    margin-left: 15px;
+
+}
+
+.nombretext{
+    display:inline-flex;
+    text-align: center;
+    margin-top: 0%;
+    float: left;
+    font-size: 9px;
+}
+
+.nom{
+    margin-left: 28px
+}
+
+.nom1{
+    margin-left: 40px
+}
+
+.nom2{
+    margin-left: 28px
+}
+
+.nom3{
+    margin-left: 28px
+}
+
+.nom4{
+    margin-left: 25px
+}
+
+.nom5{
+    margin-left: 28px
+}
+
+.nom6{
+    margin-left: 25px
+}
+
+.blogblock{
+    width: 325px;
+    height: 396px;
+    border: 2px solid #263C5C;
+    margin-left: 65px;
+    margin-top: 60px;
+    float:left;
+}
+
+.monumento{
+    width: 321.5px;
+    height: 183px;
+    margin-left: -0.5px;
+    margin-top: -2px;
+}
+
+.avataro{
+    width: 16px;
+    height: 15px;
+    margin-left: 8px;
+    float: left;
+}
+
+.blogblock p{
+    margin-left: -20px;
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+.blogblock .date{
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+h5{
+    color: black;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.blogblock .description{
+    float: left;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.blogblock .categories h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    background-color: #7B96FF;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 10px;
+    padding-top: 2.5px;
+}
+
+.one{
+    width: 70px;
+    height: 20px;
+}
+
+.two{
+    width: 50px;
+    height: 20px;
+}
+
+.three{
+    width: 90px;
+    height: 20px;
+}
+
+.blogblock1 p{
+    margin-left: -80px;
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+.blogblock1 .date{
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.blogblock1 .description{
+    float: left;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.blogblock1 .categories h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    background-color: #7B96FF;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 10px;
+    padding-top: 2.5px;
+}
+
+.blogblock1{
+    width: 325px;
+    height: 396px;
+    border: 2px solid #263C5C;
+    margin-left: 65px;
+    margin-top: 60px;
+    margin-bottom: 30%;
+    float:left;
+}
+
+.arrowdown{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: static;
+    margin-top: 300%;
+    margin-left: -330%
+}

@@ -18,8 +18,15 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
+<<<<<<< HEAD
 import UnEventPage from 'src/pages/UnEventPage'
 import ContactUs from 'src/pages/ContactUsPage'
+=======
+import UnEventPage from "../pages/UnEventPage"
+import LoginPage from '../pages/LoginPage'
+import ContactUs from 'src/pages/ContactUsPage'
+import AdminPage from 'src/pages/AdminPage'
+>>>>>>> 10b8798eca90041687b7d66bdd15706683e1d86a
 
 const MainContent = () => {
     return (
@@ -45,9 +52,15 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
+            <Route element={<LoginPage />} path="/login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
+<<<<<<< HEAD
             <Route element={<ContactUs />} path="/contactanos"></Route>
+=======
+            <Route element={<ContactUs />} path="/contactus"></Route>
+            <Route element={<AdminPage />} path="/adminpage"></Route>
+>>>>>>> 10b8798eca90041687b7d66bdd15706683e1d86a
         </Routes >
     )
 }
