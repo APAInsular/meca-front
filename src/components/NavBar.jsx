@@ -5,6 +5,7 @@ import { XCircleFill } from 'react-bootstrap-icons';
 
 const navigation = [
     { name: 'Inicio', path: '/' },
+    { name: 'Acciones', path: '/acciones' },
     { name: 'Explorar', path: '/explorar' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contáctanos', path: '/contactus' },
