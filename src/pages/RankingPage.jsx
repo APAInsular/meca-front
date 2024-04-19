@@ -40,6 +40,7 @@ const RankingPage = () => {
                     </div>
                 ))}
             </div>
+            <div id="other">
                 <div className="ranking-title">PLATINO</div>
                 {users.map((user, index) => (
                     <div key={index} className="usuario_top_box">
@@ -53,6 +54,7 @@ const RankingPage = () => {
                         <div className="h-line-1"></div>
                     </div>
                 ))}
+            </div>
             <div className="ranking-title">ORO</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">

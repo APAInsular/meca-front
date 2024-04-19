@@ -4,10 +4,6 @@
     font-family: "Inter";
 }
 
-#top{
-    width: 40%;
-    margin-left: 4em;
-}
 
 .ranking-title {
     background-color: #263C5C;
@@ -61,11 +57,13 @@
 .h-line-2 {
     height: 1px;
     background-color: white;
+    
 }
 
 .h-line-3 {
     height: 1px;
     background-color: #263C5C;
+    
 }
 
 .navbar-image {
