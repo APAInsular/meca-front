@@ -35,7 +35,7 @@ const MainContent = () => {
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
             <Route element={<ProfilePage />} path="/perfil"></Route>
-            <Route element={<ProfilePage />} path="/perfil/:nickname/editar"></Route>
+            {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route> */}
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
             <Route element={<RoutePage />} path="/rutas/:idRuta"></Route>

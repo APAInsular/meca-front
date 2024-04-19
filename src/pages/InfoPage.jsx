@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/InfoPage.css';
 import qrcode from '../images/SP_blog_Link.jpg';
+import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
 import Events from 'src/components/EventPage/Event';
 
@@ -88,7 +89,7 @@ const InfoPage = () => {
                 <div className='col-12 col-md-5 m-3 fs-3 text-center'>
                 Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.
                 </div>
-                <div className="col-12 col-md-5 bg-secondary-subtle text-center align-items-center d-flex justify-content-center m-3" style={{width: "30em", height: "20em"}}>MAPA</div>
+                <img className="col-12 col-md-5 text-center align-items-center d-flex justify-content-center m-3" style={{width: "30em", height: "20em"}} src={map} alt='/'/>
             </div>
         </div>
     );
