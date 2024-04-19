@@ -280,11 +280,13 @@ h5{
 
     .nombregroup {
         margin-top: 10px; /* Zwiększ odstęp na górze */
-        margin-left: 20px; /* Zresetuj marginesy */
-        text-align: left; /* Ustaw tekst na lewo */
+        margin-left: auto; /* Zresetuj marginesy */
+        margin-right: auto;
+        text-align: center; /* Ustaw tekst na lewo */
     }
 
     .nombretext {
+        padding-left: 8em; /* Zresetuj marginesy */
         margin-top: 5%; /* Zwiększ odstęp na górze */
         font-size: 9px; /* Zwiększ rozmiar czcionki */
     }
@@ -315,16 +317,6 @@ h5{
     
     .nom6{
         margin-left: 15px
-    }
-
-    .blogblock1 {
-        width: 325px;
-        height: 396px;
-        border: 2px solid #263C5C;
-        margin-left: 3%;
-        margin-top: 60px;
-        float: left;
-        margin-bottom: 15%;
     }
 
     .blogblock p, .blogblock1 p {
