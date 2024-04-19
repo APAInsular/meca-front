@@ -42,7 +42,7 @@ const ProfilePage = () => {
                 </button>
                 <h1 className="text-white">Perfil</h1>
                 {windowWidth < 992 ? (
-                    <div>
+                    <div>x
                     <button>
                         <List size="50" color="black" />
                     </button>

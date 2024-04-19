@@ -4,12 +4,6 @@
     grid-template-rows: repeat(3);
     grid-column-gap: 3%;
     grid-row-gap: 0;
-    width: 30%;
-    height: 50%;
-    position: absolute;
-    padding-top: 9%;
-    right: 8%;
-    top: 15%;
 }
 
 .div6 {
@@ -38,11 +32,3 @@
     height: 100%;
     width: 100%;
 }
-
-.obraTitle {
-    font-size: 30px;
-    position: absolute;
-    top: 10%;
-    margin-left: 18%;
-}
-
