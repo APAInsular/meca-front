@@ -3,10 +3,9 @@ import '../styles/InfoPage.css';
 import qrcode from '../images/SP_blog_Link.jpg';
 import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
-import Events from 'src/components/EventPage/Event';
 
 const InfoPage = () => {
-    const rewards = [
+    const rewards = [   
         {img: <QrCode></QrCode>, nombre: "QR", totems: "100"},
         {img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10"},
         {img: <HandThumbsUp></HandThumbsUp>, nombre: "Valorar", totems: "100"},
