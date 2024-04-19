@@ -40,6 +40,24 @@ const EventosDestacados = () => {
             },
             cupo: "100",
             num_inscritos: "35"
+        },
+        {
+            titulo: "Evento 5",
+            fecha: "23-06-2007",
+            autor: {
+                nombre: "Luis Gordillo"
+            },
+            cupo: "100",
+            num_inscritos: "35"
+        },
+        {
+            titulo: "Evento 6",
+            fecha: "23-06-2007",
+            autor: {
+                nombre: "Luis Gordillo"
+            },
+            cupo: "100",
+            num_inscritos: "35"
         }
     ]
 
@@ -47,7 +65,7 @@ const EventosDestacados = () => {
         <div className="p-3 text-center">
             <div className="align-items-center">
                 <h3 className="text-uppercase">
-                    Eventos Destacados
+                    PRÓXIMOS EVENTOS
                 </h3>
             </div>
             <div className="">
