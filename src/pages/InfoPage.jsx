@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/InfoPage.css';
 import qrImage from '../images/SP_blog_Link.jpg';
-import maps from '../images/maps.png';
 import { QrCode } from 'react-bootstrap-icons'
 
 const InfoPage = () => {
@@ -65,14 +64,14 @@ const InfoPage = () => {
 
 
 
-                <div className='bottom_parts d-flex justify-content-center row'>
-                    <div className='maps d-flex col-xs-12 col-6'>
-                        <img className="maps" src={maps} alt="mapa" />
-                    </div>
-                    <div className='about_qr d-flex col-xs-12 col-6 align-items-center'>
-                        <p>Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.</p>
-                    </div>
+            <div className='bottom_parts d-flex justify-content-center row'>
+                <div className='maps d-flex col-xs-12 col-6'>
+                    <img className="maps" src={'/Image/maps.png'} alt="mapa" />
                 </div>
+                <div className='about_qr d-flex col-xs-12 col-6 align-items-center'>
+                    <p>Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.</p>
+                </div>
+            </div>
 
 
 
