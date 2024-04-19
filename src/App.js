@@ -6,10 +6,8 @@ import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 
 function App() {
-  // const { pathname } = useLocation();
   return (
     <div className="App m-0 p-0">
-      <NavBar />
       <MainContent />
       <Footer />
     </div>
