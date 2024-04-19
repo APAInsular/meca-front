@@ -4,6 +4,11 @@
     font-family: "Inter";
 }
 
+#top{
+    width: 40%;
+    margin-left: 4em;
+}
+
 .ranking-title {
     background-color: #263C5C;
     height: 66px;

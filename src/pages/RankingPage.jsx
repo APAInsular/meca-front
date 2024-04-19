@@ -16,6 +16,7 @@ const RankingPage = () => {
 
     return (
         <div>
+            <div id='top'>
                 <div className="h-line-3"></div>
                 <div className="ranking-title">TOP</div>
                 <div className="h-line-2"></div>
@@ -38,19 +39,20 @@ const RankingPage = () => {
                         <div className="h-line-1"></div>
                     </div>
                 ))}
-            <div className="ranking-title">PLATINO</div>
-            {users.map((user, index) => (
-                <div key={index} className="usuario_top_box">
-                    <div className="usuario px-2">
-                        <div className="usuario_name">
-                            <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                            {user.name}
+            </div>
+                <div className="ranking-title">PLATINO</div>
+                {users.map((user, index) => (
+                    <div key={index} className="usuario_top_box">
+                        <div className="usuario px-2">
+                            <div className="usuario_name">
+                                <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
+                                {user.name}
+                            </div>
+                            <div className="estatuas">{user.statues}</div>
                         </div>
-                        <div className="estatuas">{user.statues}</div>
+                        <div className="h-line-1"></div>
                     </div>
-                    <div className="h-line-1"></div>
-                </div>
-            ))}
+                ))}
             <div className="ranking-title">ORO</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">
