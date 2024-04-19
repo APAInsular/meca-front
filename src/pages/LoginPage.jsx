@@ -1,3 +1,4 @@
+import '../styles/Login.css';
 import React from 'react';
 import logo from '../images/MECA-09.png'
 import "../styles/Login.css";

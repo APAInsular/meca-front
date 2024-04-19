@@ -3,8 +3,8 @@ import '../styles/Footer.css'
 
 const Footer = () => {
   return (
-    <footer>
-      <img src={'/Image/Logos/MECA-11.png'} alt="Footer" />
+    <footer style= {{ height: "60px"}}>
+      <img src={'/Image/Logos/MECA-11.png'} alt="Footer" style= {{ width: "100px", height: "68px"}}/>
     </footer>
   );
 };

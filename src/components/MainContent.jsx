@@ -18,9 +18,12 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
-import UnEventPage from 'src/pages/UnEventPage'
+import UnEventPage from "../pages/UnEventPage"
+// import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
-
+import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+// import AdminEventPage from 'src/pages/AdminEventPage'
+//import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
         <Routes>
@@ -33,7 +36,7 @@ const MainContent = () => {
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
             <Route element={<ProfilePage />} path="/perfil"></Route>
-            <Route element={<ProfilePage />} path="/perfil/:nickname/editar"></Route>
+            {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route>  */}
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
             <Route element={<RoutePage />} path="/rutas/:idRuta"></Route>
@@ -45,9 +48,12 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
+            {/* <Route element={<LoginPage />} path="/login"></Route> */}
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
-            <Route element={<ContactUs />} path="/contactanos"></Route>
+            <Route element={<ContactUs />} path="/contactus"></Route>
+            <Route element={<MonumentFiltradosPage/>} path="/monumentfiltrados"></Route>
+            {/* <Route element={<AdminEventPage/>} path="/adminevent"></Route> */}
         </Routes >
     )
 }

@@ -5,11 +5,9 @@ import { XCircleFill } from 'react-bootstrap-icons';
 
 const navigation = [
     { name: 'Inicio', path: '/' },
-    { name: 'Acciones', path: '/acciones' },
     { name: 'Explorar', path: '/explorar' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contáctanos', path: '/contactanos' },
-    { name: 'Información', path: '/info' },
 ];
 
 export default function NavBar() {
@@ -31,7 +29,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className='my-3 px-3 d-flex align-items-center'>
+        <div className='my-3 px-3 d-flex align-items-center' style={{ borderBottom: '2px solid #263C5C', paddingBottom: '10px' }}>
             {/* Botón de menú para tablet */}
             <div className="col-md-4 col-xs-4 text-right d-flex d-lg-none justify-content-start">
                 <button onClick={toggleMenu}>

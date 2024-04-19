@@ -1,0 +1,345 @@
+input[type=search]{
+    width: 564px;
+    height: 72px;
+    border-radius: 40px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.searchbar{
+    text-align: center;
+    margin-top: 0%;
+    
+}
+
+input::placeholder{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.entras{
+    margin-left: -7%;
+    margin-top: 20px;
+    width: 44px;
+    height: 35px;
+}
+
+.entra{
+    position: static;
+    margin-left: 35%;
+    margin-bottom: -10px;
+    margin-top: 3px;
+    width: 35px;
+    height: 35px;
+}
+
+.fitras{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 22px;
+    height: 21px;
+}
+
+.filtra{
+    width: 19px;
+    height: 18px;
+    margin-left: 90%;
+   margin-bottom: -4px;
+    border-radius: 50px;
+    outline: 1px solid black;
+    outline-offset: 5px;
+}
+
+.nombr{
+    margin-left: 1px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.nombregroup{
+    text-align: center;
+    margin-top: 15px;
+    float: left;
+    margin-left: 33.5%;
+
+}
+
+.nombretext{
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+    justify-content: center ;
+    margin-left: -50%;
+    margin-top: 3%;
+    font-size: 12px;
+}
+
+.nom{
+    margin-left: 33px
+}
+
+.nom1{
+    margin-left: 40px
+}
+
+.nom2{
+    margin-left: 30px
+}
+
+.nom3{
+    margin-left: 33px
+}
+
+.nom4{
+    margin-left: 30px
+}
+
+.nom5{
+    margin-left: 33px
+}
+
+.nom6{
+    margin-left: 30px
+}
+
+.blogblock{
+    width: 325px;
+    height: 396px;
+    border: 2px solid #263C5C;
+    margin-left: 3%;
+    margin-top: 60px;
+    float: left;
+}
+
+.monumento{
+    width: 321.5px;
+    height: 183px;
+    margin-left: -0.5px;
+    margin-top: -2px;
+}
+
+.avataro{
+    width: 16px;
+    height: 15px;
+    margin-left: 8px;
+    float: left;
+}
+
+
+.blogblock p{
+    margin-right: 10%;
+    padding-left: -20%;
+    float: left;
+    font-size: 10px;
+    
+}
+
+.blogblock .date{
+    float: left;
+    margin-top: -30px;
+    margin-left: 10%;
+    font-size: 10px;
+}
+
+h5{
+    color: black;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: -10px;
+    float: left;
+}
+
+.blogblock .description{
+    float: left;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.blogblock .categories h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    background-color: #7B96FF;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 10px;
+    padding-top: 2.5px;
+}
+
+.one{
+    width: 70px;
+    height: 20px;
+}
+
+.two{
+    width: 50px;
+    height: 20px;
+}
+
+.three{
+    width: 90px;
+    height: 20px;
+}
+
+.blogblock1 p{
+    margin-left: -80px;
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+.blogblock1 .date{
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.blogblock1 .description{
+    float: left;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.blogblock1 .categories h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    background-color: #7B96FF;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 10px;
+    padding-top: 2.5px;
+}
+
+.blogblock1{
+    width: 325px;
+    height: 396px;
+    border: 2px solid #263C5C;
+    margin-left: 45px;
+    margin-top: 60px;
+    margin-bottom: 10%;
+    float:left;
+}
+
+.arrowdown{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: static;
+    margin-top: 50%;
+    margin-left: -260%
+}
+
+.arrowdown1{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: static;
+    margin-top: 350%;
+    margin-left: -320%
+}
+
+@media (max-width: 768px) {
+    .entras{
+        margin-left: -25%;
+    }
+
+    input[type=search] {
+        width: 80%; /* Szerokość pełnego ekranu */
+        height: 50px; /* Wysokość zmniejszona */
+        font-size: 16px; /* Zwiększ rozmiar czcionki */
+        margin-left: -10%;
+        
+    }
+
+    .searchbar {
+        margin-top: 20px; /* Zwiększ odstęp na górze */
+    }
+
+    .nombr {
+        width: 40px; /* Zmniejsz szerokość obrazka */
+        height: 40px; /* Zmniejsz wysokość obrazka */
+        margin-left: 5px; /* Zmniejsz margines */
+    }
+
+    .nombregroup {
+        margin-top: 10px; /* Zwiększ odstęp na górze */
+        margin-left: 20px; /* Zresetuj marginesy */
+        text-align: left; /* Ustaw tekst na lewo */
+    }
+
+    .nombretext {
+        margin-top: 5%; /* Zwiększ odstęp na górze */
+        font-size: 9px; /* Zwiększ rozmiar czcionki */
+    }
+
+    .nom{
+        margin-left: 18px
+    }
+    
+    .nom1{
+        margin-left: 20px
+    }
+    
+    .nom2{
+        margin-left: 15px
+    }
+    
+    .nom3{
+        margin-left: 18px
+    }
+    
+    .nom4{
+        margin-left: 15px
+    }
+    
+    .nom5{
+        margin-left: 18px
+    }
+    
+    .nom6{
+        margin-left: 15px
+    }
+
+    .blogblock1 {
+        width: 325px;
+        height: 396px;
+        border: 2px solid #263C5C;
+        margin-left: 3%;
+        margin-top: 60px;
+        float: left;
+        margin-bottom: 15%;
+    }
+
+    .blogblock p, .blogblock1 p {
+        margin-right: 0; /* Zresetuj margines */
+        padding-left: 0; /* Zresetuj wcięcie */
+        font-size: 12px; /* Zmniejsz rozmiar czcionki */
+    }
+
+    .blogblock .date, .blogblock1 .date {
+        margin-top: -20px; /* Zmniejsz odstęp na górze */
+        margin-left: 0; /* Zresetuj margines */
+        font-size: 12px; /* Zmniejsz rozmiar czcionki */
+    }
+
+    .blogblock .description, .blogblock1 .description {
+        margin-top: 0; /* Zresetuj margines */
+        font-size: 14px; /* Zwiększ rozmiar czcionki */
+    }
+
+    .blogblock .categories h5, .blogblock1 .categories h5 {
+        font-size: 12px; /* Zmniejsz rozmiar czcionki */
+        padding-top: 1px; /* Dostosuj wyrównanie */
+    }
+}
