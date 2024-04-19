@@ -55,7 +55,6 @@ const RoutePage = () => {
             return <ObraRuta key={index} obra={data} />
           })}
         </div>
-
       </div>
     </div>
   );
