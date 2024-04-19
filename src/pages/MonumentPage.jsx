@@ -1,6 +1,6 @@
 import React from "react";
 import Obra from "../images/Obra.jpg";
-import Autor from "../images/Cesar.png"
+import Autor from "../images/Cesar.jpg"
 import Map from "../images/maps.png"
 import "../styles/MonumentPage.css";
 import ObrasRelacionadas from "src/components/AuthorPage/ObrasRelaciondas";
