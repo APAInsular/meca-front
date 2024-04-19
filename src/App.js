@@ -1,18 +1,15 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RoutePage from './pages/RoutePage'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Footer from './components/Footer';
-
-
-
-//import MainContent from './components/MainContent';
+import MainContent from './components/MainContent';
 
 function App() {
   return (
     <div className="App m-0 p-0">
       <NavBar />
-      <RoutePage />
+      <MainContent />
       <Footer />
     </div>
   );

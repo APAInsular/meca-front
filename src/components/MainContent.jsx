@@ -18,6 +18,8 @@ import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
+import UnEventPage from 'src/pages/UnEventPage'
+import ContactUs from 'src/pages/ContactUsPage'
 
 const MainContent = () => {
     return (
@@ -30,7 +32,7 @@ const MainContent = () => {
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
-            <Route element={<ProfilePage />} path="/perfil/:nickname"></Route>
+            <Route element={<ProfilePage />} path="/perfil"></Route>
             <Route element={<ProfilePage />} path="/perfil/:nickname/editar"></Route>
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
@@ -44,6 +46,8 @@ const MainContent = () => {
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
+            <Route element={<UnEventPage />} path="/unevent"></Route>
+            <Route element={<ContactUs />} path="/contactanos"></Route>
         </Routes >
     )
 }

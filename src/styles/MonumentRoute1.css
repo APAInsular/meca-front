@@ -1,5 +1,4 @@
 .Element3{
-    height: 220px;
     width: 100%;
     border: 5px solid #FFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
@@ -15,8 +14,22 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1.5);
     width: 40%;
-    height: 50%;
+    height: 40%;
     z-index: 1000;
+}
+
+@media (min-width: 300px){
+    #popOutImage.enlarged{
+        height: 40%;
+        width: 60%;
+    }
+}
+
+@media (min-width: 900px){
+    #popOutImage.enlarged{
+        height: 6 git0%;
+        width: 50%;
+    }
 }
 
 #overlay {

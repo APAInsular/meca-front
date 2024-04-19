@@ -12,7 +12,7 @@ const RankingPage = () => {
     return (
         <div>
             <div className="h-line-3"></div>
-            <div className="title">TOP</div>
+            <div className="ranking-title">TOP</div>
             <div className="h-line-2"></div>
             <div className="usuario_top_box">
                 <div class="usuario1 px-2">
@@ -33,7 +33,7 @@ const RankingPage = () => {
                     <div className="h-line-1"></div>
                 </div>
             ))}
-            <div className="title">PLATINO</div>
+            <div className="ranking-title">PLATINO</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">
                     <div className="usuario px-2">
@@ -46,7 +46,7 @@ const RankingPage = () => {
                     <div className="h-line-1"></div>
                 </div>
             ))}
-            <div className="title">ORO</div>
+            <div className="ranking-title">ORO</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">
                     <div className="usuario px-2">
@@ -59,7 +59,7 @@ const RankingPage = () => {
                     <div className="h-line-1"></div>
                 </div>
             ))}
-            <div className="title">PLATA</div>
+            <div className="ranking-title">PLATA</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">
                     <div className="usuario px-2">
@@ -72,7 +72,7 @@ const RankingPage = () => {
                     <div className="h-line-1"></div>
                 </div>
             ))}
-            <div className="title">BRONCE</div>
+            <div className="ranking-title">BRONCE</div>
             {users.map((user, index) => (
                 <div key={index} className="usuario_top_box">
                     <div className="usuario px-2">
