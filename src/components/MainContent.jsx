@@ -16,6 +16,7 @@ import InfoPage from '../pages/InfoPage'
 import { Route, Routes } from 'react-router'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
+import LoginPage from '../pages/LoginPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
@@ -48,7 +49,8 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
-            {/* <Route element={<LoginPage />} path="/login"></Route> */}
+            <Route element={<LoginPage />} path="/login"></Route>
+            <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactus"></Route>
