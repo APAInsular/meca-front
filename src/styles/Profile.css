@@ -11,7 +11,7 @@
 .profilePicture img {
     width: 15em;
     height: auto;  
-    position: absolute;  
+    position: absolute;     
     bottom: 0; 
     transform: translateY(40%);  
 }

@@ -7,7 +7,6 @@ import MainContent from './components/MainContent';
 import { useLocation } from 'react-router-dom';
 
 function App() {
-  const { pathname } = useLocation();
   return (
     <div className="App m-0 p-0">
       <NavBar />
