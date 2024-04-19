@@ -4,13 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
-import { useLocation } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App m-0 p-0">
       <NavBar />
-      {/* {pathname === "/perfil" ? null : <NavBar/>} */}
       <MainContent />
       <Footer />
     </div>
