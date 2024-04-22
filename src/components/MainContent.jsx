@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route, Routes } from 'react-router'
 
 import AuthorPage from '../pages/AuthorPage'
 import HomePage from '../pages/HomePage'
@@ -13,7 +14,6 @@ import RankingPage from '../pages/RankingPage'
 import RoutePage from '../pages/RoutePage'
 import SearchPage from '../pages/SearchPage'
 import InfoPage from '../pages/InfoPage'
-import { Route, Routes } from 'react-router'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
