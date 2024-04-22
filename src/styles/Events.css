@@ -151,7 +151,8 @@
 
     .customFix-position2 {
         margin-bottom: 5%;
-        margin-right: 5%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .customFix-position3 {
