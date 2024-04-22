@@ -52,13 +52,15 @@
 .google{
     margin-top: 5%;
     margin-right: -1%;
-    width: 96px;
-    height: 81px;
+    margin-left: -2%;
+    width: 55px;
+    height: 55px;
 }
 
 .facebook{
     margin-top: 5%;
     margin-left: 3%;
-    width: 80px;
-    height: 76px;
+    width: 50px;
+    height: 50px;
 }
+

@@ -1,7 +1,9 @@
 import React from "react";
 
+import ProgressBar from "src/components/RoutePage/ProgressBar";
 import ObraRuta from "src/components/RoutePage/ObraRuta";
 import RouteInfo from "src/components/RoutePage/RouteInfo";
+
 
 const RoutePage = () => {
 
@@ -46,7 +48,7 @@ const RoutePage = () => {
       <div className="col-lg-6 col-12 mt-3">
         <h2 className="fs-1">Obras</h2>
         <div className="col-3">
-          {/* ProgressBar */}
+        <ProgressBar/>
         </div>
         <div className="col-12 col-md-9">
           {obrasRuta.map((data, index) => {

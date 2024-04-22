@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import '../styles/InfoPage.css';
-import qrImage from '../images/SP_blog_Link.jpg';
-import { QrCode } from 'react-bootstrap-icons'
+import qrcode from '../images/mail.svg';
+import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
+import Events from 'src/components/EventPage/Event';
 
 const InfoPage = () => {
     return (
@@ -13,8 +14,13 @@ const InfoPage = () => {
                     <p>Escanee el código para experimentar más.</p>
                     <p>No se necesita ninguna aplicación. Es fácil.</p>
                 </div>
-                <div className='info-box2'>
-                    <img className="qr-image" src={qrImage} alt="qr" />
+                <div className='d-flex justify-content-center m-3'>
+                    <img
+                        src={qrcode}
+                        alt='qr'
+                        className='rounded rounded-3'
+                        style={{ height: 'auto', width: '100%', maxWidth: '250px', maxHeight: '500px' }}
+                    />
                 </div>
             </div>
             <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>

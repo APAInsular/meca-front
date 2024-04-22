@@ -8,7 +8,7 @@ const navigation = [
     { name: 'Acciones', path: '/acciones' },
     { name: 'Explorar', path: '/explorar' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contáctanos', path: '/contactus' },
+    { name: 'Contáctanos', path: '/contactanos' },
 ];
 
 export default function NavBar() {
@@ -30,7 +30,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className='my-3 px-3 d-flex align-items-center'>
+        <div className='my-3 px-3 d-flex align-items-center' style={{ borderBottom: '2px solid #263C5C', paddingBottom: '10px' }}>
             {/* Botón de menú para tablet */}
             <div className="col-md-4 col-xs-4 text-right d-flex d-lg-none justify-content-start">
                 <button onClick={toggleMenu}>
@@ -50,7 +50,7 @@ export default function NavBar() {
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' ? (
-                            <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
+                            <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
@@ -67,7 +67,7 @@ export default function NavBar() {
                                 </div>
                             </div>
                         ) : item.name === 'Explorar' ? (
-                            <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
+                            <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>

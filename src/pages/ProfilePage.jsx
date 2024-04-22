@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ProfilePicture from "../images/Profile.png";
-// import Flag from "../images/spain.png";
+import Flag from "../images/Flag_of_Spain.png";
 import { List, Bell, ArrowLeft, CaretRightFill, Heart  } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
 
@@ -55,7 +55,7 @@ const ProfilePage = () => {
                 <img src={ProfilePicture} alt="profile" className="border border-3 border-white rounded-circle"/>
             </div>
             <div className="d-flex justify-content-end align-items-center m-3">
-                <img src={""} alt="flag"></img>
+                <img src={Flag} alt="flag"></img>
             </div>
             <div className="d-flex justify-content-center align-items-center m-5">
                 {windowWidth < 992 && (
