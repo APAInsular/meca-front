@@ -191,7 +191,7 @@ const TickOptions = () => {
           <div className="flex-grow-1 flex flex-wrap flex-col">
             
           {selectedOptions.option1 && obrasInfo.map((obra) =>(
-            <ListedObra key={obra.id} obra={obra} />
+            <ListedObra key={obra.id} obra={obra} id={obra.id} />
           )
 
           )}
