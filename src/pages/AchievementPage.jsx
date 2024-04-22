@@ -6,6 +6,18 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import "../styles/AchievementPage.css";
 
 const AchievementPage = () => {
+
+  // let algo = {
+  //   nombre: "hola",
+  //   levels : 3
+  // }
+
+  // <Level />
+
+  // for(lelt i = 0; i < algo.leveks; i++){
+
+  // }
+
   return (
     <div className="row">
       <div className="ac_box_1 d-flex mx-auto rounded-3xl" style={{background: "#263C5C", width: "80%"}}>
