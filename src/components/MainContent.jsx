@@ -16,7 +16,6 @@ import SearchPage from '../pages/SearchPage'
 import InfoPage from '../pages/InfoPage'
 import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
-import LoginPage from '../pages/LoginPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"

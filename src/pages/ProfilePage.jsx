@@ -37,7 +37,7 @@ const ProfilePage = () => {
             <div className="d-flex justify-content-between align-items-center navbar p-3">
                 <button>
                 <Link to={"/"}>
-                    <ArrowLeft size="50" color="white" />
+                    <ArrowLeft size="50" color="white"/>
                 </Link>
                 </button>
                 <h1 className="text-white">Perfil</h1>
