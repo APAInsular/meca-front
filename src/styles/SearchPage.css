@@ -162,3 +162,92 @@
     height: 141px;
     border-radius: 15px;
 }
+
+.text {
+    display: block; /* Upewnij się, że tekst będzie wyświetlany jako blok */
+  }
+  
+  .opis {
+    content: "{blok.description}";
+  }
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 768px) {
+    .explolar h1{
+        font-size: 48px;
+    }
+    .monumenty{
+        width: 90%;
+        margin-left: 5%;
+        height: 50vh;
+    }
+    .busquedabar,.blok{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .buscar{
+        width: 50%;
+        margin-left: 20%;
+        background: none;
+        margin-top: -3vh;
+    }
+    .filtrobtn,
+    .monumentobtn{
+        width: 40%;
+        margin-left: 5%;
+        background: none;
+        
+    }
+    .monumentobtn p{
+        color: none;
+        text-rendering: unset;
+        
+    }
+    .lupa,
+    .filtro{
+        margin-left: 5%;
+        background: none;
+    }
+    .filtrobtn p{
+        margin-left: 5%;
+        background-color: none;
+        
+    }
+    .search{
+        width: 90%;
+    }
+    .searhbtn{
+        width: 15%;
+        margin-left: 85%;
+        position: static;
+        margin-top: -10vh;
+    }
+    .opis{
+        width: 90%;
+    }
+
+    .nazwa{
+        font-size: smaller;
+        float: left;
+        margin: auto;
+        margin-top: -10%;
+        margin-left: 25vw;
+    }
+    .obraz{
+        width: 20%;
+        height: 20%;
+    }
+
+    .text {
+        display: block; /* Upewnij się, że tekst będzie wyświetlany jako blok */
+      }
+      
+      .opis {
+        content: url('../images/info.svg'); /* Dodaj ikonę jako zawartość pseudo-elementu */
+        display: inline-block; /* Pokaż ikonę na mniejszych ekranach */
+        width: 20px; /* Dostosuj szerokość i wysokość ikony do własnych potrzeb */
+        height: 20px;
+        margin-top: -5vh;
+        position: sticky;
+      }
+}
