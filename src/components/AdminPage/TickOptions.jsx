@@ -143,7 +143,7 @@ const TickOptions = () => {
     <div className="flex flex-col items-center ml-5">
       <div className="flex justify-between w-full">
         <div className="mr-[20px] flex flex-nowrap flex-col">
-          <p className="text-xl">Roles</p>
+          <p className="text-4xl text-blue-950 mt-[150px]">Roles</p>
           <label htmlFor="option1">
             <input
               type="checkbox"
