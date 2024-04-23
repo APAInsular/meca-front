@@ -1,6 +1,6 @@
 import React from "react";
 import ObrasDestacadas from "src/components/HomePage/ObrasDestacadas";
-import Cezar from "../images/Cesar.png";
+import Cezar from "../images/Cesar.jpg";
 import { Heart } from "react-bootstrap-icons";
 import Usuario from "../images/nombreavatar.svg";
 
