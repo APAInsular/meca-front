@@ -88,7 +88,7 @@ const TickOptions = () => {
       style: 'Barroco'
     },
     {
-      title: 'SomethingSomething2222',
+      title: 'SomethingSomething2',
       id: '2',
       author: {
         name: 'Caesar Manrique'
@@ -96,7 +96,7 @@ const TickOptions = () => {
       style: 'Barroco'
     },
     {
-      title: 'SomethingSomething33333',
+      title: 'SomethingSomething3',
       id: '3',
       author: {
         name: 'Caesar Manrique'
@@ -104,7 +104,7 @@ const TickOptions = () => {
       style: 'Barroco'
     },
     {
-      title: 'SomethingSomething444444',
+      title: 'SomethingSomething4',
       id: '4',
       author: {
         name: 'Caesar Manrique'
@@ -112,7 +112,7 @@ const TickOptions = () => {
       style: 'Barroco'
     },
     {
-      title: 'SomethingSomething55555',
+      title: 'SomethingSomething5',
       id: '5',
       author: {
         name: 'Caesar Manrique'
@@ -120,114 +120,107 @@ const TickOptions = () => {
       style: 'Barroco'
     },
   ]
-    // State to track selected options
-    const [selectedOptions, setSelectedOptions] = useState({
-      option1: false,
-      option2: false,
-      option3: false,
-      option4: false,
-      option5: false
+  // State to track selected options
+  const [selectedOptions, setSelectedOptions] = useState({
+    option1: false,
+    option2: false,
+    option3: false,
+    option4: false,
+    option5: false
+  });
+
+  // Function to handle checkbox change
+  const handleCheckboxChange = (option) => {
+    setSelectedOptions({
+      ...selectedOptions,
+      [option]: !selectedOptions[option],
     });
-  
-    // Function to handle checkbox change
-    const handleCheckboxChange = (option) => {
-      setSelectedOptions({
-        ...selectedOptions,
-        [option]: !selectedOptions[option],
-      });
-    };
-  
-    return (
-      <div className="flex flex-col items-center ml-5">
-        <div className="flex justify-between w-full">
-          <div className="mr-[20px] flex flex-nowrap flex-col">
-            <p className="text-xl">Roles</p>
-            <label htmlFor="option1">
-              <input
-                type="checkbox"
-                id="option1"
-                checked={selectedOptions.option1}
-                onChange={() => handleCheckboxChange('option1')}
-              />
-              Usuario Publico
-            </label>
-            <label htmlFor="option2">
-              <input
-                type="checkbox"
-                id="option2"
-                checked={selectedOptions.option2}
-                onChange={() => handleCheckboxChange('option2')}
-              />
-              Usuario Privado
-            </label>
-            <label htmlFor="option3">
-              <input
-                type="checkbox"
-                id="option3"
-                checked={selectedOptions.option3}
-                onChange={() => handleCheckboxChange('option3')}
-              />
-              Moderador
-            </label>
-            <label htmlFor="option4">
-              <input
-                type="checkbox"
-                id="option4"
-                checked={selectedOptions.option4}
-                onChange={() => handleCheckboxChange('option4')}
-              />
-              Admin de Evento
-            </label>
-            <label htmlFor="option5">
-              <input
-                type="checkbox"
-                id="option5"
-                checked={selectedOptions.option5}
-                onChange={() => handleCheckboxChange('option5')}
-              />
-              Admin Total
-            </label>
-          </div>
-          <div className="flex-grow-1 flex flex-wrap flex-col">
-            
-          {selectedOptions.option1 && obrasInfo.map((obra) =>(
+  };
+
+  return (
+    <div className="flex flex-col items-center ml-5">
+      <div className="flex justify-between w-full">
+        <div className="mr-[20px] flex flex-nowrap flex-col">
+          <p className="text-xl">Roles</p>
+          <label htmlFor="option1">
+            <input
+              type="checkbox"
+              id="option1"
+              checked={selectedOptions.option1}
+              onChange={() => handleCheckboxChange('option1')}
+            />
+            Usuario Publico
+          </label>
+          <label htmlFor="option2">
+            <input
+              type="checkbox"
+              id="option2"
+              checked={selectedOptions.option2}
+              onChange={() => handleCheckboxChange('option2')}
+            />
+            Usuario Privado
+          </label>
+          <label htmlFor="option3">
+            <input
+              type="checkbox"
+              id="option3"
+              checked={selectedOptions.option3}
+              onChange={() => handleCheckboxChange('option3')}
+            />
+            Moderador
+          </label>
+          <label htmlFor="option4">
+            <input
+              type="checkbox"
+              id="option4"
+              checked={selectedOptions.option4}
+              onChange={() => handleCheckboxChange('option4')}
+            />
+            Admin de Evento
+          </label>
+          <label htmlFor="option5">
+            <input
+              type="checkbox"
+              id="option5"
+              checked={selectedOptions.option5}
+              onChange={() => handleCheckboxChange('option5')}
+            />
+            Admin Total
+          </label>
+        </div>
+        <div className=" flex flex-wrap flex-col border-solid border-8 w-[80%] mr-auto">
+          <div className="flex justify-evenly"><div className="">ID</div><div>Titulo</div><div>Autor</div><div>Estilo</div><div>Ubicacion</div><div>Discurso</div><div>Edicion</div></div>
+          {selectedOptions.option1 && obrasInfo.map((obra) => (
             <ListedObra key={obra.id} obra={obra} id={obra.id} />
           )
 
           )}
-
-
-            {selectedOptions.option5 && (
-              <div className="bg-gray-500 p-3 m-2">
-               <ListedObra />
-              </div>
-            )}
-          </div>
         </div>
       </div>
-    );
-  };
-  
+    </div>
+  );
+};
 
-  export default TickOptions;
 
-  // {selectedOptions.option1 && (
-  //   <div className="bg-gray-500 p-3 m-2">
-  //     Content for Option 1
-  //   </div>
-  // )}
-  // {selectedOptions.option2 && (
-  //   <div className="bg-gray-500 p-3 m-2">
-  //     Content for Option 2
-  //   </div>
-  // )}
-  // {selectedOptions.option3 && (
-  //   <div className="bg-gray-500 p-3 m-2">
-  //     Content for Option 3
-  //   </div>
-  // )}
-  // {selectedOptions.option4 && (
-  //   <div className="bg-gray-500 p-3 m-2">
-  //     Content for Option 4
-  //   </div>
-  // )}
+export default TickOptions;
+
+// {selectedOptions.option1 && (
+//   <div className="bg-gray-500 p-3 m-2">
+//     Content for Option 1
+//   </div>
+// )}
+// {selectedOptions.option2 && (
+//   <div className="bg-gray-500 p-3 m-2">
+//     Content for Option 2
+//   </div>
+// )}
+// {selectedOptions.option3 && (
+//   <div className="bg-gray-500 p-3 m-2">
+//     Content for Option 3
+//   </div>
+// )}
+// {selectedOptions.option4 && (
+//   <div className="bg-gray-500 p-3 m-2">
+//     Content for Option 4
+//   </div>
+// )}
