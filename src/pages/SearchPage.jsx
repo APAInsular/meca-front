@@ -20,9 +20,9 @@ const SearchPage = () => {
             <div class='explolar'>
                 <h1>Explorar</h1>
                 <div class="busquedabar">
-                    <button class="monumentobtn"><img src={lupa} alt="/" class="lupa"/><p>Monumento</p></button>
+                    <button class="monumentobtn"><img src={lupa} alt="/" class="lupa"/><span class='mon'>Monumento</span></button>
                     <input type="text" placeholder="Buscar" class="buscar"/>
-                    <button class="filtrobtn"><img src={filtro} alt="/" class="filtro"/><p>Filtros</p></button>
+                    <button class="filtrobtn"><img src={filtro} alt="/" class="filtro"/><span class='fil'>Filtros</span></button>
                     <button class="searhbtn"><img src={search} alt="/" class="search"/></button>
                 </div>
             </div>

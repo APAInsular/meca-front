@@ -38,16 +38,16 @@
     width: 22px;
     height: 21px;
     margin-left: 10%;
-    margin-top: 0.8vh;
 }
 
-.monumentobtn p{
+.monumentobtn .mon{
     float: left;
     color: white;
     font-weight: bold;
     position: static;
     margin-top: -2.5vh;
     margin-left: 1.7vw;
+    content: "Monumento";
 }
 
 .buscar{
@@ -91,13 +91,14 @@
     margin-top: -28vh;
 }
 
-.filtrobtn p{
+.filtrobtn .fil{
     float: left;
     color: black;
     font-weight: bold;
     position: static;
     margin-top: -31.3vh;
     margin-left: 2.5vw;
+    content: "Filtros";
 }
 
 .searhbtn{
@@ -189,29 +190,46 @@
         width: 50%;
         margin-left: 20%;
         background: none;
-        margin-top: -3vh;
+        margin-top: -4vh;
     }
-    .filtrobtn,
+    .filtrobtn{
+        width: 40%;
+        margin-left: 69%;
+        margin-top: -4vh;
+        background: none;
+    }
     .monumentobtn{
         width: 40%;
-        margin-left: 5%;
+        margin-left: 2%;
         background: none;
+        margin-top: 1vh;
         
     }
-    .monumentobtn p{
+    .monumentobtn .mon{
         color: none;
         text-rendering: unset;
-        
+        display: none;
     }
-    .lupa,
+    .lupa{
+        margin-left: 5%;
+        background: none;
+        position: static;
+        width: 40px;
+        height: 40px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
     .filtro{
         margin-left: 5%;
         background: none;
-    }
-    .filtrobtn p{
+        position: static;
+        width: 50px;
+        height: 50px;  
+     }
+    .filtrobtn .fil{
         margin-left: 5%;
         background-color: none;
-        
+        content: none;
+        display: none;
     }
     .search{
         width: 90%;
@@ -220,7 +238,7 @@
         width: 15%;
         margin-left: 85%;
         position: static;
-        margin-top: -10vh;
+        margin-top: -5.6vh;
     }
     .opis{
         width: 90%;
