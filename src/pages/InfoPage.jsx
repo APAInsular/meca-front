@@ -12,13 +12,13 @@ const InfoPage = () => {
         {img: <Journal></Journal>, nombre: "Blog", totems: "10"},
     ]
     return (
-        <div>
-            <div className='d-flex justify-content-center align-items-center flex-wrap m-1'>
-                <div className='border border-black border-5 rounded rounded-5 m-3' style={{maxHeight: "600px"}}>
-                    <div className='m-3 m-md-5 text-center h1 mb-2 fw-bold'>Ver más</div>
-                    <div className='m-3 m-md-5 text-center h1 fw-bold'>Moverse más</div>
-                    <div className='m-3 m-md-5 text-center fs-5'><strong>Escanee el código</strong> para experimentar <strong>más.</strong></div>
-                    <div className='m-3 m-md-5 text-center fs-5'><strong>No se necesita ninguna aplicación.</strong> Es fácil.</div>
+        <div className='container-info-page'>
+            <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
+                <div className='info-box1'>
+                    <h1 className='info-pg-h1'>Ver más</h1>
+                    <h2>Moverse más</h2>
+                    <p>Escanee el código para experimentar más.</p>
+                    <p>No se necesita ninguna aplicación. Es fácil.</p>
                 </div>
                 <div className='d-flex justify-content-center m-3'>
                     <img
@@ -29,35 +29,9 @@ const InfoPage = () => {
                     />
                 </div>
             </div>
-            <div className='col-11 col-md-10 mx-auto m-3 rounded rounded-5' style={{backgroundColor: "#7B96FF"}}>
-                <div className='text-center h1' style={{color: "#263c5c"}} >Puntos de recogida</div>
-                <div className='d-flex flex-wrap'> 
-                    <div className='col-12 col-md-6 '>
-                        <div className='d-flex justify-content-around border-bottom border-white fs-4 m-3'>
-                            <span className='col-2'></span><span className='col-5 fw-bold' style={{color: "#263c5c"}}>Nombre</span><span className='col-5 fw-bold' style={{color: "#263c5c"}}>Totems</span>
-                        </div>
-                        {rewards.map((reward, index) => {
-                            const isLastItem = index === rewards.length - 1;
-                            return (
-                                <div key={index} className={'d-flex justify-content-around align-items-center fs-5 m-3' + (index !== rewards.length - 1 ? ' border-bottom border-white' : '')}>
-                                    <span className='col-2'>{reward.img}</span><span className='col-5 text-white'>{reward.nombre}</span><span className='col-5 text-white'>{reward.totems}</span>
-                                </div>  
-                            );
-                        })}
-                    </div>
-                    <div className='col-12 col-md-6'>
-                        <div className='d-flex justify-content-around border-bottom border-white fs-4 m-3'>
-                            <span className='col-2'></span><span className='col-5 fw-bold' style={{color: "#263c5c"}}>Nombre</span><span className='col-5 fw-bold' style={{color: "#263c5c"}}>Totems</span>
-                        </div>
-                        {rewards.map((reward, index) => {
-                            const isLastItem = index === rewards.length - 1;
-                            return (
-                                <div key={index} className={'d-flex justify-content-around align-items-center fs-5 m-3' + (index !== rewards.length - 1 ? ' border-bottom border-white' : '')}>
-                                    <span className='col-2'>{reward.img}</span><span className='col-5 text-white'>{reward.nombre}</span><span className='col-5 text-white'>{reward.totems}</span>
-                                </div>  
-                            );
-                        })}
-                    </div>
+            <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
+                <div className='info-box3'>
+                    <h1 className='puntos_h1'>Puntos de recogida</h1>
                 </div>
             </div>
             <div className='d-flex justify-content-center flex-wrap align-items-stretch'> 
