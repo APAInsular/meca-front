@@ -3,19 +3,19 @@ import ObrasRelacionadas from "../components/AuthorPage/ObrasRelaciondas.jsx";
 
 const AuthorPage = () => {
   return (
-    <div className="row">
-      <div className="d-flex">
+    <div className="d-flex">
+        <div className="row">
         <div
-          className="ml-[15%] col-xs-12 col-md-6 col-lg-6"
-          style={{ width: "30%" }}
+          className="ml-[10%] mx-auto col-xs-12 col-md-6 col-lg-6"
+          style={{ width: "50%" }}
         >
-          <h1 className="">Escultura Móvil</h1>
+          <h1 className="mx-auto">Escultura Móvil</h1>
           <img
-            className="w-[55%] h-auto mt-3 mx-auto"
+            className="w-[35%] h-auto mt-3 mx-auto"
             src="/Image/monumentos_.png"
             alt=""
           />
-          <p className="mt-3">
+          <p className="mt-3 d-flex justify-content-center">
             César Manrique Cabrera  Arrecife, 24 abr 1919 - Teguise, 25 sep 1992
             Pintor, escultor y artista canario conocido particularmente por los
             proyectos arquitectónicos en los que intervino como director
@@ -25,7 +25,8 @@ const AuthorPage = () => {
             Mundial de Ecología y Turismo y el Premio Europa.
           </p>
         </div>
-        <div className="col-xs-12 col-md-6 col-lg-6">
+        <div className="col-xs-12 col-md-6 col-lg-6 mb-5">
+          
           <h1 className="mx-auto">Autor</h1>
           <img
             className="w-[40%] h-auto mt-2 mx-auto"
@@ -42,7 +43,7 @@ const AuthorPage = () => {
             src="/Image/map.png"
             alt="map"
           />
-          <p className="mx-auto">
+          <p className="mx-auto d-flex">
             Parque infantil del Castillo Negro Av. la Constitución 38003 Santa
             Cruz de Tenerife
           </p>
