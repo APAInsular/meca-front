@@ -121,6 +121,8 @@ const TickOptions = () => {
     },
   ]
 
+  
+
   const obraAmmount = obrasInfo.length;
   // State to track selected options
   const [selectedOptions, setSelectedOptions] = useState({
@@ -190,7 +192,7 @@ const TickOptions = () => {
             Admin Total
           </label>
         </div>
-        <div className=" flex flex-col border-solid border-8 flex-wrap w-[70%] sm:mr-5 mr-5 lg:mr-auto">
+        <div className=" flex flex-col border-solid border-8 flex-wrap w-[75%] sm:mr-5 mr-5 lg:mr-auto">
           <div className="flex flex-wrap"><div className="sm:ml-0 lg:ml-16">ID</div><div className="sm:ml-0 lg:ml-[110px]">Titulo</div><div className="sm:ml-0 lg:ml-[200px]">Autor</div><div className="sm:ml-0 lg:ml-[110px]">Estilo</div><div className="sm:ml-0 lg:ml-[60px]">Ubicacion</div><div className="sm:ml-0 lg:ml-[60px]">Discurso</div><div className="sm:ml-0 lg:ml-[110px]">Edicion</div></div>
           {selectedOptions.option1 && obrasInfo.map((obra) => (
             <ListedObra key={obra.id} obra={obra} id={obra.id} />
@@ -210,8 +212,8 @@ const TickOptions = () => {
           )}
         </div>
       </div>
-      <div className="flex border-solid border-blue-950 border-2 w-[78%] ml-3 mt-4 justify-center">Obras Totales : {obraAmmount}</div>
-      <button className="flex mb-[150px] mt-[20px] bg-blue-950 text-white w-[200px] justify-center">Anadir Obra</button>
+      <div className="flex border-solid border-blue-950 border-2 w-[78%] ml-[15%] mt-4 justify-center">Obras Totales : {obraAmmount}</div>
+      <button className="flex mb-[150px] mt-[20px] bg-blue-950 text-white w-[200px] justify-center ml-[15%]">Anadir Obra</button>
     </div>
   );
 };
