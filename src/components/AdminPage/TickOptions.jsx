@@ -120,6 +120,8 @@ const TickOptions = () => {
       style: 'Barroco'
     },
   ]
+
+  const obraAmmount = obrasInfo.length;
   // State to track selected options
   const [selectedOptions, setSelectedOptions] = useState({
     option1: false,
@@ -141,7 +143,7 @@ const TickOptions = () => {
     <div className="flex flex-col items-center ml-5">
       <div className="flex justify-between w-full">
         <div className="mr-[20px] flex flex-nowrap flex-col">
-          <p className="text-xl">Roles</p>
+          <p className="text-4xl text-blue-950 mt-[150px]">Roles</p>
           <label htmlFor="option1">
             <input
               type="checkbox"
@@ -189,14 +191,27 @@ const TickOptions = () => {
           </label>
         </div>
         <div className=" flex flex-wrap flex-col border-solid border-8 w-[80%] mr-auto">
-          <div className="flex justify-evenly"><div className="">ID</div><div>Titulo</div><div>Autor</div><div>Estilo</div><div>Ubicacion</div><div>Discurso</div><div>Edicion</div></div>
+          <div className="flex"><div className="ml-16">ID</div><div className="ml-[110px]">Titulo</div><div className="ml-[200px]">Autor</div><div className="ml-[110px]">Estilo</div><div className="ml-[60px]">Ubicacion</div><div className="ml-[60px]">Discurso</div><div className="ml-[110px]">Edicion</div></div>
           {selectedOptions.option1 && obrasInfo.map((obra) => (
             <ListedObra key={obra.id} obra={obra} id={obra.id} />
           )
-
+          )}
+          {selectedOptions.option2 && obrasInfo.map((obra) => (
+            <ListedObra key={obra.id} obra={obra} id={obra.id} />
+          )
+          )}
+          {selectedOptions.option3 && obrasInfo.map((obra) => (
+            <ListedObra key={obra.id} obra={obra} id={obra.id} />
+          )
+          )}
+          {selectedOptions.option4 && obrasInfo.map((obra) => (
+            <ListedObra key={obra.id} obra={obra} id={obra.id} />
+          )
           )}
         </div>
       </div>
+      <div className="flex border-solid border-blue-950 border-2 w-[78%] ml-3 mt-4 justify-center">Obras Totales : {obraAmmount}</div>
+      <button className="flex mb-[150px] mt-[20px] bg-blue-950 text-white w-[200px] justify-center">Anadir Obra</button>
     </div>
   );
 };

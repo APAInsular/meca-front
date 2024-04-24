@@ -224,6 +224,8 @@
     }
     .opis{
         width: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .nazwa{
@@ -242,12 +244,12 @@
         display: block; /* Upewnij się, że tekst będzie wyświetlany jako blok */
       }
       
-      .opis {
-        content: url('../images/info.svg'); /* Dodaj ikonę jako zawartość pseudo-elementu */
-        display: inline-block; /* Pokaż ikonę na mniejszych ekranach */
-        width: 20px; /* Dostosuj szerokość i wysokość ikony do własnych potrzeb */
-        height: 20px;
-        margin-top: -5vh;
-        position: sticky;
-      }
+    .opis {
+      content: url('../images/info.svg'); /* Dodaj ikonę jako zawartość pseudo-elementu */
+      display: inline-block; /* Pokaż ikonę na mniejszych ekranach */
+      width: 20px; /* Dostosuj szerokość i wysokość ikony do własnych potrzeb */
+      height: 20px;
+      margin-top: -5vh;
+      position: sticky;
+    }
 }

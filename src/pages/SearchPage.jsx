@@ -36,7 +36,7 @@ const SearchPage = () => {
                         <p>{blok.name}</p>
                     </div>
                     <div class="opis">
-                        <p>{blok.description}</p>
+                        <span class='text'>{blok.description}</span>
                     </div>
                 </div>
             ))}
