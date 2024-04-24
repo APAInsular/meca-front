@@ -144,10 +144,11 @@ const TickOptions = () => {
   return (
     <div className="flex flex-col items-center ml-3 sm:ml-3 lg:ml-5">
       <div className="flex justify-between w-full">
-        <div className="mr-[20px] flex flex-nowrap flex-col">
+        <div className="ml-[20px] flex flex-nowrap flex-col">
           <p className="text-4xl text-blue-950 mt-[150px]">Roles</p>
           <label htmlFor="option1">
             <input
+            className="drop-shadow-lg"
               type="checkbox"
               id="option1"
               checked={selectedOptions.option1}
