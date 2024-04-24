@@ -140,7 +140,7 @@ const TickOptions = () => {
   };
 
   return (
-    <div className="flex flex-col items-center ml-5">
+    <div className="flex flex-col items-center ml-3 sm:ml-3 lg:ml-5">
       <div className="flex justify-between w-full">
         <div className="mr-[20px] flex flex-nowrap flex-col">
           <p className="text-4xl text-blue-950 mt-[150px]">Roles</p>
@@ -190,8 +190,8 @@ const TickOptions = () => {
             Admin Total
           </label>
         </div>
-        <div className=" flex flex-wrap flex-col border-solid border-8 w-[80%] mr-auto">
-          <div className="flex"><div className="ml-16">ID</div><div className="ml-[110px]">Titulo</div><div className="ml-[200px]">Autor</div><div className="ml-[110px]">Estilo</div><div className="ml-[60px]">Ubicacion</div><div className="ml-[60px]">Discurso</div><div className="ml-[110px]">Edicion</div></div>
+        <div className=" flex flex-col border-solid border-8 flex-wrap w-[70%] sm:mr-5 mr-5 lg:mr-auto">
+          <div className="flex flex-wrap"><div className="sm:ml-0 lg:ml-16">ID</div><div className="sm:ml-0 lg:ml-[110px]">Titulo</div><div className="sm:ml-0 lg:ml-[200px]">Autor</div><div className="sm:ml-0 lg:ml-[110px]">Estilo</div><div className="sm:ml-0 lg:ml-[60px]">Ubicacion</div><div className="sm:ml-0 lg:ml-[60px]">Discurso</div><div className="sm:ml-0 lg:ml-[110px]">Edicion</div></div>
           {selectedOptions.option1 && obrasInfo.map((obra) => (
             <ListedObra key={obra.id} obra={obra} id={obra.id} />
           )
