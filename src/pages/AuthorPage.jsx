@@ -1,3 +1,5 @@
+import React from "react"
+
 import Author from '../components/AuthorPage/Author.jsx';
 import ObrasRelacionadas from '../components/AuthorPage/ObrasRelaciondas.jsx';
 

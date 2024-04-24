@@ -51,7 +51,7 @@ export default function NavBar() {
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === 'Acciones' ? (
-                            <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
+                            <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
@@ -68,7 +68,7 @@ export default function NavBar() {
                                 </div>
                             </div>
                         ) : item.name === 'Explorar' ? (
-                            <div className="mx-3 justify-content-center" style={{ position: 'relative' }}>
+                            <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
