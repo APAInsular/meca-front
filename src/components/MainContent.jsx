@@ -47,11 +47,11 @@ const MainContent = () => {
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
             <Route element={<RegisterPage />} path="/registro"></Route>
-            {/* <Route element={<LoginPage />} path="/login"></Route> */}
+            <Route element={<LoginPage />} path="/login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
-            <Route element={<ContactUs />} path="/contactus"></Route>
-            <Route element={<AdminPage />} path="/adminpage"></Route>
+            <Route element={<ContactUs />} path="/contactanos"></Route>
+            <Route element={<AdminPage />} path="/admin"></Route>
         </Routes >
     )
 }
