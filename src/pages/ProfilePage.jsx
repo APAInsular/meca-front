@@ -12,7 +12,6 @@ import UserPublicationProfile from "../components/ProfilePage/UserPublicationPro
 import Flag from "../images/Flag_of_Spain.png";
 import { List, Bell, ArrowLeft, CaretRightFill, Heart, GearFill } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
-import { Link } from 'react-router-dom';
 
 const ProfilePage = () => {
     const [activeTab, setActiveTab] = useState("info");

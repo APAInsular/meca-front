@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router'
 
 import AuthorPage from '../pages/AuthorPage'
+import AdminPage from 'src/pages/AdminPage'
 import HomePage from '../pages/HomePage'
 import BlogPage from '../pages/BlogPage'
 import ActionHistorial from '../pages/ActionHistorial'
