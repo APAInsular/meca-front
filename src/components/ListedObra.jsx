@@ -13,9 +13,9 @@ const ListedObra = ({ obra, id }) => {
                 <div>{author.name}</div>
                 <div>{style}</div>
                 <button type="button"><img src="/Image/add.png" alt="" /></button>
-                <a href=""><img className="w-[50px] h-[30px]" src='/Image/newspaper-folded.png' alt="newspapper" /></a>
-                <button className="w-[50px] h-[30px]" type="button"><img className="w-[50px] h-[30px]" src="/Image/pen.png" alt="edit" /></button>
-                <button className="w-[50px] h-[30px]" type="button"><img className="w-[50px] h-[30px]" src="/Image/multiply.png" alt="cancel" /></button>
+                <a href=""><img className="w-[40px] h-[20px]" src='/Image/newspaper-folded.png' alt="newspapper" /></a>
+                <button className="w-[40px] h-[20px]" type="button"><img className="w-[40px] h-[20px]" src="/Image/pen.png" alt="edit" /></button>
+                <button className="w-[40px] h-[20px]" type="button"><img className="w-[40px] h-[20px]" src="/Image/multiply.png" alt="cancel" /></button>
             </div>
     );
 }

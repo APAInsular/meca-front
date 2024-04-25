@@ -53,8 +53,8 @@ const MainContent = () => {
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
-            <Route element={<MonumentFiltradosPage/>} path="/monumentfiltrados"></Route>
-            {/* <Route element={<AdminEventPage/>} path="/adminevent"></Route> */}
+            <Route element={<ContactUs />} path="/contactanos"></Route>
+            <Route element={<AdminPage />} path="/admin"></Route>
         </Routes >
     )
 }
