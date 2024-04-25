@@ -1,15 +1,20 @@
-import '../../styles/Author.css'
+import React from "react";
+import AuthorImg from "../../images/Cesar.png"
+
+import "../../styles/Author.css"
 
 function Author() {
     return (
-        <>
-            <div className='container'>
-                <h1 className='div1'>César Manrique</h1>
-                <img className='head-img div2' src={'/Image/Cesar.jpg'} alt="César Manrique" />
-                <p className='box-display div3 textShadow'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia laborum cumque rem per</p>
-                <p className='box-display div4 textShadow'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut dicta deserunt officia illo sint nemo accusantium fugit veritatis est. Quasi ad obcaecati saepe, esse cumque, corrupti quibusdam in unde ipsam minus consequatur asperiores consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores maxime, veritatis eligendi nesciunt minus vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cum..</p>
+        <div className="col-12 d-flex justify-content-center flex-wrap">
+                <div className="col-6">
+                    <p className="h1 col-12 mb-2">Cesar Manrique</p>
+                    <img src={AuthorImg} alt="author" className="col-12" style={{height: "auto"}}></img>
+                </div>
+                <div className="col-6">
+                    <p className="text mb-2 col-12 mt-lg-5">César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, escultory artista canario </p>
+                    <p className="text col-12">conocido particularmente por los proyectos arquitectónicos en los que intervino como director artístico.1 Compaginó su obra con la defensa de los valores medioambientales de Canarias. Buscó la armonía entre el arte y la naturaleza como espacio creativo. Obtuvo, entre otros, el Premio Mundial de Ecología y Turismo y el Premio Europa.</p>
+                </div>
             </div>
-        </>
     );
 }
 

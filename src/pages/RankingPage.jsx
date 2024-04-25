@@ -1,5 +1,5 @@
 import React from 'react';
-//import '../styles/RankingPage.css';
+import '../styles/RankingPage.css';
 
 const RankingPage = () => {
 
