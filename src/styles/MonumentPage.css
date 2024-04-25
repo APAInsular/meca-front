@@ -1,0 +1,33 @@
+.h-line {
+    display: none;
+}
+
+.desc {
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+    .h-line-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desc {
+        font-size: 16px;
+    }
+
+    .h-line {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .desc {
+        font-size: 11px;
+    }
+
+    .h-line {
+        display: block;
+    }
+}
