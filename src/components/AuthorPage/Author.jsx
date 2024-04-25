@@ -1,5 +1,5 @@
 import React from "react";
-import AuthorImg from "../../images/Cesar.png"
+import AuthorImg from "../../images/Cesar.jpg"
 
 import "../../styles/Author.css"
 

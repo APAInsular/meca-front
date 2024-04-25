@@ -1,6 +1,7 @@
 
   footer {
-    background-color: hsl(216, 42%, 25%);
+    background-color: #263C5C;
+    position:relative;
     bottom: 0;
     left: 0;
     right: 0;

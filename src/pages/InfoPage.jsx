@@ -1,9 +1,16 @@
 import React from 'react';
 import '../styles/InfoPage.css';
-import qrcode from '../images/mail.svg';
+import qrcode from '../images/SP_blog_Link.jpg';
+import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
 
 const InfoPage = () => {
+    const rewards = [
+        { img: <QrCode></QrCode>, nombre: "QR", totems: "100" },
+        { img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10" },
+        { img: <HandThumbsUp></HandThumbsUp>, nombre: "Valorar", totems: "100" },
+        { img: <Journal></Journal>, nombre: "Blog", totems: "10" },
+    ]
     return (
         <div className='container-info-page'>
             <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>

@@ -9,7 +9,6 @@ import UserPublicationProfile from "../components/ProfilePage/UserPublicationPro
 
 import { Bell, ArrowLeft, GearFill } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
-import { Link } from 'react-router-dom';
 
 const ProfilePage = () => {
     const [activeTab, setActiveTab] = useState("info");

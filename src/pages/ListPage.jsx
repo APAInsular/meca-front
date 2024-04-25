@@ -31,11 +31,11 @@ const ListPage = () => {
     }
 
 
-
     return (
-        <>
-        </>
-    )
+        <div class="ListPage">
+
+        </div>
+    );
 }
 
 export default ListPage;
