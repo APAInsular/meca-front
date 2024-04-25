@@ -11,8 +11,8 @@ const Post = ({post}) => {
         setIsFill(data);
     }   
     return (
-        <div className="mx-auto col-9 col-md-6 col-lg-3 my-5">
-            <img src={post.img} alt="author" className="col-9 mx-auto" style={{height: "auto" }}></img>
+        <div className="col-xs-12 col-sm-6 col-lg-3 my-5">
+            <img src={post.img} alt="author" className="mx-auto" style={{height: "200px", width: "200px"}}></img>
             <div className="d-flex justify-content-between align-items-center col-12 mx-auto m-1">
                 <span className="d-flex align-items-center"><img src={Usuario} alt="avatar" style={{height: "32px", width: "auto"}}></img>{post.name}</span> {post.date}
             </div>

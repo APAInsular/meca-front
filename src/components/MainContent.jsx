@@ -23,6 +23,7 @@ import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import AdminPage from 'src/pages/AdminPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
