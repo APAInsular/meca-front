@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter";
+}
+
+.tituledelpost {
+    position: relative;
+    margin: auto;
+    margin-left: 4vw;
+    
+  }
+  
+  .tituledelpost input {
+    border: none;
+    border-bottom: 2px solid black; /* Grubość i kolor linii na dole */
+    border-radius: 1px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 5px; /* Odległość od dolnej krawędzi */
+    font-size: 16px; /* Rozmiar czcionki */
+    outline: none; /* Usunięcie obramowania przy aktywnym elemencie */
+  }
+
+  .tituledelpost input[type='text']{
+    padding-left: 35%;
+    padding-top: 2vh;
+  }
+  
+  .tituledelpost label {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 16px;
+    left: 0;
+    pointer-events: none; /* Zapobieganie zdarzeniom myszy na etykiecie */
+    transition: 0.2s ease all; /* Animacja przejścia */
+  }
+  
+  .tituledelpost input:focus + label,
+  .tituledelpost input:not(:placeholder-shown) + label {
+    transform: translateY(-20px); /* Przesunięcie etykiety do góry */
+
+    color: #000000; /* Kolor etykiety */
+  }
+
+  .buttons{
+    margin-top: 3vh;
+  }
+
+  .text-tools{
+    width: 108px;
+    height: 49px;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    font-size: 16px;
+    float: left;
+    margin-left: 4vw;
+  }
+
+  .post{
+    font-size: 24px;
+    background-color: #68C8F1;
+    width: 139px;
+    height: 42px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 4vw;
+  }
+
+  .textarena{
+    margin-top: 15vh;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  textarea {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  textarea {
+    padding: 2em;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    background-color: #D9D9D9;
+    outline: none;
+    resize: none;
+  }
+
+  textarea:focus{
+    outline: none;
+  }
+
+  textarea::placeholder{
+    color: #000000;
+  }

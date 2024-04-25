@@ -22,8 +22,8 @@ import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
+import NewPostPage from 'src/pages/NewPostPage'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
-import AdminPage from 'src/pages/AdminPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
@@ -55,6 +55,7 @@ const MainContent = () => {
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
+            <Route element={<NewPostPage />} path="/newPost"></Route>
         </Routes >
     )
 }
