@@ -34,7 +34,7 @@ const AutoresDestacados = () => {
                     Autores Destacados
                 </h3>
             </div>
-            <div className="">
+            <div>
                 {autores.map((autor, index) => {
                     return (
                         <Autor key={index} autor={autor} />

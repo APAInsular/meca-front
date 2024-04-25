@@ -1,9 +1,16 @@
 import React from 'react';
 import '../styles/InfoPage.css';
-import qrcode from '../images/mail.svg';
+import qrcode from '../images/SP_blog_Link.jpg';
+import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
 
 const InfoPage = () => {
+    const rewards = [   
+        {img: <QrCode></QrCode>, nombre: "QR", totems: "100"},
+        {img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10"},
+        {img: <HandThumbsUp></HandThumbsUp>, nombre: "Valorar", totems: "100"},
+        {img: <Journal></Journal>, nombre: "Blog", totems: "10"},
+    ]
     return (
         <div className='container-info-page'>
             <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
@@ -27,64 +34,38 @@ const InfoPage = () => {
                     <h1 className='puntos_h1'>Puntos de recogida</h1>
                 </div>
             </div>
-
-
-
-
-            <div className='boxes_2 col-12'>
-                <div className='left_box1 col-6'>
-                    <div className='top_box_1_left'>
-                        <h1 className='top_box_1_text'>Nombre</h1>
-                    </div>
-                    <div className='top_box_2_right'>
-                        <h1 className='top_box_2_text'>Totems</h1>
-                    </div>
-                    <div className='icons_box_left'>
-                        <QrCode className='QrCode' />
-                        <QrCode className='QrCode' />
-                        <QrCode className='QrCode' />
-                        <QrCode className='QrCode' />
-                    </div>
-                    <div className='ranks_left'>
-                        <h1 className='platino_rank_left'>Platino</h1>
-                        <h1 className='platino_rank1_left'>Platino</h1>
-                        <h1 className='platino_rank2_left'>Platino</h1>
-                        <h1 className='platino_rank3_left'>Platino</h1>
-                    </div>
-                    <div className='totems_left'>
-                        <h1 className='platino_totems'>100000</h1>
-                        <h1 className='platino_totems1'>100000</h1>
-                        <h1 className='platino_totems2'>100000</h1>
-                        <h1 className='platino_totems3'>100000</h1>
+            <div className='d-flex justify-content-center flex-wrap align-items-stretch'> 
+                <div className='col-12 col-md-5 m-3'>
+                    <div className='rounded rounded-5 p-3' style={{backgroundColor: "#7B96FF"}}>
+                        <div className='text-center h1 d-flex justify-content-evenly fw-bold' style={{color: "#263c5c"}}><span >Nombre</span> Totems</div>
+                            <div className='m-3 d-flex fs-2 text-white align-items-center justify-content-around fw-bold'>Platino <ArrowRight></ArrowRight> 100000</div>
+                            <hr className='mx-1 text-white'></hr>
+                            <div className='m-3 d-flex fs-2 text-white align-items-center justify-content-around fw-bold'>Platino <ArrowRight></ArrowRight> 100000</div>
+                            <hr className='mx-1 text-white'></hr>
+                            <div className='m-3 d-flex fs-2 text-white align-items-center justify-content-around fw-bold'>Platino <ArrowRight></ArrowRight> 100000</div>
+                            <hr className='mx-1 text-white'></hr>
+                            <div className='m-3 d-flex fs-2 text-white align-items-center justify-content-around fw-bold'>Platino <ArrowRight></ArrowRight> 100000</div>
                     </div>
                 </div>
-
-
-
-                <div className='right_box1 col-6'>
-                    <h1 className='acerca'>Acerca de este proyecto</h1>
+                <div className='col-12 col-md-5 m-3'>
+                    <div className='rounded rounded-5 p-3' style={{backgroundColor: "#7B96FF"}}>
+                        <div className='text-center h1' style={{color: "#263c5c"}}>Acerca de este proyecto</div>
+                        <hr className='mx-1 text-black'></hr>
+                        <div className='text-center col-8 mx-auto m-3 text-white'>Después de escanear el código QR cerca del monumento, podrá obtener más información sobre ese objeto y también recibirá puntos por las tareas completadas.</div>
+                        <hr className='mx-1 text-black'></hr>
+                        <div className='text-center h1' style={{color: "#263c5c"}}>Eventos entrates</div>
+                        <hr className='mx-1 text-black'></hr>
+                    </div>
                 </div>
             </div>
-
-
-
-
-            <div className='bottom_parts d-flex justify-content-center row'>
-                <div className='maps d-flex col-xs-12 col-6'>
-                    <img className="maps" src={'/Image/maps.png'} alt="mapa" />
+            <div className='d-flex justify-content-center flex-wrap flex-md-row-reverse p-5'>
+                <div className='col-12 col-md-5 m-3 fs-3 text-center'>
+                Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.
                 </div>
-                <div className='about_qr d-flex col-xs-12 col-6 align-items-center'>
-                    <p>Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.</p>
-                </div>
+                <img className="col-12 col-md-5 text-center align-items-center d-flex justify-content-center m-3" style={{width: "30em", height: "20em"}} src={map} alt='/'/>
             </div>
-
-
-
-
-
-
         </div>
     );
-}
+};
 
 export default InfoPage;

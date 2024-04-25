@@ -21,8 +21,9 @@ import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
-import AdminPage from 'src/pages/AdminPage'
-
+import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+// import AdminEventPage from 'src/pages/AdminEventPage'
+// import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
         <Routes>
