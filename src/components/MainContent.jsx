@@ -23,6 +23,7 @@ import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import NewPostPage from 'src/pages/NewPostPage'
+import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
@@ -38,7 +39,7 @@ const MainContent = () => {
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
             <Route element={<ProfilePage/>} path="/perfil"></Route>
-            {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route>  */}
+            <Route element={<ProfilePageEditar />} path="/perfil/editar"></Route>
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
             <Route element={<RoutePage />} path="/rutas/:idRuta"></Route>
@@ -55,7 +56,7 @@ const MainContent = () => {
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
-            <Route element={<NewPostPage />} path="/newPost"></Route>
+            <Route element={<NewPostPage />} path="/perfil/newPost"></Route>
         </Routes >
     )
 }

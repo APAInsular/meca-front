@@ -1,12 +1,15 @@
 import React from "react";
 import { ArrowLeft, Share } from "react-bootstrap-icons"; 
 import ProfilePicture from "../images/Profile.png";
+import { useNavigate } from "react-router-dom";
 
 const ProfilePageEditar = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className="d-flex justify-content-between align-items-center" style={{backgroundColor: "#263c5c"}}>
-                <ArrowLeft color="white" size="40"></ArrowLeft>
+                <ArrowLeft color="white" size="40" onClick={() => navigate(-1)}></ArrowLeft>
                 <div className="text-white h1">Editar Perfil</div>
                 <Share color="white" size="40"></Share>
             </div>
