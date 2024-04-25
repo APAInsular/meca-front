@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import { useState } from "react";
 
 import UserInfoProfile from "../components/ProfilePage/UserInfoProfile"
@@ -9,8 +7,7 @@ import UserFavoriteProfile from "../components/ProfilePage/UserFavoriteProfile"
 import UserAvatarProfile from "../components/ProfilePage/UserAvatarProfile"
 import UserPublicationProfile from "../components/ProfilePage/UserPublicationProfile"
 
-import Flag from "../images/Flag_of_Spain.png";
-import { List, Bell, ArrowLeft, CaretRightFill, Heart, GearFill } from 'react-bootstrap-icons';
+import { Bell, ArrowLeft, GearFill } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
 
 const ProfilePage = () => {
@@ -55,7 +52,7 @@ const ProfilePage = () => {
                 </div>
                 <div className="col-3 d-flex justify-content-end">
                     <div style={{ borderRadius: "10px", border: "1px solid #7B96FF" }}>
-                        <img src={Flag} alt="flag" className="p-2"></img>
+                        <img src={"/Image/Flag_of_Spain.png"} alt="flag" className="p-2"></img>
                     </div>
                 </div>
             </div>
