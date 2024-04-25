@@ -1,8 +1,25 @@
 import React from 'react';
-import '../styles/RankingPage.css';
+import { useState, useEffect } from 'react';
 import avatar from '../images/usuario_avatar.png';
+import MobileRanking from 'src/components/RankingPage/MobileRanking';
+import DesktopRanking from 'src/components/RankingPage/DesktopRanking';
 
 const RankingPage = () => {
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setViewportWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const isLargeScreen = viewportWidth <= 1200;
 
     const users = [
         { name: "Nombre Usuario", statues: "Nº Estatuas" },
@@ -16,84 +33,17 @@ const RankingPage = () => {
 
     return (
         <div>
-            <div id='top'>
-                <div className="h-line-3"></div>
-                <div className="ranking-title">TOP</div>
-                <div className="h-line-2"></div>
-                <div className="usuario_top_box">
-                    <div class="usuario1 px-2">
-                        <div className="usuario_name"><img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1"></img>Nombre Usuario</div>
-                        <div className="estatuas">Nº Estatuas</div>
-                    </div>
-                </div>
-                <div className="h-line-1"></div>
-                {users.map((user, index) => (
-                    <div key={index} className="usuario_top_box">
-                        <div className="usuario px-2">
-                            <div className="usuario_name">
-                                <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                                {user.name}
-                            </div>
-                            <div className="estatuas">{user.statues}</div>
-                        </div>
-                        <div className="h-line-1"></div>
-                    </div>
-                ))}
-            </div>
-            <div id="other">
-                <div className="ranking-title">PLATINO</div>
-                {users.map((user, index) => (
-                    <div key={index} className="usuario_top_box">
-                        <div className="usuario px-2">
-                            <div className="usuario_name">
-                                <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                                {user.name}
-                            </div>
-                            <div className="estatuas">{user.statues}</div>
-                        </div>
-                        <div className="h-line-1"></div>
-                    </div>
-                ))}
-            </div>
-            <div className="ranking-title">ORO</div>
+            <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>TOP</div>
             {users.map((user, index) => (
-                <div key={index} className="usuario_top_box">
-                    <div className="usuario px-2">
-                        <div className="usuario_name">
-                            <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                            {user.name}
-                        </div>
-                        <div className="estatuas">{user.statues}</div>
+                <div key={index} style={{backgroundColor: "#DEE6F0"}} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <img src={avatar} alt="usuario avatar" className="" style={{width: "40px", height: "auto"}}/>
+                        {user.name}
                     </div>
-                    <div className="h-line-1"></div>
+                    <div className="estatuas">{user.statues}</div>
                 </div>
             ))}
-            <div className="ranking-title">PLATA</div>
-            {users.map((user, index) => (
-                <div key={index} className="usuario_top_box">
-                    <div className="usuario px-2">
-                        <div className="usuario_name">
-                            <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                            {user.name}
-                        </div>
-                        <div className="estatuas">{user.statues}</div>
-                    </div>
-                    <div className="h-line-1"></div>
-                </div>
-            ))}
-            <div className="ranking-title">BRONCE</div>
-            {users.map((user, index) => (
-                <div key={index} className="usuario_top_box">
-                    <div className="usuario px-2">
-                        <div className="usuario_name">
-                            <img src={avatar} alt="usuario avatar" className="usuario_avatar mr-1" />
-                            {user.name}
-                        </div>
-                        <div className="estatuas">{user.statues}</div>
-                    </div>
-                    <div className="h-line-1"></div>
-                </div>
-            ))}
+            {isLargeScreen ? <MobileRanking /> : <DesktopRanking/>} 
         </div>
     );
 };

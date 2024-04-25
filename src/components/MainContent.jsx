@@ -22,6 +22,7 @@ import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import AdminPage from 'src/pages/AdminPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
@@ -35,6 +36,7 @@ const MainContent = () => {
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
+            <Route element={<ProfilePage/>} path="/perfil"></Route>
             {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route>  */}
             <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
