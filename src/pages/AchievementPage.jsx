@@ -1,9 +1,9 @@
 import React from "react";
 import star from '../images/star.png';
 import ProgressBar from "@ramonak/react-progress-bar";
-
-
 import "../styles/AchievementPage.css";
+
+
 
 const AchievementPage = () => {
 
