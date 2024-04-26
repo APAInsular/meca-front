@@ -5,11 +5,11 @@ import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
 
 const InfoPage = () => {
-    const rewards = [   
-        {img: <QrCode></QrCode>, nombre: "QR", totems: "100"},
-        {img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10"},
-        {img: <HandThumbsUp></HandThumbsUp>, nombre: "Valorar", totems: "100"},
-        {img: <Journal></Journal>, nombre: "Blog", totems: "10"},
+    const rewards = [
+        { img: <QrCode></QrCode>, nombre: "QR", totems: "100" },
+        { img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10" },
+        { img: <HandThumbsUp></HandThumbsUp>, nombre: "Valorar", totems: "100" },
+        { img: <Journal></Journal>, nombre: "Blog", totems: "10" },
     ]
     return (
         <div className='container-info-page'>

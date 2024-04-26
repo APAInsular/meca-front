@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState } from "react";
 import { useHistory } from "react-router-dom"; // Dodaj useHistory
 
@@ -7,8 +8,7 @@ import UserFavoriteProfile from "../components/ProfilePage/UserFavoriteProfile"
 import UserAvatarProfile from "../components/ProfilePage/UserAvatarProfile"
 import UserPublicationProfile from "../components/ProfilePage/UserPublicationProfile"
 
-import Flag from "../images/Flag_of_Spain.png";
-import { List, Bell, ArrowLeft, CaretRightFill, Heart, GearFill, Link } from 'react-bootstrap-icons';
+import { Bell, ArrowLeft, GearFill } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
 import { useNavigate } from "react-router-dom";
 
@@ -29,16 +29,16 @@ const ProfilePage = () => {
         <div>
             <div className="navbar p-3 pt-4 d-flex justify-content-between align-items-center">
                 <div className="float-left">
-                    <button className="pl-2" onClick={() => navigate(-1)}>
-                    <ArrowLeft size="40" color="white" />
+                    <button className="pl-2" style={{ backgroundColor: "transparent" }}>
+                        <ArrowLeft size="40" color="black" />
                     </button>
                 </div>
                 <div className="d-flex justify-content-center flex-grow-1">
                     <h1 className="text-white m-0">Perfil</h1>
                 </div>
                 <div className="float-right">
-                    <button className="pr-2">
-                        <GearFill size="40" color="white" />
+                    <button className="pr-2" style={{ backgroundColor: "transparent" }}>
+                        <GearFill size="40" color="black" />
                     </button>
                 </div>
             </div>
@@ -66,7 +66,7 @@ const ProfilePage = () => {
                 </div>
                 <div className="col-3 d-flex justify-content-end">
                     <div style={{ borderRadius: "10px", border: "1px solid #7B96FF" }}>
-                        <img src={Flag} alt="flag" className="p-2"></img>
+                        <img src={"/Image/Flag_of_Spain.png"} alt="flag" className="p-2"></img>
                     </div>
                 </div>
             </div>
