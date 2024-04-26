@@ -3,18 +3,30 @@ import filtra from '../images/filtras.svg';
 import monument from '../images/monumento.svg';
 import avatar from '../images/nombreavatar.svg';
 import arrow from '../images/downarrow.svg';
+import React from 'react';
+
+import Slider from 'react-slick'
 
 // import '../styles/BlogPage.css'
 
 
 const BlogPage = () => {
-    const nombres = ["Nombre", "Nombre", "Nombre", "Nombre", "Nombre"]
+    const nombres = ["Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre"]
     const posts = [
         {img: monument, pic: avatar, name: 'Nombre Apellidos', date:'23/04/1956', title: 'Título de la entrada del blog', desc: "Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo" },
         {img: monument, pic: avatar, name: 'Nombre Apellidos', date:'23/04/1956', title: 'Título de la entrada del blog', desc: "Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo" },
         {img: monument, pic: avatar, name: 'Nombre Apellidos', date:'23/04/1956', title: 'Título de la entrada del blog', desc: "Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo" },
         {img: monument, pic: avatar, name: 'Nombre Apellidos', date:'23/04/1956', title: 'Título de la entrada del blog', desc: "Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo" },
     ]
+    var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        arrows: true,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        initialSlide: 0,
+      };
     return (
         <div>
             <div class="d-flex justify-content-center">
@@ -26,13 +38,15 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-12 mx-auto flex-wrap d-flex align-items-center justify-content-center mt-3">
-                {nombres.map((nombre, index) => (
-                    <div key={index} className="d-flex flex-column align-items-center mx-2">
-                        <div className={`rounded-circle mb-2`} style={{ height: "50px", width: "50px", backgroundColor: "gray"}}></div>
-                        <p className="mb-0">{nombre}</p>
-                    </div>
-                ))}
+            <div className="slider-container col-12 col-lg-6 mx-auto mt-3">
+                <Slider {...settings}>
+                    {nombres.map((nombre, index) => (
+                        <div key={index} className="d-flex flex-column align-items-center mx-2">
+                            <div className={`rounded-circle mb-2`} style={{ height: "50px", width: "50px", backgroundColor: "gray"}}></div>
+                            <p className="mb-0">{nombre}</p>
+                        </div>
+                    ))}
+                </Slider>
             </div>
             <div className='d-flex flex-wrap justify-content-center'>
                 {posts.map((post, index) => (
