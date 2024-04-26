@@ -30,7 +30,7 @@ const ProfilePage = () => {
             <div className="navbar p-3 pt-4 d-flex justify-content-between align-items-center">
                 <div className="float-left">
                     <button className="pl-2" style={{ backgroundColor: "transparent" }}>
-                        <ArrowLeft size="40" color="black" />
+                        <ArrowLeft size="40" color="white" onClick={() => navigate(-1)} />
                     </button>
                 </div>
                 <div className="d-flex justify-content-center flex-grow-1">
@@ -38,7 +38,7 @@ const ProfilePage = () => {
                 </div>
                 <div className="float-right">
                     <button className="pr-2" style={{ backgroundColor: "transparent" }}>
-                        <GearFill size="40" color="black" />
+                        <GearFill size="40" color="white" />
                     </button>
                 </div>
             </div>

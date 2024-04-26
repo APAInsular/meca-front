@@ -8,7 +8,7 @@
     position: relative;
     margin: auto;
     margin-left: 4vw;
-    
+    margin-top: 5em;
   }
   
   .tituledelpost input {
@@ -23,8 +23,9 @@
   }
 
   .tituledelpost input[type='text']{
-    padding-left: 35%;
+    padding-left: 8.5em;
     padding-top: 2vh;
+    
   }
   
   .tituledelpost label {
@@ -48,14 +49,15 @@
   }
 
   .text-tools{
-    width: 108px;
-    height: 49px;
-    color: black;
-    background-color: #D9D9D9;
-    border-radius: 20px;
+    max-width: 100%;
+    width: 92%;
+    height: 4em;
+    background-color: white;
+    border-radius: 2px;
     font-size: 16px;
     float: left;
     margin-left: 4vw;
+    display: none;
   }
 
   .post{
@@ -66,12 +68,18 @@
     border-radius: 20px;
     float: right;
     margin-right: 4vw;
+    margin-top: -24.5em;
+  }
+
+  .post:active{
+    background-color: #0084ff;
   }
 
   .textarena{
     margin-top: 15vh;
     margin-left: 5%;
     margin-right: 5%;
+    display: none;
   }
 
   textarea {
@@ -86,7 +94,7 @@
     max-width: 100%;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    background-color: #D9D9D9;
+    background-color: white;
     outline: none;
     resize: none;
   }
@@ -98,3 +106,57 @@
   textarea::placeholder{
     color: #000000;
   }
+
+  #tools{
+    display: none;
+  }
+
+  .editor{
+    position: static;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+@media screen and (max-width: 600px){
+  .tituledelpost {
+    position: relative;
+    margin: auto;
+    margin-left: 4vw;
+  }
+
+  .text-tools{
+    width: 108px;
+    height: 49px;
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 16px;
+    float: left;
+    margin-left: 4vw;
+    display: block;
+  }
+
+  .editor{
+    display: none;
+  }
+
+  .textarena{
+    display: block;
+  }
+
+  .post{
+    font-size: 24px;
+    background-color: #68C8F1;
+    width: 139px;
+    height: 42px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 4vw;
+    margin-top: 0;
+  }
+
+  #tools{
+    display: block;
+  }
+}
