@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import avatar from '../images/usuario_avatar.png';
 import MobileRanking from 'src/components/RankingPage/MobileRanking';
 import DesktopRanking from 'src/components/RankingPage/DesktopRanking';
-import MobileRanking from 'src/components/RankingPage/MobileRanking';
-import DesktopRanking from 'src/components/RankingPage/DesktopRanking';
 
 const RankingPage = () => {
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
