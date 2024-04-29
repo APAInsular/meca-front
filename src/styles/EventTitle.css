@@ -1,0 +1,31 @@
+
+.titleHead {
+    position: absolute;
+    background-color: #263C5C;
+    top: 15%;
+    font-size: 30px;
+    height: 7%;
+    text-align: center;
+    margin-left: 40%;
+    color: #FFFF;
+    border-radius: 20px;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 300px){
+    .titleHead{
+        top: 10%;
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 700px){
+    .titleHead{
+        width: 20%;
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,115 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-height: 300vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    justify-content: center;
+}
+
+.ruta-left {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+    height: 40%;
+
+}
+
+.ruta-h1 {
+    text-align: center;
+    margin-top: -10%;
+}
+
+.maps {
+    width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_cesar {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.vertical-line {
+    padding: 0;
+    align-items: center;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 2px;
+    height: 60%;
+}
+
+.obras-right {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+    height: 40%;
+
+}
+
+.images_obras {
+    margin-left: 10%;
+}
+
+.obra_img1 {
+    z-index: 0;
+}
+
+.obra_img2 {
+    z-index: 1;
+}
+
+.route_box1 {
+    width: 200%;
+}
+
+.route_box2 {
+    margin-top: 50px;
+    width: 200%;
+}
+
+.obra_img1_p {
+    margin-left: 10%;
+}
+
+.obra_img2_p {
+    margin-left: 10%;
+}
+
+.progress_bar_full {
+    background-color: gray;
+    width: 10px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.progress_bar_completed {
+    background-color: blue;
+    width: 10px;
+    height: 50%;
+    border-radius: 15px;
+}
+
+
+
+.obras-h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: 50%;
+    margin-top: -10%;
+}
+
+footer {
+    position: fixed;
+}

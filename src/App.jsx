@@ -1,28 +1,41 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Dashboard from 'pages/dashboard';
-import Login from 'pages/login';
-import Register from 'pages/register';
-import Home from 'pages/home';
-import ForgotPassword from 'pages/forgot-password';
-import PasswordReset from 'pages/password-reset';
-import NotFoundPage from 'pages/404';
+import React from 'react';
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
+import ProfilePage from './pages/ProfilePage';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import RegisterLoginPage from './pages/RegisterLoginPage';
 
 function App() {
+  const path = window.location.pathname.split("/")[1];
+
+  console.log(path);
+
   return (
-    <div className="antialiased">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/password-reset/:token" element={<PasswordReset />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="*" element={<NotFoundPage/>}
-        />
-      </Routes>
-    </div>
+    <div className="App m-0 p-0">
+      {
+        path === "perfil" ? (
+          <Routes>
+            <Route element={<ProfilePage />} path={`/${path}`}></Route>
+          </Routes>
+        ) : path === "registro" || path === "login" ? (
+          <Routes>
+            <Route element={<RegisterLoginPage />} path={`/${path}`}></Route>
+          </Routes>
+        ) : (
+          <>
+            <NavBar />
+            <MainContent />
+            <Footer />
+          </>
+        )
+      }
+    </div >
   );
 }
+
 
 export default App;

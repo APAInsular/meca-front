@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter";
+}
+
+.ContactUs{
+  min-height: 74.5vh;
+}
+.ContactUs1 {
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+
+  .info{
+    padding: 30px;
+    margin-left: 21%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  .info2{
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444343;
+}
+
+.pin{
+    margin-left: auto;
+    margin-right: auto;
+}
+.email{
+    margin-left: auto;
+    margin-right: auto;
+}
+.phone{
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .box {
+    display: grid;
+    float: left;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #D9D9D9;
+    border-radius: 40px;
+    height: 284px;
+    padding: 15px;
+    margin: 10px;
+    width: 382px;
+    margin-top: -2%;
+    margin-left: 6%;
+  }
+
+  h3, p{
+    text-align: center;
+}
+
+  .box h3{
+    font-size: 32px;
+    color: black;
+  }
+
+  .box p{
+    font-size: 24px;
+    font-weight:500;
+    color: black;
+  }
+
+.box .contact{
+  color: #444343;
+}
+
+.mejlo{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.phoneb{
+    border: 1px solid #263C5C;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+    font-style: bold;
+    background-color: #263C5C;
+    border-radius: 40px;
+    height: 60px;
+    font-weight: 500;
+    width: 154px;
+}
+.emailb{
+    border: 1px solid #263C5C;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+    font-style: bold;
+    background-color: #263C5C;
+    border-radius: 40px;
+    height: 60px;
+    width: 154px;
+    font-weight: 500;
+}
+.oficinab{
+    border: 1px solid #263C5C;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: bold;
+    background-color: #263C5C;
+    border-radius: 40px;
+    height: 60px;
+    width: 154px;
+    margin-bottom: 20%
+}
+
+.entegar{
+  border: 1px solid #263C5C;
+  display: block;
+  margin-left: 40px;
+  margin-right: auto;
+  margin-top: 25px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: bold;
+  background-color: #263C5C;
+  border-radius: 40px;
+  height: 60px;
+  width: 154px;
+  margin-bottom: 20%
+}
+
+.downbox{
+  background-color: #D9D9D9;
+  width: 715px;
+  height: 105px;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  border-radius: 40px;
+  justify-content: center;
+  margin-left: 28%;
+  margin-top: 20%;
+}
+
+.downboxinside{
+  width: 486px;
+  height: 70px;
+  background-color: white;
+  border-radius: 40px;
+  margin-top: 18px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.downboxinside h3{
+  color: black;
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info {
+      margin: 5% auto; /* Centralizuj i dodaj marginesy */
+      font-size: 6vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+  }
+
+  .info2 {
+      font-size: 4vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+  }
+
+  .box {
+      width: 90%; /* Użyj procentowej szerokości dla responsywności */
+      margin: 5% auto; /* Centralizuj i dodaj marginesy */
+      padding: 5%; /* Zwiększ padding */
+      font-size: 4vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+      border-radius: 10px; /* Zmniejsz zaokrąglenie */
+      margin-left: 5%;
+  }
+
+  .box h3 {
+      font-size: 6vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+  }
+
+  .box p {
+      font-size: 4vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+  }
+
+  .mejlo, .phoneb, .emailb, .oficinab {
+      font-size: 3.5vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+      width: 70%; /* Użyj procentowej szerokości dla responsywności */
+      height: 50%;
+      margin: 3% auto; /* Centralizuj i dodaj marginesy */
+  }
+
+  .entegar{
+    font-size: 3.5vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+    width: 40%; /* Użyj procentowej szerokości dla responsywności */
+    height: 40%;
+    
+    margin-left: 2%;
+    margin-top: 2.5vh;
+  }
+
+  .downbox {
+      width: 90%; /* Użyj procentowej szerokości dla responsywności */
+      margin: 5% auto; /* Centralizuj i dodaj marginesy */
+      margin-top: 80%;
+      position: relative;
+      height: 8vh;
+      margin-bottom: 20%;
+  }
+
+  .downboxinside {
+      width: 70%; /* Użyj procentowej szerokości dla responsywności */
+      margin: 5% auto; /* Centralizuj i dodaj marginesy */
+      margin-right: 4%;
+      height: 4vh;
+      margin-bottom: 5px;
+  }
+
+  .downboxinside h3 {
+      font-size: 5vw; /* Użyj jednostek viewport width (vw) do responsywnego tekstu */
+  }
+
+  .phoneb, .emailb, .oficinab{
+      width: 80%; /* Użyj procentowej szerokości dla responsywności */
+  }
+}

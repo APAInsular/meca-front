@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter";
+}
+
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo {
+    width: 50vw;
+    height: auto;
+}
+
+.v-line-1 {
+    height: 80vh;
+    width: 1px;
+    background-color: black;
+    text-align: center;
+}
+
+.form {
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;  
+}
+
+.title {
+    font-size: 24px;
+}
+
+.input-text {
+    width: 20vw;
+    height: 2em;
+    border-radius: 10px;
+    border: 3px solid #263C5C;
+    font-size: 24px;
+}
+
+.submit-button {
+    width: 7.5vw;
+    height: 2em;
+    border-radius: 10px;
+    border: 3px solid #263C5C;
+    background-color: #263C5C;
+    font-size: 24px;
+    color: white;
+}
+
+.social-login {
+    display: flex;
+}
+
+.google-btn , .facebook-btn {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-btn {
+    background-color: orange;
+}
+
+.facebook-btn {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 1400px) {
+    .v-line-1 {
+        display: none;
+    }
+
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 50vw;
+        height: auto;
+    }
+    .input-text {
+        width: 60vw;
+        height: 3em;
+        border-radius: 10px;
+        border: 3px solid #263C5C;
+        font-size: 24px;
+    }
+    
+    .submit-button {
+        width: 45vw;
+        height: 3em;
+        border-radius: 10px;
+        border: 3px solid #263C5C;
+        background-color: #263C5C;
+        font-size: 24px;
+        color: white;
+    }
+
+    .title {
+        background-color: white;
+        color: black;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .v-line-1 {
+        display: none;
+    }
+
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        background-color: white;
+        color: black;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .logo {
+        width: 90vw;
+    }
+    .input-text {
+        width: 10em;
+        height: 6vh;
+        border-radius: 10px;
+        border: 3px solid #263C5C;
+        font-size: 24px;
+    }
+    
+    .submit-button {
+        width: 8em;
+        height: 6vh;
+        border-radius: 10px;
+        border: 3px solid #263C5C;
+        background-color: #263C5C;
+        font-size: 24px;
+        color: white;
+    }
+
+    .google-btn , .facebook-btn {
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}   
