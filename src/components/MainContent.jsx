@@ -10,29 +10,23 @@ import AchievementPage from '../pages/AchievementPage'
 import EventPage from '../pages/EventPage'
 import FavoritePage from '../pages/FavoritePage'
 import MonumentPage from '../pages/MonumentPage'
-import ProfilePage from '../pages/ProfilePage'
 import RankingPage from '../pages/RankingPage'
 import RoutePage from '../pages/RoutePage'
 import SearchPage from '../pages/SearchPage'
 import InfoPage from '../pages/InfoPage'
-import RegisterPage from '../pages/RegisterPage'
 import ListPage from '../pages/ListPage'
 import EntradaPage from '../pages/EntradaPage'
 import TermsConditionsPage from '../pages/TermsConditionsPage'
 import UnEventPage from "../pages/UnEventPage"
-import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
-import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import RegisterLoginPage from 'src/pages/RegisterLoginPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
         <Routes>
             <Route element={<HomePage />} path="/"></Route>
-            <Route element={<ListPage />} path="/autores"></Route>
-            <Route element={<ListPage />} path="/estilos"></Route>
-            <Route element={<ListPage />} path="/eventos"></Route>
-            <Route element={<ListPage />} path="/monumentos"></Route>
+            <Route element={<ListPage />} path="/autores, /estilos, /eventos, /monumentos" />
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
@@ -49,9 +43,7 @@ const MainContent = () => {
             <Route element={<ActionHistorial />} path="/notificaciones"></Route>
             <Route element={<RankingPage />} path="/clasificacion"></Route>
             <Route element={<InfoPage />} path="/info"></Route>
-            <Route element={<RegisterPage />} path="/registro"></Route>
-            <Route element={<LoginPage />} path="/login"></Route>
-            <Route element={<ContactUs />} path="/contactanos"></Route>
+            <Route element={<RegisterLoginPage />} path="/registro, /login"></Route>
             <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
