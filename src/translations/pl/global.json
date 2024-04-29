@@ -1,0 +1,143 @@
+{
+    "navbar": {
+        "start": "Start",
+        "actions": "Działania",
+        "achievements": "Osiągnięcia",
+        "events": "Wydarzenia",
+        "ranking": "Klasyfikacja",
+        "explore": "Wyszukiwarka",
+        "plays": "Dzieła",
+        "authors": "Autorzy",
+        "styles": "Style",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "info": "Informacje"
+    },
+    "achievementPage": {
+        "achievement" : "Osiągnięcia",
+        "achievement1" : "Odwiedź 5 liczb",
+        "achievement2" : "Ukończ dwie trasy tego samego dnia",
+        "achievement3" : "Osiągnięcie#3"
+    },
+    "eventPage":{
+        "events": "Wydarzenia",
+        "seeMore": "Zobacz więcej"
+    },
+    "rankingPage": {
+        "top": "TOP",
+        "platen": "PLATYNA",
+        "gold": "ZŁOTO",
+        "silver": "SREBRO",
+        "bronze": "BRĄZ",
+        "statues": "Statuetki"
+    },
+    "monumentPage": {
+        "monumentName": "Ruchoma rzeźba",
+        "monumentDesc": "César Manrique Cabrera Arrecife, 24 kwietnia 1919 - Teguise, 25 września 1992 Kanaryjski malarz, rzeźbiarz i artysta, znany przede wszystkim z projektów architektonicznych, w które był zaangażowany jako dyrektor artystyczny. Swoją pracę łączył z obroną wartości środowiskowych Wysp Kanaryjskich. Szukał harmonii między sztuką a naturą jako przestrzenią twórczą. Zdobył między innymi Światową Nagrodę Ekologii i Turystyki oraz Nagrodę Europa.",
+        "monumentAuthor": "Autor",
+        "monumentAuthorDesc": "César Manrique (Arrecife, 24 kwietnia 1919 - Teguise, 25 września 1992) kanaryjski malarz, rzeźbiarz i artysta.",
+        "monumentLocation": "Lokalizacja",
+        "monumentLocationDesc": "Plac zabaw Castillo Negro Av. la Constitución 38003 Santa Cruz de Tenerife",
+        "monumentRuta": "Ścieżka",
+        "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24 kwietnia 1919 - Teguise) Malarz, rzeźbiarz i artysta z Wysp Kanaryjskich, znany przede wszystkim ze swoich projektów architektonicznych."
+    },
+    "authorPage": {
+        "authorDesc": "César Manrique Cabrera (Arrecife, 24 kwietnia 1919 - Teguise) Malarz, rzeźbiarz i artysta z Wysp Kanaryjskich, znany przede wszystkim z projektów architektonicznych, w które był zaangażowany jako dyrektor artystyczny.1 Łączył swoją pracę z obroną wartości środowiskowych Wysp Kanaryjskich. Szukał harmonii między sztuką a naturą jako przestrzenią twórczą. Zdobył między innymi Światową Nagrodę Ekologii i Turystyki oraz Nagrodę Europa."
+    },
+    "blogPage": {
+        "search": "Szukaj"
+    },
+    "contactPage": {
+        "contactUs": "Skontaktuj się z nami",
+        "contactDesc": "Jeśli masz jakieś pytania lub uwagi, napisz do nas!",
+        "contactEmail": "Email",
+        "contactEmailButton": "NAPISZ",
+        "contactPhone": "Telefon",
+        "contactPhoneButton": "ZADZWOŃ",
+        "contactOffice": "Biuro",
+        "contactOfficeButton": "LOKALIZACJA",
+        "contactFormButton": "Wyślij",
+        "contactFormText": "Wyślij formularz"
+    },
+    "infoPage": {
+        "infoText": "Skanując kody QR w pobliżu zabytków i eksplorując je, będziesz nagradzany punktami za ukończone zadania.",
+        "infoPoints": "Zebrane punkty",
+        "infoName": "Nazwa",
+        "infoTotems": "Totemy"
+    },
+    "profilePage": {
+        "profileText": "Profil",
+        "profileCreatPost": "Stwórz Wpis",
+        "profileEditar": "Edytuj Profil",
+        "profileInformation": "Dane Personalne",
+        "profileFavorite": "Ulubione",
+        "profileAvatar": "Zdjecia Profilowe",
+        "profilePosts": "Publikacje"
+    },
+    "adminEventPage": {
+        "eventInfo": "Informacje dotyczące trasy",
+        "eventRoute": "Trasa",
+        "eventStop": "Zatrzymaj się",
+        "eventObra": "Praca"
+    },
+    "adminPage": {
+        "adminID": "ID",
+        "adminTitle": "Tytuł",
+        "adminAuthor": "Autor",
+        "adminStyle": "Styl",
+        "adminLocation": "Lokalizacja",
+        "adminSpeech": "Wypowiedź",
+        "adminEdtion": "Wersja",
+        "adminRoles": "Role",
+        "adminUser": "Użytkownik Publiczny",
+        "adminUserPrivate": "Użytkownik Prywatny",
+        "adminModerator": "Moderator",
+        "adminEvent": "Administrator Wydarzeń",
+        "adminTotal": "Wszyscy Administratorzy",
+        "adminTotalPlays": "Liczba Obrazów :",
+        "adminAdd": "Dodaj pracę"
+    },
+    "loginPage": {
+        "loginTitle": "ROZPOCZĘCIE SESJI",
+        "loginPassword": "Hasło",
+        "loginButton": "Zaloguj się"
+    },
+    "monumentFiltradosPage": {
+        "monumentList": "Lista prac RZEŹBY W OBSZARZE PLAYA BLANCA",
+        "monumentDesc": ""
+    },
+    "editarProfile": {
+        "editarTitle": "Edytuj Profil",
+        "editarName": "Nazwa",
+        "editarPhone": "Telefon",
+        "editarPassword": "Hasło",
+        "editarUpdate": "Aktualizuj"
+    },
+    "registerPage": {
+        "registerTitle": "REJESTRACJA",
+        "registerName": "Imię",
+        "registerSurname": "Nazwisko",
+        "registerCity": "Miasto",
+        "registerCountry": "Kraj",
+        "registerNationality": "Narodowość",
+        "registerPassword": "Hasło",
+        "registerRepeat": "Powtórz Hasło",
+        "registerButton": "Zarejestruj się"
+    },
+    "searchPage": {
+        "searchTitle": "Wyszukiwarka",
+        "searchText": "Szukaj",
+        "searchFiltres": "Filtry"
+    },
+    "termsAndCondition": {
+        "termsTitle": "Twoja prywatność jest ważna",
+        "termsAgreement": "Umowa prawna: Akceptacja regulaminu stanowi prawnie wiążącą umowę między użytkownikiem a dostawcą usługi lub produktu. Warunki te opisują prawa i obowiązki obu stron, zapewniając jasne zrozumienie relacji.",
+        "termsProtection": "Ochrona użytkownika: Warunki korzystania z usługi często zawierają klauzule opisujące, w jaki sposób dane użytkownika będą przetwarzane i chronione. Ma to kluczowe znaczenie dla ochrony danych osobowych i zapewnienia, że usługa jest zgodna z odpowiednimi przepisami dotyczącymi prywatności. Wyrażając zgodę na te warunki, użytkownicy wyraźnie zgadzają się na opisane praktyki przetwarzania danych.",
+        "termsSecurity": "Bezpieczeństwo i zgodność: Wiele warunków szczegółowo określa środki bezpieczeństwa wdrożone przez usługę w celu ochrony danych użytkownika. Akceptacja oznacza potwierdzenie tych protokołów bezpieczeństwa, zapewniając użytkowników, że dostawca zobowiązuje się do utrzymania bezpiecznego środowiska.",
+        "termsGuidelines": "Wytyczne dotyczące użytkowania: Warunki określają, w jaki sposób użytkownicy powinni wchodzić w interakcje z platformą, co jest dozwolone, a co zabronione, oraz możliwe konsekwencje naruszeń. Pomaga to utrzymać pozytywne i pełne szacunku środowisko online.",
+        "termsIntellectual": "Własność intelektualna i prawa autorskie: Zgoda na warunki często wiąże się z uznaniem polityki platformy w zakresie własności intelektualnej i praw autorskich. Ma to kluczowe znaczenie dla zrozumienia, w jaki sposób użytkownicy mogą wykorzystywać, udostępniać lub rozpowszechniać treści w granicach usługi.",
+        "termsUpdates": "Aktualizacje i zmiany: Usługodawcy mogą zastrzec sobie prawo do aktualizacji lub modyfikacji swoich warunków. Użytkownicy, akceptując te warunki, zgadzają się być informowani o wszelkich zmianach i przestrzegać zaktualizowanych warunków. Gwarantuje to, że użytkownicy są świadomi wszelkich zmian w umowie.",
+        "termsResoluton": "Rozstrzyganie sporów: Warunki często zawierają klauzule dotyczące mechanizmów rozstrzygania sporów, takich jak arbitraż lub mediacja. Akceptacja tych warunków oznacza zgodę użytkownika na te procesy w przypadku sporów.",
+        "termsLimitations": "Ograniczenia usługi: Warunki mogą opisywać wszelkie ograniczenia lub restrykcje dotyczące korzystania z usługi. Użytkownicy powinni być świadomi tych ograniczeń, aby upewnić się, że korzystają z platformy w ramach określonych limitów."
+    }
+}

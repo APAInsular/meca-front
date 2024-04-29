@@ -1,7 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 import avatar from '../../images/usuario_avatar.png';
 import { ArrowLeftCircleFill, ArrowRightCircleFill } from "react-bootstrap-icons";
 import { useTranslation } from 'react-i18next';
@@ -16,8 +14,8 @@ const DesktopRanking = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <ArrowLeftCircleFill  size={1000} color="black"></ArrowLeftCircleFill>,
-        nextArrow: <ArrowRightCircleFill size={1000} color="black"></ArrowRightCircleFill>
+        // prevArrow: <ArrowLeftCircleFill  size={1000} color="black"></ArrowLeftCircleFill>,
+        // nextArrow: <ArrowRightCircleFill size={1000} color="black"></ArrowRightCircleFill>
       };
     const users = [
         { name: "Nombre Usuario", statues: "Nº Estatuas" },

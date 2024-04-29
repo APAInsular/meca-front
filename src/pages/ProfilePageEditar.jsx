@@ -35,6 +35,7 @@ const ProfilePageEditar = () => {
                 <div className="d-flex justify-content-center"> 
                     <button type="button" className="btn btn-dark text-white col-8 col-lg-4 m-3">{t("editarProfile.editarUpdate")}</button>
                 </div>  
+                <br></br><br></br><br></br><br></br>
             </div>
         </div>
     );

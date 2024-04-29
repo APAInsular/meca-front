@@ -1,0 +1,143 @@
+{
+    "navbar": {
+        "start": "ホーム",
+        "actions": "行動",
+        "achievements": "実績",
+        "events": "イベント",
+        "ranking": "ランキング",
+        "explore": "エクスペリエンス",
+        "plays": "作品",
+        "authors": "著者紹介",
+        "styles": "スタイル",
+        "blog": "ブログ",
+        "contact": "連絡先",
+        "info": "インフォメーション"
+    },
+    "achievementPage": {
+        "achievement" : "実績",
+        "achievement1" : "5つの数字を見る",
+        "achievement2" : "同じ日に2つのルートを完走する",
+        "achievement3" : "業績#3"
+    },
+    "eventPage":{
+        "events": "イベント",
+        "seeMore": "もっと見る"
+    },
+    "rankingPage": {
+        "top": "トップ",
+        "platen": "プラチナ",
+        "gold": "ゴールド",
+        "silver": "シルバー",
+        "bronze": "ブロンズ",
+        "statues": "彫像"
+    },
+    "monumentPage": {
+        "monumentName": "移動彫刻",
+        "monumentDesc": "セサル・マンリケ・カブレラ Arrecife, 1919年4月24日 - Teguise, 1992年9月25日 カナリア出身の画家、彫刻家、芸術家で、特に芸術監督として関わった建築プロジェクトで知られる。カナリア諸島の環境保護に力を注いだ。芸術と創造空間としての自然の調和を追求。世界エコロジーツーリズム賞、ヨーロッパ賞などを受賞。",
+        "monumentAuthor": "著者",
+        "monumentAuthorDesc": "セサル・マンリケ（アレシフェ、1919年4月24日-テグイセ、1992年9月25日）カナリア諸島の画家、彫刻家、芸術家",
+        "monumentLocation": "所在地",
+        "monumentLocationDesc": "カスティーリョ・ネグロ運動場 Av. la Constitución 38003 サンタ・クルス・デ・テネリフェ",
+        "monumentRuta": "リレーションシップ・ルート",
+        "monumentRutaDesc": "セサル・マンリケ・カブレラ（アレシフェ、1919年4月24日-テギーズ）カナリア諸島出身の画家、彫刻家、芸術家で、特に建築プロジェクトで知られる。"
+    },
+    "authorPage": {
+        "authorDesc": "セサル・マンリケ・カブレラ（1919年4月24日-テギーズ） カナリア諸島出身の画家、彫刻家、芸術家で、特に芸術監督として関わった建築プロジェクトで知られる1。カナリア諸島の環境価値を守るために、芸術と創造空間としての自然の調和を追求した。世界エコロジーツーリズム賞、ヨーロッパ賞などを受賞。"
+    },
+    "blogPage": {
+        "search": "検索"
+    },
+    "contactPage": {
+        "contactUs": "お問い合わせ",
+        "contactDesc": "ご質問やご意見がありましたら、お気軽にお寄せください！",
+        "contactEmail": "電子メール",
+        "contactEmailButton": "コンタクト",
+        "contactPhone": "電話",
+        "contactPhoneButton": "コール",
+        "contactOffice": "オフィス",
+        "contactOfficeButton": "ロケーション",
+        "contactFormButton": "エンテガー",
+        "contactFormText": "フォームを送信する"
+    },
+    "infoPage": {
+        "infoText": "モニュメントの近くでQRコードをスキャンして探索すると、完了したタスクに応じてポイントがもらえる。",
+        "infoPoints": "コレクション・ポイント",
+        "infoName": "名称",
+        "infoTotems": "トーテム"
+    },
+    "profilePage": {
+        "profileText": "プロフィール",
+        "profileCreatPost": "ポスト作成",
+        "profileEditar": "プロフィール編集",
+        "profileInformation": "個人情報",
+        "profileFavorite": "お気に入り",
+        "profileAvatar": "アバター",
+        "profilePosts": "出版物"
+    },
+    "adminEventPage": {
+        "eventInfo": "ルート情報",
+        "eventRoute": "ルート",
+        "eventStop": "ストップ",
+        "eventObra": "仕事"
+    },
+    "adminPage": {
+        "adminID": "身分証明書",
+        "adminTitle": "タイトル",
+        "adminAuthor": "著者",
+        "adminStyle": "スタイル",
+        "adminLocation": "所在地",
+        "adminSpeech": "スピーチ",
+        "adminEdtion": "エディション",
+        "adminRoles": "役割",
+        "adminUser": "一般ユーザー",
+        "adminUserPrivate": "個人ユーザー",
+        "adminModerator": "司会",
+        "adminEvent": "イベント管理者",
+        "adminTotal": "管理者合計",
+        "adminTotalPlays": "全作品 :",
+        "adminAdd": "仕事の追加"
+    },
+    "loginPage": {
+        "loginTitle": "セッション開始",
+        "loginPassword": "パスワード",
+        "loginButton": "入る"
+    },
+    "monumentFiltradosPage": {
+        "monumentList": "プラヤ・ブランカ地区の彫刻作品リスト",
+        "monumentDesc": ""
+    },
+    "editarProfile": {
+        "editarTitle": "プロフィール編集",
+        "editarName": "名称",
+        "editarPhone": "電話",
+        "editarPassword": "パスワード",
+        "editarUpdate": "更新"
+    },
+    "registerPage": {
+        "registerTitle": "登録",
+        "registerName": "名称",
+        "registerSurname": "苗字",
+        "registerCity": "都市",
+        "registerCountry": "国名",
+        "registerNationality": "国籍",
+        "registerPassword": "パスワード",
+        "registerRepeat": "リピートパスワード",
+        "registerButton": "入る"
+    },
+    "searchPage": {
+        "searchTitle": "エクスペリエンス",
+        "searchText": "検索",
+        "searchFiltres": "フィルター"
+    },
+    "termsAndCondition": {
+        "termsTitle": "プライバシーは大切です",
+        "termsAgreement": "法的合意：利用規約の受諾により、利用者とサービスまたは製品の提供者との間に法的拘束力のある合意が成立する。これらの条件は、両当事者の権利と責任を記述し、関係の明確な理解を保証します。",
+        "termsProtection": "利用者保護：利用規約には、利用者データがどのように扱われ、保護されるかを記した条項が含まれていることが多い。これは、個人情報を保護し、サービスが関連するプライバシー法に準拠していることを保証するために不可欠です。これらの条件に同意することで、ユーザーは明示的に記載されたデータの取り扱い方法に同意することになります。",
+        "termsSecurity": "セキュリティとコンプライアンス：多くの利用規約は、ユーザーデータを保護するためにサービスが実施するセキュリティ対策について詳述している。受諾は、これらのセキュリティ・プロトコルを承認することを意味し、プロバイダーが安全な環境の維持に尽力していることをユーザーに保証する。",
+        "termsGuidelines": "利用ガイドライン: 利用規約は、ユーザーがどのようにプラットフォームとやりとりすることが期待されるか、何が許可され、何が禁止されるか、違反した場合に起こりうる結果を明記します。これは、前向きで礼儀正しいオンライン環境を維持するのに役立ちます。",
+        "termsIntellectual": "知的財産と著作権：利用規約への同意には、プラットフォームの知的財産と著作権のポリシーを認めることが含まれることが多い。これは、ユーザーがサービスの境界内でコンテンツをどのように使用、共有、配布できるかを理解する上で極めて重要である。",
+        "termsUpdates": "更新および変更：サービスプロバイダは、規約を更新または変更する権利を留保する場合があります。利用者は、本規約に同意することにより、いかなる変更についても通知を受け、更新された規約を遵守することに同意するものとします。これにより、利用者は規約の変更を確実に認識することができます。",
+        "termsResoluton": "紛争解決：利用規約には、仲裁や調停などの紛争解決メカニズムに関する条項が含まれていることが多い。これらの条項を受け入れることは、意見の相違が生じた場合、利用者がこれらの手続きに同意することを意味する。",
+        "termsLimitations": "サービスの制限：利用規約には、サービスの利用に関する制限や制約が記載されている場合があります。利用者はこれらの制限を認識し、所定の範囲内でプラットフォームを利用するようにしてください。"
+    }
+}

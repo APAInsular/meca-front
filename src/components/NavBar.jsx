@@ -59,7 +59,7 @@ export default function NavBar() {
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
                                     <Link to={"/logros"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{t("navbar.achievments")}</strong>
+                                        <strong className='text-white'>{t("navbar.achievements")}</strong>
                                     </Link>
                                     <Link to={"/eventos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
                                         <strong className='text-white'>{t("navbar.events")}</strong>
