@@ -24,9 +24,8 @@ import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import NewPostPage from 'src/pages/NewPostPage'
 import ProfilePageEditar from 'src/pages/ProfilePageEditar'
-import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+// import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
-// import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
         <Routes>

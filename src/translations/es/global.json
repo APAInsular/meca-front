@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "start": "Inicio",
+        "actions": "Acciones",
+        "achievements": "Logros",
+        "events": "Eventos",
+        "ranking": "Clasificación",
+        "search": "Explorar",
+        "plays": "Obras",
+        "autors": "Autores",
+        "styles": "Estilos",
+        "blog": "Blog",
+        "contact": "Contáctanos",
+        "info": "Información"
+    },
+    "achievementPage": {
+        "achievement" : "Logros",
+        "achievement1" : "Visita 5 figuras",
+        "achievement2" : "Completa dos rutas en el mismo dia",
+        "achievement3" : "Logro#3"
+    },
+    "eventPage":{
+        "events": "Eventos",
+        "eventTitle": "Event",
+        "eventAuthor": "Este evento es creado por Chuck Norris",
+        "eventDesc": "En este evento, podrás experimentar muchas cosas diferentes y ganar puntos de evento.",
+        "seeMore": "Ver más"
+    },
+    "rankingPage":{
+        "":""
+    }
+}
