@@ -1,0 +1,143 @@
+{
+    "navbar": {
+      "start": "Inizio",
+      "actions": "Azioni",
+      "achievements": "Logros",
+      "events": "Eventi",
+      "ranking": "Classificazione",
+      "explore": "Esplorare",
+      "plays": "Obra",
+      "authors": "Autori",
+      "styles": "Stilos",
+      "blog": "Blog",
+      "contact": "Contactanos",
+      "info": "Informazioni"
+    },
+    "achievementPage": {
+      "achievement": "Logros",
+      "achievement1": "Visita 5 figure",
+      "achievement2": "Completa due percorsi nello stesso giorno",
+      "achievement3": "Logro"
+    },
+    "eventPage": {
+      "events": "Eventi",
+      "seeMore": "Vedi di più"
+    },
+    "rankingPage": {
+      "top": "SUPERIORE",
+      "platen": "PLATINO",
+      "gold": "ORO",
+      "silver": "PLATA",
+      "bronze": "BRONZO",
+      "statues": "Stati"
+    },
+    "monumentPage": {
+      "monumentName": "Escultura mobile",
+      "monumentDesc": "César Manrique Cabrera Arrecife, 24 abr 1919 - Teguise, 25 set 1992 Pintor, artista scultore canario conosciuto particolarmente per los proyectos arquitectónicos en los que intervino como direttore artistico. ",
+      "monumentAuthor": "Autore",
+      "monumentAuthorDesc": "César Manrique (Arrecife, 24 aprile 1919 - Teguise, 25 settembre 1992) Pintor, artista scultoreo canario",
+      "monumentLocation": "Ubicazione",
+      "monumentLocationDesc": "Parco infantile del Castillo Negro Av. ",
+      "monumentRuta": "Ruta Relacionidas",
+      "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, artista scultore canario conosciuto particolarmente per los proyectos arquitectónicos."
+    },
+    "authorPage": {
+      "authorDesc": "César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, artista scultore canario conosciuto particolarmente dai progetti architettonici in quelli che intervino come direttore artistico.1 Compaginó su obra con la defensa de los valores medioambientales de Canarias. "
+    },
+    "blogPage": {
+      "search": "Busqueda"
+    },
+    "contactPage": {
+      "contactUs": "Contacta con nosotras",
+      "contactDesc": "Hai qualche domanda o commento? ",
+      "contactEmail": "E-mail",
+      "contactEmailButton": "CONTATTO",
+      "contactPhone": "Telefono",
+      "contactPhoneButton": "LLAMAR",
+      "contactOffice": "Oficina",
+      "contactOfficeButton": "UBICAZIONE",
+      "contactFormButton": "Integar",
+      "contactFormText": "Invia un formulario"
+    },
+    "infoPage": {
+      "infoText": "Quando esplori i codici QR per cercare i monumenti ed esplorarli, sarai ricompensato con punti per le attività completate.",
+      "infoPoints": "Punti di riconoscimento",
+      "infoName": "Nome",
+      "infoTotems": "Totem"
+    },
+    "profilePage": {
+      "profileText": "Profilo",
+      "profileCreatPost": "Crea Post",
+      "profileEditar": "Modifica profilo",
+      "profileInformation": "Dati personali",
+      "profileFavorite": "Preferiti",
+      "profileAvatar": "Avatar",
+      "profilePosts": "Pubblicazioni"
+    },
+    "adminEventPage": {
+      "eventInfo": "Informazioni sulla strada",
+      "eventRoute": "Ruta",
+      "eventStop": "Parada",
+      "eventObra": "Obra"
+    },
+    "adminPage": {
+      "adminID": "ID",
+      "adminTitle": "Titolo",
+      "adminAuthor": "Autore",
+      "adminStyle": "Stile",
+      "adminLocation": "Ubicazione",
+      "adminSpeech": "Discorso",
+      "adminEdtion": "Edizione",
+      "adminRoles": "Ruoli",
+      "adminUser": "Usuario Pubblico",
+      "adminUserPrivate": "Usuario Privato",
+      "adminModerator": "Moderatore",
+      "adminEvent": "Amministratore dell'evento",
+      "adminTotal": "Totale amministrativo",
+      "adminTotalPlays": "Operazioni totali:",
+      "adminAdd": "Anadir Obra"
+    },
+    "loginPage": {
+      "loginTitle": "INIZIA SESSIONE",
+      "loginPassword": "Contraseña",
+      "loginButton": "Entra"
+    },
+    "monumentFiltradosPage": {
+      "monumentList": "Lista de Obras ESCULTURAS EN LA ZONA DE PLAYA BLANCA",
+      "monumentDesc": ""
+    },
+    "editarProfile": {
+      "editarTitle": "Modifica profilo",
+      "editarName": "Nome",
+      "editarPhone": "Telefono",
+      "editarPassword": "Contraseña",
+      "editarUpdate": "Aggiornare"
+    },
+    "registerPage": {
+      "registerTitle": "REGISTRATI",
+      "registerName": "Nome",
+      "registerSurname": "Apellidos",
+      "registerCity": "Città",
+      "registerCountry": "País",
+      "registerNationality": "Nazionalità",
+      "registerPassword": "Contraseña",
+      "registerRepeat": "Ripetere Contraseña",
+      "registerButton": "Entra"
+    },
+    "searchPage": {
+      "searchTitle": "Esplorare",
+      "searchText": "Buscare",
+      "searchFiltres": "Filtri"
+    },
+    "termsAndCondition": {
+      "termsTitle": "La tua privacy è importante",
+      "termsAgreement": "Acuerdo Legal: La ceptación de los términos y condiciones stabilisce un acuerdo legalmente vinculante tra l'usuario e il fornitore del servizio o del prodotto. ",
+      "termsProtection": "Protezione dell'utente: i termini e le condizioni del menu includono clausole che descrivono come maneggiare e proteggere i dati dell'utente. ",
+      "termsSecurity": "Sicurezza e compatibilità: molti termini e condizioni dettagliano le misure di sicurezza implementate dal servizio per proteggere i dati dell'utente. ",
+      "termsGuidelines": "Procedure d'uso: i termini e le condizioni specifiche come si spera che gli utenti interagiscano con la piattaforma, cosa sia consentito o proibito e le possibili conseguenze delle infrazioni. ",
+      "termsIntellectual": "Proprietà intellettuale e diritti d'autore: accettare i termini e le condizioni a menudo implica riconoscere la politica di proprietà intellettuale e diritti d'autore della piattaforma. ",
+      "termsUpdates": "Aggiornamenti e modifiche: i fornitori di servizi possono prenotare il diritto di aggiornamento o modificare i termini e le condizioni. ",
+      "termsResoluton": "Risoluzione delle controversie: i termini e le condizioni del menu includono clausole sui meccanismi di risoluzione delle controversie, come arbitrato o mediazione. ",
+      "termsLimitations": "Limitazioni del servizio: Termini e condizioni possono descrivere qualsiasi limitazione o restrizione nell'uso del servizio. "
+    }
+  }

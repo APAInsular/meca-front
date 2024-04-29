@@ -1,0 +1,147 @@
+{
+    "navbar" : {
+        "start": "",
+        "actions": "",
+        "achievments": "",
+        "events": "",
+        "ranking": "",
+        "explore": "",
+        "plays": "",
+        "authors": "",
+        "styles": "",
+        "blog": "",
+        "contact": "",
+        "info": ""
+    },
+    "achievmentPage" : {
+        "achievment": "",
+        "achievment1": "",
+        "achievment2": "",
+        "achievment3": ""
+    },
+    "eventPage" : {
+        "events": "",
+        "eventTitle": "",
+        "eventAuthor": "",
+        "eventDesc": "",
+        "seeMore": ""
+    },
+    "rankingPage": {
+        "top": "",
+        "platen": "",
+        "gold": "",
+        "silver": "",
+        "bronze": "",
+        "statues": ""
+    },
+    "monumentPage": {
+        "monumentName": "",
+        "monumentDesc": "",
+        "monumentAuthor": "",
+        "monumentAuthorDesc": "",
+        "monumentLocation": "",
+        "monumentLocationDesc": "",
+        "monumentRuta": "",
+        "monumentRutaDesc": ""
+    },
+    "authorPage": {
+        "authorName": "",
+        "authorDesc": ""
+    },
+    "blogPage": {
+        "search": ""
+    },
+    "contactPage": {
+        "contactUs": "",
+        "contactDesc": "",
+        "contactEmail": "",
+        "contactEmailButton": "",
+        "contactPhone": "",
+        "contactPhoneButton": "",
+        "contactOffice": "",
+        "contactOfficeButton": "",
+        "contactFormButton": "",
+        "contactFormText": ""
+    },
+    "infoPage": {
+        "infoText": "",
+        "infoPoints": "",
+        "infoName": "",
+        "infoTotems": ""
+    },
+    "profilePage": {
+        "profileText": "",
+        "profileCreatPost": "",
+        "profileEditar": "",
+        "profileInformation": "",
+        "profileFavorite": "",
+        "profileAvatar": "",
+        "profilePosts": ""
+    },
+    "adminEventPage": {
+        "eventInfo": "",
+        "eventRoute": "",
+        "eventStop": "",
+        "eventObra": ""
+    },
+    "adminPage": {
+        "adminID": "",
+        "adminTitle": "",
+        "adminAuthor": "",
+        "adminStyle": "",
+        "adminLocation": "",
+        "adminSpeech": "",
+        "adminEdtion": "",
+        "adminRoles": "",
+        "adminUser": "",
+        "adminUserPrivate": "",
+        "adminModerator": "",
+        "adminEvent": "",
+        "adminTotal": "",
+        "adminTotalPlays": "",
+        "adminAdd": ""
+    },
+    "loginPage": {
+        "loginTitle": "",
+        "loginPassword": "",
+        "loginButton": ""
+    },
+    "monumentFiltradosPage": {
+        "monumentList": "",
+        "monumentDesc": ""
+    },
+    "editarProfile": {
+        "editarTitle": "",
+        "editarName": "",
+        "editarPhone": "",
+        "editarPassword": "",
+        "editarUpdate": ""
+    },
+    "registerPage": {
+        "registerTitle": "",
+        "registerName": "",
+        "registerSurname": "",
+        "registerCity": "",
+        "registerCountry": "",
+        "registerPassword": "",
+        "registerRepeat": "",
+        "registerButton": ""
+    },
+    "searchPage": {
+        "searchTitle": "",
+        "searchSearch": "",
+        "searchText": "",
+        "searchFiltres": ""
+    },
+    "termsAndCondition": {
+        "termsTitle": "",
+        "termsAgreement": "",
+        "termsProtection": "",
+        "termsSecurity": "",
+        "termsGuidelines": "",
+        "termsIntellectual": "",
+        "termsUpdates": "",
+        "termsResoluton": "",
+        "termsLimitations": ""
+    }
+}

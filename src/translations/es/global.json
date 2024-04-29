@@ -1,0 +1,143 @@
+{
+    "navbar": {
+        "start": "Inicio",
+        "actions": "Acciones",
+        "achievements": "Logros",
+        "events": "Eventos",
+        "ranking": "Clasificación",
+        "explore": "Explorar",
+        "plays": "Obras",
+        "authors": "Autores",
+        "styles": "Estilos",
+        "blog": "Blog",
+        "contact": "Contáctanos",
+        "info": "Información"
+    },
+    "achievementPage": {
+        "achievement" : "Logros",
+        "achievement1" : "Visita 5 figuras",
+        "achievement2" : "Completa dos rutas en el mismo dia",
+        "achievement3" : "Logro#3"
+    },
+    "eventPage":{
+        "events": "Eventos",
+        "seeMore": "Ver más"
+    },
+    "rankingPage": {
+        "top": "TOP",
+        "platen": "PLATINO",
+        "gold": "ORO",
+        "silver": "PLATA",
+        "bronze": "BRONCE",
+        "statues": "Estatuas"
+    },
+    "monumentPage": {
+        "monumentName": "Escultura Movil",
+        "monumentDesc": "César Manrique Cabrera Arrecife, 24 abr 1919 - Teguise, 25 sep 1992 Pintor, escultory artista canario conocido particularmente por los proyectos arquitectónicos en los que intervino como director artístico. Compaginó su obra con la defensa de los valores medioambientales de Canarias. Buscó la armonía entre el arte y la naturaleza como espacio creativo. Obtuvo, entre otros, el Premio Mundial de Ecología y Turismo y el Premio Europa.",
+        "monumentAuthor": "Autor",
+        "monumentAuthorDesc": "César Manrique (Arrecife, 24 abr 1919 - Teguise, 25 sep 1992) Pintor, escultory artista canario",
+        "monumentLocation": "Ubicación",
+        "monumentLocationDesc": "Parque infantil del Castillo Negro Av. la Constitución 38003 Santa Cruz de Tenerife",
+        "monumentRuta": "Ruta Relacionidas",
+        "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, escultory artista canario conocido particularmente por los proyectos arquitectónicos."
+    },
+    "authorPage": {
+        "authorDesc": "César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, escultory artista canario conocido particularmente por los proyectos arquitectónicos en los que intervino como director artístico.1 Compaginó su obra con la defensa de los valores medioambientales de Canarias. Buscó la armonía entre el arte y la naturaleza como espacio creativo. Obtuvo, entre otros, el Premio Mundial de Ecología y Turismo y el Premio Europa."
+    },
+    "blogPage": {
+        "search": "Busqueda"
+    },
+    "contactPage": {
+        "contactUs": "Contacta con nosotras",
+        "contactDesc": "¿Alguna pregunta o comentario? ¡Solo escríbenos un mensaje!",
+        "contactEmail": "Email",
+        "contactEmailButton": "CONTACTO",
+        "contactPhone": "Teléfono",
+        "contactPhoneButton": "LLAMAR",
+        "contactOffice": "Oficina",
+        "contactOfficeButton": "UBICACIÓN",
+        "contactFormButton": "Entegar",
+        "contactFormText": "Enviar un formulario"
+    },
+    "infoPage": {
+        "infoText": "Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.",
+        "infoPoints": "Puntos de recogida",
+        "infoName": "Nombre",
+        "infoTotems": "Totems"
+    },
+    "profilePage": {
+        "profileText": "Perfil",
+        "profileCreatPost": "Crear Post",
+        "profileEditar": "Editar Perfil",
+        "profileInformation": "Datos personales",
+        "profileFavorite": "Favoritos",
+        "profileAvatar": "Avatar",
+        "profilePosts": "Publicaciones"
+    },
+    "adminEventPage": {
+        "eventInfo": "Información de la ruta",
+        "eventRoute": "Ruta",
+        "eventStop": "Parada",
+        "eventObra": "Obra"
+    },
+    "adminPage": {
+        "adminID": "ID",
+        "adminTitle": "Titulo",
+        "adminAuthor": "Autor",
+        "adminStyle": "Estilo",
+        "adminLocation": "Ubicacion",
+        "adminSpeech": "Discurso",
+        "adminEdtion": "Edicion",
+        "adminRoles": "Roles",
+        "adminUser": "Usuario Publico",
+        "adminUserPrivate": "Usuario Privado",
+        "adminModerator": "Moderador",
+        "adminEvent": "Admin de Evento",
+        "adminTotal": "Admin Total",
+        "adminTotalPlays": "Obras Totales :",
+        "adminAdd": "Anadir Obra"
+    },
+    "loginPage": {
+        "loginTitle": "INICIA SESIÓN",
+        "loginPassword": "Contraseña",
+        "loginButton": "Entrar"
+    },
+    "monumentFiltradosPage": {
+        "monumentList": "Lista de Obras ESCULTURAS EN LA ZONA DE PLAYA BLANCA",
+        "monumentDesc": ""
+    },
+    "editarProfile": {
+        "editarTitle": "Editar Perfil",
+        "editarName": "Nombre",
+        "editarPhone": "Teléfono",
+        "editarPassword": "Contraseña",
+        "editarUpdate": "Actualizar"
+    },
+    "registerPage": {
+        "registerTitle": "REGISTRATE",
+        "registerName": "Nombre",
+        "registerSurname": "Apellidos",
+        "registerCity": "Ciudad",
+        "registerCountry": "País",
+        "registerNationality": "Nacionalidad",
+        "registerPassword": "Contraseña",
+        "registerRepeat": "Repetir Contraseña",
+        "registerButton": "Entrar"
+    },
+    "searchPage": {
+        "searchTitle": "Explorar",
+        "searchText": "Buscar",
+        "searchFiltres": "Filtros"
+    },
+    "termsAndCondition": {
+        "termsTitle": "Tu privacidad es importante",
+        "termsAgreement": "Acuerdo Legal: La aceptación de los términos y condiciones establece un acuerdo legalmente vinculante entre el usuario y el proveedor del servicio o producto. Estos términos describen los derechos y responsabilidades de ambas partes, asegurando una comprensión clara de la relación.",
+        "termsProtection": "Protección del usuario: los términos y condiciones a menudo incluyen cláusulas que describen cómo se manejarán y protegerán los datos del usuario. Esto es vital para salvaguardar la información personal y garantizar que el servicio cumpla con las leyes de privacidad pertinentes. Al aceptar estos términos, los usuarios dan su consentimiento explícito a las prácticas de manejo de datos descritas.",
+        "termsSecurity": "Seguridad y cumplimiento: muchos términos y condiciones detallan las medidas de seguridad implementadas por el servicio para proteger los datos del usuario. La aceptación implica el reconocimiento de estos protocolos de seguridad, asegurando a los usuarios que el proveedor se compromete a mantener un entorno seguro.",
+        "termsGuidelines": "Pautas de uso: los términos y condiciones especifican cómo se espera que los usuarios interactúen con la plataforma, qué está permitido o prohibido y las posibles consecuencias de las infracciones. Esto ayuda a mantener un entorno en línea positivo y respetuoso.",
+        "termsIntellectual": "Propiedad intelectual y derechos de autor: Aceptar los términos y condiciones a menudo implica reconocer las políticas de propiedad intelectual y derechos de autor de la plataforma. Esto es crucial para comprender cómo los usuarios pueden usar, compartir o distribuir contenido dentro de los límites del servicio.",
+        "termsUpdates": "Actualizaciones y cambios: los proveedores de servicios pueden reservarse el derecho de actualizar o modificar sus términos y condiciones. Los usuarios, al aceptar estos términos, aceptan mantenerse informados sobre cualquier cambio y adherirse a los términos actualizados. Esto garantiza que los usuarios estén al tanto de cualquier modificación del acuerdo.",
+        "termsResoluton": "Resolución de disputas: los términos y condiciones a menudo incluyen cláusulas sobre mecanismos de resolución de disputas, como arbitraje o mediación. La aceptación de estos términos implica el consentimiento del usuario a estos procesos en caso de desacuerdos.",
+        "termsLimitations": "Limitaciones del servicio: Los términos y condiciones pueden describir cualquier limitación o restricción en el uso del servicio. Los usuarios deben ser conscientes de estas limitaciones para asegurarse de utilizar la plataforma dentro de los límites prescritos."
+    }
+}

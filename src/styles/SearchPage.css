@@ -88,7 +88,7 @@
     width: 22px;
     height: 21px;
     margin-left: 10%;
-    margin-top: -28vh;
+    margin-top: 0vh;
 }
 
 .filtrobtn .fil{
@@ -96,7 +96,7 @@
     color: black;
     font-weight: bold;
     position: static;
-    margin-top: -31.3vh;
+    margin-top: -2.5vh;
     margin-left: 2.5vw;
     content: "Filtros";
 }
@@ -194,8 +194,8 @@
     }
     .filtrobtn{
         width: 40%;
-        margin-left: 69%;
-        margin-top: -4vh;
+        margin-left: 67%;
+        margin-top: -5vh;
         background: none;
     }
     .monumentobtn{

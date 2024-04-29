@@ -22,6 +22,10 @@ import ContactUs from 'src/pages/ContactUsPage'
 import RegisterLoginPage from 'src/pages/RegisterLoginPage'
 // import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
+import NewPostPage from 'src/pages/NewPostPage'
+import ProfilePageEditar from 'src/pages/ProfilePageEditar'
+import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import AdminEventPage from 'src/pages/AdminEventPage'
 const MainContent = () => {
     return (
         <Routes>
@@ -30,6 +34,8 @@ const MainContent = () => {
             <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
             <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
+            <Route element={<ProfilePage />} path="/perfil"></Route>
+            <Route element={<ProfilePageEditar />} path="/perfil/editar"></Route>
             {/* <Route element={<ProfilePage />} path="/perfil"></Route> */}
             {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route> */}
             {/* <Route element={<ProfilePageEditar />} path="/perfil/:nickname/editar"></Route>  */}
@@ -48,6 +54,9 @@ const MainContent = () => {
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
+            <Route element={<NewPostPage />} path="/perfil/newPost"></Route>
+            <Route element={<AdminEventPage />} path="/admineventpage"></Route>
+            <Route element={<MonumentFiltradosPage />} path="/filtrados"></Route>
         </Routes >
     )
 }
