@@ -76,13 +76,13 @@ export default function NavBar() {
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: 0, zIndex: 1 }}>
                                     <Link to={"/monumentos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Obras</strong>
+                                        <strong className='text-white'>{t("navbar.plays")}</strong>
                                     </Link>
                                     <Link to={"/autores"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Autores</strong>
+                                        <strong className='text-white'>{t("navbar.authors")}</strong>
                                     </Link>
                                     <Link to={"/estilos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Estilos</strong>
+                                        <strong className='text-white'>{t("navbar.styles")}</strong>
                                     </Link>
                                 </div>
                             </div>
@@ -109,13 +109,13 @@ export default function NavBar() {
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/logros"} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
+                                                <Link to={"/logros"} className='btn my-1 text-white fs-2'><strong>{t("navbar.achievements")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/eventos"} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
+                                                <Link to={"/eventos"} className='btn my-1 text-white fs-2'><strong>{t("navbar.events")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/calificaion"} className='btn my-1 text-white fs-2'><strong>Calificacion</strong></Link>
+                                                <Link to={"/calificaion"} className='btn my-1 text-white fs-2'><strong>{t("navbar.ranking")}</strong></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -124,13 +124,13 @@ export default function NavBar() {
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/obras"} className='btn my-1 text-white fs-2'><strong>Obras</strong></Link>
+                                                <Link to={"/obras"} className='btn my-1 text-white fs-2'><strong>{t("navbar.plays")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/autores"} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
+                                                <Link to={"/autores"} className='btn my-1 text-white fs-2'><strong>{t("navbar.authors")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/estilos"} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
+                                                <Link to={"/estilos"} className='btn my-1 text-white fs-2'><strong>{t("navbar.styles")}</strong></Link>
                                             </div>
                                         </div>
                                     </div>

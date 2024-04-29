@@ -1,147 +1,140 @@
 {
     "navbar" : {
-        "start": "",
-        "actions": "",
-        "achievments": "",
-        "events": "",
-        "ranking": "",
-        "explore": "",
-        "plays": "",
-        "authors": "",
-        "styles": "",
-        "blog": "",
-        "contact": "",
-        "info": ""
+        "start": "Home",
+        "actions": "Actions",
+        "achievments": "Achievments",
+        "events": "Events",
+        "ranking": "Ranking",
+        "explore": "Explore",
+        "plays": "Plays",
+        "authors": "Authors",
+        "styles": "Styles",
+        "blog": "Blog",
+        "contact": "Contact",
+        "info": "Info"
     },
     "achievmentPage" : {
-        "achievment": "",
-        "achievment1": "",
-        "achievment2": "",
-        "achievment3": ""
+        "achievment": "Achievment",
+        "achievment1": "Visit 5 figures",  
+        "achievment2": "Complete two routes in the same day",
+        "achievment3": "Achievment 3"
     },
     "eventPage" : {
-        "events": "",
-        "eventTitle": "",
-        "eventAuthor": "",
-        "eventDesc": "",
-        "seeMore": ""
+        "events": "Events",
+        "seeMore": "See More"
     },
     "rankingPage": {
-        "top": "",
-        "platen": "",
-        "gold": "",
-        "silver": "",
-        "bronze": "",
-        "statues": ""
+        "top": "TOP",
+        "platen": "PLATEN",
+        "gold": "GOLD",
+        "silver": "SILVER",
+        "bronze": "BRONZE",
+        "statues": "STAUTES"
     },
     "monumentPage": {
-        "monumentName": "",
-        "monumentDesc": "",
-        "monumentAuthor": "",
-        "monumentAuthorDesc": "",
-        "monumentLocation": "",
-        "monumentLocationDesc": "",
-        "monumentRuta": "",
-        "monumentRutaDesc": ""
+        "monumentDesc": "Cesar Manrique Cabrera Arrecife, April 24, 1919 - Teguise, September 25, 1992 Painter, sculptor and Canarian artist known particularly for the architectural projects in which he participated as artistic director. He combined his work with the defense of the environmental values ​​of the Canary Islands. He sought harmony between art and nature as a creative space. He obtained, among others, the World Prize for Ecology and Tourism and the Europe Prize.",
+        "monumentAuthorDesc": "Cesar Manrique (Arrecife, April 24, 1919 - Teguise, September 25, 1992) Painter, sculptor and Canarian artist",
+        "monumentLocation": "Location",
+        "monumentLocationDesc": "Black Castle Playground Constitution Avenue 38003 Santa Cruz de Tenerife",
+        "monumentRuta": "Related Routes",
+        "monumentRutaDesc": "César Manrique Cabrera (Arrecife, April 24, 1919-Teguise) Painter, sculptor and Canarian artist known particularly for architectural projects."
     },
     "authorPage": {
-        "authorName": "",
-        "authorDesc": ""
+        "authorDesc":"Cesar Manrique Cabrera Arrecife, April 24, 1919 - Teguise, September 25, 1992 Painter, sculptor and Canarian artist known particularly for the architectural projects in which he participated as artistic director. He combined his work with the defense of the environmental values ​​of the Canary Islands. He sought harmony between art and nature as a creative space. He obtained, among others, the World Prize for Ecology and Tourism and the Europe Prize."
     },
     "blogPage": {
-        "search": ""
+        "search": "Search..."
     },
     "contactPage": {
-        "contactUs": "",
-        "contactDesc": "",
-        "contactEmail": "",
-        "contactEmailButton": "",
-        "contactPhone": "",
-        "contactPhoneButton": "",
-        "contactOffice": "",
-        "contactOfficeButton": "",
-        "contactFormButton": "",
-        "contactFormText": ""
+        "contactUs": "Contact Us",
+        "contactDesc": "If you have any questions or comments, just drop us a line!",
+        "contactEmailButton": "Contact",
+        "contactPhone": "Telephone",
+        "contactPhoneButton": "Call",
+        "contactOffice": "Office",
+        "contactOfficeButton": "Location",
+        "contactFormButton": "Entegar",
+        "contactFormText": "Send a form"
     },
     "infoPage": {
-        "infoText": "",
-        "infoPoints": "",
-        "infoName": "",
-        "infoTotems": ""
+        "infoText": "See more Move more Scan the code to experience more. No application is needed. It's easy.",
+        "infoPoints": "Collection points",
+        "infoName": "Name",
+        "infoTotems": "Totems"
     },
     "profilePage": {
-        "profileText": "",
-        "profileCreatPost": "",
-        "profileEditar": "",
-        "profileInformation": "",
-        "profileFavorite": "",
-        "profileAvatar": "",
-        "profilePosts": ""
+        "profileText": "Profile",
+        "profileCreatPost": "Create Post",
+        "profileEditar": "Edit Profile",
+        "profileInformation": "Personal data",
+        "profileFavorite": "Favorite",
+        "profileAvatar": "Avatar",
+        "profilePosts": "Publications"
     },
     "adminEventPage": {
-        "eventInfo": "",
-        "eventRoute": "",
-        "eventStop": "",
-        "eventObra": ""
+        "eventParticipantes": "Participantes",
+        "eventRoute": "Route",
+        "eventStop": "Stop",
+        "eventObra": "Work"
     },
     "adminPage": {
-        "adminID": "",
-        "adminTitle": "",
-        "adminAuthor": "",
-        "adminStyle": "",
-        "adminLocation": "",
-        "adminSpeech": "",
-        "adminEdtion": "",
-        "adminRoles": "",
-        "adminUser": "",
-        "adminUserPrivate": "",
-        "adminModerator": "",
-        "adminEvent": "",
-        "adminTotal": "",
-        "adminTotalPlays": "",
-        "adminAdd": ""
+        "adminID": "ID",
+        "adminTitle": "Title",
+        "adminAuthor": "Author",
+        "adminStyle": "Style",
+        "adminLocation": "Location",
+        "adminSpeech": "Speech",
+        "adminEdition": "Edition",
+        "adminRoles": "Roles",
+        "adminUser": "User Public",
+        "adminUserPrivate": "User Private",
+        "adminModerator": "Moderator",
+        "adminEvent": "Event Admin",
+        "adminTotal": "Admin Total",
+        "adminTotalPlays": "Total Works",
+        "adminAdd": "Add Work"
     },
     "loginPage": {
-        "loginTitle": "",
-        "loginPassword": "",
-        "loginButton": ""
+        "loginTitle": "START SESSION",
+        "loginPassword": "Password",
+        "loginButton": "Enter"
     },
     "monumentFiltradosPage": {
-        "monumentList": "",
-        "monumentDesc": ""
+        "monumentList": "List of Works",
+        "monumentDesc": "SCULPTURES IN THE AREA OF PLAYA BLANCA"
     },
     "editarProfile": {
-        "editarTitle": "",
-        "editarName": "",
-        "editarPhone": "",
-        "editarPassword": "",
-        "editarUpdate": ""
+        "editarTitle": "Edit Profile",
+        "editarName": "Name",
+        "editarPhone": "Phone",
+        "editarPassword": "Password",
+        "editarUpdate": "Update Profile"
     },
     "registerPage": {
-        "registerTitle": "",
-        "registerName": "",
-        "registerSurname": "",
-        "registerCity": "",
-        "registerCountry": "",
-        "registerPassword": "",
-        "registerRepeat": "",
-        "registerButton": ""
+        "registerTitle": "Register",
+        "registerName": "Name",
+        "registerSurname": "Surname",
+        "registerCity": "City",
+        "registerCountry": "Country",
+        "registerPassword": "Password",
+        "registerRepeat": "Repeat Password",
+        "registerButton": "Enter"
     },
     "searchPage": {
-        "searchTitle": "",
-        "searchSearch": "",
-        "searchText": "",
-        "searchFiltres": ""
+        "searchTitle": "Explore",
+        "searchSearch": "Monuments",
+        "searchText": "Search",
+        "searchFiltres": "Filters"
     },
     "termsAndCondition": {
-        "termsTitle": "",
-        "termsAgreement": "",
-        "termsProtection": "",
-        "termsSecurity": "",
-        "termsGuidelines": "",
-        "termsIntellectual": "",
-        "termsUpdates": "",
-        "termsResoluton": "",
-        "termsLimitations": ""
+        "termsTitle": "Your privacy is important",
+        "termsAgreement": "Legal Agreement: Accepting terms and conditions establishes a legally binding agreement between the user and the service or product provider. These terms outline the rights and responsibilities of both parties, ensuring a clear understanding of the relationship.",
+        "termsProtection": "User Protection: Terms and conditions often include clauses that outline how user data will be handled and protected. This is vital for safeguarding personal information and ensuring that the service complies with relevant privacy laws. By accepting these terms, users give their explicit consent to the data handling practices outlined.",
+        "termsSecurity": "Security and Compliance: Many terms and conditions detail the security measures implemented by the service to protect user data. Acceptance implies acknowledgment of these security protocols, assuring users that the provider is committed to maintaining a secure environment.",
+        "termsGuidelines": "Usage Guidelines: Terms and conditions specify how users are expected to interact with the platform, what is allowed or prohibited, and any potential consequences for violations. This helps maintain a positive and respectful online environment.",
+        "termsIntellectual": "Intellectual Property and Copyright: Accepting terms and conditions often involves acknowledging the intellectual property and copyright policies of the platform. This is crucial for understanding how users can use, share, or distribute content within the confines of the service.",
+        "termsUpdates": "Updates and Changes: Service providers may reserve the right to update or modify their terms and conditions. Users, by accepting these terms, agree to stay informed about any changes and adhere to the updated terms. This ensures that users are aware of any alterations to the agreement.",
+        "termsResoluton": "Dispute Resolution: Terms and conditions often include clauses regarding dispute resolution mechanisms, such as arbitration or mediation. Accepting these terms implies the user's consent to these processes in the event of disagreements.",
+        "termsLimitations": "Service Limitations: The terms and conditions may outline any limitations or restrictions on the use of the service. Users need to be aware of these limitations to ensure they use the platform within the prescribed boundaries."
     }
-}
+}   
