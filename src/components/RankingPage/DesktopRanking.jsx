@@ -4,8 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import avatar from '../../images/usuario_avatar.png';
 import { ArrowLeftCircleFill, ArrowRightCircleFill } from "react-bootstrap-icons";
+import { useTranslation } from 'react-i18next';
+
 
 const DesktopRanking = () => {
+    const [t, i18n] = useTranslation("global");
     const settings = {
         dots: true,
         infinite: true,
@@ -29,7 +32,7 @@ const DesktopRanking = () => {
         <div className="col-12">
             <Slider {...settings}>
                 <div>
-                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>PLATINA</div>
+                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>{t("rankingPage.platen")}</div>
                     {users.map((user, index) => (
                         <div key={index} style={{backgroundColor: "#DEE6F0"}} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
                             <div className="d-flex align-items-center justify-content-center">
@@ -41,7 +44,7 @@ const DesktopRanking = () => {
                     ))}
                 </div>
                 <div>
-                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>ORO</div>
+                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>{t("rankingPage.gold")}</div>
                     {users.map((user, index) => (
                         <div key={index} style={{backgroundColor: "#DEE6F0"}} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
                             <div className="d-flex align-items-center justify-content-center">
@@ -53,7 +56,7 @@ const DesktopRanking = () => {
                     ))}
                 </div>
                 <div>
-                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>PLATA</div>
+                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>{t("rankingPage.silver")}</div>
                     {users.map((user, index) => (
                         <div key={index} style={{backgroundColor: "#DEE6F0"}} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
                             <div className="d-flex align-items-center justify-content-center">
@@ -65,7 +68,7 @@ const DesktopRanking = () => {
                     ))}
                 </div>
                 <div>
-                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>BRONCE</div>
+                    <div className="col-12 text-center p-2 h1 text-white" style={{backgroundColor: "#263c5c", margin: "0px"}}>{t("rankingPage.bronze")}</div>
                     {users.map((user, index) => (
                         <div key={index} style={{backgroundColor: "#DEE6F0"}} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
                             <div className="d-flex align-items-center justify-content-center">

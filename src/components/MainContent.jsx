@@ -23,7 +23,7 @@ import UnEventPage from "../pages/UnEventPage"
 import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
-// import AdminEventPage from 'src/pages/AdminEventPage'
+import AdminEventPage from 'src/pages/AdminEventPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
@@ -56,6 +56,8 @@ const MainContent = () => {
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
+            <Route element={<AdminEventPage/>} path="/adminevent"></Route>
+            <Route element={<MonumentFiltradosPage/>} path="/filtrados"></Route>
         </Routes >
     )
 }

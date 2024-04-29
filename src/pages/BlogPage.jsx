@@ -4,13 +4,14 @@ import monument from '../images/monumento.svg';
 import avatar from '../images/nombreavatar.svg';
 import arrow from '../images/downarrow.svg';
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick'
 
 // import '../styles/BlogPage.css'
 
 
 const BlogPage = () => {
+    const [t, i18n] = useTranslation("global");
     const nombres = ["Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre", "Nombre"]
     const posts = [
         {img: monument, pic: avatar, name: 'Nombre Apellidos', date:'23/04/1956', title: 'Título de la entrada del blog', desc: "Descripción corta de la entrada del blog de una usuario concreto mientras escribe esta descripción que saldrá en el homePage abajo del todo" },
@@ -31,7 +32,7 @@ const BlogPage = () => {
         <div>
             <div class="d-flex justify-content-center">
                 <div class="input-group mx-auto">
-                    <input type="text" class="form-control border-black shadow-none"  style={{ height: "75px", borderRight: "none", borderTopLeftRadius: "50px", borderBottomLeftRadius: "50px"}} placeholder="Busqueda..." aria-describedby="button-addon"/>
+                    <input type="text" class="form-control border-black shadow-none"  style={{ height: "75px", borderRight: "none", borderTopLeftRadius: "50px", borderBottomLeftRadius: "50px"}} placeholder={t("blogPage.search")} aria-describedby="button-addon"/>
                     <div class="input-group-append" id="button-addon">
                         <button class="btn shadow-none d-flex align-items-center border-black" style={{height: "75px", borderLeft: "none", borderRight: "none"}} type="button"><img src={entra}  style={{height: "40px"}}></img></button>
                         <button class="btn shadow-none d-flex align-items-center border-black" style={{height: "75px", borderLeft: "none", borderTopRightRadius: "50px", borderBottomRightRadius: "50px"}} type="button"><img src={filtra} style={{height: "40px"}}></img></button>

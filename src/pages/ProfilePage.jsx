@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useState } from "react";
-
+import { useTranslation } from 'react-i18next';
 import UserInfoProfile from "../components/ProfilePage/UserInfoProfile"
 import UserFavoriteProfile from "../components/ProfilePage/UserFavoriteProfile"
 import UserAvatarProfile from "../components/ProfilePage/UserAvatarProfile"
@@ -12,7 +12,7 @@ import "../styles/Profile.css";
 
 const ProfilePage = () => {
     const [activeTab, setActiveTab] = useState("info");
-
+    const [t, i18n] = useTranslation("global");
     return (
         <div>
             <div className="navbar p-3 pt-4 d-flex justify-content-between align-items-center">
@@ -22,7 +22,7 @@ const ProfilePage = () => {
                     </button>
                 </div>
                 <div className="d-flex justify-content-center flex-grow-1">
-                    <h1 className="text-white m-0">Perfil</h1>
+                    <h1 className="text-white m-0">{t("profilePage.profileText")}</h1>
                 </div>
                 <div className="float-right">
                     <button className="pr-2" style={{ backgroundColor: "transparent" }}>
@@ -42,12 +42,12 @@ const ProfilePage = () => {
                 </div>
                 <div className="col-3 d-flex justify-content-end mt-5 pr-1">
                     <button className="btn ml-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }}>
-                        Crear Post
+                    {t("profilePage.profileCreatPost")}
                     </button>
                 </div>
                 <div className="col-3 d-flex justify-content-start mt-5 pl-1">
                     <button className="btn mr-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }}>
-                        Editar Perfil
+                    {t("profilePage.profileEditar")}
                     </button>
                 </div>
                 <div className="col-3 d-flex justify-content-end">
@@ -62,28 +62,28 @@ const ProfilePage = () => {
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("info")}
                 >
-                    Datos personales
+                    {t("profilePage.profileInformation")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("favorite")}
                 >
-                    Favoritos
+                    {t("profilePage.profileFavorite")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("avatar")}
                 >
-                    Avatar
+                    {t("profilePage.profileAvatar")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("publications")}
                 >
-                    Publicaciones
+                    {t("profilePage.profilePosts")}
                 </div>
             </div>
             <div className="mt-4">
