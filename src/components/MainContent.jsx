@@ -24,8 +24,8 @@ import LoginPage from '../pages/LoginPage'
 import ContactUs from 'src/pages/ContactUsPage'
 import NewPostPage from 'src/pages/NewPostPage'
 import ProfilePageEditar from 'src/pages/ProfilePageEditar'
-// import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
-// import AdminEventPage from 'src/pages/AdminEventPage'
+import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
+import AdminEventPage from 'src/pages/AdminEventPage'
 const MainContent = () => {
     return (
         <Routes>
@@ -60,6 +60,8 @@ const MainContent = () => {
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
             <Route element={<NewPostPage />} path="/perfil/newPost"></Route>
+            <Route element={<AdminEventPage />} path="/admineventpage"></Route>
+            <Route element={<MonumentFiltradosPage />} path="/filtrados"></Route>
         </Routes >
     )
 }
