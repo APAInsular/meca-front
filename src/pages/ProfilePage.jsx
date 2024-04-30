@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useState } from "react";
-import { useHistory } from "react-router-dom"; // Dodaj useHistory
+import { useTranslation } from 'react-i18next';import { useHistory } from "react-router-dom"; // Dodaj useHistory
 
 import UserInfoProfile from "../components/ProfilePage/UserInfoProfile"
 import UserFavoriteProfile from "../components/ProfilePage/UserFavoriteProfile"
@@ -10,31 +10,20 @@ import UserPublicationProfile from "../components/ProfilePage/UserPublicationPro
 
 import { Bell, ArrowLeft, GearFill } from 'react-bootstrap-icons';
 import "../styles/Profile.css";
-import { useNavigate } from "react-router-dom";
 
 const ProfilePage = () => {
     const [activeTab, setActiveTab] = useState("info");
-    const navigate = useNavigate(); 
-    const routeChange = () =>{ 
-    let path = `newpost`; 
-    navigate(path);
-    }
-
-    const editar = () =>{ 
-    let path = `editar`; 
-    navigate(path);
-    }
-
+    const [t, i18n] = useTranslation("global");
     return (
         <div>
             <div className="navbar p-3 pt-4 d-flex justify-content-between align-items-center">
                 <div className="float-left">
                     <button className="pl-2" style={{ backgroundColor: "transparent" }}>
-                        <ArrowLeft size="40" color="white" onClick={() => navigate(-1)} />
+                        <ArrowLeft size="40" color="white"/>
                     </button>
                 </div>
                 <div className="d-flex justify-content-center flex-grow-1">
-                    <h1 className="text-white m-0">Perfil</h1>
+                    <h1 className="text-white m-0">{t("profilePage.profileText")}</h1>
                 </div>
                 <div className="float-right">
                     <button className="pr-2" style={{ backgroundColor: "transparent" }}>
@@ -54,14 +43,14 @@ const ProfilePage = () => {
                 </div>
                 
                 <div className="col-3 d-flex justify-content-end mt-5 pr-1">
-                    <button className="btn ml-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }} onClick={routeChange}>
-                         Crear Post
+                    <button className="btn ml-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }}>
+                    {t("profilePage.profileCreatPost")}
                     </button>
                     
                 </div>
                 <div className="col-3 d-flex justify-content-start mt-5 pl-1">
-                    <button className="btn mr-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }} onClick={editar}>
-                        Editar Perfil
+                    <button className="btn mr-3 text-white fw-semibold" style={{ backgroundColor: "#7B96FF" }}>
+                    {t("profilePage.profileEditar")}
                     </button>
                 </div>
                 <div className="col-3 d-flex justify-content-end">
@@ -76,28 +65,28 @@ const ProfilePage = () => {
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("info")}
                 >
-                    Datos personales
+                    {t("profilePage.profileInformation")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("favorite")}
                 >
-                    Favoritos
+                    {t("profilePage.profileFavorite")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("avatar")}
                 >
-                    Avatar
+                    {t("profilePage.profileAvatar")}
                 </div>
                 <div
                     className="col-3 fs-5 d-flex justify-content-center fw-semibold"
                     style={{ borderBottom: "2px solid black", cursor: "pointer" }}
                     onClick={() => setActiveTab("publications")}
                 >
-                    Publicaciones
+                    {t("profilePage.profilePosts")}
                 </div>
             </div>
             <div className="mt-4">

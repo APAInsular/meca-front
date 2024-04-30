@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import { XCircleFill } from 'react-bootstrap-icons';
-
-const navigation = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Acciones', path: '/acciones' },
-    { name: 'Explorar', path: '/explorar' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contáctanos', path: '/contactanos' },
-    { name: 'Información', path: '/info' },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function NavBar() {
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [t, i18n] = useTranslation("global");
 
+    const navigation = [
+        { name: t("navbar.start"), path: '/' },
+        { name: t("navbar.actions"), path: '/acciones' },
+        { name: t("navbar.explore"), path: '/explorar' },
+        { name: t("navbar.blog"), path: '/blog' },
+        { name: t("navbar.contact"), path: '/contactanos' },
+        { name: t("navbar.info"), path: '/info' },
+    ];
+    const [selectedItem, setSelectedItem] = useState(null);
+    
     const handleClick = (itemName) => {
         setSelectedItem((prevSelectedItem) => {
             return prevSelectedItem === itemName ? null : itemName;
@@ -50,37 +52,37 @@ export default function NavBar() {
             <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-8">
                 {navigation.map((item) => (
                     <div key={item.name}>
-                        {item.name === 'Acciones' ? (
+                        {item.name === t("navbar.actions") ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
                                     <Link to={"/logros"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Logros</strong>
+                                        <strong className='text-white'>{t("navbar.achievements")}</strong>
                                     </Link>
                                     <Link to={"/eventos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Eventos</strong>
+                                        <strong className='text-white'>{t("navbar.events")}</strong>
                                     </Link>
                                     <Link to={"/clasificacion"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Clasificación</strong>
+                                        <strong className='text-white'>{t("navbar.ranking")}</strong>
                                     </Link>
                                 </div>
                             </div>
-                        ) : item.name === 'Explorar' ? (
+                        ) : item.name === t("navbar.explore") ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: 0, zIndex: 1 }}>
                                     <Link to={"/monumentos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Obras</strong>
+                                        <strong className='text-white'>{t("navbar.plays")}</strong>
                                     </Link>
                                     <Link to={"/autores"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Autores</strong>
+                                        <strong className='text-white'>{t("navbar.authors")}</strong>
                                     </Link>
                                     <Link to={"/estilos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Estilos</strong>
+                                        <strong className='text-white'>{t("navbar.styles")}</strong>
                                     </Link>
                                 </div>
                             </div>
@@ -102,33 +104,33 @@ export default function NavBar() {
                     <div className="d-flex flex-column justify-content-center align-items-center w-100">
                         {navigation.map((item, index) => (
                             <div key={index}>
-                                {item.name === 'Acciones' ? (
+                                {item.name === t("navbar.actions") ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/logros"} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
+                                                <Link to={"/logros"} className='btn my-1 text-white fs-2'><strong>{t("navbar.achievements")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/eventos"} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
+                                                <Link to={"/eventos"} className='btn my-1 text-white fs-2'><strong>{t("navbar.events")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/calificaion"} className='btn my-1 text-white fs-2'><strong>Calificacion</strong></Link>
+                                                <Link to={"/calificaion"} className='btn my-1 text-white fs-2'><strong>{t("navbar.ranking")}</strong></Link>
                                             </div>
                                         </div>
                                     </div>
-                                ) : item.name === 'Explorar' ? (
+                                ) : item.name === t("navbar.explore") ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/obras"} className='btn my-1 text-white fs-2'><strong>Obras</strong></Link>
+                                                <Link to={"/obras"} className='btn my-1 text-white fs-2'><strong>{t("navbar.plays")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/autores"} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
+                                                <Link to={"/autores"} className='btn my-1 text-white fs-2'><strong>{t("navbar.authors")}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/estilos"} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
+                                                <Link to={"/estilos"} className='btn my-1 text-white fs-2'><strong>{t("navbar.styles")}</strong></Link>
                                             </div>
                                         </div>
                                     </div>

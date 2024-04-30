@@ -2,21 +2,10 @@ import react from "react";
 import star from '../images/star.svg';
 import ProgressBar from "@ramonak/react-progress-bar";
 import "../styles/AchievementPage.css";
-
-
+import { useTranslation } from 'react-i18next';
 
 const AchievementPage = () => {
-
-  // let algo = {
-  //   nombre: "hola",
-  //   levels : 3
-  // }
-
-  // <Level />
-
-  // for(lelt i = 0; i < algo.leveks; i++){
-
-  // }
+  const [t, i18n] = useTranslation("global");
 
   return (
     <div className="row">
@@ -27,19 +16,19 @@ const AchievementPage = () => {
                         className='rounded rounded-3'
                         style={{ height: '100%', width: '70%', maxWidth: '70px', maxHeight: '100px',color: "white" }}
                     />
-        <h1 className="" style={{color:"#FFFFFF", marginLeft: "5%", padding: "10px"}}>Logros</h1>
+        <h1 className="" style={{color:"#FFFFFF", marginLeft: "5%", padding: "10px"}}>{t("achievementPage.achievement")}</h1>
         <ProgressBar className="progress_bar_ac my-auto ml-[25%] position-relative" completed={35} maxCompleted={100} />
       </div>
       <div className="ac_box_2 d-flex mx-auto" style={{background: "#263C5C", width: "80%", marginTop: "5%"}}>
-        <h1 style={{color:"#FFFFFF", padding: "10px", fontSize: "32px"}}>Visita 5 figuras</h1>
+        <h1 style={{color:"#FFFFFF", padding: "10px", fontSize: "32px"}}>{t("achievementPage.achievement1")}</h1>
         <ProgressBar className="progress_bar_ac my-auto ml-auto position-relative" completed={74} maxCompleted={100} />
       </div>
       <div className="ac_box_3 d-flex mx-auto" style={{background: "#263C5C", width: "80%", marginTop: "2%"}}>
-        <h1 style={{color:"#FFFFFF", padding: "10px", fontSize: "32px"}}>Completa dos rutas  en el mismo dia</h1>
+        <h1 style={{color:"#FFFFFF", padding: "10px", fontSize: "32px"}}>{t("achievementPage.achievement2")}</h1>
         <ProgressBar className="progress_bar_ac my-auto ml-auto position-relative" completed={45} maxCompleted={100} />
       </div>
       <div className="ac_box_4 d-flex mx-auto" style={{background: "#263C5C", width: "80%", marginTop: "2%"}}>
-        <h1 style={{color:"#FFFFFF", padding: "10px", width: "45%", fontSize: "32px"}}>Logro#3</h1>
+        <h1 style={{color:"#FFFFFF", padding: "10px", width: "45%", fontSize: "32px"}}>{t("achievementPage.achievement3")}</h1>
         <ProgressBar className="progress_bar_ac my-auto ml-auto position-relative" completed={56} maxCompleted={100} />
       </div>
     </div>

@@ -3,8 +3,10 @@ import '../styles/InfoPage.css';
 import qrcode from '../images/SP_blog_Link.jpg';
 import map from '../images/maps.png';
 import { ArrowRight, QrCode, ChatLeftText, HandThumbsUp, Journal } from 'react-bootstrap-icons';
+import { useTranslation } from 'react-i18next';
 
 const InfoPage = () => {
+    const [t, i18n] = useTranslation("global");
     const rewards = [
         { img: <QrCode></QrCode>, nombre: "QR", totems: "100" },
         { img: <ChatLeftText></ChatLeftText>, nombre: "Comentario", totems: "10" },
@@ -15,10 +17,7 @@ const InfoPage = () => {
         <div className='container-info-page'>
             <div className='info-page-box1 col-sm-12 col-md-12 col-lg-12'>
                 <div className='info-box1'>
-                    <h1 className='info-pg-h1'>Ver más</h1>
-                    <h2>Moverse más</h2>
-                    <p>Escanee el código para experimentar más.</p>
-                    <p>No se necesita ninguna aplicación. Es fácil.</p>
+                    <h1 className='info-pg-h1'>{t("infoPage.infoText")}</h1>
                 </div>
                 <div className='d-flex justify-content-center m-3'>
                     <img
@@ -31,7 +30,7 @@ const InfoPage = () => {
             </div>
             <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
                 <div className='info-box3'>
-                    <h1 className='puntos_h1'>Puntos de recogida</h1>
+                    <h1 className='puntos_h1'>{t("infoPage.infoPoints")}</h1>
                 </div>
             </div>
             <div className='d-flex justify-content-center flex-wrap align-items-stretch'> 

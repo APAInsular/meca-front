@@ -2,8 +2,10 @@ import React from "react";
 import "../styles/MonumentFiltradosPage.css";
 import myImagea from "../images/Obra.jpg";
 import Obra from "src/components/HomePage/Obra";
+import { useTranslation } from 'react-i18next';
 
 const MonumentFiltradosPage = () => {
+  const [t, i18n] = useTranslation("global");
   const obras = [
     {
       nombre: "Escultura 1",
@@ -74,10 +76,10 @@ const MonumentFiltradosPage = () => {
   return (
     <div className="filtro">
       <div className="lista-obras">
-        <h1 className="lista-obras-text">Lista de Obras</h1>
+        <h1 className="lista-obras-text">{t("monumentFiltradosPage.monumentList")}</h1>
       </div>
       <div className="esculturas">
-        <h1 className="esculturas-text">ESCULTURAS EN LA ZONA DE PLAYA BLANCA</h1>
+        <h1 className="esculturas-text">{t("monumentFiltradosPage.monumentDesc")}</h1>
       </div>
       <div className="obras">
         {obras.map((obra, index) => {

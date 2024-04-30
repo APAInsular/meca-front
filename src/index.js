@@ -17,7 +17,7 @@ import { I18nextProvider } from 'react-i18next';
 
 i18next.init({
   interpolation: {escapeValue: false},
-  lng: "es",
+  lng: "de",
   resources: {
     es: {
       global: global_es

@@ -26,6 +26,7 @@ import NewPostPage from 'src/pages/NewPostPage'
 import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 import MonumentFiltradosPage from 'src/pages/MonumentFiltradosPage'
 import AdminEventPage from 'src/pages/AdminEventPage'
+// import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 const MainContent = () => {
     return (
         <Routes>
@@ -59,9 +60,8 @@ const MainContent = () => {
             <Route element={<UnEventPage />} path="/unevent"></Route>
             <Route element={<ContactUs />} path="/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
-            <Route element={<NewPostPage />} path="/perfil/newPost"></Route>
-            <Route element={<AdminEventPage />} path="/admineventpage"></Route>
-            <Route element={<MonumentFiltradosPage />} path="/filtrados"></Route>
+            <Route element={<AdminEventPage/>} path="/adminevent"></Route>
+            <Route element={<MonumentFiltradosPage/>} path="/filtrados"></Route>
         </Routes >
     )
 }
