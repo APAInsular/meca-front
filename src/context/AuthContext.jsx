@@ -52,7 +52,7 @@ export function AuthProvider({ children }) {
         setLoading(true);
         try {
             await csrf();
-            await axios.post('http://localhost:8000/api/user', data);
+            await axios.post('/api/user', data);
             await getUser();
             navigate("/")
         }

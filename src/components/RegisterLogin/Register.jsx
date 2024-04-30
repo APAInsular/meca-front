@@ -13,7 +13,7 @@ const Register = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
+    const [nombre, setNombre] = useState('');
     const [password, setPassword] = useState('');
     const [password_confirmation, setPasswordConfirmation] = useState('');
     const [apellido1, setApellido1] = useState('');
@@ -32,9 +32,11 @@ const Register = () => {
     }
 
     const handleRegister = async (e) => {
+        console.log({ nombre, usuario, email, password, apellido1, apellido2, nacionalidad, localidad, password_confirmation })
+
         e.preventDefault();
 
-        register({ name, usuario, email, password, apellido1, apellido2, nacionalidad, localidad, password_confirmation });
+        register({ nombre, usuario, email, password, apellido1, apellido2, nacionalidad, localidad, password_confirmation });
     };
 
     async function getFlags() {
@@ -111,8 +113,8 @@ const Register = () => {
                         className="form-control custom-input"
                         name="name"
                         placeholder='Nombre'
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        value={nombre}
+                        onChange={(e) => setNombre(e.target.value)}
                     />
                 </div>
                 <div className="col-md-6">

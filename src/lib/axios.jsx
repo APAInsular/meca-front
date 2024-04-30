@@ -4,6 +4,7 @@ const instance = axios.create({
     withXSRFToken: true,
     withCredentials: true,
 });
+console.log(import.meta.env.VITE_BACKEND_URL)
 // Add a response interceptor
 instance.interceptors.response.use((response) => {
     // If the request was successful, return the response
