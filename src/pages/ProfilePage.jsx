@@ -2,6 +2,7 @@ import React from "react";
 
 import { useState } from "react";
 
+import Menu from "../components/ProfilePage/Menu";
 import UserInfoProfile from "../components/ProfilePage/UserInfoProfile"
 import UserFavoriteProfile from "../components/ProfilePage/UserFavoriteProfile"
 import UserAvatarProfile from "../components/ProfilePage/UserAvatarProfile"
@@ -24,6 +25,13 @@ const ProfilePage = () => {
         navigate(path);
     }
 
+    const menuItems = [
+        { key: 'info', label: 'Datos personales' },
+        { key: 'favorite', label: 'Favoritos' },
+        { key: 'avatar', label: 'Avatar' },
+        { key: 'publications', label: 'Publicaciones' }
+    ];
+
     return (
         <div>
             <div className="navbar p-3 pt-4 d-flex justify-content-between align-items-center">
@@ -43,7 +51,7 @@ const ProfilePage = () => {
             </div>
 
             <div className="profilePicture d-flex justify-content-center align-items-end">
-                <img src={"Image/PerfilPorDefecto.png"} alt="profile" className="p-2" style={{ backgroundColor: "white", border: "4px solid #263C5C", borderRadius: "50%", maxWidth: "200px", height: "auto" }} />
+                <img src={"/Image/PerfilPorDefecto.png"} alt="profile" className="p-2" style={{ backgroundColor: "white", border: "4px solid #263C5C", borderRadius: "50%", maxWidth: "200px", height: "auto" }} />
             </div>
             <div className="d-flex justify-content-center align-items-center mt-5 mx-5 row">
                 <div className="col-3 d-flex justify-content-start">
@@ -69,36 +77,7 @@ const ProfilePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-3 row">
-                <div
-                    className="col-3 fs-5 d-flex justify-content-center fw-semibold"
-                    style={{ borderBottom: "2px solid black", cursor: "pointer" }}
-                    onClick={() => setActiveTab("info")}
-                >
-                    Datos personales
-                </div>
-                <div
-                    className="col-3 fs-5 d-flex justify-content-center fw-semibold"
-                    style={{ borderBottom: "2px solid black", cursor: "pointer" }}
-                    onClick={() => setActiveTab("favorite")}
-                >
-                    Favoritos
-                </div>
-                <div
-                    className="col-3 fs-5 d-flex justify-content-center fw-semibold"
-                    style={{ borderBottom: "2px solid black", cursor: "pointer" }}
-                    onClick={() => setActiveTab("avatar")}
-                >
-                    Avatar
-                </div>
-                <div
-                    className="col-3 fs-5 d-flex justify-content-center fw-semibold"
-                    style={{ borderBottom: "2px solid black", cursor: "pointer" }}
-                    onClick={() => setActiveTab("publications")}
-                >
-                    Publicaciones
-                </div>
-            </div>
+            <Menu items={menuItems} setActiveTab={setActiveTab} />
             <div className="mt-4">
                 {
                     activeTab === "info" ? (

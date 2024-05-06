@@ -29,29 +29,29 @@ import AdminEventPage from '../pages/AdminEventPage'
 const MainContent = () => {
     return (
         <Routes>
-            <Route element={<HomePage />} path="/"></Route>
-            <Route element={<ListPage />} path="/autores, /estilos, /eventos, /monumentos" />
-            <Route element={<AuthorPage />} path="/autores/:nombreAutor"></Route>
-            <Route element={<EventPage />} path="/eventos/:idEvento"></Route>
-            <Route element={<MonumentPage />} path="/monumentos/:nombreMonumento"></Route>
-            <Route element={<ProfilePageEditar />} path="/perfil/editar"></Route>
-            <Route element={<FavoritePage />} path="/favoritos/:nickname"></Route>
-            <Route element={<BlogPage />} path="/entradas/:nickname"></Route>
-            <Route element={<RoutePage />} path="/rutas/:idRuta"></Route>
-            <Route element={<SearchPage />} path="/busqueda"></Route>
-            <Route element={<BlogPage />} path="/blog"></Route>
-            <Route element={<AchievementPage />} path="/logros"></Route>
-            <Route element={<ActionHistorial />} path="/notificaciones"></Route>
-            <Route element={<RankingPage />} path="/clasificacion"></Route>
-            <Route element={<InfoPage />} path="/info"></Route>
-            <Route element={<RegisterLoginPage />} path="/registro, /login"></Route>
-            <Route element={<TermsConditionsPage />} path="/termsconditions"></Route>
-            <Route element={<UnEventPage />} path="/unevent"></Route>
-            <Route element={<ContactUs />} path="/contactanos"></Route>
+            <Route element={<HomePage />} path="/:idioma/MeCa"></Route>
+            <Route element={<ListPage />} path="/:idioma/autores, /:idioma/estilos, /:idioma/eventos, /:idioma/monumentos" />
+            <Route element={<AuthorPage />} path="/:idioma/autores/:nombreAutor"></Route>
+            <Route element={<EventPage />} path="/:idioma/eventos/:idEvento"></Route>
+            <Route element={<MonumentPage />} path="/:idioma/monumentos/:nombreMonumento"></Route>
+            <Route element={<ProfilePageEditar />} path="/:idioma/perfil/editar"></Route>
+            <Route element={<FavoritePage />} path="/:idioma/favoritos/:nickname"></Route>
+            <Route element={<BlogPage />} path="/:idioma/entradas/:nickname"></Route>
+            <Route element={<RoutePage />} path="/:idioma/rutas/:idRuta"></Route>
+            <Route element={<SearchPage />} path="/:idioma/busqueda"></Route>
+            <Route element={<BlogPage />} path="/:idioma/blog"></Route>
+            <Route element={<AchievementPage />} path="/:idioma/logros"></Route>
+            <Route element={<ActionHistorial />} path="/:idioma/notificaciones"></Route>
+            <Route element={<RankingPage />} path="/:idioma/clasificacion"></Route>
+            <Route element={<InfoPage />} path="/:idioma/info"></Route>
+            <Route element={<RegisterLoginPage />} path="/:idioma/registro, /login"></Route>
+            <Route element={<TermsConditionsPage />} path="/:idioma/termsconditions"></Route>
+            <Route element={<UnEventPage />} path="/:idioma/unevent"></Route>
+            <Route element={<ContactUs />} path="/:idioma/contactanos"></Route>
             <Route element={<AdminPage />} path="/admin"></Route>
-            <Route element={<NewPostPage />} path="/perfil/newPost"></Route>
-            <Route element={<AdminEventPage />} path="/admineventpage"></Route>
-            <Route element={<MonumentFiltradosPage />} path="/filtrados"></Route>
+            <Route element={<NewPostPage />} path="/:idioma/perfil/newPost"></Route>
+            <Route element={<AdminEventPage />} path="/:idioma/admineventpage"></Route>
+            <Route element={<MonumentFiltradosPage />} path="/:idioma/filtrados"></Route>
         </Routes >
     )
 }

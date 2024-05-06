@@ -1,0 +1,40 @@
+{
+    "Piel": {
+        "PielClara": "PielClara.png",
+        "PielMedioClara": "PielMedioClara.png",
+        "PielMedioOscura": "PielMedioOscura.png",
+        "PielOscura": "PielOscura.png"
+    },
+    "Pelo": {
+        "Corto": {
+            "Rojo": "Rojo.png",
+            "Negro": "Negro.png",
+            "Rubio": "Rubio.png",
+            "Verde": "Verde.png",
+            "Marron": "Marron.png"
+        },
+        "Largo": {
+            "Azul": "Azul.png",
+            "Rojo": "Rojo.png",
+            "Negro": "Negro.png",
+            "Rubio": "Rubio.png",
+            "Verde": "Verde.png",
+            "Marron": "Marron.png"
+        },
+        "Rizado": {
+            "Azul": "Azul.png",
+            "Rojo": "Rojo.png",
+            "Negro": "Negro.png",
+            "Rubio": "Rubio.png",
+            "Verde": "Verde.png",
+            "Marron": "Marron.png"
+        }
+    },
+    "camisa": {
+        "Corta": {},
+        "Larga": {}
+    },
+    "pantalon": {},
+    "zapato": {},
+    "accesorio": {}
+}

@@ -10,7 +10,7 @@ import { Routes } from 'react-router-dom';
 import RegisterLoginPage from './pages/RegisterLoginPage';
 
 function App() {
-  const path = window.location.pathname.split("/")[1];
+  const path = window.location.pathname.split("/")[2];
 
   console.log(path);
 
@@ -19,7 +19,7 @@ function App() {
       {
         path === "perfil" ? (
           <Routes>
-            <Route element={<ProfilePage />} path={`/${path}`}></Route>
+            <Route element={<ProfilePage />} path={`/:idioma/${path}`}></Route>
           </Routes>
         ) : path === "registro" || path === "login" ? (
           <Routes>

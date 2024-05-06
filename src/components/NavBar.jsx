@@ -3,17 +3,28 @@ import { Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import { XCircleFill } from 'react-bootstrap-icons';
 
-const navigation = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Acciones', path: '/acciones' },
-    { name: 'Explorar', path: '/explorar' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contáctanos', path: '/contactanos' },
-    { name: 'Información', path: '/info' },
-];
+import useTranslationContext from '../hooks/useTranslationContext';
 
 export default function NavBar() {
+    let idioma = window.location.pathname.split("/")[1];
+    idioma = idioma || 'es';
+
+    const translation = useTranslationContext();
+
+    if (!translation) {
+        return;
+    }
+
     const [selectedItem, setSelectedItem] = useState(null);
+
+    const navigation = [
+        { name: translation.navbar.start, path: `/${idioma}/MeCa` },
+        { name: translation.navbar.actions, path: `/${idioma}/acciones` },
+        { name: translation.navbar.explore, path: `/${idioma}/explorar` },
+        { name: translation.navbar.blog, path: `/${idioma}/blog` },
+        { name: translation.navbar.contact, path: `/${idioma}/contactanos` },
+        { name: translation.navbar.info, path: `/${idioma}/info` },
+    ];
 
     const handleClick = (itemName) => {
         setSelectedItem((prevSelectedItem) => {
@@ -41,7 +52,7 @@ export default function NavBar() {
 
             {/* Logo */}
             <div className='col-md-4 col-xs-4 col-lg-2 text-center d-flex justify-content-center'>
-                <Link to={"/"} onClick={closeNav}>
+                <Link to={`/${idioma}/MeCa`} onClick={closeNav}>
                     <img src="/Image/Logos/MECA-09.png" alt="Logo MECA" />
                 </Link>
             </div>
@@ -50,37 +61,37 @@ export default function NavBar() {
             <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-8">
                 {navigation.map((item) => (
                     <div key={item.name}>
-                        {item.name === 'Acciones' ? (
+                        {item.name === translation.navbar.actions ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
-                                <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: -12, zIndex: 1 }}>
-                                    <Link to={"/logros"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Logros</strong>
+                                <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: -30, zIndex: 1 }}>
+                                    <Link to={`/${idioma}/logros`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.achievements}</strong>
                                     </Link>
-                                    <Link to={"/eventos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Eventos</strong>
+                                    <Link to={`/${idioma}/eventos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.events}</strong>
                                     </Link>
-                                    <Link to={"/clasificacion"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Clasificación</strong>
+                                    <Link to={`/${idioma}/clasificacion`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.ranking}</strong>
                                     </Link>
                                 </div>
                             </div>
-                        ) : item.name === 'Explorar' ? (
+                        ) : item.name === translation.navbar.explore ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
-                                <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: 0, zIndex: 1 }}>
-                                    <Link to={"/monumentos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Obras</strong>
+                                <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: 11, zIndex: 1 }}>
+                                    <Link to={`/${idioma}/monumentos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.monuments}</strong>
                                     </Link>
-                                    <Link to={"/autores"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Autores</strong>
+                                    <Link to={`/${idioma}/autores`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.authors}</strong>
                                     </Link>
-                                    <Link to={"/estilos"} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>Estilos</strong>
+                                    <Link to={`/${idioma}/estilos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
+                                        <strong className='text-white'>{translation.navbar.styles}</strong>
                                     </Link>
                                 </div>
                             </div>
@@ -107,13 +118,13 @@ export default function NavBar() {
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/logros"} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
+                                                <Link to={`/${idioma}/logros`} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/eventos"} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
+                                                <Link to={`/${idioma}/eventos`} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/calificaion"} className='btn my-1 text-white fs-2'><strong>Calificacion</strong></Link>
+                                                <Link to={`/${idioma}/calificaion`} className='btn my-1 text-white fs-2'><strong>Calificacion</strong></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -122,13 +133,13 @@ export default function NavBar() {
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/obras"} className='btn my-1 text-white fs-2'><strong>Obras</strong></Link>
+                                                <Link to={`/${idioma}/obras`} className='btn my-1 text-white fs-2'><strong>Obras</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/autores"} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
+                                                <Link to={`/${idioma}/autores`} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={"/estilos"} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
+                                                <Link to={`/${idioma}/estilos`} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +154,7 @@ export default function NavBar() {
 
             {/* Perfil */}
             <div className='col-md-4 col-xs-4 col-lg-2 text-right'>
-                <Link to={"/perfil"} onClick={closeNav}>
+                <Link to={`/${idioma}/perfil`} onClick={closeNav}>
                     <img className="flex float-right p-1" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ border: "1px solid #263C5C", borderRadius: "50%", maxWidth: "40px", height: "auto" }} />
                 </Link>
             </div>

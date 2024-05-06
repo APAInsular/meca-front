@@ -1,25 +1,25 @@
 {
-    "navbar" : {
+    "navbar": {
         "start": "",
         "actions": "",
         "achievments": "",
         "events": "",
         "ranking": "",
         "explore": "",
-        "plays": "",
+        "monuments": "",
         "authors": "",
         "styles": "",
         "blog": "",
         "contact": "",
         "info": ""
     },
-    "achievmentPage" : {
+    "achievmentPage": {
         "achievment": "",
         "achievment1": "",
         "achievment2": "",
         "achievment3": ""
     },
-    "eventPage" : {
+    "eventPage": {
         "events": "",
         "eventTitle": "",
         "eventAuthor": "",

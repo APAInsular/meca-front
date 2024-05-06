@@ -1,143 +1,143 @@
 {
-    "navbar": {
-      "start": "Accueil",
-      "actions": "Accions",
-      "achievements": "Logros",
-      "events": "Événements",
-      "ranking": "Classification",
-      "explore": "Explorer",
-      "plays": "Obras",
-      "authors": "Autores",
-      "styles": "Styles",
-      "blog": "Blog",
-      "contact": "Contacts",
-      "info": "Informations"
-    },
-    "achievementPage": {
-      "achievement": "Logros",
-      "achievement1": "Visite 5 chiffres",
-      "achievement2": "Compléter deux routes dans le même jour",
-      "achievement3": "Logro"
-    },
-    "eventPage": {
-      "events": "Événements",
-      "seeMore": "Voir plus"
-    },
-    "rankingPage": {
-      "top": "HAUT",
-      "platen": "PLATINO",
-      "gold": "ORO",
-      "silver": "PLATE",
-      "bronze": "BRONZE",
-      "statues": "Statuts"
-    },
-    "monumentPage": {
-      "monumentName": "Escultura Movil",
-      "monumentDesc": "César Manrique Cabrera Arrecife, 24 avril 1919 - Teguise, 25 septembre 1992 Pintor, artiste esculteur canarien, connaît particulièrement les projets architecturaux dans les interventions comme directeur artistique. ",
-      "monumentAuthor": "Auteur",
-      "monumentAuthorDesc": "César Manrique (Arrecife, 24 avril 1919 - Teguise, 25 septembre 1992) Pintor, artiste escultoire canarien",
-      "monumentLocation": "Emplacement",
-      "monumentLocationDesc": "Parc infantile du Castillo Negro Av. ",
-      "monumentRuta": "Ruta Relacionidas",
-      "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24 avril 1919-Teguise) Peintre, artiste esculteur canarien connu particulièrement pour les projets architecturaux."
-    },
-    "authorPage": {
-      "authorDesc": "César Manrique Cabrera (Arrecife, 24 avril 1919-Teguise) Peintre, artiste écultatoire canarien, connu particulièrement pour les projets architecturaux dans l'intervin comme directeur artistique.1 Compaginó son travail avec la défense des valeurs ambiantes moyennes des Canaries. "
-    },
-    "blogPage": {
-      "search": "Busqueda"
-    },
-    "contactPage": {
-      "contactUs": "Contactez-nous",
-      "contactDesc": "Avez-vous une question ou un commentaire ? ",
-      "contactEmail": "E-mail",
-      "contactEmailButton": "CONTACTER",
-      "contactPhone": "Téléphone",
-      "contactPhoneButton": "LLAMAR",
-      "contactOffice": "Bureau",
-      "contactOfficeButton": "UBICACIÓN",
-      "contactFormButton": "Entégar",
-      "contactFormText": "Envoyer un formulaire"
-    },
-    "infoPage": {
-      "infoText": "Lors de la recherche des codes QR concernant les monuments et les explorations, ils seront récompensés par des points pour les tâches complétées.",
-      "infoPoints": "Points de reconnaissance",
-      "infoName": "Nombre",
-      "infoTotems": "Totems"
-    },
-    "profilePage": {
-      "profileText": "Profil",
-      "profileCreatPost": "Créer un message",
-      "profileEditar": "Modifier le profil",
-      "profileInformation": "Données personnelles",
-      "profileFavorite": "Favoris",
-      "profileAvatar": "Avatar",
-      "profilePosts": "Publications"
-    },
-    "adminEventPage": {
-      "eventInfo": "Informations sur la route",
-      "eventRoute": "Itinéraire",
-      "eventStop": "Parada",
-      "eventObra": "Obra"
-    },
-    "adminPage": {
-      "adminID": "IDENTIFIANT",
-      "adminTitle": "Titre",
-      "adminAuthor": "Auteur",
-      "adminStyle": "Style",
-      "adminLocation": "Emplacement",
-      "adminSpeech": "Discurso",
-      "adminEdtion": "Édition",
-      "adminRoles": "Les rôles",
-      "adminUser": "Utilisateur public",
-      "adminUserPrivate": "Utilisateur Privado",
-      "adminModerator": "Modérateur",
-      "adminEvent": "Administrateur d'événements",
-      "adminTotal": "Total administrateur",
-      "adminTotalPlays": "Total des Ouvres :",
-      "adminAdd": "Anadir Obra"
-    },
-    "loginPage": {
-      "loginTitle": "SÉANCE INITIALE",
-      "loginPassword": "Contreseña",
-      "loginButton": "Entrée"
-    },
-    "monumentFiltradosPage": {
-      "monumentList": "Lista de Obras ESCULTURAS EN LA ZONE DE PLAYA BLANCA",
-      "monumentDesc": ""
-    },
-    "editarProfile": {
-      "editarTitle": "Modifier le profil",
-      "editarName": "Nombre",
-      "editarPhone": "Téléphone",
-      "editarPassword": "Contreseña",
-      "editarUpdate": "Actualiser"
-    },
-    "registerPage": {
-      "registerTitle": "S'INSCRIRE",
-      "registerName": "Nombre",
-      "registerSurname": "Apellidos",
-      "registerCity": "Ville",
-      "registerCountry": "Pays",
-      "registerNationality": "Nationalité",
-      "registerPassword": "Contreseña",
-      "registerRepeat": "Répéter la Contraseña",
-      "registerButton": "Entrée"
-    },
-    "searchPage": {
-      "searchTitle": "Explorer",
-      "searchText": "Rechercher",
-      "searchFiltres": "Filtres"
-    },
-    "termsAndCondition": {
-      "termsTitle": "Votre confidentialité est importante",
-      "termsAgreement": "Acuerdo Legal: L'acceptation des termes et conditions établit un acuerdo legalmente vinculante entre l'utilisateur et le fournisseur du service ou du produit. ",
-      "termsProtection": "Protection de l'utilisateur : les termes et conditions du menu incluent des clauses qui décrivent comment gérer et protéger les données de l'utilisateur. ",
-      "termsSecurity": "Sécurité et garantie : les termes et conditions détaillés des mesures de sécurité mises en œuvre par le service pour protéger les données de l'utilisateur. ",
-      "termsGuidelines": "Conditions d'utilisation : les termes et conditions spécifiques sont attendus pour que les utilisateurs interagissent avec la plate-forme, ce qui est autorisé ou interdit et les conséquences possibles des infractions. ",
-      "termsIntellectual": "Propriété intellectuelle et droits d'auteur : Accepter les termes et conditions afin de reconnaître les politiques de propriété intellectuelle et de droits d'auteur de la plate-forme. ",
-      "termsUpdates": "Actualisations et modifications : les fournisseurs de services peuvent se réserver le droit d'actualiser ou de modifier leurs termes et conditions. ",
-      "termsResoluton": "Résolution des litiges : les termes et conditions du menu comprennent des clauses sur les mécanismes de résolution des litiges, comme l'arbitrage ou la médiation. ",
-      "termsLimitations": "Limitations du service : Les termes et conditions peuvent décrire toute limitation ou restriction lors de l'utilisation du service. "
-    }
+  "navbar": {
+    "start": "Accueil",
+    "actions": "Accions",
+    "achievements": "Logros",
+    "events": "Événements",
+    "ranking": "Classification",
+    "explore": "Explorer",
+    "monuments": "Obras",
+    "authors": "Autores",
+    "styles": "Styles",
+    "blog": "Blog",
+    "contact": "Contacts",
+    "info": "Informations"
+  },
+  "achievementPage": {
+    "achievement": "Logros",
+    "achievement1": "Visite 5 chiffres",
+    "achievement2": "Compléter deux routes dans le même jour",
+    "achievement3": "Logro"
+  },
+  "eventPage": {
+    "events": "Événements",
+    "seeMore": "Voir plus"
+  },
+  "rankingPage": {
+    "top": "HAUT",
+    "platen": "PLATINO",
+    "gold": "ORO",
+    "silver": "PLATE",
+    "bronze": "BRONZE",
+    "statues": "Statuts"
+  },
+  "monumentPage": {
+    "monumentName": "Escultura Movil",
+    "monumentDesc": "César Manrique Cabrera Arrecife, 24 avril 1919 - Teguise, 25 septembre 1992 Pintor, artiste esculteur canarien, connaît particulièrement les projets architecturaux dans les interventions comme directeur artistique. ",
+    "monumentAuthor": "Auteur",
+    "monumentAuthorDesc": "César Manrique (Arrecife, 24 avril 1919 - Teguise, 25 septembre 1992) Pintor, artiste escultoire canarien",
+    "monumentLocation": "Emplacement",
+    "monumentLocationDesc": "Parc infantile du Castillo Negro Av. ",
+    "monumentRuta": "Ruta Relacionidas",
+    "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24 avril 1919-Teguise) Peintre, artiste esculteur canarien connu particulièrement pour les projets architecturaux."
+  },
+  "authorPage": {
+    "authorDesc": "César Manrique Cabrera (Arrecife, 24 avril 1919-Teguise) Peintre, artiste écultatoire canarien, connu particulièrement pour les projets architecturaux dans l'intervin comme directeur artistique.1 Compaginó son travail avec la défense des valeurs ambiantes moyennes des Canaries. "
+  },
+  "blogPage": {
+    "search": "Busqueda"
+  },
+  "contactPage": {
+    "contactUs": "Contactez-nous",
+    "contactDesc": "Avez-vous une question ou un commentaire ? ",
+    "contactEmail": "E-mail",
+    "contactEmailButton": "CONTACTER",
+    "contactPhone": "Téléphone",
+    "contactPhoneButton": "LLAMAR",
+    "contactOffice": "Bureau",
+    "contactOfficeButton": "UBICACIÓN",
+    "contactFormButton": "Entégar",
+    "contactFormText": "Envoyer un formulaire"
+  },
+  "infoPage": {
+    "infoText": "Lors de la recherche des codes QR concernant les monuments et les explorations, ils seront récompensés par des points pour les tâches complétées.",
+    "infoPoints": "Points de reconnaissance",
+    "infoName": "Nombre",
+    "infoTotems": "Totems"
+  },
+  "profilePage": {
+    "profileText": "Profil",
+    "profileCreatPost": "Créer un message",
+    "profileEditar": "Modifier le profil",
+    "profileInformation": "Données personnelles",
+    "profileFavorite": "Favoris",
+    "profileAvatar": "Avatar",
+    "profilePosts": "Publications"
+  },
+  "adminEventPage": {
+    "eventInfo": "Informations sur la route",
+    "eventRoute": "Itinéraire",
+    "eventStop": "Parada",
+    "eventObra": "Obra"
+  },
+  "adminPage": {
+    "adminID": "IDENTIFIANT",
+    "adminTitle": "Titre",
+    "adminAuthor": "Auteur",
+    "adminStyle": "Style",
+    "adminLocation": "Emplacement",
+    "adminSpeech": "Discurso",
+    "adminEdtion": "Édition",
+    "adminRoles": "Les rôles",
+    "adminUser": "Utilisateur public",
+    "adminUserPrivate": "Utilisateur Privado",
+    "adminModerator": "Modérateur",
+    "adminEvent": "Administrateur d'événements",
+    "adminTotal": "Total administrateur",
+    "adminTotalPlays": "Total des Ouvres :",
+    "adminAdd": "Anadir Obra"
+  },
+  "loginPage": {
+    "loginTitle": "SÉANCE INITIALE",
+    "loginPassword": "Contreseña",
+    "loginButton": "Entrée"
+  },
+  "monumentFiltradosPage": {
+    "monumentList": "Lista de Obras ESCULTURAS EN LA ZONE DE PLAYA BLANCA",
+    "monumentDesc": ""
+  },
+  "editarProfile": {
+    "editarTitle": "Modifier le profil",
+    "editarName": "Nombre",
+    "editarPhone": "Téléphone",
+    "editarPassword": "Contreseña",
+    "editarUpdate": "Actualiser"
+  },
+  "registerPage": {
+    "registerTitle": "S'INSCRIRE",
+    "registerName": "Nombre",
+    "registerSurname": "Apellidos",
+    "registerCity": "Ville",
+    "registerCountry": "Pays",
+    "registerNationality": "Nationalité",
+    "registerPassword": "Contreseña",
+    "registerRepeat": "Répéter la Contraseña",
+    "registerButton": "Entrée"
+  },
+  "searchPage": {
+    "searchTitle": "Explorer",
+    "searchText": "Rechercher",
+    "searchFiltres": "Filtres"
+  },
+  "termsAndCondition": {
+    "termsTitle": "Votre confidentialité est importante",
+    "termsAgreement": "Acuerdo Legal: L'acceptation des termes et conditions établit un acuerdo legalmente vinculante entre l'utilisateur et le fournisseur du service ou du produit. ",
+    "termsProtection": "Protection de l'utilisateur : les termes et conditions du menu incluent des clauses qui décrivent comment gérer et protéger les données de l'utilisateur. ",
+    "termsSecurity": "Sécurité et garantie : les termes et conditions détaillés des mesures de sécurité mises en œuvre par le service pour protéger les données de l'utilisateur. ",
+    "termsGuidelines": "Conditions d'utilisation : les termes et conditions spécifiques sont attendus pour que les utilisateurs interagissent avec la plate-forme, ce qui est autorisé ou interdit et les conséquences possibles des infractions. ",
+    "termsIntellectual": "Propriété intellectuelle et droits d'auteur : Accepter les termes et conditions afin de reconnaître les politiques de propriété intellectuelle et de droits d'auteur de la plate-forme. ",
+    "termsUpdates": "Actualisations et modifications : les fournisseurs de services peuvent se réserver le droit d'actualiser ou de modifier leurs termes et conditions. ",
+    "termsResoluton": "Résolution des litiges : les termes et conditions du menu comprennent des clauses sur les mécanismes de résolution des litiges, comme l'arbitrage ou la médiation. ",
+    "termsLimitations": "Limitations du service : Les termes et conditions peuvent décrire toute limitation ou restriction lors de l'utilisation du service. "
   }
+}

@@ -6,7 +6,7 @@
         "events": "イベント",
         "ranking": "ランキング",
         "explore": "エクスペリエンス",
-        "plays": "作品",
+        "monuments": "作品",
         "authors": "著者紹介",
         "styles": "スタイル",
         "blog": "ブログ",
@@ -14,12 +14,12 @@
         "info": "インフォメーション"
     },
     "achievementPage": {
-        "achievement" : "実績",
-        "achievement1" : "5つの数字を見る",
-        "achievement2" : "同じ日に2つのルートを完走する",
-        "achievement3" : "業績#3"
+        "achievement": "実績",
+        "achievement1": "5つの数字を見る",
+        "achievement2": "同じ日に2つのルートを完走する",
+        "achievement3": "業績#3"
     },
-    "eventPage":{
+    "eventPage": {
         "events": "イベント",
         "seeMore": "もっと見る"
     },

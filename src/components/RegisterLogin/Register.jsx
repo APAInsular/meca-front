@@ -104,7 +104,7 @@ const Register = () => {
 
     return (
         <div className="col-md-5 p-5 d-flex align-items-center justify-content-center border-custom-registerLogin">
-            <form className="pl-3 row g-3" onSubmit={handleRegister}>
+            <form className="pl-3 row g-3 d-flex align-items-center" onSubmit={handleRegister}>
                 <h2 className="text-center mb-4 text-white">Sign up</h2>
                 <div className="col-md-6">
                     <label className="form-label text-white">Nombre *</label>
@@ -127,7 +127,7 @@ const Register = () => {
                         onChange={(e) => separarApellidos(e.target.value)}
                     />
                 </div>
-                <div className="col-6">
+                <div className="col-12">
                     <label className="form-label text-white">Email *</label>
                     <input
                         type="email"
@@ -138,18 +138,7 @@ const Register = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
-                <div className="col-6">
-                    <label className="form-label text-white">Dirección *</label>
-                    <input
-                        type="text"
-                        className="form-control custom-input"
-                        name="direccion"
-                        placeholder="Dirección"
-                        value={nacionalidad}
-                        onChange={(e) => setNacionalidad(e.target.value)}
-                    />
-                </div>
-                <div className="col-6">
+                <div className="col-12">
                     <label className="form-label text-white">Localidad *</label>
                     <input
                         type="text"
@@ -160,7 +149,7 @@ const Register = () => {
                         onChange={(e) => setLocalidad(e.target.value)}
                     />
                 </div>
-                <div className=''>
+                <div className='col-12'>
                     <div className='d-flex justify-content-center'>
                         <div className='d-flex justify-content-start mx-3'>
                             <button className="btn text-white" type="button" style={{ backgroundColor: "#263c5c" }} onClick={toggleMenu}>

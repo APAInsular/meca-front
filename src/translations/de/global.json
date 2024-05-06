@@ -1,143 +1,143 @@
 {
-    "navbar": {
-      "start": "Anfang",
-      "actions": "Aktionen",
-      "achievements": "Logros",
-      "events": "Veranstaltungen",
-      "ranking": "Klassifizierung",
-      "explore": "Entdecken",
-      "plays": "Obras",
-      "authors": "Autoren",
-      "styles": "Estilos",
-      "blog": "Blog",
-      "contact": "Kontakte",
-      "info": "Informationen"
-    },
-    "achievementPage": {
-      "achievement": "Logros",
-      "achievement1": "Besuchen Sie 5 Figuren",
-      "achievement2": "Komplette Dos-Routen im Mismo-Tag",
-      "achievement3": "Logro"
-    },
-    "eventPage": {
-      "events": "Veranstaltungen",
-      "seeMore": "Mehr erfahren"
-    },
-    "rankingPage": {
-      "top": "SPITZE",
-      "platen": "PLATINO",
-      "gold": "ORO",
-      "silver": "PLATA",
-      "bronze": "BRONZE",
-      "statues": "Estatuas"
-    },
-    "monumentPage": {
-      "monumentName": "Escultura Movil",
-      "monumentDesc": "César Manrique Cabrera Arrecife, 24. April 1919 – Teguise, 25. September 1992 Pintor, kaiserlicher künstlerischer Leiter, insbesondere für architektonische Projekte zuständig und als künstlerischer Leiter tätig. ",
-      "monumentAuthor": "Autor",
-      "monumentAuthorDesc": "César Manrique (Arrecife, 24. April 1919 – Teguise, 25. September 1992) Pintor, Eskultator und Künstler Canario",
-      "monumentLocation": "Ubicación",
-      "monumentLocationDesc": "Parque infantil del Castillo Negro Av. ",
-      "monumentRuta": "Ruta Relacionidas",
-      "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24. April 1919 – Teguise) Pintor, kaiserlicher Kunstmaler, der sich insbesondere mit architektonischen Projekten beschäftigte."
-    },
-    "authorPage": {
-      "authorDesc": "César Manrique Cabrera (Arrecife, 24. April 1919 – Teguise) Zeichner, kaiserlicher Bildhauer, besonders bekannt für architektonische Projekte und als Künstler tätig. "
-    },
-    "blogPage": {
-      "search": "Busqueda"
-    },
-    "contactPage": {
-      "contactUs": "Kontaktieren Sie uns mit uns",
-      "contactDesc": "Haben Sie einen Kommentar geschrieben? ",
-      "contactEmail": "Email",
-      "contactEmailButton": "KONTAKT",
-      "contactPhone": "Telefon",
-      "contactPhoneButton": "LLAMAR",
-      "contactOffice": "Büro",
-      "contactOfficeButton": "UBICACIÓN",
-      "contactFormButton": "Entegar",
-      "contactFormText": "Senden Sie ein Formular"
-    },
-    "infoPage": {
-      "infoText": "Wenn Sie die QR-Codes auf der Suche nach Denkmälern und Erkundungstouren durchsuchen, erhalten Sie eine Belohnung für die Besichtigung der abgeschlossenen Gebiete.",
-      "infoPoints": "Puntos de recogida",
-      "infoName": "Nummer",
-      "infoTotems": "Totems"
-    },
-    "profilePage": {
-      "profileText": "Profil",
-      "profileCreatPost": "Beitrag erstellen",
-      "profileEditar": "Profil bearbeiten",
-      "profileInformation": "Persönliche Daten",
-      "profileFavorite": "Favoriten",
-      "profileAvatar": "Benutzerbild",
-      "profilePosts": "Veröffentlichungen"
-    },
-    "adminEventPage": {
-      "eventInfo": "Informationen zur Route",
-      "eventRoute": "Ruta",
-      "eventStop": "Parada",
-      "eventObra": "Obra"
-    },
-    "adminPage": {
-      "adminID": "AUSWEIS",
-      "adminTitle": "Titel",
-      "adminAuthor": "Autor",
-      "adminStyle": "Stil",
-      "adminLocation": "Ubicacion",
-      "adminSpeech": "Diskussion",
-      "adminEdtion": "Edicion",
-      "adminRoles": "Rollen",
-      "adminUser": "Usuario Publico",
-      "adminUserPrivate": "Usuario Privado",
-      "adminModerator": "Moderator",
-      "adminEvent": "Eventadministrator",
-      "adminTotal": "Admin-Gesamtsumme",
-      "adminTotalPlays": "Obras Totales:",
-      "adminAdd": "Anadir Obra"
-    },
-    "loginPage": {
-      "loginTitle": "INICIA SESIÓN",
-      "loginPassword": "Contraseña",
-      "loginButton": "Entrar"
-    },
-    "monumentFiltradosPage": {
-      "monumentList": "Lista de Obras ESCULTURAS EN LA ZONA DE PLAYA BLANCA",
-      "monumentDesc": ""
-    },
-    "editarProfile": {
-      "editarTitle": "Profil bearbeiten",
-      "editarName": "Nummer",
-      "editarPhone": "Telefon",
-      "editarPassword": "Contraseña",
-      "editarUpdate": "Aktualisieren"
-    },
-    "registerPage": {
-      "registerTitle": "REGISTRIEREN",
-      "registerName": "Nummer",
-      "registerSurname": "Apellidos",
-      "registerCity": "Stadt",
-      "registerCountry": "País",
-      "registerNationality": "Nationalität",
-      "registerPassword": "Contraseña",
-      "registerRepeat": "Repetir Contraseña",
-      "registerButton": "Entrar"
-    },
-    "searchPage": {
-      "searchTitle": "Entdecken",
-      "searchText": "Buscar",
-      "searchFiltres": "Filter"
-    },
-    "termsAndCondition": {
-      "termsTitle": "Ihre Privatsphäre ist wichtig",
-      "termsAgreement": "Acuerdo Legal: Die Annahme der Bedingungen und Konditionen stellt einen rechtmäßigen Rechtsakt dar, der zwischen dem Benutzer und dem Lieferanten des Dienstes oder des Produkts wirksam ist. ",
-      "termsProtection": "Schutz des Benutzers: Die im Menü aufgeführten Termine und Bedingungen umfassen Klauseln, die so beschrieben werden, wie sie verwaltet und die Daten des Benutzers geschützt werden. ",
-      "termsSecurity": "Sicherheit und Komfort: Viele Termine und Bedingungen sowie die vom Service implementierten Sicherheitsmaßnahmen zum Schutz der Daten des Benutzers. ",
-      "termsGuidelines": "Nutzungshinweise: Die Bedingungen und Konditionen sind genau so, wie sie es erwarten, wenn die Benutzer mit der Plattform interagieren, was erlaubt oder verboten ist und welche möglichen Folgen die Verstöße haben können. ",
-      "termsIntellectual": "Intellektuelles Eigentum und Rechte des Autors: Akzeptieren Sie die Termine und Bedingungen im Menü, um die Politik des geistigen Eigentums und die Rechte des Autors von der Plattform zu verstehen. ",
-      "termsUpdates": "Aktualisierungen und Änderungen: Die Anbieter von Dienstleistungen können die Möglichkeit zur Aktualisierung oder Änderung ihrer Bedingungen und Konditionen reservieren. ",
-      "termsResoluton": "Streitbeilegung: Die im Menü aufgeführten Fristen und Bedingungen umfassen Klauseln über Mechanismen zur Streitbeilegung, wie Schiedsverfahren oder Mediation. ",
-      "termsLimitations": "Serviceeinschränkungen: Die Termine und Bedingungen können jeweils mit Einschränkungen oder Einschränkungen bei der Nutzung des Service beschrieben werden. "
-    }
+  "navbar": {
+    "start": "Anfang",
+    "actions": "Aktionen",
+    "achievements": "Logros",
+    "events": "Veranstaltungen",
+    "ranking": "Klassifizierung",
+    "explore": "Entdecken",
+    "monuments": "Obras",
+    "authors": "Autoren",
+    "styles": "Estilos",
+    "blog": "Blog",
+    "contact": "Kontakte",
+    "info": "Informationen"
+  },
+  "achievementPage": {
+    "achievement": "Logros",
+    "achievement1": "Besuchen Sie 5 Figuren",
+    "achievement2": "Komplette Dos-Routen im Mismo-Tag",
+    "achievement3": "Logro"
+  },
+  "eventPage": {
+    "events": "Veranstaltungen",
+    "seeMore": "Mehr erfahren"
+  },
+  "rankingPage": {
+    "top": "SPITZE",
+    "platen": "PLATINO",
+    "gold": "ORO",
+    "silver": "PLATA",
+    "bronze": "BRONZE",
+    "statues": "Estatuas"
+  },
+  "monumentPage": {
+    "monumentName": "Escultura Movil",
+    "monumentDesc": "César Manrique Cabrera Arrecife, 24. April 1919 – Teguise, 25. September 1992 Pintor, kaiserlicher künstlerischer Leiter, insbesondere für architektonische Projekte zuständig und als künstlerischer Leiter tätig. ",
+    "monumentAuthor": "Autor",
+    "monumentAuthorDesc": "César Manrique (Arrecife, 24. April 1919 – Teguise, 25. September 1992) Pintor, Eskultator und Künstler Canario",
+    "monumentLocation": "Ubicación",
+    "monumentLocationDesc": "Parque infantil del Castillo Negro Av. ",
+    "monumentRuta": "Ruta Relacionidas",
+    "monumentRutaDesc": "César Manrique Cabrera (Arrecife, 24. April 1919 – Teguise) Pintor, kaiserlicher Kunstmaler, der sich insbesondere mit architektonischen Projekten beschäftigte."
+  },
+  "authorPage": {
+    "authorDesc": "César Manrique Cabrera (Arrecife, 24. April 1919 – Teguise) Zeichner, kaiserlicher Bildhauer, besonders bekannt für architektonische Projekte und als Künstler tätig. "
+  },
+  "blogPage": {
+    "search": "Busqueda"
+  },
+  "contactPage": {
+    "contactUs": "Kontaktieren Sie uns mit uns",
+    "contactDesc": "Haben Sie einen Kommentar geschrieben? ",
+    "contactEmail": "Email",
+    "contactEmailButton": "KONTAKT",
+    "contactPhone": "Telefon",
+    "contactPhoneButton": "LLAMAR",
+    "contactOffice": "Büro",
+    "contactOfficeButton": "UBICACIÓN",
+    "contactFormButton": "Entegar",
+    "contactFormText": "Senden Sie ein Formular"
+  },
+  "infoPage": {
+    "infoText": "Wenn Sie die QR-Codes auf der Suche nach Denkmälern und Erkundungstouren durchsuchen, erhalten Sie eine Belohnung für die Besichtigung der abgeschlossenen Gebiete.",
+    "infoPoints": "Puntos de recogida",
+    "infoName": "Nummer",
+    "infoTotems": "Totems"
+  },
+  "profilePage": {
+    "profileText": "Profil",
+    "profileCreatPost": "Beitrag erstellen",
+    "profileEditar": "Profil bearbeiten",
+    "profileInformation": "Persönliche Daten",
+    "profileFavorite": "Favoriten",
+    "profileAvatar": "Benutzerbild",
+    "profilePosts": "Veröffentlichungen"
+  },
+  "adminEventPage": {
+    "eventInfo": "Informationen zur Route",
+    "eventRoute": "Ruta",
+    "eventStop": "Parada",
+    "eventObra": "Obra"
+  },
+  "adminPage": {
+    "adminID": "AUSWEIS",
+    "adminTitle": "Titel",
+    "adminAuthor": "Autor",
+    "adminStyle": "Stil",
+    "adminLocation": "Ubicacion",
+    "adminSpeech": "Diskussion",
+    "adminEdtion": "Edicion",
+    "adminRoles": "Rollen",
+    "adminUser": "Usuario Publico",
+    "adminUserPrivate": "Usuario Privado",
+    "adminModerator": "Moderator",
+    "adminEvent": "Eventadministrator",
+    "adminTotal": "Admin-Gesamtsumme",
+    "adminTotalPlays": "Obras Totales:",
+    "adminAdd": "Anadir Obra"
+  },
+  "loginPage": {
+    "loginTitle": "INICIA SESIÓN",
+    "loginPassword": "Contraseña",
+    "loginButton": "Entrar"
+  },
+  "monumentFiltradosPage": {
+    "monumentList": "Lista de Obras ESCULTURAS EN LA ZONA DE PLAYA BLANCA",
+    "monumentDesc": ""
+  },
+  "editarProfile": {
+    "editarTitle": "Profil bearbeiten",
+    "editarName": "Nummer",
+    "editarPhone": "Telefon",
+    "editarPassword": "Contraseña",
+    "editarUpdate": "Aktualisieren"
+  },
+  "registerPage": {
+    "registerTitle": "REGISTRIEREN",
+    "registerName": "Nummer",
+    "registerSurname": "Apellidos",
+    "registerCity": "Stadt",
+    "registerCountry": "País",
+    "registerNationality": "Nationalität",
+    "registerPassword": "Contraseña",
+    "registerRepeat": "Repetir Contraseña",
+    "registerButton": "Entrar"
+  },
+  "searchPage": {
+    "searchTitle": "Entdecken",
+    "searchText": "Buscar",
+    "searchFiltres": "Filter"
+  },
+  "termsAndCondition": {
+    "termsTitle": "Ihre Privatsphäre ist wichtig",
+    "termsAgreement": "Acuerdo Legal: Die Annahme der Bedingungen und Konditionen stellt einen rechtmäßigen Rechtsakt dar, der zwischen dem Benutzer und dem Lieferanten des Dienstes oder des Produkts wirksam ist. ",
+    "termsProtection": "Schutz des Benutzers: Die im Menü aufgeführten Termine und Bedingungen umfassen Klauseln, die so beschrieben werden, wie sie verwaltet und die Daten des Benutzers geschützt werden. ",
+    "termsSecurity": "Sicherheit und Komfort: Viele Termine und Bedingungen sowie die vom Service implementierten Sicherheitsmaßnahmen zum Schutz der Daten des Benutzers. ",
+    "termsGuidelines": "Nutzungshinweise: Die Bedingungen und Konditionen sind genau so, wie sie es erwarten, wenn die Benutzer mit der Plattform interagieren, was erlaubt oder verboten ist und welche möglichen Folgen die Verstöße haben können. ",
+    "termsIntellectual": "Intellektuelles Eigentum und Rechte des Autors: Akzeptieren Sie die Termine und Bedingungen im Menü, um die Politik des geistigen Eigentums und die Rechte des Autors von der Plattform zu verstehen. ",
+    "termsUpdates": "Aktualisierungen und Änderungen: Die Anbieter von Dienstleistungen können die Möglichkeit zur Aktualisierung oder Änderung ihrer Bedingungen und Konditionen reservieren. ",
+    "termsResoluton": "Streitbeilegung: Die im Menü aufgeführten Fristen und Bedingungen umfassen Klauseln über Mechanismen zur Streitbeilegung, wie Schiedsverfahren oder Mediation. ",
+    "termsLimitations": "Serviceeinschränkungen: Die Termine und Bedingungen können jeweils mit Einschränkungen oder Einschränkungen bei der Nutzung des Service beschrieben werden. "
   }
+}

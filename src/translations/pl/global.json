@@ -6,7 +6,7 @@
         "events": "Wydarzenia",
         "ranking": "Klasyfikacja",
         "explore": "Wyszukiwarka",
-        "plays": "Dzieła",
+        "monuments": "Dzieła",
         "authors": "Autorzy",
         "styles": "Style",
         "blog": "Blog",
@@ -14,12 +14,12 @@
         "info": "Informacje"
     },
     "achievementPage": {
-        "achievement" : "Osiągnięcia",
-        "achievement1" : "Odwiedź 5 liczb",
-        "achievement2" : "Ukończ dwie trasy tego samego dnia",
-        "achievement3" : "Osiągnięcie#3"
+        "achievement": "Osiągnięcia",
+        "achievement1": "Odwiedź 5 liczb",
+        "achievement2": "Ukończ dwie trasy tego samego dnia",
+        "achievement3": "Osiągnięcie#3"
     },
-    "eventPage":{
+    "eventPage": {
         "events": "Wydarzenia",
         "seeMore": "Zobacz więcej"
     },
