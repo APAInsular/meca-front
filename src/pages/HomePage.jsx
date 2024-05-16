@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ObrasDestacadas from "../components/HomePage/ObrasDestacadas";
 import EventosDestacados from "../components/HomePage/EventosDestacados";
 import AutoresDestacados from "../components/HomePage/AutoresDestacados";
+import RutasDestacadas from "../components/HomePage/RutasDestacadas";
+import StarRatingModal from "../components/HomePage/StarRatingModal";
 
 const HomePage = () => {
     return (
@@ -21,7 +23,7 @@ const HomePage = () => {
             </div>
 
             <div>
-                {/* <RutasDestacadas /> */}
+                <RutasDestacadas />
             </div>
             <div>
                 {/* <EntradasDestacadas /> */}

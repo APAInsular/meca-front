@@ -30,11 +30,37 @@
             "Marron": "Marron.png"
         }
     },
-    "camisa": {
-        "Corta": {},
-        "Larga": {}
+    "Camisa": {
+        "Corta": {
+            "AzulClaro": "AzulClaro.png",
+            "Blanca": "Blanca",
+            "Negra": "Negra"
+        },
+        "Larga": {
+            "Morada": "Morada",
+            "VerdeAmarilla": "VerdeAmarilla"
+        },
+        "Especial": {
+            "Bicho": "Bicho",
+            "Canarias": "Canarias",
+            "CaritaFeliz": "CaritaFeliz"
+        }
     },
-    "pantalon": {},
-    "zapato": {},
-    "accesorio": {}
+    "Pantalon": {
+        "Falda": {
+            "AzulClara": "AzulClara",
+            "Blanca": "Blanca",
+            "Negra": "Negra"
+        },
+        "Largo": {
+            "Azul": "Azul",
+            "Militar": "Militar",
+            "Negro": "Negro"
+        }
+    },
+    "Zapato": {
+        "Rojo": "Rojo",
+        "Negro": "Negro"
+    },
+    "Accesorio": {}
 }

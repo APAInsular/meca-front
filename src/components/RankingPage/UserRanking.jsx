@@ -1,13 +1,15 @@
 import React from "react";
 
+import UserRankingPoints from "./UserRankingPoints";
+
 const UserRanking = ({ user, key }) => {
     return (
         <div key={key} style={{ backgroundColor: "#DEE6F0" }} className='d-flex align-items-center justify-content-between p-1 border-bottom border-black'>
             <div className="d-flex align-items-center justify-content-center">
                 <img src={"/Image/PerfilPorDefecto.png"} alt="usuario avatar" className="" style={{ width: "40px", height: "auto" }} />
-                {user.name + ' ' + user.last_name + ' ' + user.second_last_name}
+                {user.name + ' ' + user.first_surname + ' ' + user.second_surname}
             </div>
-            <div className="estatuas">{user.points}</div>
+            <UserRankingPoints userPoints={user.points} />
         </div>
     )
 }

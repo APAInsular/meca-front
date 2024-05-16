@@ -19,9 +19,13 @@ const InfoPage = () => {
                     <p>No se necesita ninguna aplicación. Es fácil.</p>
                 </div>
                 <div className='d-flex justify-content-center m-3'>
-                    {
-                        rewards[0]
-                    }
+                    {/* {
+                        rewards.map((reward => {
+                            return (
+                                reward
+                            )
+                        }))
+                    } */}
                 </div>
             </div>
             <div className='info-page-box2 col-xs-12 col-md-12 col-lg-12'>
@@ -57,7 +61,7 @@ const InfoPage = () => {
                 <div className='col-12 col-md-5 m-3 fs-3 text-center'>
                     Al escanear los códigos QR cerca de los monumentos y explorarlos, serás recompensado con puntos por las tareas completadas.
                 </div>
-                <img className="col-12 col-md-5 text-center align-items-center d-flex justify-content-center m-3" style={{ width: "30em", height: "20em" }} src={map} alt='/' />
+                <img className="col-12 col-md-5 text-center align-items-center d-flex justify-content-center m-3" style={{ width: "30em", height: "20em" }} src={"/Image/Map.png"} alt='/' />
             </div>
         </div>
     );

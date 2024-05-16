@@ -1,61 +1,51 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import axios from "axios";
+import { useAxiosBaseUrl } from "../../context/AxiosBaseUrl";
 
 import Obra from "./Obra";
+import BigSpinner from "../BigSpinner";
 
 const ObrasDestacadas = () => {
+    const baseUrl = useAxiosBaseUrl()
     const [data, setData] = useState(null);
 
-    const obras = [
-        {
-            nombre: "Escultura 1",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            imagen: "/Image/Obra.jpg"
-        },
-        {
-            nombre: "Escultura 2",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            imagen: "/Image/Obra.jpg"
-        },
-        {
-            nombre: "Escultura 3",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            imagen: "/Image/Obra.jpg"
-        },
-        {
-            nombre: "Escultura 4",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            imagen: "/Image/Obra.jpg"
+    const getMonument = async () => {
+        try {
+            const response = await axios.get(`${baseUrl}/top-rated-monuments`);
+            setData(response.data);
+            console.log("Data Monuments: " + data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
         }
-    ]
+    }
 
-    return (
-        <div className="p-3 align-items-center text-center">
-            <h3 className="text-uppercase">
-                ESCULTURAS DESTACADAS
-            </h3>
+    useEffect(() => {
+        getMonument();
+    }, []);
 
-            <div className="d-flex justify-content-center">
-                <div className="row" style={{ margin: "0 auto" }}>
-                    {obras.map((obra, index) => (
-                        <Obra key={index} obra={obra} />
-                    ))}
+    if (!data) {
+        return <BigSpinner />
+    } else {
+        return (
+            <div className="p-3 align-items-center text-center">
+                <h3 className="text-uppercase">
+                    ESCULTURAS DESTACADAS
+                </h3>
+
+                <div className="d-flex justify-content-center">
+                    <div className="row" style={{ margin: "0 auto" }}>
+                        {
+                            data.map((obra, index) => (
+                                <Obra key={index} obra={obra} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default ObrasDestacadas;

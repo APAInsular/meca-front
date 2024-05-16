@@ -1,45 +1,106 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/MonumentPage.css";
+
+import axios from "axios";
+
 import ObrasRelacionadas from "../components/AuthorPage/ObrasRelaciondas";
+import BigSpinner from "../components/BigSpinner";
+import Comment from "../components/Interaction/Comment";
 
+import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
 
-const MonumentPage = () => {
-  return (
-    <div>
-      <div className="d-flex flex-wrap justify-content-center align-items-start mx-auto">
-        <div className="col-12 d-flex justify-content-center flex-wrap col-lg-6">
-          <div className="h1 text-center m-3 col-12">Escultura Movil</div>
-          <img src={"/Image/Obra.jpg"} alt="obra" className="col-9 col-md-6 col-lg-9 m-3" style={{ height: "auto" }}></img>
-          <div className="col-9 col-6-md col-lg-9 m-3 desc" style={{ textAlign: "justify", textJustify: "auto" }}>César Manrique Cabrera <br></br>Arrecife, 24 abr 1919 - Teguise, 25 sep 1992 Pintor, escultory artista canario conocido particularmente por los proyectos arquitectónicos en los que intervino como director artístico. Compaginó su obra con la defensa de los valores medioambientales de Canarias. Buscó la armonía entre el arte y la naturaleza como espacio creativo. Obtuvo, entre otros, el Premio Mundial de Ecología y Turismo y el Premio Europa.</div>
-        </div>
-        <hr className="text-center text-black mx-auto m-3 col-8 h-line-1"></hr>
-        <div className="row col-lg-6 mx-auto d-flex flex-wrap justify-content-center">
-          <div className="col-12 d-flex justify-content-center flex-wrap col-md-6 col-lg-9">
-            <div className="h1 text-center m-3 col-12">Autor</div>
-            <img src={"/Image/Cesar.jpg"} alt="obra" className="col-9 m-3 img-fluid" style={{ height: "auto" }}></img>
-            <div className="col-9 m-3 desc text-center" style={{ textAlign: "justify", textJustify: "auto" }}>César Manrique <br></br> (Arrecife, 24 abr 1919 - Teguise, 25 sep 1992) Pintor, escultory artista canario</div>
+const MonumentPage = ({ monument }) => {
+  const baseUrl = useAxiosBaseUrl();
+
+  const id = 1
+  const userId = 1;
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  const fetchMonument = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/monuments/${id}?userId=${userId}`);
+      setData(response.data);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchMonument();
+  }, [id]);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (!data) {
+    return <BigSpinner />
+  } else {
+    return (
+      <div className="container mt-5">
+        <div className="row text-center">
+          <div className="col-12">
+            <h1>{data.title}</h1>
           </div>
-          <hr className="text-center text-black mx-auto m-3 col-4 h-line"></hr>
-          <div className="col-12 d-flex justify-content-center flex-wrap col-md-6 col-lg-9">
-            <div className="h1 text-center m-3 col-12">Ubicación</div>
-            <img src={"/Image/Map.png"} alt="obra" className="col-9 m-3 img-fluid" style={{ height: "auto" }}></img>
-            <div className="col-9 m-3 desc text-center" style={{ textAlign: "justify", textJustify: "auto" }}>Parque infantil del Castillo Negro <br></br>Av. la Constitución <br></br>38003 Santa Cruz de Tenerife</div>
+        </div>
+        <div className="row mt-3">
+          <div className="col-lg-4">
+            <div className="row d-flex justify-content-center">
+              <img src={"/Image/Obra.jpg"} alt="" style={{ width: "300px", height: "200px" }} />
+            </div>
+            <div className="row mt-3">
+              <div className="col-auto">
+                <strong>Fecha de creación: </strong>
+                <p className="text-start">{data.creation_date}</p>
+              </div>
+              <div className="col-auto">
+                <strong>Autor: </strong>
+                <p className="text-start">
+                  {data.authors.map((author, index) => (
+                    <span key={index}>
+                      {author.name}
+                      {index < data.authors.length - 1 && " y "}
+                    </span>
+                  ))}
+                </p>
+              </div>
+              <div className="col-auto">
+                <strong>Estilo: </strong>
+                <p className="text-start">
+                  {data.styles.map((style, index) => (
+                    <span key={index}>
+                      {style.name}
+                      {index < data.styles.length - 1 && " y "}
+                    </span>
+                  ))}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="row">
+              <div className="col text-start">
+                <strong>Significado: </strong>
+                <p className="text-start">{data.meaning}</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="row">
+              <div className="col">
+                <div className="comments">
+                  {data.comments.map((comment, index) => (
+                    <Comment comment={comment} key={index} userId={userId} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <hr className="text-center text-black mx-auto m-3 col-8 h-line"></hr>
-      <div>
-        <div className="text-center h1">Obras Destacadas</div>
-        <div className="col-9 mx-auto m-3 col-lg-6"><ObrasRelacionadas></ObrasRelacionadas></div>
-      </div>
-      <hr className="text-center text-black mx-auto m-3 col-8 h-line"></hr>
-      <div className="col-12 col-lg-6 d-flex justify-content-center flex-wrap mx-auto">
-        <div className="h1 text-center m-3 col-12">Ruta Relacionidas</div>
-        <img src={"/Image/Map.png"} alt="obra" className="col-9 m-3 img-fluid" style={{ height: "auto" }}></img>
-        <div className="col-9 m-3 desc " style={{ textAlign: "justify", textJustify: "auto" }}>César Manrique Cabrera (Arrecife, 24 de abril de 1919-Teguise) Pintor, escultory artista canario conocido particularmente por los proyectos arquitectónicos.</div>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default MonumentPage

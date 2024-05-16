@@ -5,14 +5,14 @@ import imagesData from '../../Avatar.json'; // Asegúrate de que la ruta sea cor
 
 const UserAvatarProfile = () => {
     const [activeTab, setActiveTab] = useState("Piel");
-    const [selectedAvatar, setSelectedAvatar] = useState({
-        Piel: "/Image/Avatar/Piel/PielClara.png",
-        Pelo: false,
-        Camisa: false,
-        Pantalon: false,
-        Zapato: false,
-        Accesorio: false
-    })
+
+    const [selectedBody, setSelectedBody] = useState('/Image/Avatar/Piel/PielMedioClara.png');
+    const [selectedHair, setSelectedHair] = useState();
+    const [selectedShirt, setSelectedShirt] = useState();
+    const [selectedPants, setSelectedPants] = useState();
+    const [selectedShoe, setSelectedShoe] = useState();
+    const [selectedAccessory, setSelectedAccessory] = useState();
+
 
     const menuAvatar = [
         { key: 'piel', label: 'Piel' },
@@ -60,8 +60,29 @@ const UserAvatarProfile = () => {
     };
 
     const handleSelectImage = (img, category) => {
-        setSelectedAvatar({ category: img });
+        switch (category) {
+            case "Piel":
+                setSelectedBody(img);
+                break;
+            case "Pelo":
+                setSelectedHair(img);
+                break;
+            case "Camisa":
+                setSelectedShirt(img);
+                break;
+            case "Pantalon":
+                setSelectedPants(img);
+                break;
+            case "Zapato":
+                setSelectedShoe(img);
+                break;
+            case "Accesorio":
+                setSelectedAccessory(img);
+                break;
+        }
     }
+
+    console.log(renderImages())
 
     return (
         <div className="row">
@@ -95,11 +116,11 @@ const UserAvatarProfile = () => {
                 </div>
             </div>
             <div className="col-6 d-flex justify-content-center">
-                <img src={selectedAvatar.Piel} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
-                <img src={selectedAvatar.Pantalon} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
-                <img src={selectedAvatar.Camisa} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
-                <img src={selectedAvatar.Pelo} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
-                <img src={selectedAvatar.Zapato} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
+                <img src={selectedBody} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
+                <img src={selectedShirt} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
+                <img src={selectedPants} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
+                <img src={selectedHair} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
+                <img src={selectedShoe} alt="" style={{ position: "absolute", top: 0, left: 0, width: "500px", height: "auto" }} />
             </div>
         </div>
     )

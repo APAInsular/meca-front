@@ -6,19 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { TranslationProvider } from './context/TranslationContext.jsx';
+import { AxiosBaseUrlProvider } from './context/AxiosBaseUrl.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <TranslationProvider>
-        <AuthProvider>
-          <App />
-        </AuthProvider>
-      </TranslationProvider>
-    </React.StrictMode>
-  </BrowserRouter>
-);
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <BrowserRouter>
+      <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
+        <TranslationProvider>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </TranslationProvider>
+      </AxiosBaseUrlProvider>
+    </BrowserRouter>
+  );
+} else {
+  console.error("Root element not found");
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

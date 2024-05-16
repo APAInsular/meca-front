@@ -40,24 +40,6 @@ const EventosDestacados = () => {
             },
             cupo: "100",
             num_inscritos: "35"
-        },
-        {
-            titulo: "Evento 5",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            cupo: "100",
-            num_inscritos: "35"
-        },
-        {
-            titulo: "Evento 6",
-            fecha: "23-06-2007",
-            autor: {
-                nombre: "Luis Gordillo"
-            },
-            cupo: "100",
-            num_inscritos: "35"
         }
     ]
 
@@ -75,7 +57,7 @@ const EventosDestacados = () => {
                     )
                 })}
             </div>
-            
+
         </div>
     );
 }

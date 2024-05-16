@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
     const csrf = () => axios.get('/sanctum/csrf-cookie');
     const getUser = async () => {
         try {
-            const { data } = await axios.get('/api/user');
+            const { data } = await axios.get('/user');
             setUser(data);
             setSessionVerified(true);
             window.localStorage.setItem(SESSION_NAME, 'true');
@@ -32,7 +32,7 @@ export function AuthProvider({ children }) {
             await csrf();
             await axios.post('/login', data);
             await getUser();
-            navigate("/");
+            navigate("/es/MeCa");
         }
         catch (e) {
             if (typeof e === 'object' && e !== null && 'response' in e) {
@@ -48,13 +48,15 @@ export function AuthProvider({ children }) {
         }
     };
     const register = async ({ ...data }) => {
+        console.log("entra en el registro")
+        console.log(data);
         setErrors({});
         setLoading(true);
         try {
             await csrf();
             await axios.post('/api/user', data);
             await getUser();
-            navigate("/")
+            navigate("/es/MeCa")
         }
         catch (e) {
             if (typeof e === 'object' && e !== null && 'response' in e) {

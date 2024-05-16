@@ -1,36 +1,55 @@
 import React, { useState } from "react";
-import { Heart, HeartFill } from "react-bootstrap-icons";
+import { Cursor, Star, StarFill } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const Obra = ({ obra }) => {
-    const [isFill, setIsFill] = useState(false);
+    let idioma = window.location.pathname.split("/")[1];
+    idioma = idioma || 'es';
 
-    function fillHeart(data) {
-        setIsFill(data);
+    function getYellowStars(rating) {
+        const truncatedRating = Math.floor(Math.max(0, Math.min(5, rating))); // Ignora la parte decimal y redondea hacia abajo
+        const yellowStars = [];
+
+        // Añade componentes de estrellas rellenas al array
+        for (let i = 0; i < truncatedRating; i++) {
+            yellowStars.push(<StarFill color={"yellow"} key={i} />);
+        }
+
+        // Añade componentes de estrellas vacías si es necesario
+        for (let i = truncatedRating; i < 5; i++) {
+            yellowStars.push(<Star color={"yellow"} key={i} />);
+        }
+
+        return yellowStars;
     }
 
     return (
-        <div className="col-xs-12 col-sm-6 col-lg-3">
-            <div className="col-12 d-flex flex-column align-items-center">
-                <img src={obra.imagen} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
+        <Link to={`/${idioma}/monumentos/${obra.id}`} style={{ color: "black", textDecoration: "none" }} className="col-xs-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
+            <div>
+                <img src={"/Image/Obra.jpg"} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
                 <div className="text-center mt-2">
-                    <strong>{obra.nombre}</strong>
+                    <strong style={{ fontSize: "13px" }}>{obra.title}</strong>
                 </div>
-                <div className="d-flex justify-content-between">
-                    <span style={{ fontSize: "13px" }}>{obra.autor.nombre}</span>
-                    <span style={{ fontSize: "13px" }} className="mx-3">{obra.fecha}</span>
-                    <button onClick={() => fillHeart(!isFill)}>
+                <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column">
+                        {obra.authors.map((autor, index) => (
+                            <div key={index} className="d-flex justify-content-center">
+                                <span style={{ fontSize: "12px" }}>{autor.name}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    <span style={{ fontSize: "11px" }}>{obra.creation_date}</span>
+
+                    <div className="d-flex" style={{ cursor: "pointer" }}>
                         {
-                            isFill ? (
-                                <HeartFill color={"red"} />
-                            ) : (
-                                <Heart color={"red"} />
-                            )
+                            getYellowStars(obra.avg_rating)
                         }
-                    </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        </Link>
+    );
 }
 
 export default Obra;

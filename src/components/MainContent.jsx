@@ -30,10 +30,10 @@ const MainContent = () => {
     return (
         <Routes>
             <Route element={<HomePage />} path="/:idioma/MeCa"></Route>
-            <Route element={<ListPage />} path="/:idioma/autores, /:idioma/estilos, /:idioma/eventos, /:idioma/monumentos" />
+            <Route element={<ListPage />} path="/:idioma/monumentos"></Route>
             <Route element={<AuthorPage />} path="/:idioma/autores/:nombreAutor"></Route>
             <Route element={<EventPage />} path="/:idioma/eventos/:idEvento"></Route>
-            <Route element={<MonumentPage />} path="/:idioma/monumentos/:nombreMonumento"></Route>
+            <Route element={<MonumentPage />} path="/:idioma/monumentos/:idMonumento"></Route>
             <Route element={<ProfilePageEditar />} path="/:idioma/perfil/editar"></Route>
             <Route element={<FavoritePage />} path="/:idioma/favoritos/:nickname"></Route>
             <Route element={<BlogPage />} path="/:idioma/entradas/:nickname"></Route>

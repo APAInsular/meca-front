@@ -1,29 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 import ProfilePage from './pages/ProfilePage';
-import { Route } from 'react-router-dom';
+import { useNavigate, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import RegisterLoginPage from './pages/RegisterLoginPage';
 
 function App() {
-  const path = window.location.pathname.split("/")[2];
+  const navigate = useNavigate();
 
-  console.log(path);
+  useEffect(() => {
+    if (window.location.pathname == "/") {
+      navigate("/es/MeCa");
+    }
+  }, window.location.pathname)
+
 
   return (
     <div className="App m-0 p-0">
       {
-        path === "perfil" ? (
+        window.location.pathname.split("/")[2] === "perfil" ? (
           <Routes>
-            <Route element={<ProfilePage />} path={`/:idioma/${path}`}></Route>
+            <Route element={<ProfilePage />} path={`/:idioma/${window.location.pathname.split("/")[2]}`}></Route>
           </Routes>
-        ) : path === "registro" || path === "login" ? (
+        ) : window.location.pathname.split("/")[1] === "registro" || window.location.pathname.split("/")[1] === "login" ? (
           <Routes>
-            <Route element={<RegisterLoginPage />} path={`/${path}`}></Route>
+            <Route element={<RegisterLoginPage />} path={`/${window.location.pathname.split("/")[1]}`}></Route>
           </Routes>
         ) : (
           <>

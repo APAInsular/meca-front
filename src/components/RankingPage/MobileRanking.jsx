@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
+import { useAxiosBaseUrl } from "../../context/AxiosBaseUrl";
 
 import BigSpinner from "../BigSpinner";
 import UserRanking from "./UserRanking";
 
 const MobileRanking = () => {
+    const baseUrl = useAxiosBaseUrl();
+
     const [data, setData] = useState([]);
 
     const getUsersByPointsCategory = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/users/points-category');
+            const response = await axios.get(`${baseUrl}/users/points-category`);
             // Manejar la respuesta
             console.log(response.data);
 

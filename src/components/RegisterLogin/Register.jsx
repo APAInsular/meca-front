@@ -13,30 +13,32 @@ const Register = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const [email, setEmail] = useState('');
-    const [nombre, setNombre] = useState('');
+    const [name, setName] = useState('');
     const [password, setPassword] = useState('');
-    const [password_confirmation, setPasswordConfirmation] = useState('');
-    const [apellido1, setApellido1] = useState('');
-    const [apellido2, setApellido2] = useState('');
-    const [nacionalidad, setNacionalidad] = useState('');
-    const [localidad, setLocalidad] = useState('');
-    const [usuario, setUsuario] = useState('');
+    const [confirm_password, setConfirmPassword] = useState('');
+    const [first_surname, setFirstSurname] = useState('');
+    const [second_surname, setSecondSurname] = useState('');
+    const [nationality, setNationality] = useState('España');
+    const [location, setLocation] = useState('');
+    const [nickname, setNickname] = useState('');
 
     const { register, errors, loading } = useAuthContext();
 
     const separarApellidos = (e) => {
         let [apellido1, apellido2] = e.split(' ');
 
-        setApellido1(apellido1);
-        setApellido2(apellido2);
+        setFirstSurname(apellido1);
+        setSecondSurname(apellido2);
     }
 
     const handleRegister = async (e) => {
-        console.log({ nombre, usuario, email, password, apellido1, apellido2, nacionalidad, localidad, password_confirmation })
-
         e.preventDefault();
 
-        register({ nombre, usuario, email, password, apellido1, apellido2, nacionalidad, localidad, password_confirmation });
+        if (password === confirm_password) {
+            register({ name, nickname, email, password, first_surname, second_surname, nationality, location, confirm_password });
+        } else {
+            console.log("Las contraseñas no son iguales")
+        }
     };
 
     async function getFlags() {
@@ -113,8 +115,8 @@ const Register = () => {
                         className="form-control custom-input"
                         name="name"
                         placeholder='Nombre'
-                        value={nombre}
-                        onChange={(e) => setNombre(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                     />
                 </div>
                 <div className="col-md-6">
@@ -145,8 +147,8 @@ const Register = () => {
                         className="form-control custom-input"
                         name="localidad"
                         placeholder="Localidad"
-                        value={localidad}
-                        onChange={(e) => setLocalidad(e.target.value)}
+                        value={location}
+                        onChange={(e) => setLocation(e.target.value)}
                     />
                 </div>
                 <div className='col-12'>
@@ -166,7 +168,7 @@ const Register = () => {
                     <div style={isOpen ? stylesArray[1] : stylesArray[0]} className="menu">
                         <div className="menu-content">
                             {flags.map(flag => (
-                                <div key={flag.code} style={stylesArray[2]} onClick={() => handleFlagSelect(flag.code)}>
+                                <div key={flag.code} onChange={() => setNationality(flag.name)} style={stylesArray[2]} onClick={() => handleFlagSelect(flag.code)}>
                                     <img src={flag.imgUrl} alt={flag.code} style={stylesArray[3]} />
                                     <span>{flag.name}</span>
                                 </div>
@@ -181,8 +183,8 @@ const Register = () => {
                         className="form-control custom-input"
                         name="usuario"
                         placeholder='Usuario'
-                        value={usuario}
-                        onChange={(e) => setUsuario(e.target.value)}
+                        value={nickname}
+                        onChange={(e) => setNickname(e.target.value)}
                     />
                 </div>
                 <div className="col-md-6">
@@ -203,8 +205,8 @@ const Register = () => {
                         className="form-control custom-input"
                         name="password_confirmation"
                         placeholder='Repite la contraseña'
-                        value={password_confirmation}
-                        onChange={(e) => setPasswordConfirmation(e.target.value)}
+                        value={confirm_password}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
                     />
                 </div>
                 <div className='col-md-7 m-0'>
