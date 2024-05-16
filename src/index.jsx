@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -13,15 +13,17 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
-    <BrowserRouter>
-      <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
-        <TranslationProvider>
-          <AuthProvider>
-            <App />
-          </AuthProvider>
-        </TranslationProvider>
-      </AxiosBaseUrlProvider>
-    </BrowserRouter>
+    <StrictMode>
+      <BrowserRouter>
+        <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
+          <TranslationProvider>
+            <AuthProvider>
+              <App />
+            </AuthProvider>
+          </TranslationProvider>
+        </AxiosBaseUrlProvider>
+      </BrowserRouter>
+    </StrictMode>
   );
 } else {
   console.error("Root element not found");
