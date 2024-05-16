@@ -11,7 +11,7 @@ import { AxiosBaseUrlProvider } from './context/AxiosBaseUrl.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
+    <AxiosBaseUrlProvider baseUrl={"https://roomerescape.es/api"}>
       <TranslationProvider>
         <AuthProvider>
           <App />
