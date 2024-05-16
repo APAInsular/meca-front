@@ -13,7 +13,7 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
-    <StrictMode>
+    <React.StrictMode>
       <BrowserRouter>
         <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
           <TranslationProvider>
@@ -23,7 +23,7 @@ if (rootElement) {
           </TranslationProvider>
         </AxiosBaseUrlProvider>
       </BrowserRouter>
-    </StrictMode>
+    </React.StrictMode>
   );
 } else {
   console.error("Root element not found");
