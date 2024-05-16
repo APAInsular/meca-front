@@ -13,17 +13,15 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
-          <TranslationProvider>
-            <AuthProvider>
-              <App />
-            </AuthProvider>
-          </TranslationProvider>
-        </AxiosBaseUrlProvider>
-      </BrowserRouter>
-    </React.StrictMode>
+    <BrowserRouter>
+      <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
+        <TranslationProvider>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </TranslationProvider>
+      </AxiosBaseUrlProvider>
+    </BrowserRouter>
   );
 } else {
   console.error("Root element not found");
