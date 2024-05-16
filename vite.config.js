@@ -16,6 +16,10 @@ export default ({ mode }) => {
         'hooks': path.resolve('src/hooks/'),
         'images': path.resolve('src/images/'),
       }
+    },
+    server: {
+      host: '0.0.0.0', // Asegúrate de que la aplicación escucha en 0.0.0.0
+      port: 5173, // Puedes especificar el puerto si es necesario
     }
   })
 }

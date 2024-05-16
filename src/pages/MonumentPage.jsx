@@ -12,10 +12,33 @@ import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
 const MonumentPage = ({ monument }) => {
   const baseUrl = useAxiosBaseUrl();
 
-  const id = 1
+  const id = window.location.pathname.split("/")[3];
   const userId = 1;
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [qrMessage, setQrMessage] = useState(null);
+
+  const checkQrAndUpdatePoints = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/check-qr/${userId}/${id}`);
+      setQrMessage(response.data.message);
+      alert(response.data.message);
+      console.log(response.data.message)
+    } catch (error) {
+      setQrMessage('Error al verificar el QR.');
+    }
+  };
+
+  useEffect(() => {
+    fetchMonument();
+
+    // Verificar el parámetro qr en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const qr = urlParams.get('qr');
+    if (qr === 'true') {
+      checkQrAndUpdatePoints();
+    }
+  }, [id]);
 
   const fetchMonument = async () => {
     try {
@@ -25,10 +48,6 @@ const MonumentPage = ({ monument }) => {
       setError(error.message);
     }
   };
-
-  useEffect(() => {
-    fetchMonument();
-  }, [id]);
 
   if (error) {
     return <div>Error: {error}</div>;

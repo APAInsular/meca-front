@@ -13,11 +13,10 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (window.location.pathname == "/") {
+    if (window.location.pathname === "/") {
       navigate("/es/MeCa");
     }
-  }, window.location.pathname)
-
+  }, [window.location.pathname]); // Cambiado aquí
 
   return (
     <div className="App m-0 p-0">
@@ -38,9 +37,8 @@ function App() {
           </>
         )
       }
-    </div >
+    </div>
   );
 }
-
 
 export default App;

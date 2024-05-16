@@ -33,13 +33,13 @@ const Ruta = () => {
         }
     }
 
-    useEffect(() => {
-        getStops();
-    }, [])
+    // useEffect(() => {
+    //     getStops();
+    // }, [])
 
-    useEffect(() => {
-        getRoute();
-    }, [])
+    // useEffect(() => {
+    //     getRoute();
+    // }, [])
 
     return (
         <div style={{ marginBottom: "300px" }}>

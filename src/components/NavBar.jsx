@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { List } from 'react-bootstrap-icons';
-import { XCircleFill } from 'react-bootstrap-icons';
-
+import { List, XCircleFill } from 'react-bootstrap-icons';
 import useTranslationContext from '../hooks/useTranslationContext';
 
 export default function NavBar() {
@@ -10,12 +8,12 @@ export default function NavBar() {
     idioma = idioma || 'es';
 
     const translation = useTranslationContext();
+    const [selectedItem, setSelectedItem] = useState(null); // Mantén el orden de los hooks
+    const [menuOpen, setMenuOpen] = useState(false); // Mantén el orden de los hooks
 
     if (!translation) {
-        return;
+        return null; // Asegúrate de retornar null si translation es falsy
     }
-
-    const [selectedItem, setSelectedItem] = useState(null);
 
     const navigation = [
         { name: translation.navbar.start, path: `/${idioma}/MeCa` },
@@ -34,8 +32,7 @@ export default function NavBar() {
 
     const closeNav = () => {
         setSelectedItem(null);
-    }
-    const [menuOpen, setMenuOpen] = useState(false);
+    };
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -113,33 +110,33 @@ export default function NavBar() {
                     <div className="d-flex flex-column justify-content-center align-items-center w-100">
                         {navigation.map((item, index) => (
                             <div key={index}>
-                                {item.name === 'Acciones' ? (
+                                {item.name === translation.navbar.actions ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/logros`} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
+                                                <Link to={`/${idioma}/logros`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.achievements}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/eventos`} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
+                                                <Link to={`/${idioma}/eventos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.events}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/calificaion`} className='btn my-1 text-white fs-2'><strong>Calificacion</strong></Link>
+                                                <Link to={`/${idioma}/clasificacion`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.ranking}</strong></Link>
                                             </div>
                                         </div>
                                     </div>
-                                ) : item.name === 'Explorar' ? (
+                                ) : item.name === translation.navbar.explore ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/obras`} className='btn my-1 text-white fs-2'><strong>Obras</strong></Link>
+                                                <Link to={`/${idioma}/monumentos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.monuments}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/autores`} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
+                                                <Link to={`/${idioma}/autores`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.authors}</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/estilos`} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
+                                                <Link to={`/${idioma}/estilos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.styles}</strong></Link>
                                             </div>
                                         </div>
                                     </div>

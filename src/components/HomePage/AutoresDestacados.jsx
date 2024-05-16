@@ -1,48 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Autor from "./Autor";
+import BigSpinner from "../BigSpinner";
+
+import axios from "axios";
+import { useAxiosBaseUrl } from "../../context/AxiosBaseUrl";
 
 const AutoresDestacados = () => {
+    const baseUrl = useAxiosBaseUrl();
     const [data, setData] = useState(null);
 
-    const autores = [
-        {
-            name: "Autor 1",
-            nacimiento: "23-06-2007",
-            num_obras: "5"
-        },
-        {
-            name: "Autor 2",
-            nacimiento: "23-06-2007",
-            num_obras: "12"
-        },
-        {
-            name: "Autor 3",
-            nacimiento: "23-06-2007",
-            num_obras: "23"
-        },
-        {
-            name: "Autor 4",
-            nacimiento: "23-06-2007",
-            num_obras: "65"
+    const getAuthor = async () => {
+        try {
+            const response = await axios.get(`${baseUrl}/top-rated-authors`);
+            if (response.data) setData(response.data);
+            console.log("Data Authors: " + response.data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
         }
-    ]
+    }
 
-    return (
-        <div className="p-3 text-center">
-            <div className="align-items-center">
-                <h3 className="text-uppercase">
-                    Autores Destacados
-                </h3>
+    useEffect(() => {
+        getAuthor();
+    }, []);
+
+    if (!data) {
+        return <BigSpinner />
+    } else {
+        return (
+            <div className="p-3 text-center">
+                <div className="align-items-center">
+                    <h3 className="text-uppercase">
+                        Autores Destacados
+                    </h3>
+                </div>
+                <div>
+                    {data.map((autor, index) => {
+                        return (
+                            <Autor key={index} autor={autor} />
+                        )
+                    })}
+                </div>
             </div>
-            <div>
-                {autores.map((autor, index) => {
-                    return (
-                        <Autor key={index} autor={autor} />
-                    )
-                })}
-            </div>
-        </div>
-    );
+        );
+    }
+
 }
 
 export default AutoresDestacados;
