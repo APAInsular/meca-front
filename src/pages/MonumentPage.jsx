@@ -3,7 +3,6 @@ import "../styles/MonumentPage.css";
 
 import axios from "axios";
 
-import ObrasRelacionadas from "../components/AuthorPage/ObrasRelaciondas";
 import BigSpinner from "../components/BigSpinner";
 import Comment from "../components/Interaction/Comment";
 

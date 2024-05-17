@@ -15,6 +15,9 @@ import { useNavigate } from "react-router-dom";
 const ProfilePage = () => {
     const [activeTab, setActiveTab] = useState("info");
     const navigate = useNavigate();
+
+
+
     const routeChange = () => {
         let path = `newpost`;
         navigate(path);
