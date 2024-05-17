@@ -23,7 +23,6 @@ import RegisterLoginPage from '../pages/RegisterLoginPage'
 // import ProfilePageEditar from 'src/pages/ProfilePageEditar'
 import NewPostPage from '../pages/NewPostPage'
 import ProfilePageEditar from '../pages/ProfilePageEditar'
-import MonumentFiltradosPage from '../pages/MonumentFiltradosPage'
 import AdminEventPage from '../pages/AdminEventPage'
 
 const MainContent = () => {
@@ -51,7 +50,6 @@ const MainContent = () => {
             <Route element={<AdminPage />} path="/admin"></Route>
             <Route element={<NewPostPage />} path="/:idioma/perfil/newPost"></Route>
             <Route element={<AdminEventPage />} path="/:idioma/admineventpage"></Route>
-            <Route element={<MonumentFiltradosPage />} path="/:idioma/filtrados"></Route>
         </Routes >
     )
 }
