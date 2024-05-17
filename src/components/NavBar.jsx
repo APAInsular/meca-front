@@ -1,28 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { List, XCircleFill } from 'react-bootstrap-icons';
 import useTranslationContext from '../hooks/useTranslationContext';
+import axios from 'axios'; // Importa axios si no lo has hecho
+
+import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
 
 export default function NavBar() {
     let idioma = window.location.pathname.split("/")[1];
     idioma = idioma || 'es';
-
     const translation = useTranslationContext();
-    const [selectedItem, setSelectedItem] = useState(null); // Mantén el orden de los hooks
-    const [menuOpen, setMenuOpen] = useState(false); // Mantén el orden de los hooks
 
-    if (!translation) {
-        return null; // Asegúrate de retornar null si translation es falsy
-    }
+
+    const baseUrl = useAxiosBaseUrl();
+    const userId = 1;
+
+    const [points, setPoints] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const navigation = [
-        { name: translation.navbar.start, path: `/${idioma}/MeCa` },
-        { name: translation.navbar.actions, path: `/${idioma}/acciones` },
-        { name: translation.navbar.explore, path: `/${idioma}/explorar` },
-        { name: translation.navbar.blog, path: `/${idioma}/blog` },
-        { name: translation.navbar.contact, path: `/${idioma}/contactanos` },
-        { name: translation.navbar.info, path: `/${idioma}/info` },
+        { name: "Inicio", path: `/${idioma}/MeCa` },
+        { name: "Acciones", path: `/${idioma}/acciones` },
+        { name: "Explorar", path: `/${idioma}/explorar` },
+        { name: "Blog", path: `/${idioma}/blog` },
+        { name: "Contacta", path: `/${idioma}/contactanos` },
+        { name: "Informacion", path: `/${idioma}/info` },
     ];
+
+    useEffect(() => {
+        const fetchUserPoints = async () => {
+            try {
+                const response = await axios.get(`${baseUrl}/user/${userId}/points`);
+                setPoints(response.data.points);
+                setLoading(false);
+            } catch (error) {
+                setError(error.response.data.message);
+                setLoading(false);
+            }
+        };
+
+        fetchUserPoints();
+    }, [baseUrl, userId]);
 
     const handleClick = (itemName) => {
         setSelectedItem((prevSelectedItem) => {
@@ -38,6 +59,14 @@ export default function NavBar() {
         setMenuOpen(!menuOpen);
     };
 
+    if (error) {
+        return <p>Error: {error}</p>;
+    }
+
+    if (loading) {
+        return <p>Cargando...</p>;
+    }
+
     return (
         <div className='mt-3 pb-3 px-3 d-flex align-items-center' style={{ borderBottom: "2px solid #263C5C" }}>
             {/* Botón de menú para tablet */}
@@ -48,14 +77,14 @@ export default function NavBar() {
             </div>
 
             {/* Logo */}
-            <div className='col-md-4 col-xs-4 col-lg-2 text-center d-flex justify-content-center'>
+            <div className='col-md-4 col-xs-4 col-lg-1 text-center d-flex justify-content-center'>
                 <Link to={`/${idioma}/MeCa`} onClick={closeNav}>
                     <img src="/Image/Logos/MECA-09.png" alt="Logo MECA" />
                 </Link>
             </div>
 
             {/* Botones NavBar */}
-            <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-8">
+            <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-7">
                 {navigation.map((item) => (
                     <div key={item.name}>
                         {item.name === translation.navbar.actions ? (
@@ -148,9 +177,13 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
+            <div className='col-md-2 col-xs-1 col-lg-3 d-flex justify-content-end align-items-center'>
+                <img src="\Image\Moneda-Tara.png" alt="" style={{ width: "30px", height: "auto" }} />
+                <span>{points}</span>
+            </div>
 
             {/* Perfil */}
-            <div className='col-md-4 col-xs-4 col-lg-2 text-right'>
+            <div className='col-md-2 col-xs-2 col-lg-1 text-right'>
                 <Link to={`/${idioma}/perfil`} onClick={closeNav}>
                     <img className="flex float-right p-1" src="/Image/PerfilPorDefecto.png" alt="PerfilPorDefecto" style={{ border: "1px solid #263C5C", borderRadius: "50%", maxWidth: "40px", height: "auto" }} />
                 </Link>

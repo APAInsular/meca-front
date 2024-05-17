@@ -3,8 +3,11 @@ import Obra from "../components/HomePage/Obra";
 import { Link } from "react-router-dom";
 
 import axios from "axios";
+import { useAxiosBaseUrl } from "../context/AxiosBaseUrl";
 
 const ListPage = () => {
+    const baseUrl = useAxiosBaseUrl();
+
     const [info, setInfo] = useState(null);
 
     const [data, setData] = useState(null);
@@ -12,7 +15,7 @@ const ListPage = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/monuments/all-info');
+            const response = await axios.get(`${baseUrl}/monuments/all-info`);
             setData(response.data);
             console.log(data);
         } catch (error) {
