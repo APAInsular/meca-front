@@ -1,10 +1,13 @@
 import { createContext, useEffect, useState } from 'react';
 import axios from '../lib/axios';
+import { useAxiosBaseUrl } from './AxiosBaseUrl';
+
 import { redirect, useNavigate } from 'react-router-dom';
 export const AuthContext = createContext({});
 const SESSION_NAME = 'session-verified';
 
 export function AuthProvider({ children }) {
+    const baseUrl = useAxiosBaseUrl();
     const [user, setUser] = useState(null);
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(true);
@@ -16,7 +19,7 @@ export function AuthProvider({ children }) {
     const csrf = () => axios.get('/sanctum/csrf-cookie');
     const getUser = async () => {
         try {
-            const { data } = await axios.get('/user');
+            const { data } = await axios.get(`${baseUrl}/user`);
             setUser(data);
             setSessionVerified(true);
             window.localStorage.setItem(SESSION_NAME, 'true');

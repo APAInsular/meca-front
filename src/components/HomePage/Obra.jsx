@@ -25,27 +25,25 @@ const Obra = ({ obra }) => {
 
     return (
         <Link to={`/${idioma}/monumentos/${obra.id}`} style={{ color: "black", textDecoration: "none" }} className="col-xs-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
-            <div>
-                <img src={"/Image/Obra.jpg"} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
-                <div className="text-center mt-2">
-                    <strong style={{ fontSize: "13px" }}>{obra.title}</strong>
+            <img src={"/Image/Obra.jpg"} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
+            <div className="text-center mt-2">
+                <strong style={{ fontSize: "13px" }}>{obra.title}</strong>
+            </div>
+            <div className="d-flex flex-column align-items-center">
+                <div className="d-flex flex-column">
+                    {obra.authors.map((autor, index) => (
+                        <div key={index} className="d-flex justify-content-center">
+                            <span style={{ fontSize: "12px" }}>{autor.name}</span>
+                        </div>
+                    ))}
                 </div>
-                <div className="d-flex flex-column align-items-center">
-                    <div className="d-flex flex-column">
-                        {obra.authors.map((autor, index) => (
-                            <div key={index} className="d-flex justify-content-center">
-                                <span style={{ fontSize: "12px" }}>{autor.name}</span>
-                            </div>
-                        ))}
-                    </div>
 
-                    <span style={{ fontSize: "11px" }}>{obra.creation_date}</span>
+                <span style={{ fontSize: "11px" }}>{obra.creation_date}</span>
 
-                    <div className="d-flex" style={{ cursor: "pointer" }}>
-                        {
-                            getYellowStars(obra.avg_rating)
-                        }
-                    </div>
+                <div className="d-flex" style={{ cursor: "pointer" }}>
+                    {
+                        getYellowStars(obra.avg_rating)
+                    }
                 </div>
             </div>
         </Link>
