@@ -7,17 +7,22 @@ import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { TranslationProvider } from './context/TranslationContext.jsx';
 import { AxiosBaseUrlProvider } from './context/AxiosBaseUrl.jsx';
+import { UserPointsProvider } from './context/UserPointsContext.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+
     <AxiosBaseUrlProvider baseUrl={"http://localhost:8000/api"}>
-      <TranslationProvider>
-        <AuthProvider>
-          <App />
-        </AuthProvider>
-      </TranslationProvider>
+      <UserPointsProvider>
+        <TranslationProvider>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </TranslationProvider>
+      </UserPointsProvider>
     </AxiosBaseUrlProvider>
+
   </BrowserRouter>
 );
 

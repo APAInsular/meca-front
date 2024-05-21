@@ -66,13 +66,9 @@ const ListPage = () => {
         return <div>Loading...</div>;
     } else {
         return (
-            <div className="row mt-5">
+            <div className="row mt-5 mb-5">
                 {data.map((obra, index) => (
-                    <div className="col-xs-12 col-sm-6 col-lg-3">
-                        <Link to={`/es/monuments/${obra.title}`}>
-                            <Obra key={index} obra={obra} />
-                        </Link>
-                    </div>
+                    <Obra key={index} obra={obra} />
                 ))}
             </div>
         );

@@ -1,134 +1,82 @@
 {
-    "Femenino": {
-        "Piel": {
-            "PielClara": "PielClara.png",
-            "PielMedioClara": "PielMedioClara.png",
-            "PielMedioOscura": "PielMedioOscura.png",
-            "PielOscura": "PielOscura.png"
-        },
-        "Pelo": {
-            "Corto": {
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            },
-            "Largo": {
-                "Azul": "Azul.png",
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            },
-            "Rizado": {
-                "Azul": "Azul.png",
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            }
-        },
-        "Camisa": {
-            "Corta": {
-                "AzulClaro": "AzulClaro.png",
-                "Blanca": "Blanca",
-                "Negra": "Negra"
-            },
-            "Larga": {
-                "Morada": "Morada",
-                "VerdeAmarilla": "VerdeAmarilla"
-            },
-            "Especial": {
-                "Bicho": "Bicho",
-                "Canarias": "Canarias",
-                "CaritaFeliz": "CaritaFeliz"
-            }
-        },
-        "Pantalon": {
-            "Falda": {
-                "AzulClara": "AzulClara",
-                "Blanca": "Blanca",
-                "Negra": "Negra"
-            },
-            "Largo": {
-                "Azul": "Azul",
-                "Militar": "Militar",
-                "Negro": "Negro"
-            }
-        },
-        "Zapato": {
-            "Rojo": "Rojo",
-            "Negro": "Negro"
-        },
-        "Accesorio": {}
+    "Piel": {
+        "Piel-1": "Piel-1",
+        "Piel-2": "Piel-2",
+        "Piel-3": "Piel-3",
+        "Piel-4": "Piel-4"
     },
-    "Masculino": {
-        "Piel": {
-            "PielClara": "PielClara.png",
-            "PielMedioClara": "PielMedioClara.png",
-            "PielMedioOscura": "PielMedioOscura.png",
-            "PielOscura": "PielOscura.png"
-        },
-        "Pelo": {
-            "Corto": {
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            },
-            "Largo": {
-                "Azul": "Azul.png",
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            },
-            "Rizado": {
-                "Azul": "Azul.png",
-                "Rojo": "Rojo.png",
-                "Negro": "Negro.png",
-                "Rubio": "Rubio.png",
-                "Verde": "Verde.png",
-                "Marron": "Marron.png"
-            }
-        },
-        "Camisa": {
-            "Corta": {
-                "AzulClaro": "AzulClaro.png",
-                "Blanca": "Blanca",
-                "Negra": "Negra"
-            },
-            "Larga": {
-                "Morada": "Morada",
-                "VerdeAmarilla": "VerdeAmarilla"
-            },
-            "Especial": {
-                "Bicho": "Bicho",
-                "Canarias": "Canarias",
-                "CaritaFeliz": "CaritaFeliz"
-            }
-        },
-        "Pantalon": {
-            "Falda": {
-                "AzulClara": "AzulClara",
-                "Blanca": "Blanca",
-                "Negra": "Negra"
-            },
-            "Largo": {
-                "Azul": "Azul",
-                "Militar": "Militar",
-                "Negro": "Negro"
-            }
-        },
-        "Zapato": {
+    "Pelo": {
+        "Corto": {
             "Rojo": "Rojo",
-            "Negro": "Negro"
+            "Negro": "Negro",
+            "Rubio": "Rubio",
+            "Verde": "Verde",
+            "Marron": "Marron"
         },
-        "Accesorio": {}
+        "Largo": {
+            "Azul": "Azul",
+            "Rojo": "Rojo",
+            "Negro": "Negro",
+            "Rubio": "Rubio",
+            "Verde": "Verde",
+            "Marron": "Marron"
+        },
+        "Rizado": {
+            "Azul": "Azul",
+            "Rojo": "Rojo",
+            "Negro": "Negro",
+            "Rubio": "Rubio",
+            "Verde": "Verde",
+            "Marron": "Marron"
+        }
+    },
+    "Camisa": {
+        "Corta": {
+            "AzulClaro": "AzulClaro",
+            "Blanca": "Blanca",
+            "Negra": "Negra"
+        },
+        "Larga": {
+            "Morada": "Morada",
+            "VerdeAmarilla": "VerdeAmarilla"
+        },
+        "Especial": {
+            "Bicho": "Bicho",
+            "Canarias": "Canarias",
+            "CaritaFeliz": "CaritaFeliz"
+        }
+    },
+    "Pantalon": {
+        "Falda": {
+            "AzulClara": "AzulClara",
+            "Blanca": "Blanca",
+            "Negra": "Negra"
+        },
+        "Largo": {
+            "Azul": "Azul",
+            "Militar": "Militar",
+            "Negro": "Negro"
+        }
+    },
+    "Zapato": {
+        "Rojo": "Rojo",
+        "Negro": "Negro"
+    },
+    "Accesorio": {
+        "Clip": {
+            "Azul": "Azul",
+            "Naranja": "Naranja",
+            "Rosa": "Rosa"
+        },
+        "Piercing": {
+            "Nariz": "Nariz",
+            "DobleNariz": "DobleNariz",
+            "Cara": "Cara"
+        },
+        "Pulsera": {
+            "Amarilla": "Amarilla",
+            "Azul": "Azul",
+            "Rosa": "Rosa"
+        }
     }
 }

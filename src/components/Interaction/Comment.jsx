@@ -5,10 +5,10 @@ const Comment = ({ comment, userId }) => {
     return (
         <div className="container my-1" style={{ border: "1px solid #263c5c", borderRadius: "20px" }}>
             <div className="row align-items-center">
-                <div className="col-auto">
-                    <img src={"/Image/PerfilPorDefecto.png"} alt="Profile Picture" className="rounded-circle" style={{ width: "40px", height: "40px", border: "1px solid #263c5c" }} />
+                <div className="col-2">
+                    <img src={"/Image/PerfilPorDefecto.png"} alt="Profile Picture" className="rounded-circle m-0" style={{ width: "35px", height: "35px", border: "1px solid #263c5c" }} />
                 </div>
-                <div className="col-auto">
+                <div className="col-10">
                     <div className="row d-flex justify-content-between">
                         <div className="col">
                             <span className="font-weight-bold text-start" style={{ fontSize: "15px" }}>{comment.nickname}</span>

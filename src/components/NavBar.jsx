@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { List, XCircleFill } from 'react-bootstrap-icons';
-import useTranslationContext from '../hooks/useTranslationContext';
 import axios from 'axios'; // Importa axios si no lo has hecho
 
+import useTranslationContext from '../hooks/useTranslationContext';
+import { useUserPoints } from '../context/UserPointsContext';
 import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
 
 export default function NavBar() {
     let idioma = window.location.pathname.split("/")[1];
     idioma = idioma || 'es';
     const translation = useTranslationContext();
-
+    const { points } = useUserPoints();
 
     const baseUrl = useAxiosBaseUrl();
     const userId = 1;
 
-    const [points, setPoints] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedItem, setSelectedItem] = useState(null);
@@ -29,21 +29,6 @@ export default function NavBar() {
         { name: "Contacta", path: `/${idioma}/contactanos` },
         { name: "Informacion", path: `/${idioma}/info` },
     ];
-
-    useEffect(() => {
-        const fetchUserPoints = async () => {
-            try {
-                const response = await axios.get(`${baseUrl}/user/${userId}/points`);
-                setPoints(response.data.points);
-                setLoading(false);
-            } catch (error) {
-                setError(error.response.data.message);
-                setLoading(false);
-            }
-        };
-
-        fetchUserPoints();
-    }, [baseUrl, userId]);
 
     const handleClick = (itemName) => {
         setSelectedItem((prevSelectedItem) => {
@@ -63,9 +48,9 @@ export default function NavBar() {
         return <p>Error: {error}</p>;
     }
 
-    if (loading) {
-        return <p>Cargando...</p>;
-    }
+    // if (loading) {
+    //     return <p>Cargando...</p>;
+    // }
 
     return (
         <div className='mt-3 pb-3 px-3 d-flex align-items-center' style={{ borderBottom: "2px solid #263C5C" }}>
@@ -87,37 +72,37 @@ export default function NavBar() {
             <div className="d-none d-lg-flex justify-content-start align-items-center col-lg-7">
                 {navigation.map((item) => (
                     <div key={item.name}>
-                        {item.name === translation.navbar.actions ? (
+                        {item.name === "Acciones" ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: -30, zIndex: 1 }}>
                                     <Link to={`/${idioma}/logros`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.achievements}</strong>
+                                        <strong className='text-white'>Logros</strong>
                                     </Link>
                                     <Link to={`/${idioma}/eventos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.events}</strong>
+                                        <strong className='text-white'>Eventos</strong>
                                     </Link>
                                     <Link to={`/${idioma}/clasificacion`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.ranking}</strong>
+                                        <strong className='text-white'>Clasificacion</strong>
                                     </Link>
                                 </div>
                             </div>
-                        ) : item.name === translation.navbar.explore ? (
+                        ) : item.name === "Explorar" ? (
                             <div className="justify-content-center" style={{ position: 'relative' }}>
                                 <div className="btn mx-3 text-center NavBar_buttons" style={{ borderRadius: "20px", backgroundColor: '#263C5C' }} onClick={() => handleClick(item.name)}>
                                     <strong className='text-white'>{item.name}</strong>
                                 </div>
                                 <div hidden={selectedItem !== item.name} className="justify-content-center" style={{ position: 'absolute', top: '100%', left: 11, zIndex: 1 }}>
                                     <Link to={`/${idioma}/monumentos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.monuments}</strong>
+                                        <strong className='text-white'>Monumentos</strong>
                                     </Link>
                                     <Link to={`/${idioma}/autores`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.authors}</strong>
+                                        <strong className='text-white'>Autores</strong>
                                     </Link>
                                     <Link to={`/${idioma}/estilos`} className="btn mx-3 mt-2 d-flex justify-content-center NavBar_buttons" style={{ backgroundColor: '#263C5C', borderRadius: "20px" }} onClick={closeNav}>
-                                        <strong className='text-white'>{translation.navbar.styles}</strong>
+                                        <strong className='text-white'>Estilos</strong>
                                     </Link>
                                 </div>
                             </div>
@@ -139,33 +124,33 @@ export default function NavBar() {
                     <div className="d-flex flex-column justify-content-center align-items-center w-100">
                         {navigation.map((item, index) => (
                             <div key={index}>
-                                {item.name === translation.navbar.actions ? (
+                                {item.name === "Acciones" ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/logros`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.achievements}</strong></Link>
+                                                <Link to={`/${idioma}/logros`} className='btn my-1 text-white fs-2'><strong>Logros</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/eventos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.events}</strong></Link>
+                                                <Link to={`/${idioma}/eventos`} className='btn my-1 text-white fs-2'><strong>Eventos</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/clasificacion`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.ranking}</strong></Link>
+                                                <Link to={`/${idioma}/clasificacion`} className='btn my-1 text-white fs-2'><strong>Clasificacion</strong></Link>
                                             </div>
                                         </div>
                                     </div>
-                                ) : item.name === translation.navbar.explore ? (
+                                ) : item.name === "Explorar" ? (
                                     <div className="mx-3" style={{ position: 'relative' }} onClick={() => handleClick(item.name)}>
                                         <div to={item.path} className='btn my-1 text-white fs-2 d-flex justify-content-center'><strong>{item.name}</strong></div>
                                         <div hidden={selectedItem !== item.name}>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/monumentos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.monuments}</strong></Link>
+                                                <Link to={`/${idioma}/monumentos`} className='btn my-1 text-white fs-2'><strong>Monumentos</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/autores`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.authors}</strong></Link>
+                                                <Link to={`/${idioma}/autores`} className='btn my-1 text-white fs-2'><strong>Autores</strong></Link>
                                             </div>
                                             <div className='d-flex justify-content-center'>
-                                                <Link to={`/${idioma}/estilos`} className='btn my-1 text-white fs-2'><strong>{translation.navbar.styles}</strong></Link>
+                                                <Link to={`/${idioma}/estilos`} className='btn my-1 text-white fs-2'><strong>Estilos</strong></Link>
                                             </div>
                                         </div>
                                     </div>

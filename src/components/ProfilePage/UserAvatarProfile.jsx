@@ -6,7 +6,7 @@ import imagesData from '../../Avatar.json'; // Asegúrate de que la ruta sea cor
 const UserAvatarProfile = () => {
     const [activeTab, setActiveTab] = useState("Piel");
 
-    const [selectedBody, setSelectedBody] = useState('/Image/Avatar/Piel/PielMedioClara.png');
+    const [selectedBody, setSelectedBody] = useState('/Image/Avatar/Piel/Piel-2.png');
     const [selectedHair, setSelectedHair] = useState();
     const [selectedShirt, setSelectedShirt] = useState();
     const [selectedPants, setSelectedPants] = useState();
