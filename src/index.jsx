@@ -12,7 +12,7 @@ import { UserPointsProvider } from './context/UserPointsContext.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <AxiosBaseUrlProvider baseUrl={"http://acoray.informaticamajada.es/api"}>
+    <AxiosBaseUrlProvider baseUrl={"https://acoray.informaticamajada.es/api"}>
       <UserPointsProvider>
         <TranslationProvider>
           <AuthProvider>
