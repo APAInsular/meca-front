@@ -10,6 +10,7 @@ export const UserPointsProvider = ({ children }) => {
     const baseUrl = useAxiosBaseUrl();
     const userId = 1; // Reemplaza esto con la lógica adecuada para obtener el ID del usuario actual
     const [points, setPoints] = useState(0);
+    const [showGIF, setShowGIF] = useState(false);
 
     const fetchUserPoints = async () => {
         try {
@@ -25,11 +26,15 @@ export const UserPointsProvider = ({ children }) => {
     }, []);
 
     const updateUserPoints = (newPoints) => {
+        setShowGIF(true);
         setPoints(newPoints);
+        setTimeout(() => {
+            setShowGIF(false);
+        }, 5000); // Ocultar el GIF después de 5 segundos
     };
 
     return (
-        <UserPointsContext.Provider value={{ points, updateUserPoints }}>
+        <UserPointsContext.Provider value={{ points, updateUserPoints, showGIF }}>
             {children}
         </UserPointsContext.Provider>
     );

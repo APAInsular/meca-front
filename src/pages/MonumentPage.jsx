@@ -6,13 +6,14 @@ import axios from "axios";
 import BigSpinner from "../components/BigSpinner";
 import Comment from "../components/Interaction/Comment";
 import RatingModal from "../components/MonumentPage/RatingModal";
-
+import Swal from "sweetalert2";
+import 'react-notifications-component/dist/theme.css';
 import { Star, StarFill } from "react-bootstrap-icons";
 
 import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
 import { useUserPoints } from '../context/UserPointsContext'; // Ajusta la ruta según la ubicación del archivo
 
-const MonumentPage = ({ monument }) => {
+const MonumentPage = () => {
   const baseUrl = useAxiosBaseUrl();
   const { updateUserPoints } = useUserPoints();
 
@@ -28,7 +29,24 @@ const MonumentPage = ({ monument }) => {
     try {
       const response = await axios.get(`${baseUrl}/check-qr/${userId}/${id}`);
       setQrMessage(response.data.message);
-      alert(response.data.message);
+      if (response.data.success) {
+        handleAddPoints(50);
+      } else {
+        Swal.mixin({
+          toast: true,
+          position: "top-start",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          }
+        }).fire({
+          icon: "warning",
+          title: "Aun no han pasado 24 horas desde la ultima visita"
+        });
+      }
     } catch (error) {
       setQrMessage('Error al verificar el QR.');
     }
@@ -40,7 +58,21 @@ const MonumentPage = ({ monument }) => {
       const response = await axios.post(`${baseUrl}/user/${userId}/up-points`, { points: pointsToAdd });
       const newPoints = response.data.points;
 
-      // Actualizar los puntos en el contexto
+      Swal.mixin({
+        toast: true,
+        position: "top-start",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      }).fire({
+        icon: "success",
+        title: "Puntos añadidos correctamente"
+      });
+
       updateUserPoints(newPoints);
     } catch (error) {
       console.error('Error adding points:', error);
@@ -169,16 +201,17 @@ const MonumentPage = ({ monument }) => {
             <div className="col-lg-4">
               <div className="row">
                 <div className="col text-start">
-                  <strong>Significado: </strong>
+                  <strong>Significado </strong>
                   <p className="text-start">{data.meaning}</p>
                 </div>
               </div>
               <div className="row">
                 <div className="col text-start">
-                  <strong>Descripcion autores: </strong>
+                  <strong>Descripcion autores </strong>
                   <p className="text-start">
                     {data.authors.map((author, index) => (
                       <span key={index}>
+                        <strong>{"->" + author.name + ": "}</strong>
                         {author.description}
                         <br />
                       </span>

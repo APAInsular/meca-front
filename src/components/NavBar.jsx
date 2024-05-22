@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { List, XCircleFill } from 'react-bootstrap-icons';
 import axios from 'axios'; // Importa axios si no lo has hecho
-
 import useTranslationContext from '../hooks/useTranslationContext';
 import { useUserPoints } from '../context/UserPointsContext';
 import { useAxiosBaseUrl } from '../context/AxiosBaseUrl';
@@ -11,7 +10,7 @@ export default function NavBar() {
     let idioma = window.location.pathname.split("/")[1];
     idioma = idioma || 'es';
     const translation = useTranslationContext();
-    const { points } = useUserPoints();
+    const { points, showGIF } = useUserPoints();
 
     const baseUrl = useAxiosBaseUrl();
     const userId = 1;
@@ -47,10 +46,6 @@ export default function NavBar() {
     if (error) {
         return <p>Error: {error}</p>;
     }
-
-    // if (loading) {
-    //     return <p>Cargando...</p>;
-    // }
 
     return (
         <div className='mt-3 pb-3 px-3 d-flex align-items-center' style={{ borderBottom: "2px solid #263C5C" }}>
@@ -163,8 +158,9 @@ export default function NavBar() {
                 </div>
             </div>
             <div className='col-md-2 col-xs-1 col-lg-3 d-flex justify-content-end align-items-center'>
-                <img src="\Image\Moneda-Tara.png" alt="" style={{ width: "30px", height: "auto" }} />
-                <span>{points}</span>
+                {/* {showGIF ? <img src="/Image/Moneda-GIF-2.0.gif" alt="" style={{ width: "50px", height: "auto" }} /> : <img src="/Image/Moneda-Tara.png" alt="" style={{ width: "30px", height: "auto" }} />} */}
+                <img src="/Image/Moneda-GIF.gif" alt="" style={{ width: "80px", height: "auto" }} />
+                <span style={{ position: "absolute", top: "28%", left: "90%" }}>{points}</span>
             </div>
 
             {/* Perfil */}
