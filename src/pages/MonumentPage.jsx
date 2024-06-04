@@ -175,7 +175,7 @@ const MonumentPage = () => {
           <div className="row mt-3">
             <div className="col-lg-4">
               <div className="row d-flex justify-content-center">
-                <img src={"/Image/Obra.jpg"} alt="" style={{ width: "300px", height: "200px" }} />
+                <img src={`/Image/Monumentos/${data.title}.png`} alt="" style={{ width: "300px", height: "200px" }} />
               </div>
               <div className="d-flex mt-3" style={{ cursor: "pointer" }} onClick={handleOpenModal}>
                 {getYellowStars(data.average_rating)}
