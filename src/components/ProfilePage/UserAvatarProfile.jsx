@@ -90,7 +90,7 @@ const UserAvatarProfile = () => {
                 <div className="row mt-1">
                     {menuAvatar.map((item) => (
                         <div
-                            className="col-2 d-flex justify-content-center fw-semibold"
+                            className="col-lg-2 col-md-3 col-xs-4 d-flex justify-content-center fw-semibold"
                             style={{ borderBottom: "2px solid black", cursor: "pointer", fontSize: "15px" }}
                             onClick={() => setActiveTab(`${item.label}`)}
                             key={item.key}
