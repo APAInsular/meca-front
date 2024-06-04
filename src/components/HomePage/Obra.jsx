@@ -25,7 +25,7 @@ const Obra = ({ obra }) => {
 
     return (
         <Link to={`/${idioma}/monumentos/${obra.id}`} style={{ color: "black", textDecoration: "none" }} className="col-xs-12 col-md-6 col-lg-3 mb-3 d-flex flex-column align-items-center">
-            <img src={"/Image/Obra.jpg"} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
+            <img src={`/Image/Monumentos/${obra.title}.png`} alt="ImagenObra" style={{ width: "200px", height: "200px" }} />
             <div className="text-center mt-2">
                 <strong style={{ fontSize: "13px" }}>{obra.title}</strong>
             </div>

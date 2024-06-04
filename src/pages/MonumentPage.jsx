@@ -28,7 +28,6 @@ const MonumentPage = () => {
   const checkQrAndUpdatePoints = async () => {
     try {
       const response = await axios.get(`${baseUrl}/check-qr/${userId}/${id}`);
-      setQrMessage(response.data.message);
       if (response.data.success) {
         handleAddPoints(50);
       } else {
@@ -48,7 +47,20 @@ const MonumentPage = () => {
         });
       }
     } catch (error) {
-      setQrMessage('Error al verificar el QR.');
+      Swal.mixin({
+        toast: true,
+        position: "top-start",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      }).fire({
+        icon: "warning",
+        title: "Error"
+      });
     }
   };
 
